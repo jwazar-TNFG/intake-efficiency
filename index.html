@@ -266,8 +266,8 @@
         }
         
         function renderHeatmap(reps) {
-            // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P
-            const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P'];
+            // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P, 11P
+            const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
             
             // Sort by total LD descending for heatmap
             const sortedReps = [...reps].sort((a, b) => b.ld - a.ld);
@@ -278,7 +278,7 @@
             
             let bodyRows = sortedReps.map(rep => {
                 const rowClass = getRowClass(rep.ld, rep.rate);
-                const hourly = rep.hourly || new Array(16).fill(0);
+                const hourly = rep.hourly || new Array(17).fill(0);
                 
                 let row = `<tr class="${rowClass}"><td class="name-cell">${rep.name}</td>`;
                 hourly.forEach(count => {
