@@ -1,7 +1,25 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T10:08:47.085477",
+  "updated": "2026-04-20T10:23:49.717235",
   "reps": [
+    {
+      "name": "Naryeli Silva",
+      "ld": 2,
+      "hours": 8,
+      "rate": 0.25
+    },
+    {
+      "name": "Luis Vivas",
+      "ld": 1,
+      "hours": 8,
+      "rate": 0.12
+    },
+    {
+      "name": "Manny Penaranda",
+      "ld": 1,
+      "hours": 8,
+      "rate": 0.12
+    },
     {
       "name": "Axl Vilchez",
       "ld": 0,
@@ -57,12 +75,6 @@
       "rate": 0.0
     },
     {
-      "name": "Luis Vivas",
-      "ld": 0,
-      "hours": 8,
-      "rate": 0.0
-    },
-    {
       "name": "M Cardona",
       "ld": 0,
       "hours": 8,
@@ -70,18 +82,6 @@
     },
     {
       "name": "M Pomares",
-      "ld": 0,
-      "hours": 8,
-      "rate": 0.0
-    },
-    {
-      "name": "Manny Penaranda",
-      "ld": 0,
-      "hours": 8,
-      "rate": 0.0
-    },
-    {
-      "name": "Naryeli Silva",
       "ld": 0,
       "hours": 8,
       "rate": 0.0
