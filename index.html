@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intake Efficiency Report</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -21,20 +21,27 @@
         }
         
         .container {
-            max-width: 500px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 30px;
         }
         
         .header h1 {
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 28px;
+            font-weight: 800;
             letter-spacing: 2px;
-            margin-bottom: 4px;
+            margin-bottom: 0;
+        }
+        
+        .header h2 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
         }
         
         .header .date {
@@ -42,60 +49,42 @@
             color: #888;
         }
         
-        .summary-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            gap: 12px;
+        .chart-area {
+            position: relative;
+            padding-top: 30px;
         }
         
-        .summary-card {
-            flex: 1;
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 16px;
-            text-align: center;
+        .target-line {
+            position: absolute;
+            top: 0;
+            bottom: 80px;
+            width: 2px;
+            background: #4ade80;
+            left: calc(50% + 80px);
+            z-index: 10;
         }
         
-        .summary-card .value {
-            font-size: 32px;
-            font-weight: 700;
-        }
-        
-        .summary-card .label {
-            font-size: 11px;
-            color: #888;
-            margin-top: 4px;
-            letter-spacing: 1px;
-        }
-        
-        .summary-card.teal .value { color: #5BA4B5; }
-        .summary-card.green .value { color: #4ade80; }
-        .summary-card.red .value { color: #ef4444; }
-        
-        .chart-container {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .chart-title {
+        .target-label {
+            position: absolute;
+            top: 5px;
+            left: calc(50% + 85px);
+            color: #4ade80;
             font-size: 12px;
-            color: #888;
-            letter-spacing: 1px;
-            margin-bottom: 16px;
+            font-weight: 600;
         }
         
         .bar-row {
             display: flex;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
+            height: 32px;
         }
         
-        .bar-label {
-            width: 100px;
-            font-size: 13px;
+        .bar-name {
+            width: 160px;
+            text-align: right;
+            padding-right: 15px;
+            font-size: 14px;
             font-weight: 500;
             flex-shrink: 0;
         }
@@ -103,74 +92,116 @@
         .bar-track {
             flex: 1;
             height: 28px;
-            background: #2a2a2a;
-            border-radius: 6px;
-            overflow: hidden;
             position: relative;
+            max-width: 500px;
         }
         
         .bar-fill {
             height: 100%;
-            border-radius: 6px;
+            border-radius: 3px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding-right: 8px;
-            font-size: 13px;
-            font-weight: 600;
-            min-width: 40px;
+            padding-right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            min-width: 50px;
             transition: width 0.5s ease;
         }
         
-        .bar-fill.teal { background: #5BA4B5; }
-        .bar-fill.green { background: #4ade80; color: #000; }
-        .bar-fill.yellow { background: #fbbf24; color: #000; }
-        .bar-fill.red { background: #ef4444; }
+        .bar-fill.elite { background: #4ade80; color: #000; }
+        .bar-fill.solid { background: #5BA4B5; color: #fff; }
+        .bar-fill.average { background: #fbbf24; color: #000; }
+        .bar-fill.below { background: #ef4444; color: #fff; }
         
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-        
-        .metric-card {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 16px;
-        }
-        
-        .metric-card .label {
-            font-size: 11px;
+        .bar-stats {
+            width: 80px;
+            text-align: right;
+            font-size: 12px;
             color: #888;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            padding-left: 10px;
+            flex-shrink: 0;
         }
         
-        .metric-card .value {
-            font-size: 28px;
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        
+        .summary-box {
+            background: #1a1a1a;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        
+        .summary-box .line {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .summary-box .line:last-child {
+            margin-bottom: 0;
+        }
+        
+        .summary-box .value {
             font-weight: 700;
         }
         
-        .metric-card.green .value { color: #4ade80; }
-        .metric-card.red .value { color: #ef4444; }
+        .summary-box .elite-count {
+            color: #4ade80;
+        }
+        
+        .legend {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 12px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        .legend-dot.elite { background: #4ade80; }
+        .legend-dot.solid { background: #5BA4B5; }
+        .legend-dot.average { background: #fbbf24; }
+        .legend-dot.below { background: #ef4444; }
+        
+        .x-axis {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 160px;
+            max-width: 500px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .x-axis-label {
+            text-align: center;
+            margin-left: 160px;
+            max-width: 500px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #888;
+            font-weight: 600;
+        }
         
         .loading {
             text-align: center;
-            padding: 40px;
+            padding: 100px;
             color: #888;
-        }
-        
-        .error {
-            text-align: center;
-            padding: 40px;
-            color: #ef4444;
-        }
-        
-        .refresh-note {
-            text-align: center;
-            font-size: 11px;
-            color: #555;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -184,23 +215,22 @@
             try {
                 const response = await fetch('./data.json?' + Date.now());
                 if (!response.ok) throw new Error('Failed to fetch data');
-                
                 const data = await response.json();
                 renderDashboard(data);
-                
             } catch (error) {
                 console.error(error);
-                document.getElementById('app').innerHTML = `
-                    <div class="error">
-                        <p>Error loading data</p>
-                        <p style="font-size: 12px; margin-top: 8px;">${error.message}</p>
-                    </div>
-                `;
+                document.getElementById('app').innerHTML = `<div class="loading">Error loading data</div>`;
             }
         }
         
+        function getBarClass(rate) {
+            if (rate >= 1.0) return 'elite';
+            if (rate >= 0.6) return 'solid';
+            if (rate >= 0.4) return 'average';
+            return 'below';
+        }
+        
         function renderDashboard(data) {
-            const counts = data.counts;
             const dateObj = new Date(data.date + 'T12:00:00');
             const formattedDate = dateObj.toLocaleDateString('en-US', { 
                 weekday: 'long', 
@@ -209,81 +239,71 @@
                 day: 'numeric' 
             });
             
-            const maxCount = Math.max(counts.signed, counts.pending, counts.noShow, counts.other, 1);
+            const reps = data.reps || [];
+            const totalLD = reps.reduce((sum, r) => sum + r.ld, 0);
+            const totalHours = reps.reduce((sum, r) => sum + r.hours, 0);
+            const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : 0;
+            const eliteCount = reps.filter(r => r.rate >= 1.0).length;
+            
+            // Find max rate for scaling (cap at 1.75 for display)
+            const maxRate = Math.max(...reps.map(r => r.rate), 1.5);
+            const scaleMax = Math.min(maxRate * 1.1, 2.0);
+            
+            // Target line position (1.0 on scale)
+            const targetPct = (1.0 / scaleMax) * 100;
+            
+            let barsHtml = reps.map(rep => {
+                const barWidth = (rep.rate / scaleMax) * 100;
+                const barClass = getBarClass(rep.rate);
+                return `
+                    <div class="bar-row">
+                        <div class="bar-name">${rep.name}</div>
+                        <div class="bar-track">
+                            <div class="bar-fill ${barClass}" style="width: ${barWidth}%">
+                                ${rep.rate.toFixed(2)}
+                            </div>
+                        </div>
+                        <div class="bar-stats">${rep.ld} LD | ${rep.hours}h</div>
+                    </div>
+                `;
+            }).join('');
             
             document.getElementById('app').innerHTML = `
                 <div class="header">
-                    <h1>INTAKE EFFICIENCY REPORT</h1>
-                    <div class="date">${formattedDate}</div>
+                    <h1>1-800-NO-FAULT</h1>
+                    <h2>INTAKE EFFICIENCY REPORT</h2>
+                    <div class="date">${formattedDate} | ${totalLD} Total LD</div>
                 </div>
                 
-                <div class="summary-row">
-                    <div class="summary-card teal">
-                        <div class="value">${counts.total}</div>
-                        <div class="label">TOTAL LEADS</div>
+                <div class="chart-area">
+                    <div class="target-line" style="left: calc(160px + ${targetPct}% * 5)"></div>
+                    <div class="target-label" style="left: calc(165px + ${targetPct}% * 5)">TARGET: 1.0</div>
+                    
+                    ${barsHtml}
+                    
+                    <div class="x-axis">
+                        <span>0</span>
+                        <span>0.5</span>
+                        <span>1.0</span>
+                        <span>1.5</span>
                     </div>
-                    <div class="summary-card green">
-                        <div class="value">${counts.signed}</div>
-                        <div class="label">SIGNED</div>
-                    </div>
-                    <div class="summary-card red">
-                        <div class="value">${counts.noShow}</div>
-                        <div class="label">NO SHOW</div>
-                    </div>
+                    <div class="x-axis-label">LOCKED DOWN PER HOUR</div>
                 </div>
                 
-                <div class="chart-container">
-                    <div class="chart-title">LEAD STATUS BREAKDOWN</div>
-                    
-                    <div class="bar-row">
-                        <div class="bar-label">Signed</div>
-                        <div class="bar-track">
-                            <div class="bar-fill green" style="width: ${(counts.signed / maxCount) * 100}%">
-                                ${counts.signed}
-                            </div>
-                        </div>
+                <div class="footer">
+                    <div class="summary-box">
+                        <div class="line"><span class="value">TOTAL LD: ${totalLD}</span></div>
+                        <div class="line">TEAM AVG: <span class="value">${teamAvg}/hr</span></div>
+                        <div class="line"><span class="elite-count">ELITE PERFORMERS: ${eliteCount}</span></div>
                     </div>
                     
-                    <div class="bar-row">
-                        <div class="bar-label">Pending</div>
-                        <div class="bar-track">
-                            <div class="bar-fill yellow" style="width: ${(counts.pending / maxCount) * 100}%">
-                                ${counts.pending}
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bar-row">
-                        <div class="bar-label">No Show</div>
-                        <div class="bar-track">
-                            <div class="bar-fill red" style="width: ${(counts.noShow / maxCount) * 100}%">
-                                ${counts.noShow}
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bar-row">
-                        <div class="bar-label">Other</div>
-                        <div class="bar-track">
-                            <div class="bar-fill teal" style="width: ${(counts.other / maxCount) * 100}%">
-                                ${counts.other}
-                            </div>
-                        </div>
+                    <div class="legend">
+                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ ELITE</div>
+                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-1.0 SOLID</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 AVERAGE</div>
+                        <div class="legend-item"><span class="legend-dot below"></span> <0.4 BELOW</div>
                     </div>
                 </div>
-                
-                <div class="metrics-grid">
-                    <div class="metric-card green">
-                        <div class="label">SIGN RATE</div>
-                        <div class="value">${data.signRate}%</div>
-                    </div>
-                    <div class="metric-card red">
-                        <div class="label">NO SHOW RATE</div>
-                        <div class="value">${data.noShowRate}%</div>
-                    </div>
-                </div>
-                
-                <div class="refresh-note">Data refreshes every 15 minutes</div>
             `;
         }
         
