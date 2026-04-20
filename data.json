@@ -1,11 +1,11 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T15:13:55.360733",
+  "updated": "2026-04-20T15:25:46.835579",
   "reps": [
     {
       "name": "Katiria Bonilla",
       "ld": 14,
-      "hours": 8.0,
+      "hours": 8,
       "rate": 1.75
     },
     {
@@ -53,7 +53,7 @@
     {
       "name": "Beatriz Oliva",
       "ld": 3,
-      "hours": 8.0,
+      "hours": 8,
       "rate": 0.38
     },
     {
