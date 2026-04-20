@@ -1,13 +1,5 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T08:38:30.857059",
-  "counts": {
-    "total": 23,
-    "signed": 0,
-    "pending": 0,
-    "noShow": 0,
-    "other": 23
-  },
-  "signRate": 0.0,
-  "noShowRate": 0.0
+  "updated": "2026-04-20T08:45:30.025079",
+  "reps": []
 }
