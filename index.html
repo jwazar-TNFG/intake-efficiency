@@ -179,6 +179,17 @@
             background: #2a2a2a;
         }
         
+        .heatmap-table th.star-col {
+            width: 28px;
+            background: #2a2a2a;
+        }
+        
+        .heatmap-table td.star-cell {
+            background: #2a2a2a;
+            font-weight: 600;
+            color: #5BA4B5;
+        }
+        
         .heatmap-table th.hour-col {
             width: 22px;
             font-size: 10px;
@@ -298,15 +309,17 @@
             // Sort by total LD descending for heatmap
             const sortedReps = [...reps].sort((a, b) => b.ld - a.ld);
             
-            let headerRow = '<tr><th class="name-col">Intaker</th>';
+            let headerRow = '<tr><th class="name-col">Intaker</th><th class="star-col">*</th>';
             hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
             headerRow += '<th class="total-col">TOT</th></tr>';
             
             let bodyRows = sortedReps.map(rep => {
                 const rowClass = getRowClass(rep.ld, rep.rate);
                 const hourly = rep.hourly || new Array(17).fill(0);
+                const displayName = rep.abbrev || rep.name;
+                const rateWorked = rep.rate_worked !== undefined ? rep.rate_worked.toFixed(1) : '-';
                 
-                let row = `<tr class="${rowClass}"><td class="name-cell">${rep.name}</td>`;
+                let row = `<tr class="${rowClass}"><td class="name-cell">${displayName}</td><td class="star-cell">${rateWorked}</td>`;
                 hourly.forEach(count => {
                     if (count === 0) {
                         row += '<td class="heatmap-cell-dash">-</td>';
@@ -325,6 +338,7 @@
                         <thead>${headerRow}</thead>
                         <tbody>${bodyRows}</tbody>
                     </table>
+                    <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">* = Locked down p/hour of shift</div>
                 </div>
             `;
         }
