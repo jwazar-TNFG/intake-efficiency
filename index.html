@@ -291,6 +291,68 @@
             margin-bottom: 15px;
             color: #888;
         }
+        
+        /* Department Summary Block */
+        .dept-summary {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .dept-summary-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #5BA4B5;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .dept-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+        }
+        
+        .dept-stat {
+            font-size: 13px;
+        }
+        
+        .dept-stat-label {
+            color: #888;
+        }
+        
+        .dept-stat-value {
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .dept-stat-value.positive { color: #4ade80; }
+        .dept-stat-value.negative { color: #ef4444; }
+        
+        /* Hourly totals row */
+        .heatmap-table tr.totals-row td {
+            background: #1a1a1a;
+            font-weight: 700;
+            border-top: 2px solid #444;
+        }
+        
+        .heatmap-table tr.totals-row td.name-cell {
+            background: #1a1a1a;
+            color: #5BA4B5;
+        }
+        
+        .heatmap-table tr.totals-row td.star-cell {
+            background: #2a2a2a;
+        }
+        
+        /* Hourly total heatmap colors */
+        .hourly-heat-0 { background: #1a1a1a !important; color: #666; }
+        .hourly-heat-1 { background: #14532d !important; }
+        .hourly-heat-2 { background: #166534 !important; }
+        .hourly-heat-3 { background: #15803d !important; }
+        .hourly-heat-4 { background: #16a34a !important; }
     </style>
 </head>
 <body>
@@ -326,7 +388,7 @@
             return 'below-row';
         }
         
-        function renderHeatmap(reps) {
+        function renderHeatmap(reps, dept) {
             // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P, 11P
             const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
             
@@ -355,16 +417,76 @@
                 return row;
             }).join('');
             
+            // Hourly totals row
+            const hourlyTotals = dept.hourly_totals || new Array(17).fill(0);
+            const maxHourlyTotal = Math.max(...hourlyTotals, 1);
+            
+            function getHourlyHeatClass(val) {
+                if (val === 0) return 'hourly-heat-0';
+                const ratio = val / maxHourlyTotal;
+                if (ratio >= 0.75) return 'hourly-heat-4';
+                if (ratio >= 0.5) return 'hourly-heat-3';
+                if (ratio >= 0.25) return 'hourly-heat-2';
+                return 'hourly-heat-1';
+            }
+            
+            let totalsRow = '<tr class="totals-row"><td class="name-cell">TOTAL</td><td class="star-cell">-</td>';
+            hourlyTotals.forEach(count => {
+                const heatClass = getHourlyHeatClass(count);
+                if (count === 0) {
+                    totalsRow += `<td class="${heatClass}">-</td>`;
+                } else {
+                    totalsRow += `<td class="${heatClass}">${count}</td>`;
+                }
+            });
+            totalsRow += `<td class="total-cell">${dept.total_ld}</td></tr>`;
+            
+            // Yesterday comparison
+            const yesterdayLd = dept.yesterday_ld || 0;
+            const ldDiff = dept.total_ld - yesterdayLd;
+            const ldDiffClass = ldDiff >= 0 ? 'positive' : 'negative';
+            const ldDiffText = ldDiff >= 0 ? `+${ldDiff}` : `${ldDiff}`;
+            
             return `
                 <div class="heatmap-section">
                     <div class="heatmap-title">Signed by Hour per Intaker</div>
                     <div class="heatmap-wrapper">
                         <table class="heatmap-table">
                             <thead>${headerRow}</thead>
-                            <tbody>${bodyRows}</tbody>
+                            <tbody>${bodyRows}${totalsRow}</tbody>
                         </table>
                     </div>
                     <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">* = Locked down p/hour of shift</div>
+                </div>
+                
+                <div class="dept-summary">
+                    <div class="dept-summary-title">Intake Department</div>
+                    <div class="dept-stats">
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">Total LD:</span>
+                            <span class="dept-stat-value">${dept.total_ld}</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">Specialists:</span>
+                            <span class="dept-stat-value">${dept.specialists_count} (${dept.specialists_with_ld} with LD)</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">Current Rate:</span>
+                            <span class="dept-stat-value">${dept.rate_worked.toFixed(2)}/hr worked</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">Projected Rate:</span>
+                            <span class="dept-stat-value">${dept.rate_shift.toFixed(2)}/hr shift</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">Hours:</span>
+                            <span class="dept-stat-value">${dept.total_hours_worked} worked of ${dept.total_shift_hours} scheduled</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">vs Yesterday:</span>
+                            <span class="dept-stat-value ${ldDiffClass}">${ldDiffText} (${yesterdayLd} total)</span>
+                        </div>
+                    </div>
                 </div>
             `;
         }
@@ -430,7 +552,18 @@
             
             const updatedTime = data.updated ? new Date(data.updated).toLocaleTimeString() : '';
             
-            const heatmapHtml = renderHeatmap(reps);
+            const dept = data.department || {
+                total_ld: totalLD,
+                total_shift_hours: totalHours,
+                total_hours_worked: totalHours,
+                specialists_count: reps.length,
+                specialists_with_ld: reps.filter(r => r.ld > 0).length,
+                rate_worked: parseFloat(teamAvg),
+                rate_shift: parseFloat(teamAvg),
+                hourly_totals: new Array(17).fill(0),
+                yesterday_ld: 0
+            };
+            const heatmapHtml = renderHeatmap(reps, dept);
             
             document.getElementById('app').innerHTML = `
                 <div class="header">
