@@ -467,20 +467,20 @@
                             <span class="dept-stat-value">${dept.total_ld}</span>
                         </div>
                         <div class="dept-stat">
+                            <span class="dept-stat-label">Avg LD/Hour:</span>
+                            <span class="dept-stat-value" style="color: #5BA4B5; font-size: 16px;">${dept.rate_worked.toFixed(2)}</span>
+                        </div>
+                        <div class="dept-stat">
                             <span class="dept-stat-label">Specialists:</span>
                             <span class="dept-stat-value">${dept.specialists_count} (${dept.specialists_with_ld} with LD)</span>
                         </div>
                         <div class="dept-stat">
-                            <span class="dept-stat-label">Current Rate:</span>
-                            <span class="dept-stat-value">${dept.rate_worked.toFixed(2)}/hr worked</span>
+                            <span class="dept-stat-label">Hours:</span>
+                            <span class="dept-stat-value">${dept.total_hours_worked} worked of ${dept.total_shift_hours} scheduled</span>
                         </div>
                         <div class="dept-stat">
                             <span class="dept-stat-label">Projected Rate:</span>
                             <span class="dept-stat-value">${dept.rate_shift.toFixed(2)}/hr shift</span>
-                        </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">Hours:</span>
-                            <span class="dept-stat-value">${dept.total_hours_worked} worked of ${dept.total_shift_hours} scheduled</span>
                         </div>
                         <div class="dept-stat">
                             <span class="dept-stat-label">vs Yesterday:</span>
