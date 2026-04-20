@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Efficiency Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        
+        .header .date {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 12px;
+        }
+        
+        .summary-card {
+            flex: 1;
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+        
+        .summary-card .value {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        
+        .summary-card .label {
+            font-size: 11px;
+            color: #888;
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+        
+        .summary-card.teal .value { color: #5BA4B5; }
+        .summary-card.green .value { color: #4ade80; }
+        .summary-card.red .value { color: #ef4444; }
+        
+        .chart-container {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .chart-title {
+            font-size: 12px;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        
+        .bar-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .bar-label {
+            width: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+        
+        .bar-track {
+            flex: 1;
+            height: 28px;
+            background: #2a2a2a;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            min-width: 40px;
+            transition: width 0.5s ease;
+        }
+        
+        .bar-fill.teal { background: #5BA4B5; }
+        .bar-fill.green { background: #4ade80; color: #000; }
+        .bar-fill.yellow { background: #fbbf24; color: #000; }
+        .bar-fill.red { background: #ef4444; }
+        
+        .bar-value {
+            margin-left: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            min-width: 30px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        
+        .metric-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        
+        .metric-card .label {
+            font-size: 11px;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .metric-card .value {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .metric-card.green .value { color: #4ade80; }
+        .metric-card.red .value { color: #ef4444; }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="loading">Loading...</div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltaGhkaXBhcGxoenhwZmhydW5wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3NDc5NTQsImV4cCI6MjA1ODMyMzk1NH0.p3FOT4bJBf6ykVQOKxLNcNxXe2k7eNlbrHopqbCOvYs';
+        
+        async function fetchData() {
+            const today = new Date().toISOString().split('T')[0];
+            const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+            
+            try {
+                // Fetch today's leads
+                const response = await fetch(
+                    `${SUPABASE_URL}/rest/v1/leads?select=leadStatus,sourceType&dateCreated=gte.${today}&dateCreated=lt.${tomorrow}`,
+                    {
+                        headers: {
+                            'apikey': SUPABASE_KEY,
+                            'Authorization': `Bearer ${SUPABASE_KEY}`
+                        }
+                    }
+                );
+                
+                if (!response.ok) throw new Error('Failed to fetch data');
+                
+                const leads = await response.json();
+                
+                // Filter to TNFG source only
+                const tnfgLeads = leads.filter(l => l.sourceType === 'TNFG');
+                
+                // Count by status
+                const counts = {
+                    total: tnfgLeads.length,
+                    signed: 0,
+                    pending: 0,
+                    noShow: 0,
+                    other: 0
+                };
+                
+                tnfgLeads.forEach(lead => {
+                    const status = (lead.leadStatus || '').toLowerCase();
+                    if (status.includes('signed') || status.includes('locked')) {
+                        counts.signed++;
+                    } else if (status.includes('pending') || status.includes('scheduled') || status.includes('confirm')) {
+                        counts.pending++;
+                    } else if (status.includes('no show') || status.includes('noshow') || status.includes('no-show')) {
+                        counts.noShow++;
+                    } else {
+                        counts.other++;
+                    }
+                });
+                
+                // Calculate rates
+                const signRate = counts.total > 0 ? ((counts.signed / counts.total) * 100).toFixed(1) : 0;
+                const noShowRate = counts.total > 0 ? ((counts.noShow / counts.total) * 100).toFixed(1) : 0;
+                
+                renderDashboard(counts, signRate, noShowRate, today);
+                
+            } catch (error) {
+                console.error(error);
+                document.getElementById('app').innerHTML = `
+                    <div class="error">
+                        <p>Error loading data</p>
+                        <p style="font-size: 12px; margin-top: 8px;">${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function renderDashboard(counts, signRate, noShowRate, dateStr) {
+            const dateObj = new Date(dateStr + 'T12:00:00');
+            const formattedDate = dateObj.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            
+            const maxCount = Math.max(counts.signed, counts.pending, counts.noShow, counts.other, 1);
+            
+            document.getElementById('app').innerHTML = `
+                <div class="header">
+                    <h1>INTAKE EFFICIENCY REPORT</h1>
+                    <div class="date">${formattedDate}</div>
+                </div>
+                
+                <div class="summary-row">
+                    <div class="summary-card teal">
+                        <div class="value">${counts.total}</div>
+                        <div class="label">TOTAL LEADS</div>
+                    </div>
+                    <div class="summary-card green">
+                        <div class="value">${counts.signed}</div>
+                        <div class="label">SIGNED</div>
+                    </div>
+                    <div class="summary-card red">
+                        <div class="value">${counts.noShow}</div>
+                        <div class="label">NO SHOW</div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">LEAD STATUS BREAKDOWN</div>
+                    
+                    <div class="bar-row">
+                        <div class="bar-label">Signed</div>
+                        <div class="bar-track">
+                            <div class="bar-fill green" style="width: ${(counts.signed / maxCount) * 100}%">
+                                ${counts.signed}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-row">
+                        <div class="bar-label">Pending</div>
+                        <div class="bar-track">
+                            <div class="bar-fill yellow" style="width: ${(counts.pending / maxCount) * 100}%">
+                                ${counts.pending}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-row">
+                        <div class="bar-label">No Show</div>
+                        <div class="bar-track">
+                            <div class="bar-fill red" style="width: ${(counts.noShow / maxCount) * 100}%">
+                                ${counts.noShow}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-row">
+                        <div class="bar-label">Other</div>
+                        <div class="bar-track">
+                            <div class="bar-fill teal" style="width: ${(counts.other / maxCount) * 100}%">
+                                ${counts.other}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card green">
+                        <div class="label">SIGN RATE</div>
+                        <div class="value">${signRate}%</div>
+                    </div>
+                    <div class="metric-card red">
+                        <div class="label">NO SHOW RATE</div>
+                        <div class="value">${noShowRate}%</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Load data on page load
+        fetchData();
+        
+        // Refresh every 5 minutes
+        setInterval(fetchData, 300000);
+    </script>
+</body>
+</html>
