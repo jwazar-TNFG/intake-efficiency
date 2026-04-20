@@ -6,11 +6,7 @@
     <title>Intake Efficiency Report</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', sans-serif;
@@ -20,58 +16,14 @@
             padding: 20px;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+        .container { max-width: 900px; margin: 0 auto; }
         
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { font-size: 28px; font-weight: 800; letter-spacing: 2px; margin-bottom: 0; }
+        .header h2 { font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
+        .header .date { font-size: 14px; color: #888; }
         
-        .header h1 {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            margin-bottom: 0;
-        }
-        
-        .header h2 {
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-        
-        .header .date {
-            font-size: 14px;
-            color: #888;
-        }
-        
-        .chart-area {
-            position: relative;
-            padding-top: 30px;
-        }
-        
-        .target-line {
-            position: absolute;
-            top: 0;
-            bottom: 80px;
-            width: 2px;
-            background: #4ade80;
-            left: calc(50% + 80px);
-            z-index: 10;
-        }
-        
-        .target-label {
-            position: absolute;
-            top: 5px;
-            left: calc(50% + 85px);
-            color: #4ade80;
-            font-size: 12px;
-            font-weight: 600;
-        }
+        .chart-area { padding-top: 20px; }
         
         .bar-row {
             display: flex;
@@ -92,13 +44,15 @@
         .bar-track {
             flex: 1;
             height: 28px;
+            background: #1a1a1a;
+            border-radius: 4px;
             position: relative;
-            max-width: 500px;
+            max-width: 400px;
         }
         
         .bar-fill {
             height: 100%;
-            border-radius: 3px;
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -106,7 +60,6 @@
             font-size: 14px;
             font-weight: 700;
             min-width: 50px;
-            transition: width 0.5s ease;
         }
         
         .bar-fill.elite { background: #4ade80; color: #000; }
@@ -115,11 +68,11 @@
         .bar-fill.below { background: #ef4444; color: #fff; }
         
         .bar-stats {
-            width: 80px;
-            text-align: right;
+            width: 100px;
+            text-align: left;
             font-size: 12px;
             color: #888;
-            padding-left: 10px;
+            padding-left: 15px;
             flex-shrink: 0;
         }
         
@@ -129,6 +82,8 @@
             margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 20px;
         }
         
         .summary-box {
@@ -137,72 +92,28 @@
             border-radius: 8px;
         }
         
-        .summary-box .line {
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
+        .summary-box .line { font-size: 14px; margin-bottom: 5px; }
+        .summary-box .line:last-child { margin-bottom: 0; }
+        .summary-box .value { font-weight: 700; }
+        .summary-box .elite-count { color: #4ade80; }
         
-        .summary-box .line:last-child {
-            margin-bottom: 0;
-        }
-        
-        .summary-box .value {
-            font-weight: 700;
-        }
-        
-        .summary-box .elite-count {
-            color: #4ade80;
-        }
-        
-        .legend {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            font-size: 12px;
-        }
-        
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .legend-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        
+        .legend { display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
         .legend-dot.elite { background: #4ade80; }
         .legend-dot.solid { background: #5BA4B5; }
         .legend-dot.average { background: #fbbf24; }
         .legend-dot.below { background: #ef4444; }
         
-        .x-axis {
-            display: flex;
-            justify-content: space-between;
-            margin-left: 160px;
-            max-width: 500px;
-            margin-top: 10px;
-            font-size: 12px;
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
             color: #666;
         }
+        .empty-state h3 { font-size: 18px; margin-bottom: 10px; color: #888; }
+        .empty-state p { font-size: 14px; }
         
-        .x-axis-label {
-            text-align: center;
-            margin-left: 160px;
-            max-width: 500px;
-            margin-top: 5px;
-            font-size: 12px;
-            color: #888;
-            font-weight: 600;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 100px;
-            color: #888;
-        }
+        .loading { text-align: center; padding: 100px; color: #888; }
     </style>
 </head>
 <body>
@@ -219,7 +130,7 @@
                 renderDashboard(data);
             } catch (error) {
                 console.error(error);
-                document.getElementById('app').innerHTML = `<div class="loading">Error loading data</div>`;
+                document.getElementById('app').innerHTML = `<div class="loading">Error: ${error.message}</div>`;
             }
         }
         
@@ -242,18 +153,31 @@
             const reps = data.reps || [];
             const totalLD = reps.reduce((sum, r) => sum + r.ld, 0);
             const totalHours = reps.reduce((sum, r) => sum + r.hours, 0);
-            const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : 0;
+            const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : '0.00';
             const eliteCount = reps.filter(r => r.rate >= 1.0).length;
             
-            // Find max rate for scaling (cap at 1.75 for display)
+            // Empty state
+            if (reps.length === 0) {
+                document.getElementById('app').innerHTML = `
+                    <div class="header">
+                        <h1>1-800-NO-FAULT</h1>
+                        <h2>INTAKE EFFICIENCY REPORT</h2>
+                        <div class="date">${formattedDate}</div>
+                    </div>
+                    <div class="empty-state">
+                        <h3>No Data Yet</h3>
+                        <p>Waiting for intake specialists to lock down cases today.</p>
+                        <p style="margin-top: 10px; color: #555;">Refreshes every 15 minutes</p>
+                    </div>
+                `;
+                return;
+            }
+            
             const maxRate = Math.max(...reps.map(r => r.rate), 1.5);
             const scaleMax = Math.min(maxRate * 1.1, 2.0);
             
-            // Target line position (1.0 on scale)
-            const targetPct = (1.0 / scaleMax) * 100;
-            
             let barsHtml = reps.map(rep => {
-                const barWidth = (rep.rate / scaleMax) * 100;
+                const barWidth = Math.max((rep.rate / scaleMax) * 100, 5);
                 const barClass = getBarClass(rep.rate);
                 return `
                     <div class="bar-row">
@@ -276,38 +200,28 @@
                 </div>
                 
                 <div class="chart-area">
-                    <div class="target-line" style="left: calc(160px + ${targetPct}% * 5)"></div>
-                    <div class="target-label" style="left: calc(165px + ${targetPct}% * 5)">TARGET: 1.0</div>
-                    
                     ${barsHtml}
-                    
-                    <div class="x-axis">
-                        <span>0</span>
-                        <span>0.5</span>
-                        <span>1.0</span>
-                        <span>1.5</span>
-                    </div>
-                    <div class="x-axis-label">LOCKED DOWN PER HOUR</div>
                 </div>
                 
                 <div class="footer">
                     <div class="summary-box">
                         <div class="line"><span class="value">TOTAL LD: ${totalLD}</span></div>
                         <div class="line">TEAM AVG: <span class="value">${teamAvg}/hr</span></div>
-                        <div class="line"><span class="elite-count">ELITE PERFORMERS: ${eliteCount}</span></div>
+                        <div class="line"><span class="elite-count">ELITE (1.0+): ${eliteCount}</span></div>
                     </div>
                     
                     <div class="legend">
-                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ ELITE</div>
-                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-1.0 SOLID</div>
-                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 AVERAGE</div>
-                        <div class="legend-item"><span class="legend-dot below"></span> <0.4 BELOW</div>
+                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ Elite</div>
+                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-1.0 Solid</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 Average</div>
+                        <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
                     </div>
                 </div>
             `;
         }
         
         fetchData();
+        setInterval(fetchData, 300000); // Refresh every 5 min
     </script>
 </body>
 </html>
