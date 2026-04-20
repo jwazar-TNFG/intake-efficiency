@@ -1,5 +1,114 @@
 {
-  "date": "2026-04-20",
-  "updated": "2026-04-20T08:45:30.025079",
-  "reps": []
+  "date": "2026-04-18",
+  "updated": "2026-04-20T08:45:53.067017",
+  "reps": [
+    {
+      "name": "Jasmine Cuarezma",
+      "ld": 2,
+      "hours": 2,
+      "rate": 1.0
+    },
+    {
+      "name": "Luis Vivas",
+      "ld": 11,
+      "hours": 12,
+      "rate": 0.92
+    },
+    {
+      "name": "Orlando Plasencia",
+      "ld": 7,
+      "hours": 10,
+      "rate": 0.7
+    },
+    {
+      "name": "Richard Pena",
+      "ld": 6,
+      "hours": 12,
+      "rate": 0.5
+    },
+    {
+      "name": "Nelson Rodriguez",
+      "ld": 6,
+      "hours": 12,
+      "rate": 0.5
+    },
+    {
+      "name": "M Cardona",
+      "ld": 4,
+      "hours": 8,
+      "rate": 0.5
+    },
+    {
+      "name": "Jesus Ortega",
+      "ld": 4,
+      "hours": 8,
+      "rate": 0.5
+    },
+    {
+      "name": "Juan Jose Ortega",
+      "ld": 5,
+      "hours": 12,
+      "rate": 0.42
+    },
+    {
+      "name": "Sebastian Cubillos",
+      "ld": 3,
+      "hours": 8,
+      "rate": 0.38
+    },
+    {
+      "name": "Jorge Duvergel",
+      "ld": 3,
+      "hours": 12,
+      "rate": 0.25
+    },
+    {
+      "name": "Naryeli Silva",
+      "ld": 3,
+      "hours": 12,
+      "rate": 0.25
+    },
+    {
+      "name": "D Velasquez",
+      "ld": 2,
+      "hours": 12,
+      "rate": 0.17
+    },
+    {
+      "name": "Jonathan Ramirez",
+      "ld": 1,
+      "hours": 12,
+      "rate": 0.08
+    },
+    {
+      "name": "Manny Penaranda",
+      "ld": 1,
+      "hours": 12,
+      "rate": 0.08
+    },
+    {
+      "name": "Reny Roca",
+      "ld": 0,
+      "hours": 12,
+      "rate": 0.0
+    },
+    {
+      "name": "D Valles",
+      "ld": 0,
+      "hours": 12,
+      "rate": 0.0
+    },
+    {
+      "name": "Axl Vilchez",
+      "ld": 0,
+      "hours": 9,
+      "rate": 0.0
+    },
+    {
+      "name": "Mpomares",
+      "ld": 0,
+      "hours": 1,
+      "rate": 0.0
+    }
+  ]
 }
