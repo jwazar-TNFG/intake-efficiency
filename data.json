@@ -1,6 +1,6 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T16:47:28.667393",
+  "updated": "2026-04-20T16:58:28.824489",
   "reps": [
     {
       "name": "Katiria Bonilla",
@@ -35,9 +35,9 @@
       "abbrev": "J. Cuarezma",
       "ld": 13,
       "hours": 11.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 1.18,
-      "rate_worked": 1.48,
+      "rate_worked": 1.45,
       "hourly": [
         0,
         0,
@@ -63,9 +63,9 @@
       "abbrev": "J. Duvergel",
       "ld": 10,
       "hours": 15.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 1.14,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -91,9 +91,9 @@
       "abbrev": "J. Ortega",
       "ld": 6,
       "hours": 9.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.0,
       "rate": 0.67,
-      "rate_worked": 2.15,
+      "rate_worked": 2.02,
       "hourly": [
         0,
         0,
@@ -119,9 +119,9 @@
       "abbrev": "L. Murillo",
       "ld": 6,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 0.68,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         2,
@@ -147,9 +147,9 @@
       "abbrev": "L. Vivas",
       "ld": 6,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 0.68,
+      "rate_worked": 0.67,
       "hourly": [
         1,
         3,
@@ -203,9 +203,9 @@
       "abbrev": "N. Rodriguez",
       "ld": 9,
       "hours": 15.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.6,
-      "rate_worked": 1.02,
+      "rate_worked": 1.0,
       "hourly": [
         0,
         0,
@@ -231,9 +231,9 @@
       "abbrev": "O. Plasencia",
       "ld": 7,
       "hours": 12.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.58,
-      "rate_worked": 0.8,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -259,9 +259,9 @@
       "abbrev": "A. Vilchez",
       "ld": 5,
       "hours": 9.0,
-      "hours_worked": 6.8,
+      "hours_worked": 7.0,
       "rate": 0.56,
-      "rate_worked": 0.74,
+      "rate_worked": 0.72,
       "hourly": [
         0,
         0,
@@ -287,9 +287,9 @@
       "abbrev": "M. Penaranda",
       "ld": 8,
       "hours": 15.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.53,
-      "rate_worked": 0.91,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         1,
@@ -315,9 +315,9 @@
       "abbrev": "D. Juarez",
       "ld": 4,
       "hours": 9.0,
-      "hours_worked": 7.8,
+      "hours_worked": 8.0,
       "rate": 0.44,
-      "rate_worked": 0.51,
+      "rate_worked": 0.5,
       "hourly": [
         0,
         0,
@@ -343,9 +343,9 @@
       "abbrev": "J. Ramirez",
       "ld": 4,
       "hours": 10.0,
-      "hours_worked": 6.3,
+      "hours_worked": 6.5,
       "rate": 0.4,
-      "rate_worked": 0.64,
+      "rate_worked": 0.62,
       "hourly": [
         1,
         0,
@@ -455,9 +455,9 @@
       "abbrev": "N. Silva",
       "ld": 2,
       "hours": 9.0,
-      "hours_worked": 7.8,
+      "hours_worked": 8.0,
       "rate": 0.22,
-      "rate_worked": 0.26,
+      "rate_worked": 0.25,
       "hourly": [
         0,
         0,
@@ -511,7 +511,7 @@
       "abbrev": "R. Roca",
       "ld": 1,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 8.5,
       "rate": 0.11,
       "rate_worked": 0.12,
       "hourly": [
@@ -539,9 +539,9 @@
       "abbrev": "S. Cubillos",
       "ld": 1,
       "hours": 9.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.0,
       "rate": 0.11,
-      "rate_worked": 0.36,
+      "rate_worked": 0.34,
       "hourly": [
         0,
         0,
@@ -567,7 +567,7 @@
       "abbrev": "D. Castro",
       "ld": 0,
       "hours": 10.0,
-      "hours_worked": 4.8,
+      "hours_worked": 5.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -595,7 +595,7 @@
       "abbrev": "J. Munoz",
       "ld": 0,
       "hours": 8.0,
-      "hours_worked": 7.8,
+      "hours_worked": 8.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "abbrev": "M. Miranda",
       "ld": 0,
       "hours": 8.0,
-      "hours_worked": 7.8,
+      "hours_worked": 8.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -651,7 +651,7 @@
       "abbrev": "R. Pena",
       "ld": 0,
       "hours": 9.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -679,7 +679,7 @@
       "abbrev": "R. Chavarria",
       "ld": 0,
       "hours": 9.0,
-      "hours_worked": 6.8,
+      "hours_worked": 7.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -703,5 +703,34 @@
       ]
     }
   ],
-  "shifts_configured": true
+  "shifts_configured": true,
+  "department": {
+    "total_ld": 110,
+    "total_shift_hours": 242.0,
+    "total_hours_worked": 186.0,
+    "specialists_count": 25,
+    "specialists_with_ld": 20,
+    "rate_worked": 0.59,
+    "rate_shift": 0.45,
+    "hourly_totals": [
+      2,
+      7,
+      9,
+      4,
+      17,
+      5,
+      25,
+      24,
+      13,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "yesterday_ld": 32
+  }
 }
