@@ -1,6 +1,127 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T09:38:41.410004",
-  "reps": [],
+  "updated": "2026-04-20T09:47:49.040841",
+  "reps": [
+    {
+      "name": "Axl Vilchez",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "D Valles",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "D Velasquez",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Delvin Castro",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Jasmine Cuarezma",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Jesus Ortega",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Jonathan Ramirez",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Jorge Duvergel",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Juan Jose Ortega",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Luis Vivas",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "M Cardona",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "M Pomares",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Manny Penaranda",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Naryeli Silva",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Nelson Rodriguez",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Orlando Plasencia",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Reny Roca",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Richard Pena",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Ronnie Chavarria",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    },
+    {
+      "name": "Sebastian Cubillos",
+      "ld": 0,
+      "hours": 8,
+      "rate": 0.0
+    }
+  ],
   "shifts_configured": false
 }
