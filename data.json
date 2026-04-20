@@ -1,7 +1,19 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T14:40:38.041901",
+  "updated": "2026-04-20T14:55:41.448634",
   "reps": [
+    {
+      "name": "Orlando Plasencia",
+      "ld": 4,
+      "hours": 12.0,
+      "rate": 0.33
+    },
+    {
+      "name": "Axl Vilchez",
+      "ld": 2,
+      "hours": 8.0,
+      "rate": 0.25
+    },
     {
       "name": "Manny Penaranda",
       "ld": 2,
@@ -9,7 +21,43 @@
       "rate": 0.22
     },
     {
+      "name": "Jorge Duvergel",
+      "ld": 3,
+      "hours": 15.0,
+      "rate": 0.2
+    },
+    {
+      "name": "Nelson Rodriguez",
+      "ld": 2,
+      "hours": 15.0,
+      "rate": 0.13
+    },
+    {
+      "name": "Luis Vivas",
+      "ld": 1,
+      "hours": 9.0,
+      "rate": 0.11
+    },
+    {
+      "name": "Reny Roca",
+      "ld": 1,
+      "hours": 9.0,
+      "rate": 0.11
+    },
+    {
       "name": "Jasmine Cuarezma",
+      "ld": 0,
+      "hours": 9.0,
+      "rate": 0.0
+    },
+    {
+      "name": "Naryeli Silva",
+      "ld": 0,
+      "hours": 9.0,
+      "rate": 0.0
+    },
+    {
+      "name": "Ronnie Chavarria",
       "ld": 0,
       "hours": 9.0,
       "rate": 0.0
