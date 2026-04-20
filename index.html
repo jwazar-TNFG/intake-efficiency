@@ -18,12 +18,34 @@
         
         .container { max-width: 900px; margin: 0 auto; }
         
-        .header { text-align: center; margin-bottom: 30px; }
+        .header { text-align: center; margin-bottom: 20px; }
         .header h1 { font-size: 28px; font-weight: 800; letter-spacing: 2px; margin-bottom: 0; }
         .header h2 { font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
         .header .date { font-size: 14px; color: #888; }
         
-        .chart-area { padding-top: 20px; }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            border: none;
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+        
+        .tab:hover { background: #2a2a2a; color: #fff; }
+        .tab.active { background: #5BA4B5; color: #fff; }
+        
+        .chart-area { padding-top: 10px; }
         
         .bar-row {
             display: flex;
@@ -114,6 +136,8 @@
         .empty-state p { font-size: 14px; }
         
         .loading { text-align: center; padding: 100px; color: #888; }
+        
+        .updated { text-align: center; font-size: 11px; color: #444; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -156,6 +180,13 @@
             const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : '0.00';
             const eliteCount = reps.filter(r => r.rate >= 1.0).length;
             
+            const tabs = `
+                <div class="tabs">
+                    <a href="index.html" class="tab active">Dashboard</a>
+                    <a href="admin.html" class="tab">Manage Shifts</a>
+                </div>
+            `;
+            
             // Empty state
             if (reps.length === 0) {
                 document.getElementById('app').innerHTML = `
@@ -164,6 +195,7 @@
                         <h2>INTAKE EFFICIENCY REPORT</h2>
                         <div class="date">${formattedDate}</div>
                     </div>
+                    ${tabs}
                     <div class="empty-state">
                         <h3>No Data Yet</h3>
                         <p>Waiting for intake specialists to lock down cases today.</p>
@@ -192,12 +224,16 @@
                 `;
             }).join('');
             
+            const updatedTime = data.updated ? new Date(data.updated).toLocaleTimeString() : '';
+            
             document.getElementById('app').innerHTML = `
                 <div class="header">
                     <h1>1-800-NO-FAULT</h1>
                     <h2>INTAKE EFFICIENCY REPORT</h2>
                     <div class="date">${formattedDate} | ${totalLD} Total LD</div>
                 </div>
+                
+                ${tabs}
                 
                 <div class="chart-area">
                     ${barsHtml}
@@ -217,11 +253,13 @@
                         <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
                     </div>
                 </div>
+                
+                <div class="updated">Last updated: ${updatedTime}</div>
             `;
         }
         
         fetchData();
-        setInterval(fetchData, 300000); // Refresh every 5 min
+        setInterval(fetchData, 300000);
     </script>
 </body>
 </html>

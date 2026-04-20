@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Shifts - Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .header h1 { font-size: 24px; font-weight: 700; }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            border: none;
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+        
+        .tab:hover { background: #2a2a2a; color: #fff; }
+        .tab.active { background: #5BA4B5; color: #fff; }
+        
+        .date-nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .date-nav button {
+            padding: 8px 15px;
+            background: #1a1a1a;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .date-nav button:hover { background: #2a2a2a; }
+        
+        .date-nav input {
+            padding: 8px 12px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .shift-form {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .btn-primary { background: #4ade80; color: #000; }
+        .btn-primary:hover { background: #22c55e; }
+        .btn-danger { background: #ef4444; color: #fff; }
+        .btn-danger:hover { background: #dc2626; }
+        
+        .shifts-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .shifts-table th,
+        .shifts-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        
+        .shifts-table th {
+            font-size: 12px;
+            color: #888;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .shifts-table td { font-size: 14px; }
+        
+        .shifts-table .hours { color: #5BA4B5; font-weight: 600; }
+        
+        .shifts-table .actions { text-align: right; }
+        
+        .shifts-table .delete-btn {
+            background: none;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .message.success { background: #065f46; color: #6ee7b7; }
+        .message.error { background: #7f1d1d; color: #fca5a5; }
+        
+        .loading { text-align: center; padding: 40px; color: #888; }
+        
+        .total-row {
+            font-weight: 700;
+            background: #1a1a1a;
+        }
+        
+        .total-row td { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Intake Shift Manager</h1>
+        </div>
+        
+        <div class="tabs">
+            <a href="index.html" class="tab">Dashboard</a>
+            <a href="admin.html" class="tab active">Manage Shifts</a>
+        </div>
+        
+        <div id="message"></div>
+        
+        <div class="date-nav">
+            <button onclick="changeDate(-1)">← Prev</button>
+            <input type="date" id="shiftDate" onchange="loadShifts()">
+            <button onclick="changeDate(1)">Next →</button>
+            <button onclick="setToday()">Today</button>
+        </div>
+        
+        <div class="shift-form">
+            <h3 style="margin-bottom: 15px; font-size: 16px;">Add Shift</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Specialist</label>
+                    <select id="specialist"></select>
+                </div>
+                <div class="form-group">
+                    <label>Start Time</label>
+                    <input type="time" id="startTime" value="09:00">
+                </div>
+                <div class="form-group">
+                    <label>End Time</label>
+                    <input type="time" id="endTime" value="17:00">
+                </div>
+                <div class="form-group" style="display: flex; align-items: flex-end;">
+                    <button class="btn btn-primary" onclick="addShift()">Add Shift</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="shiftsContainer">
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltaGhkaXBhcGxoenhwZmhydW5wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0Mjc0Nzk1NCwiZXhwIjoyMDU4MzIzOTU0fQ.p3FOT4bJBf6ykVQOKxLNcNxXe2k7eNlbrHopqbCOvYs';
+        
+        let specialists = [];
+        
+        async function supabase(endpoint, options = {}) {
+            const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
+                ...options,
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json',
+                    'Prefer': options.method === 'POST' ? 'return=representation' : 'return=minimal',
+                    ...options.headers
+                }
+            });
+            if (!res.ok) {
+                const err = await res.text();
+                throw new Error(err);
+            }
+            const text = await res.text();
+            return text ? JSON.parse(text) : null;
+        }
+        
+        async function loadSpecialists() {
+            try {
+                specialists = await supabase('intake_specialists?is_active=eq.true&order=display_name');
+                const select = document.getElementById('specialist');
+                select.innerHTML = specialists.map(s => 
+                    `<option value="${s.email}">${s.display_name}</option>`
+                ).join('');
+            } catch (e) {
+                showMessage('Error loading specialists: ' + e.message, 'error');
+            }
+        }
+        
+        async function loadShifts() {
+            const date = document.getElementById('shiftDate').value;
+            if (!date) return;
+            
+            try {
+                const shifts = await supabase(`intake_shifts?shift_date=eq.${date}&order=start_time`);
+                renderShifts(shifts);
+            } catch (e) {
+                showMessage('Error loading shifts: ' + e.message, 'error');
+            }
+        }
+        
+        function renderShifts(shifts) {
+            if (shifts.length === 0) {
+                document.getElementById('shiftsContainer').innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        No shifts scheduled for this date.<br>
+                        Add shifts using the form above.
+                    </div>
+                `;
+                return;
+            }
+            
+            const totalHours = shifts.reduce((sum, s) => sum + parseFloat(s.hours_scheduled || 0), 0);
+            
+            const rows = shifts.map(s => `
+                <tr>
+                    <td>${s.specialist_name}</td>
+                    <td>${formatTime(s.start_time)}</td>
+                    <td>${formatTime(s.end_time)}</td>
+                    <td class="hours">${parseFloat(s.hours_scheduled).toFixed(1)}h</td>
+                    <td class="actions">
+                        <button class="delete-btn" onclick="deleteShift(${s.id})">✕</button>
+                    </td>
+                </tr>
+            `).join('');
+            
+            document.getElementById('shiftsContainer').innerHTML = `
+                <table class="shifts-table">
+                    <thead>
+                        <tr>
+                            <th>Specialist</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Hours</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows}
+                        <tr class="total-row">
+                            <td colspan="3"><strong>Total</strong></td>
+                            <td class="hours">${totalHours.toFixed(1)}h</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+        }
+        
+        function formatTime(time) {
+            const [h, m] = time.split(':');
+            const hour = parseInt(h);
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+            const hour12 = hour % 12 || 12;
+            return `${hour12}:${m} ${ampm}`;
+        }
+        
+        async function addShift() {
+            const date = document.getElementById('shiftDate').value;
+            const email = document.getElementById('specialist').value;
+            const start = document.getElementById('startTime').value;
+            const end = document.getElementById('endTime').value;
+            
+            if (!date || !email || !start || !end) {
+                showMessage('Please fill all fields', 'error');
+                return;
+            }
+            
+            const specialist = specialists.find(s => s.email === email);
+            
+            try {
+                await supabase('intake_shifts', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        shift_date: date,
+                        specialist_email: email,
+                        specialist_name: specialist.display_name,
+                        start_time: start,
+                        end_time: end
+                    })
+                });
+                showMessage('Shift added successfully', 'success');
+                loadShifts();
+            } catch (e) {
+                if (e.message.includes('duplicate')) {
+                    showMessage('This specialist already has a shift on this date', 'error');
+                } else {
+                    showMessage('Error adding shift: ' + e.message, 'error');
+                }
+            }
+        }
+        
+        async function deleteShift(id) {
+            if (!confirm('Delete this shift?')) return;
+            
+            try {
+                await supabase(`intake_shifts?id=eq.${id}`, { method: 'DELETE' });
+                showMessage('Shift deleted', 'success');
+                loadShifts();
+            } catch (e) {
+                showMessage('Error deleting shift: ' + e.message, 'error');
+            }
+        }
+        
+        function changeDate(days) {
+            const input = document.getElementById('shiftDate');
+            const date = new Date(input.value);
+            date.setDate(date.getDate() + days);
+            input.value = date.toISOString().split('T')[0];
+            loadShifts();
+        }
+        
+        function setToday() {
+            document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
+            loadShifts();
+        }
+        
+        function showMessage(text, type) {
+            const el = document.getElementById('message');
+            el.innerHTML = `<div class="message ${type}">${text}</div>`;
+            setTimeout(() => el.innerHTML = '', 3000);
+        }
+        
+        // Init
+        document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
+        loadSpecialists();
+        loadShifts();
+    </script>
+</body>
+</html>
