@@ -138,6 +138,98 @@
         .loading { text-align: center; padding: 100px; color: #888; }
         
         .updated { text-align: center; font-size: 11px; color: #444; margin-top: 20px; }
+        
+        /* Hourly Heatmap Styles */
+        .heatmap-section {
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+        
+        .heatmap-title {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .heatmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            min-width: 700px;
+        }
+        
+        .heatmap-table th {
+            background: #1a1a1a;
+            padding: 8px 4px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #333;
+        }
+        
+        .heatmap-table th.name-col {
+            text-align: left;
+            padding-left: 10px;
+            width: 140px;
+        }
+        
+        .heatmap-table th.total-col {
+            width: 50px;
+            background: #2a2a2a;
+        }
+        
+        .heatmap-table td {
+            padding: 6px 4px;
+            text-align: center;
+            border: 1px solid #333;
+            font-weight: 500;
+        }
+        
+        .heatmap-table td.name-cell {
+            text-align: left;
+            padding-left: 10px;
+            font-weight: 500;
+        }
+        
+        .heatmap-table td.total-cell {
+            font-weight: 700;
+            background: #2a2a2a;
+        }
+        
+        .heatmap-table tr.elite-row td { background: #166534; }
+        .heatmap-table tr.elite-row td.name-cell,
+        .heatmap-table tr.elite-row td.total-cell { background: #14532d; }
+        
+        .heatmap-table tr.solid-row td { background: #365314; }
+        .heatmap-table tr.solid-row td.name-cell,
+        .heatmap-table tr.solid-row td.total-cell { background: #1a2e05; }
+        
+        .heatmap-table tr.average-row td { background: #713f12; }
+        .heatmap-table tr.average-row td.name-cell,
+        .heatmap-table tr.average-row td.total-cell { background: #451a03; }
+        
+        .heatmap-table tr.below-row td { background: #7f1d1d; }
+        .heatmap-table tr.below-row td.name-cell,
+        .heatmap-table tr.below-row td.total-cell { background: #450a0a; }
+        
+        .heatmap-table tr.zero-row td { background: #3f3f46; }
+        .heatmap-table tr.zero-row td.name-cell,
+        .heatmap-table tr.zero-row td.total-cell { background: #27272a; }
+        
+        .heatmap-cell-dash { color: #666; }
+        
+        .section-divider {
+            border-top: 2px solid #333;
+            margin: 30px 0;
+            padding-top: 20px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
@@ -163,6 +255,52 @@
             if (rate >= 0.6) return 'solid';
             if (rate >= 0.4) return 'average';
             return 'below';
+        }
+        
+        function getRowClass(ld, rate) {
+            if (ld === 0) return 'zero-row';
+            if (rate >= 1.0) return 'elite-row';
+            if (rate >= 0.6) return 'solid-row';
+            if (rate >= 0.4) return 'average-row';
+            return 'below-row';
+        }
+        
+        function renderHeatmap(reps) {
+            // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P
+            const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P'];
+            
+            // Sort by total LD descending for heatmap
+            const sortedReps = [...reps].sort((a, b) => b.ld - a.ld);
+            
+            let headerRow = '<tr><th class="name-col">Intaker</th>';
+            hourLabels.forEach(h => { headerRow += `<th>${h}</th>`; });
+            headerRow += '<th class="total-col">TOT</th></tr>';
+            
+            let bodyRows = sortedReps.map(rep => {
+                const rowClass = getRowClass(rep.ld, rep.rate);
+                const hourly = rep.hourly || new Array(16).fill(0);
+                
+                let row = `<tr class="${rowClass}"><td class="name-cell">${rep.name}</td>`;
+                hourly.forEach(count => {
+                    if (count === 0) {
+                        row += '<td class="heatmap-cell-dash">-</td>';
+                    } else {
+                        row += `<td>${count}</td>`;
+                    }
+                });
+                row += `<td class="total-cell">${rep.ld}</td></tr>`;
+                return row;
+            }).join('');
+            
+            return `
+                <div class="heatmap-section">
+                    <div class="heatmap-title">Signed by Hour per Intaker</div>
+                    <table class="heatmap-table">
+                        <thead>${headerRow}</thead>
+                        <tbody>${bodyRows}</tbody>
+                    </table>
+                </div>
+            `;
         }
         
         function renderDashboard(data) {
@@ -226,6 +364,8 @@
             
             const updatedTime = data.updated ? new Date(data.updated).toLocaleTimeString() : '';
             
+            const heatmapHtml = renderHeatmap(reps);
+            
             document.getElementById('app').innerHTML = `
                 <div class="header">
                     <h1>1-800-NO-FAULT</h1>
@@ -234,6 +374,12 @@
                 </div>
                 
                 ${tabs}
+                
+                ${heatmapHtml}
+                
+                <div class="section-divider">
+                    <div class="section-title">LD/Hour Performance</div>
+                </div>
                 
                 <div class="chart-area">
                     ${barsHtml}
