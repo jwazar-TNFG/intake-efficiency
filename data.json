@@ -1,6 +1,6 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T16:46:16.785703",
+  "updated": "2026-04-20T16:47:28.667393",
   "reps": [
     {
       "name": "Katiria Bonilla",
@@ -93,7 +93,7 @@
       "hours": 9.0,
       "hours_worked": 2.8,
       "rate": 0.67,
-      "rate_worked": 2.17,
+      "rate_worked": 2.15,
       "hourly": [
         0,
         0,
@@ -205,7 +205,7 @@
       "hours": 15.0,
       "hours_worked": 8.8,
       "rate": 0.6,
-      "rate_worked": 1.03,
+      "rate_worked": 1.02,
       "hourly": [
         0,
         0,
@@ -568,6 +568,62 @@
       "ld": 0,
       "hours": 10.0,
       "hours_worked": 4.8,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Jorge Munoz",
+      "abbrev": "J. Munoz",
+      "ld": 0,
+      "hours": 8.0,
+      "hours_worked": 7.8,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Maria Jose Miranda",
+      "abbrev": "M. Miranda",
+      "ld": 0,
+      "hours": 8.0,
+      "hours_worked": 7.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
