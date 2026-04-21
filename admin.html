@@ -114,6 +114,53 @@
         .save-indicator.show {
             opacity: 1;
         }
+        
+        /* Deactivate button */
+        .deactivate-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #2a2a2a;
+            color: #888;
+            margin-left: 8px;
+        }
+        .deactivate-btn:hover {
+            background: #7f1d1d;
+            color: #fca5a5;
+        }
+        
+        /* Reactivate button */
+        .reactivate-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #065f46;
+            color: #6ee7b7;
+        }
+        .reactivate-btn:hover {
+            background: #047857;
+        }
+        
+        /* Inactive section */
+        .inactive-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .inactive-section h4 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .inactive-row td {
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -148,6 +195,7 @@
         
         let specialists = [];
         let defaults = [];
+        let inactiveDefaults = [];
         
         async function supabase(endpoint, options = {}) {
             const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
@@ -183,8 +231,29 @@
         
         async function loadDefaults() {
             try {
-                // Load from default_shifts table (day_of_week IS NULL = Mon-Fri default)
-                defaults = await supabase('default_shifts?day_of_week=is.null&order=specialist_name');
+                // Load active specialists from default_shifts (join with intake_specialists.is_active)
+                const allDefaults = await supabase('default_shifts?day_of_week=is.null&order=specialist_name');
+                const allSpecialists = await supabase('intake_specialists?select=email,is_active');
+                
+                // Create lookup for active status
+                const activeMap = {};
+                (allSpecialists || []).forEach(s => {
+                    activeMap[s.email] = s.is_active !== false;
+                });
+                
+                // Split into active and inactive
+                defaults = [];
+                inactiveDefaults = [];
+                
+                (allDefaults || []).forEach(d => {
+                    const isActive = activeMap[d.specialist_email] !== false;
+                    if (isActive) {
+                        defaults.push(d);
+                    } else {
+                        inactiveDefaults.push(d);
+                    }
+                });
+                
                 renderDefaults();
             } catch (e) {
                 console.error('Failed to load defaults:', e);
@@ -248,10 +317,38 @@
                         <button class="off-toggle ${isOff ? 'off' : 'working'}" onclick="toggleOff(${d.id}, ${!isOff})">
                             ${isOff ? 'ON' : 'OFF'}
                         </button>
+                        <button class="deactivate-btn" onclick="deactivateSpecialist('${d.specialist_email}', '${d.specialist_name}')">
+                            Deactivate
+                        </button>
                         <span class="save-indicator" id="saved-${d.id}">✓ Saved</span>
                     </td>
                 </tr>`;
             }).join('');
+            
+            // Build inactive section
+            let inactiveHtml = '';
+            if (inactiveDefaults.length > 0) {
+                const inactiveRows = inactiveDefaults.map(d => `
+                    <tr class="inactive-row">
+                        <td>${d.specialist_name}</td>
+                        <td colspan="2" style="color:#666;">(deactivated)</td>
+                        <td>
+                            <button class="reactivate-btn" onclick="reactivateSpecialist('${d.specialist_email}')">
+                                Reactivate
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+                
+                inactiveHtml = `
+                    <div class="inactive-section">
+                        <h4>Inactive Specialists</h4>
+                        <table>
+                            <tbody>${inactiveRows}</tbody>
+                        </table>
+                    </div>
+                `;
+            }
             
             document.getElementById('defaultsContainer').innerHTML = `
                 <table>
@@ -273,6 +370,7 @@
                         </tr>
                     </tbody>
                 </table>
+                ${inactiveHtml}
             `;
         }
         
@@ -332,6 +430,40 @@
             if (indicator) {
                 indicator.classList.add('show');
                 setTimeout(() => indicator.classList.remove('show'), 2000);
+            }
+        }
+        
+        async function deactivateSpecialist(email, name) {
+            if (!confirm(`Deactivate ${name}?\n\nThey will be removed from the dashboard and moved to the inactive list.`)) {
+                return;
+            }
+            
+            try {
+                // Set is_active = false in intake_specialists
+                await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ is_active: false })
+                });
+                
+                showMessage(`${name} deactivated`, 'success');
+                loadDefaults(); // Reload to move to inactive section
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function reactivateSpecialist(email) {
+            try {
+                // Set is_active = true in intake_specialists
+                await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ is_active: true })
+                });
+                
+                showMessage('Specialist reactivated', 'success');
+                loadDefaults(); // Reload to move back to active section
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
             }
         }
         
