@@ -50,11 +50,10 @@
             color: #000;
         }
         
-        .dept-scorecard .rate-box.rate-red { background: #ef4444; }
-        .dept-scorecard .rate-box.rate-orange { background: #f97316; }
-        .dept-scorecard .rate-box.rate-yellow { background: #fbbf24; }
-        .dept-scorecard .rate-box.rate-lightgreen { background: #a3e635; }
-        .dept-scorecard .rate-box.rate-green { background: #22c55e; }
+        .dept-scorecard .rate-box.rate-below { background: #ef4444; }
+        .dept-scorecard .rate-box.rate-average { background: #fbbf24; }
+        .dept-scorecard .rate-box.rate-solid { background: #5BA4B5; }
+        .dept-scorecard .rate-box.rate-elite { background: #4ade80; }
         
         .dept-scorecard .tier-label {
             font-size: 11px;
@@ -644,16 +643,16 @@
         }
         
         function getRateClass(rate) {
-            if (rate >= 1.0) return 'rate-green';
-            if (rate >= 0.6) return 'rate-lightgreen';
-            if (rate >= 0.4) return 'rate-yellow';
-            return 'rate-red';
+            if (rate >= 1.0) return 'rate-elite';
+            if (rate >= 0.6) return 'rate-solid';
+            if (rate >= 0.4) return 'rate-average';
+            return 'rate-below';
         }
         
         function getRateTier(rate) {
-            // Match the legend: Elite 1.0+, Solid 0.6-0.99, Average 0.4-0.59, Below <0.4
-            if (rate >= 1.0) return { label: 'Elite', color: '#22c55e' };
-            if (rate >= 0.6) return { label: 'Solid', color: '#a3e635' };
+            // Match the legend exactly: Elite #4ade80, Solid #5BA4B5, Average #fbbf24, Below #ef4444
+            if (rate >= 1.0) return { label: 'Elite', color: '#4ade80' };
+            if (rate >= 0.6) return { label: 'Solid', color: '#5BA4B5' };
             if (rate >= 0.4) return { label: 'Average', color: '#fbbf24' };
             return { label: 'Below', color: '#ef4444' };
         }
