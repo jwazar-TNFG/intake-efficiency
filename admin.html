@@ -7,134 +7,144 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #000; color: #fff; min-height: 100vh; padding: 20px; }
-        .container { max-width: 900px; margin: 0 auto; }
-        .header { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #333; }
-        .header h1 { font-size: 24px; font-weight: 700; }
+        body { font-family: 'Inter', sans-serif; background: #000; color: #fff; min-height: 100vh; padding: 12px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .header { margin-bottom: 15px; }
+        .header h1 { font-size: 20px; font-weight: 700; }
         
-        .nav-tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .nav-tabs { display: flex; gap: 8px; margin-bottom: 15px; }
         .nav-tab {
-            padding: 10px 20px; background: #1a1a1a; border: none; color: #888;
-            font-size: 14px; font-weight: 500; cursor: pointer; border-radius: 6px; text-decoration: none;
+            padding: 8px 16px; background: #1a1a1a; border: none; color: #888;
+            font-size: 13px; font-weight: 500; cursor: pointer; border-radius: 6px; text-decoration: none;
         }
         .nav-tab:hover { background: #2a2a2a; color: #fff; }
         .nav-tab.active { background: #5BA4B5; color: #fff; }
         
-        .section { display: none; }
-        .section.active { display: block; }
+        .card { background: #1a1a1a; padding: 15px; border-radius: 8px; }
+        .card h3 { font-size: 15px; margin-bottom: 8px; }
+        .card p { font-size: 12px; color: #888; margin-bottom: 12px; line-height: 1.4; }
         
-        .card { background: #1a1a1a; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        .card h3 { font-size: 16px; margin-bottom: 15px; }
-        
-        .btn { padding: 10px 20px; border: none; border-radius: 4px; font-size: 14px; font-weight: 500; cursor: pointer; }
-        .btn-primary { background: #4ade80; color: #000; }
-        .btn-primary:hover { background: #22c55e; }
-        .btn-secondary { background: #5BA4B5; color: #fff; }
-        .btn-secondary:hover { background: #4a8a9a; }
-        .btn-sm { padding: 6px 12px; font-size: 12px; }
-        
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
-        th { font-size: 12px; color: #888; font-weight: 500; text-transform: uppercase; }
-        td { font-size: 14px; }
-        .hours { color: #5BA4B5; font-weight: 600; }
-        .delete-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-size: 16px; padding: 4px 8px; }
-        .total-row { font-weight: 700; background: #111; }
-        .total-row td { border-bottom: none; }
-        
-        .message { padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 14px; }
+        .message { padding: 10px; border-radius: 6px; margin-bottom: 12px; font-size: 13px; }
         .message.success { background: #065f46; color: #6ee7b7; }
         .message.error { background: #7f1d1d; color: #fca5a5; }
         
-        .empty { text-align: center; padding: 40px; color: #666; }
+        /* Specialist list */
+        .specialist-list { display: flex; flex-direction: column; gap: 1px; background: #333; border-radius: 6px; overflow: hidden; }
         
-        /* OFF toggle button styles */
-        .off-toggle {
-            padding: 6px 14px;
-            border: none;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
+        .specialist-row {
+            display: grid;
+            grid-template-columns: 1fr auto auto auto;
+            gap: 8px;
+            align-items: center;
+            padding: 10px 12px;
+            background: #111;
         }
-        .off-toggle.working {
-            background: #2a2a2a;
-            color: #888;
-        }
-        .off-toggle.working:hover {
-            background: #7f1d1d;
-            color: #fca5a5;
-        }
-        .off-toggle.off {
-            background: #ef4444;
-            color: #fff;
-        }
-        .off-toggle.off:hover {
-            background: #065f46;
-            color: #6ee7b7;
-        }
+        .specialist-row.is-off { background: #1a1a1a; }
+        .specialist-row.is-off .spec-name { color: #666; }
+        .specialist-row.is-off .spec-times { opacity: 0.3; }
         
-        /* Row when OFF */
-        tr.is-off td {
-            color: #666;
-        }
-        tr.is-off .hours {
-            color: #ef4444;
-        }
-        tr.is-off input {
-            opacity: 0.4;
-            pointer-events: none;
-        }
-        
-        .time-inputs { display: flex; gap: 5px; align-items: center; }
-        .time-inputs input { 
-            width: 85px; 
-            padding: 8px; 
+        .spec-name { 
             font-size: 13px; 
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .spec-times {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .spec-times input {
+            width: 70px;
+            padding: 6px;
+            font-size: 12px;
             background: #2a2a2a;
             border: 1px solid #444;
             color: #fff;
             border-radius: 4px;
-        }
-        .time-inputs span { color: #666; }
-        
-        .hours-display {
-            min-width: 50px;
             text-align: center;
         }
+        .spec-times span { color: #666; font-size: 11px; }
         
-        .save-indicator {
-            font-size: 11px;
-            color: #4ade80;
-            margin-left: 8px;
-            opacity: 0;
-            transition: opacity 0.3s;
+        .spec-hours {
+            font-size: 12px;
+            font-weight: 600;
+            color: #5BA4B5;
+            min-width: 35px;
+            text-align: center;
         }
-        .save-indicator.show {
-            opacity: 1;
+        .spec-hours.off { color: #ef4444; }
+        
+        .spec-actions {
+            display: flex;
+            gap: 4px;
         }
         
-        /* Deactivate button */
-        .deactivate-btn {
-            padding: 6px 12px;
+        .btn-off {
+            padding: 5px 10px;
             border: none;
             border-radius: 4px;
-            font-size: 11px;
-            font-weight: 500;
+            font-size: 10px;
+            font-weight: 600;
             cursor: pointer;
-            background: #2a2a2a;
-            color: #888;
-            margin-left: 8px;
         }
-        .deactivate-btn:hover {
-            background: #7f1d1d;
-            color: #fca5a5;
+        .btn-off.working { background: #2a2a2a; color: #888; }
+        .btn-off.working:hover { background: #7f1d1d; color: #fca5a5; }
+        .btn-off.is-off { background: #4ade80; color: #000; }
+        .btn-off.is-off:hover { background: #22c55e; }
+        
+        .btn-deactivate {
+            padding: 5px 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 10px;
+            cursor: pointer;
+            background: transparent;
+            color: #666;
+        }
+        .btn-deactivate:hover { color: #ef4444; }
+        
+        /* Header row */
+        .list-header {
+            display: grid;
+            grid-template-columns: 1fr auto auto auto;
+            gap: 8px;
+            padding: 8px 12px;
+            font-size: 10px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
-        /* Reactivate button */
-        .reactivate-btn {
-            padding: 6px 12px;
+        /* Total row */
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            background: #111;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .total-row .hours { color: #5BA4B5; }
+        
+        /* Inactive section */
+        .inactive-section { margin-top: 20px; }
+        .inactive-section h4 { font-size: 12px; color: #666; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        .inactive-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background: #111;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+        .inactive-row .name { font-size: 13px; color: #666; }
+        .btn-reactivate {
+            padding: 5px 12px;
             border: none;
             border-radius: 4px;
             font-size: 11px;
@@ -143,23 +153,20 @@
             background: #065f46;
             color: #6ee7b7;
         }
-        .reactivate-btn:hover {
-            background: #047857;
-        }
+        .btn-reactivate:hover { background: #047857; }
         
-        /* Inactive section */
-        .inactive-section {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-        }
-        .inactive-section h4 {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-        .inactive-row td {
-            color: #666;
+        .empty { text-align: center; padding: 30px; color: #666; font-size: 13px; }
+        
+        @media (max-width: 480px) {
+            .specialist-row {
+                grid-template-columns: 1fr auto;
+                gap: 6px;
+            }
+            .spec-name { grid-column: 1; }
+            .spec-times { grid-column: 1 / -1; grid-row: 2; }
+            .spec-hours { grid-column: 2; grid-row: 1; }
+            .spec-actions { grid-column: 1 / -1; grid-row: 3; justify-content: flex-end; }
+            .spec-times input { width: 80px; }
         }
     </style>
 </head>
@@ -171,21 +178,15 @@
         
         <div class="nav-tabs">
             <a href="index.html" class="nav-tab">📊 Dashboard</a>
-            <button class="nav-tab active" onclick="showSection('defaults')">⚙️ Default Schedules</button>
+            <button class="nav-tab active">⚙️ Default Schedules</button>
         </div>
         
         <div id="message"></div>
         
-        <!-- Default Schedules Section -->
-        <div id="defaults-section" class="section active">
-            <div class="card">
-                <h3>Default Weekly Schedules (Mon-Fri)</h3>
-                <p style="color:#888;font-size:13px;margin-bottom:15px;">
-                    Set default hours for each specialist. Changes apply to all weekdays automatically.
-                    <br>Click <strong>OFF</strong> to mark someone as not working.
-                </p>
-                <div id="defaultsContainer"><div class="empty">Loading...</div></div>
-            </div>
+        <div class="card">
+            <h3>Default Weekly Schedules (Mon-Fri)</h3>
+            <p>Set default hours for each specialist. Click <strong>OFF</strong> to mark as not working.</p>
+            <div id="defaultsContainer"><div class="empty">Loading...</div></div>
         </div>
     </div>
 
@@ -193,7 +194,6 @@
         const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
         const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
         
-        let specialists = [];
         let defaults = [];
         let inactiveDefaults = [];
         
@@ -213,41 +213,19 @@
             return text ? JSON.parse(text) : null;
         }
         
-        function showSection(section) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-            document.getElementById(section + '-section').classList.add('active');
-            event.target.classList.add('active');
-        }
-        
-        async function loadSpecialists() {
-            try {
-                specialists = await supabase('intake_specialists?is_active=eq.true&order=display_name');
-            } catch (e) {
-                console.error('Failed to load specialists:', e);
-                specialists = [];
-            }
-        }
-        
         async function loadDefaults() {
             try {
-                // Load active specialists from default_shifts (join with intake_specialists.is_active)
                 const allDefaults = await supabase('default_shifts?day_of_week=is.null&order=specialist_name');
                 const allSpecialists = await supabase('intake_specialists?select=email,is_active');
                 
-                // Create lookup for active status
                 const activeMap = {};
-                (allSpecialists || []).forEach(s => {
-                    activeMap[s.email] = s.is_active !== false;
-                });
+                (allSpecialists || []).forEach(s => { activeMap[s.email] = s.is_active !== false; });
                 
-                // Split into active and inactive
                 defaults = [];
                 inactiveDefaults = [];
                 
                 (allDefaults || []).forEach(d => {
-                    const isActive = activeMap[d.specialist_email] !== false;
-                    if (isActive) {
+                    if (activeMap[d.specialist_email] !== false) {
                         defaults.push(d);
                     } else {
                         inactiveDefaults.push(d);
@@ -256,215 +234,131 @@
                 
                 renderDefaults();
             } catch (e) {
-                console.error('Failed to load defaults:', e);
-                showMessage('Error loading schedules: ' + e.message, 'error');
-                document.getElementById('defaultsContainer').innerHTML = '<div class="empty">Failed to load schedules</div>';
+                console.error('Failed to load:', e);
+                showMessage('Error loading: ' + e.message, 'error');
             }
         }
         
-        function formatTimeForInput(timeStr) {
-            if (!timeStr) return '09:00';
-            // Handle HH:MM:SS format
-            return timeStr.substring(0, 5);
-        }
+        function formatTime(t) { return t ? t.substring(0, 5) : '09:00'; }
         
-        function formatTimeDisplay(timeStr) {
-            if (!timeStr) return '';
-            const [h, m] = timeStr.split(':');
-            const hr = parseInt(h);
-            return `${hr % 12 || 12}:${m} ${hr >= 12 ? 'PM' : 'AM'}`;
-        }
-        
-        function calculateHours(start, end) {
-            if (!start || !end) return 0;
+        function calcHours(start, end) {
             const [sh, sm] = start.split(':').map(Number);
             const [eh, em] = end.split(':').map(Number);
             return ((eh * 60 + em) - (sh * 60 + sm)) / 60;
         }
         
         function renderDefaults() {
-            if (!defaults || defaults.length === 0) {
+            if (!defaults.length) {
                 document.getElementById('defaultsContainer').innerHTML = '<div class="empty">No schedules configured</div>';
                 return;
             }
             
-            let totalHours = 0;
-            let workingCount = 0;
+            let totalHours = 0, workingCount = 0;
             
             const rows = defaults.map(d => {
                 const isOff = d.is_off === true;
-                const start = formatTimeForInput(d.start_time);
-                const end = formatTimeForInput(d.end_time);
-                const hours = isOff ? 0 : calculateHours(start, end);
+                const start = formatTime(d.start_time);
+                const end = formatTime(d.end_time);
+                const hours = isOff ? 0 : calcHours(start, end);
                 
-                if (!isOff) {
-                    totalHours += hours;
-                    workingCount++;
-                }
+                if (!isOff) { totalHours += hours; workingCount++; }
                 
                 return `
-                <tr class="default-row ${isOff ? 'is-off' : ''}" data-id="${d.id}" data-email="${d.specialist_email}">
-                    <td>${d.specialist_name}</td>
-                    <td class="time-inputs">
-                        <input type="time" class="def-start" value="${start}" onchange="updateShift(${d.id})">
+                <div class="specialist-row ${isOff ? 'is-off' : ''}" data-id="${d.id}">
+                    <div class="spec-name">${d.specialist_name}</div>
+                    <div class="spec-times">
+                        <input type="time" value="${start}" onchange="updateShift(${d.id})">
                         <span>-</span>
-                        <input type="time" class="def-end" value="${end}" onchange="updateShift(${d.id})">
-                    </td>
-                    <td class="hours-display">
-                        <span class="hours">${isOff ? 'OFF' : hours.toFixed(1) + 'h'}</span>
-                    </td>
-                    <td>
-                        <button class="off-toggle ${isOff ? 'off' : 'working'}" onclick="toggleOff(${d.id}, ${!isOff})">
-                            ${isOff ? 'ON' : 'OFF'}
-                        </button>
-                        <button class="deactivate-btn" onclick="deactivateSpecialist('${d.specialist_email}', '${d.specialist_name}')">
-                            Deactivate
-                        </button>
-                        <span class="save-indicator" id="saved-${d.id}">✓ Saved</span>
-                    </td>
-                </tr>`;
+                        <input type="time" value="${end}" onchange="updateShift(${d.id})">
+                    </div>
+                    <div class="spec-hours ${isOff ? 'off' : ''}">${isOff ? 'OFF' : hours.toFixed(1) + 'h'}</div>
+                    <div class="spec-actions">
+                        <button class="btn-off ${isOff ? 'is-off' : 'working'}" onclick="toggleOff(${d.id}, ${!isOff})">${isOff ? 'ON' : 'OFF'}</button>
+                        <button class="btn-deactivate" onclick="deactivate('${d.specialist_email}', '${d.specialist_name}')" title="Deactivate">✕</button>
+                    </div>
+                </div>`;
             }).join('');
             
-            // Build inactive section
             let inactiveHtml = '';
-            if (inactiveDefaults.length > 0) {
-                const inactiveRows = inactiveDefaults.map(d => `
-                    <tr class="inactive-row">
-                        <td>${d.specialist_name}</td>
-                        <td colspan="2" style="color:#666;">(deactivated)</td>
-                        <td>
-                            <button class="reactivate-btn" onclick="reactivateSpecialist('${d.specialist_email}')">
-                                Reactivate
-                            </button>
-                        </td>
-                    </tr>
-                `).join('');
-                
+            if (inactiveDefaults.length) {
                 inactiveHtml = `
-                    <div class="inactive-section">
-                        <h4>Inactive Specialists</h4>
-                        <table>
-                            <tbody>${inactiveRows}</tbody>
-                        </table>
-                    </div>
-                `;
+                <div class="inactive-section">
+                    <h4>Inactive (${inactiveDefaults.length})</h4>
+                    ${inactiveDefaults.map(d => `
+                        <div class="inactive-row">
+                            <span class="name">${d.specialist_name}</span>
+                            <button class="btn-reactivate" onclick="reactivate('${d.specialist_email}')">Reactivate</button>
+                        </div>
+                    `).join('')}
+                </div>`;
             }
             
             document.getElementById('defaultsContainer').innerHTML = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Specialist</th>
-                            <th>Start - End</th>
-                            <th>Hours</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${rows}
-                        <tr class="total-row">
-                            <td><strong>Total (${workingCount} working)</strong></td>
-                            <td></td>
-                            <td class="hours">${totalHours.toFixed(1)}h</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="list-header">
+                    <span>Name</span>
+                    <span>Schedule</span>
+                    <span>Hrs</span>
+                    <span></span>
+                </div>
+                <div class="specialist-list">${rows}</div>
+                <div class="total-row">
+                    <span>${workingCount} working</span>
+                    <span class="hours">${totalHours.toFixed(1)}h total</span>
+                </div>
                 ${inactiveHtml}
             `;
         }
         
         async function updateShift(id) {
-            const row = document.querySelector(`tr[data-id="${id}"]`);
-            const start = row.querySelector('.def-start').value;
-            const end = row.querySelector('.def-end').value;
+            const row = document.querySelector(`[data-id="${id}"]`);
+            const inputs = row.querySelectorAll('input[type="time"]');
+            const start = inputs[0].value;
+            const end = inputs[1].value;
             
             try {
                 await supabase(`default_shifts?id=eq.${id}`, {
                     method: 'PATCH',
-                    body: JSON.stringify({ 
-                        start_time: start + ':00',
-                        end_time: end + ':00',
-                        updated_at: new Date().toISOString()
-                    })
+                    body: JSON.stringify({ start_time: start + ':00', end_time: end + ':00' })
                 });
-                
-                // Update local data and re-render
                 const d = defaults.find(d => d.id === id);
-                if (d) {
-                    d.start_time = start + ':00';
-                    d.end_time = end + ':00';
-                }
+                if (d) { d.start_time = start; d.end_time = end; }
                 renderDefaults();
-                showSaved(id);
-            } catch (e) {
-                showMessage('Error saving: ' + e.message, 'error');
-            }
+            } catch (e) { showMessage('Error: ' + e.message, 'error'); }
         }
         
         async function toggleOff(id, setOff) {
             try {
                 await supabase(`default_shifts?id=eq.${id}`, {
                     method: 'PATCH',
-                    body: JSON.stringify({ 
-                        is_off: setOff,
-                        updated_at: new Date().toISOString()
-                    })
+                    body: JSON.stringify({ is_off: setOff })
                 });
-                
-                // Update local data and re-render
                 const d = defaults.find(d => d.id === id);
-                if (d) {
-                    d.is_off = setOff;
-                }
+                if (d) d.is_off = setOff;
                 renderDefaults();
-                showSaved(id);
-                showMessage(setOff ? 'Marked as OFF' : 'Marked as working', 'success');
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-            }
+            } catch (e) { showMessage('Error: ' + e.message, 'error'); }
         }
         
-        function showSaved(id) {
-            const indicator = document.getElementById(`saved-${id}`);
-            if (indicator) {
-                indicator.classList.add('show');
-                setTimeout(() => indicator.classList.remove('show'), 2000);
-            }
-        }
-        
-        async function deactivateSpecialist(email, name) {
-            if (!confirm(`Deactivate ${name}?\n\nThey will be removed from the dashboard and moved to the inactive list.`)) {
-                return;
-            }
-            
+        async function deactivate(email, name) {
+            if (!confirm(`Deactivate ${name}?`)) return;
             try {
-                // Set is_active = false in intake_specialists
                 await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
                     method: 'PATCH',
                     body: JSON.stringify({ is_active: false })
                 });
-                
                 showMessage(`${name} deactivated`, 'success');
-                loadDefaults(); // Reload to move to inactive section
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-            }
+                loadDefaults();
+            } catch (e) { showMessage('Error: ' + e.message, 'error'); }
         }
         
-        async function reactivateSpecialist(email) {
+        async function reactivate(email) {
             try {
-                // Set is_active = true in intake_specialists
                 await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
                     method: 'PATCH',
                     body: JSON.stringify({ is_active: true })
                 });
-                
-                showMessage('Specialist reactivated', 'success');
-                loadDefaults(); // Reload to move back to active section
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-            }
+                showMessage('Reactivated', 'success');
+                loadDefaults();
+            } catch (e) { showMessage('Error: ' + e.message, 'error'); }
         }
         
         function showMessage(text, type) {
@@ -472,8 +366,7 @@
             setTimeout(() => document.getElementById('message').innerHTML = '', 3000);
         }
         
-        // Init
-        loadSpecialists().then(() => loadDefaults());
+        loadDefaults();
     </script>
 </body>
 </html>
