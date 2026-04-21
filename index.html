@@ -723,7 +723,13 @@
             const yesterdaySameTime = dept.yesterday_same_time || 0;
             const lastWeekSameTime = dept.last_week_same_time || 0;
             const lastWeekTotal = dept.last_week_total || 0;
-            const paceTime = dept.pace_time || '';
+            const paceTimeRaw = dept.pace_time || '';
+            const paceTime = paceTimeRaw ? (() => {
+                const [h, m] = paceTimeRaw.split(':').map(Number);
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                const h12 = h % 12 || 12;
+                return `${h12}:${m.toString().padStart(2, '0')} ${ampm}`;
+            })() : '';
             
             const vsYesterdayDiff = dept.total_ld - yesterdaySameTime;
             const vsYesterdayPct = yesterdaySameTime > 0 ? ((vsYesterdayDiff / yesterdaySameTime) * 100).toFixed(0) : 0;
