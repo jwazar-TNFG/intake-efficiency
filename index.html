@@ -320,6 +320,56 @@
             gap: 15px 30px;
         }
         
+        .dept-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        
+        .stats-section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+        
+        .stats-section-title {
+            font-size: 10px;
+            color: #5BA4B5;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .stat-big {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+        }
+        
+        .stat-big .stat-label {
+            font-size: 14px;
+            color: #888;
+            font-weight: 400;
+        }
+        
+        .stat-row {
+            font-size: 13px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+        
+        .stat-row strong {
+            color: #fff;
+        }
+        
+        .stat-context {
+            color: #666;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+        
         .dept-stat {
             font-size: 13px;
         }
@@ -543,11 +593,29 @@
             });
             droppedRow += `<td class="total-cell" style="background: #450a0a; color: #ef4444;">${totalDropped}</td></tr>`;
             
-            // Yesterday comparison
+            // Yesterday comparison (full day)
             const yesterdayLd = dept.yesterday_ld || 0;
             const ldDiff = dept.total_ld - yesterdayLd;
             const ldDiffClass = ldDiff >= 0 ? 'positive' : 'negative';
             const ldDiffText = ldDiff >= 0 ? `+${ldDiff}` : `${ldDiff}`;
+            
+            // Pace comparisons (same time)
+            const yesterdaySameTime = dept.yesterday_same_time || 0;
+            const lastWeekSameTime = dept.last_week_same_time || 0;
+            const lastWeekTotal = dept.last_week_total || 0;
+            const paceTime = dept.pace_time || '';
+            
+            const vsYesterdayDiff = dept.total_ld - yesterdaySameTime;
+            const vsYesterdayPct = yesterdaySameTime > 0 ? ((vsYesterdayDiff / yesterdaySameTime) * 100).toFixed(0) : 0;
+            const vsYesterdayClass = vsYesterdayDiff >= 0 ? 'positive' : 'negative';
+            const vsYesterdayText = vsYesterdayDiff >= 0 ? `+${vsYesterdayDiff}` : `${vsYesterdayDiff}`;
+            
+            const vsLastWeekDiff = dept.total_ld - lastWeekSameTime;
+            const vsLastWeekPct = lastWeekSameTime > 0 ? ((vsLastWeekDiff / lastWeekSameTime) * 100).toFixed(0) : 0;
+            const vsLastWeekClass = vsLastWeekDiff >= 0 ? 'positive' : 'negative';
+            const vsLastWeekText = vsLastWeekDiff >= 0 ? `+${vsLastWeekDiff}` : `${vsLastWeekDiff}`;
+            
+            const shiftPct = dept.total_shift_hours > 0 ? ((dept.total_hours_worked / dept.total_shift_hours) * 100).toFixed(0) : 0;
             
             return `
                 <div class="heatmap-section">
@@ -569,34 +637,21 @@
                 
                 <div class="dept-summary">
                     <div class="dept-summary-title">Intake Department</div>
-                    <div class="dept-stats">
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">Total LD:</span>
-                            <span class="dept-stat-value">${dept.total_ld}</span>
+                    <div class="dept-stats-grid">
+                        <div class="stats-section">
+                            <div class="stats-section-title">TODAY'S PRODUCTION</div>
+                            <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
+                            <div class="stat-row">Rate: <strong>${dept.rate_worked.toFixed(2)}</strong>/hr</div>
                         </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">LD/Scheduled Hr:</span>
-                            <span class="dept-stat-value" style="color: #4ade80; font-size: 16px;">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                        <div class="stats-section">
+                            <div class="stats-section-title">PACE CHECK</div>
+                            <div class="stat-row">vs Yesterday ${paceTime}: <span class="${vsYesterdayClass}">${vsYesterdayText} (${vsYesterdayPct}%)</span> <span class="stat-context">${yesterdaySameTime} → ${yesterdayLd} EOD</span></div>
+                            <div class="stat-row">vs Last Week ${paceTime}: <span class="${vsLastWeekClass}">${vsLastWeekText} (${vsLastWeekPct}%)</span> <span class="stat-context">${lastWeekSameTime} → ${lastWeekTotal} EOD</span></div>
                         </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">LD/Worked Hr:</span>
-                            <span class="dept-stat-value" style="color: #5BA4B5; font-size: 16px;">${dept.rate_worked.toFixed(2)}</span>
-                        </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">Specialists:</span>
-                            <span class="dept-stat-value">${dept.specialists_count} (${dept.specialists_with_ld} with LD)</span>
-                        </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">Hours:</span>
-                            <span class="dept-stat-value">${dept.total_hours_worked} worked of ${dept.total_shift_hours} scheduled</span>
-                        </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">Projected Rate:</span>
-                            <span class="dept-stat-value">${dept.rate_shift.toFixed(2)}/hr shift</span>
-                        </div>
-                        <div class="dept-stat">
-                            <span class="dept-stat-label">vs Yesterday:</span>
-                            <span class="dept-stat-value ${ldDiffClass}">${ldDiffText} (${yesterdayLd} total)</span>
+                        <div class="stats-section">
+                            <div class="stats-section-title">SHIFT STATUS</div>
+                            <div class="stat-row">Hours: <strong>${dept.total_hours_worked}</strong> / ${dept.total_shift_hours} (${shiftPct}% complete)</div>
+                            <div class="stat-row">Active: <strong>${dept.specialists_with_ld}</strong> / ${dept.specialists_count} with LD</div>
                         </div>
                     </div>
                 </div>
