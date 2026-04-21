@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T00:06:49.040059",
+  "generated_at": "2026-04-21T00:25:43.329598",
   "date": "2026-04-20",
   "reps": [
     {
@@ -33,14 +33,15 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 19
+      "end_hour": 19,
+      "is_off": false
     },
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
       "ld": 29,
-      "still_ld": 19,
-      "came_in": 10,
+      "still_ld": 18,
+      "came_in": 11,
       "dropped": 0,
       "hours": 15.0,
       "hours_worked": 15.0,
@@ -66,7 +67,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
     },
     {
       "name": "Jorge Duvergel",
@@ -99,7 +101,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
     },
     {
       "name": "Manny Penaranda",
@@ -132,7 +135,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
     },
     {
       "name": "Juan Ortega",
@@ -165,7 +169,8 @@
         0
       ],
       "start_hour": 14,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
     },
     {
       "name": "Orlando Plasencia",
@@ -198,7 +203,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 20
+      "end_hour": 20,
+      "is_off": false
     },
     {
       "name": "Luis Vivas",
@@ -231,7 +237,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 17
+      "end_hour": 17,
+      "is_off": false
     },
     {
       "name": "Jhonathan Ramirez",
@@ -264,7 +271,8 @@
         0
       ],
       "start_hour": 10,
-      "end_hour": 20
+      "end_hour": 20,
+      "is_off": false
     },
     {
       "name": "Delvin Castro",
@@ -297,14 +305,15 @@
         0
       ],
       "start_hour": 12,
-      "end_hour": 22
+      "end_hour": 22,
+      "is_off": false
     },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
       "ld": 8,
-      "still_ld": 3,
-      "came_in": 5,
+      "still_ld": 2,
+      "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -330,7 +339,8 @@
         0
       ],
       "start_hour": 10,
-      "end_hour": 19
+      "end_hour": 19,
+      "is_off": false
     },
     {
       "name": "Lina Murillo",
@@ -363,7 +373,8 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 17
+      "end_hour": 17,
+      "is_off": false
     },
     {
       "name": "Ronnie Chavarria",
@@ -396,7 +407,8 @@
         0
       ],
       "start_hour": 10,
-      "end_hour": 19
+      "end_hour": 19,
+      "is_off": false
     },
     {
       "name": "Naryeli Silva",
@@ -429,7 +441,8 @@
         0
       ],
       "start_hour": 9,
-      "end_hour": 18
+      "end_hour": 18,
+      "is_off": false
     },
     {
       "name": "Richard Pena",
@@ -462,7 +475,42 @@
         0
       ],
       "start_hour": 14,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
+    },
+    {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 6,
+      "still_ld": 2,
+      "came_in": 4,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 9.0,
+      "rate": 0.67,
+      "rate_worked": 0.67,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 17,
+      "is_off": false
     },
     {
       "name": "Maria Jose Miranda",
@@ -495,40 +543,8 @@
         0
       ],
       "start_hour": 9,
-      "end_hour": 17
-    },
-    {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 5,
-      "still_ld": 1,
-      "came_in": 4,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 9.0,
-      "rate": 0.56,
-      "rate_worked": 0.56,
-      "hourly": [
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        2,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 17
+      "end_hour": 17,
+      "is_off": false
     },
     {
       "name": "David Juarez",
@@ -561,7 +577,8 @@
         0
       ],
       "start_hour": 9,
-      "end_hour": 18
+      "end_hour": 18,
+      "is_off": false
     },
     {
       "name": "Sebastian Cubillos",
@@ -594,7 +611,144 @@
         0
       ],
       "start_hour": 14,
-      "end_hour": 23
+      "end_hour": 23,
+      "is_off": false
+    },
+    {
+      "name": "Beatriz Oliva",
+      "abbrev": "B. Oliva",
+      "ld": 5,
+      "still_ld": 2,
+      "came_in": 3,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true
+    },
+    {
+      "name": "Juan Gomez",
+      "abbrev": "J. Gomez",
+      "ld": 4,
+      "still_ld": 0,
+      "came_in": 4,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true
+    },
+    {
+      "name": "Jesus Ortega",
+      "abbrev": "J. Ortega",
+      "ld": 3,
+      "still_ld": 2,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true
+    },
+    {
+      "name": "Carold",
+      "abbrev": "Carold",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true
     },
     {
       "name": "Jorge Munoz",
@@ -627,35 +781,36 @@
         0
       ],
       "start_hour": 9,
-      "end_hour": 17
+      "end_hour": 17,
+      "is_off": false
     }
   ],
   "dept": {
-    "total_ld": 209,
-    "total_came_in": 108,
+    "total_ld": 224,
+    "total_came_in": 118,
     "total_dropped": 2,
-    "total_still_ld": 99,
+    "total_still_ld": 104,
     "total_shift_hours": 194.0,
     "total_hours_worked": 194.0,
     "specialists_count": 19,
-    "specialists_with_ld": 18,
-    "rate_worked": 1.08,
-    "rate_shift": 1.08,
+    "specialists_with_ld": 22,
+    "rate_worked": 1.15,
+    "rate_shift": 1.15,
     "hourly_totals": [
       3,
       7,
       16,
-      12,
       14,
       16,
-      25,
-      24,
       16,
-      28,
-      9,
-      12,
+      26,
+      26,
+      16,
+      31,
+      10,
+      13,
       11,
-      11,
+      14,
       4,
       1,
       0
@@ -672,10 +827,10 @@
       7,
       11,
       3,
-      6,
+      7,
       7,
       2,
-      0,
+      1,
       1,
       0
     ],
