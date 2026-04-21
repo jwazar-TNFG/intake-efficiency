@@ -56,6 +56,18 @@
         .dept-scorecard .rate-box.rate-lightgreen { background: #a3e635; }
         .dept-scorecard .rate-box.rate-green { background: #22c55e; }
         
+        .dept-scorecard .tier-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .dept-scorecard .tier-label.tier-elite { color: #22c55e; }
+        .dept-scorecard .tier-label.tier-solid { color: #5BA4B5; }
+        .dept-scorecard .tier-label.tier-average { color: #fbbf24; }
+        .dept-scorecard .tier-label.tier-below { color: #ef4444; }
+        
         .dept-scorecard .stats {
             font-size: 12px;
             color: #888;
@@ -86,8 +98,11 @@
             }
             
             .dept-scorecard .label {
-                font-size: 7px;
-                line-height: 1;
+                display: none;
+            }
+            
+            .dept-scorecard .tier-label {
+                font-size: 9px;
             }
             
             .dept-scorecard .stats {
@@ -641,6 +656,13 @@
             return 'rate-red';
         }
         
+        function getRateTier(rate) {
+            if (rate >= 1.0) return { label: 'Elite', class: 'tier-elite' };
+            if (rate >= 0.6) return { label: 'Solid', class: 'tier-solid' };
+            if (rate >= 0.4) return { label: 'Average', class: 'tier-average' };
+            return { label: 'Below', class: 'tier-below' };
+        }
+        
         function toggleDefinitions() {
             const el = document.getElementById('definitions');
             if (el) {
@@ -989,6 +1011,7 @@
             const deptTotalHours = reps.reduce((sum, r) => sum + (r.hours || 0), 0);
             const deptRate = deptTotalHours > 0 ? deptTotalLD / deptTotalHours : 0;
             const deptRateClass = getRateClass(deptRate);
+            const deptTier = getRateTier(deptRate);
             
             document.getElementById('app').innerHTML = `
                 <div class="header">
@@ -1002,6 +1025,7 @@
                     <div class="dept-scorecard">
                         <div class="label">DEPT<br>RATE</div>
                         <div class="rate-box ${deptRateClass}">${deptRate.toFixed(2)}</div>
+                        <div class="tier-label ${deptTier.class}">${deptTier.label}</div>
                         <div class="stats"><strong>${deptTotalLD}</strong> LD&nbsp;&nbsp;|&nbsp;&nbsp;<strong>${Math.round(deptTotalHours)}</strong>h</div>
                     </div>
                 </div>
