@@ -23,23 +23,8 @@
         .section { display: none; }
         .section.active { display: block; }
         
-        .date-nav { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-        .date-nav button, .date-nav input {
-            padding: 8px 12px; background: #1a1a1a; border: 1px solid #333;
-            color: #fff; border-radius: 4px; font-size: 14px; cursor: pointer;
-        }
-        .date-nav button:hover { background: #2a2a2a; }
-        
         .card { background: #1a1a1a; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
         .card h3 { font-size: 16px; margin-bottom: 15px; }
-        
-        .form-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-        .form-group { flex: 1; min-width: 120px; }
-        .form-group label { display: block; font-size: 12px; color: #888; margin-bottom: 5px; }
-        .form-group select, .form-group input {
-            width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444;
-            color: #fff; border-radius: 4px; font-size: 14px;
-        }
         
         .btn { padding: 10px 20px; border: none; border-radius: 4px; font-size: 14px; font-weight: 500; cursor: pointer; }
         .btn-primary { background: #4ade80; color: #000; }
@@ -53,7 +38,7 @@
         th { font-size: 12px; color: #888; font-weight: 500; text-transform: uppercase; }
         td { font-size: 14px; }
         .hours { color: #5BA4B5; font-weight: 600; }
-        .delete-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-size: 16px; }
+        .delete-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-size: 16px; padding: 4px 8px; }
         .total-row { font-weight: 700; background: #111; }
         .total-row td { border-bottom: none; }
         
@@ -63,13 +48,72 @@
         
         .empty { text-align: center; padding: 40px; color: #666; }
         
-        .day-checks { display: flex; gap: 8px; flex-wrap: wrap; }
-        .day-check { display: flex; align-items: center; gap: 4px; font-size: 12px; }
-        .day-check input { width: auto; }
+        /* OFF toggle button styles */
+        .off-toggle {
+            padding: 6px 14px;
+            border: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .off-toggle.working {
+            background: #2a2a2a;
+            color: #888;
+        }
+        .off-toggle.working:hover {
+            background: #7f1d1d;
+            color: #fca5a5;
+        }
+        .off-toggle.off {
+            background: #ef4444;
+            color: #fff;
+        }
+        .off-toggle.off:hover {
+            background: #065f46;
+            color: #6ee7b7;
+        }
         
-        .default-row td { vertical-align: middle; }
+        /* Row when OFF */
+        tr.is-off td {
+            color: #666;
+        }
+        tr.is-off .hours {
+            color: #ef4444;
+        }
+        tr.is-off input {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        
         .time-inputs { display: flex; gap: 5px; align-items: center; }
-        .time-inputs input { width: 90px; padding: 6px; font-size: 13px; }
+        .time-inputs input { 
+            width: 85px; 
+            padding: 8px; 
+            font-size: 13px; 
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+        }
+        .time-inputs span { color: #666; }
+        
+        .hours-display {
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .save-indicator {
+            font-size: 11px;
+            color: #4ade80;
+            margin-left: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .save-indicator.show {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -80,52 +124,18 @@
         
         <div class="nav-tabs">
             <a href="index.html" class="nav-tab">📊 Dashboard</a>
-            <button class="nav-tab active" onclick="showSection('daily')">📅 Daily Shifts</button>
-            <button class="nav-tab" onclick="showSection('defaults')">⚙️ Default Schedules</button>
+            <button class="nav-tab active" onclick="showSection('defaults')">⚙️ Default Schedules</button>
         </div>
         
         <div id="message"></div>
         
-        <!-- Daily Shifts Section -->
-        <div id="daily-section" class="section active">
-            <div class="date-nav">
-                <button onclick="changeDate(-1)">← Prev</button>
-                <input type="date" id="shiftDate" onchange="loadShifts()">
-                <button onclick="changeDate(1)">Next →</button>
-                <button onclick="setToday()">Today</button>
-                <button class="btn btn-secondary btn-sm" onclick="applyDefaults()">Apply Defaults</button>
-            </div>
-            
-            <div class="card">
-                <h3>Add Shift Override</h3>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Specialist</label>
-                        <select id="specialist"></select>
-                    </div>
-                    <div class="form-group">
-                        <label>Start</label>
-                        <input type="time" id="startTime" value="09:00">
-                    </div>
-                    <div class="form-group">
-                        <label>End</label>
-                        <input type="time" id="endTime" value="17:00">
-                    </div>
-                    <div class="form-group" style="display:flex;align-items:flex-end;">
-                        <button class="btn btn-primary" onclick="addShift()">Add</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="shiftsContainer"><div class="empty">Loading...</div></div>
-        </div>
-        
         <!-- Default Schedules Section -->
-        <div id="defaults-section" class="section">
+        <div id="defaults-section" class="section active">
             <div class="card">
-                <h3>Default Weekly Schedules</h3>
+                <h3>Default Weekly Schedules (Mon-Fri)</h3>
                 <p style="color:#888;font-size:13px;margin-bottom:15px;">
-                    Set default hours for each specialist. Click "Apply Defaults" on daily view to populate.
+                    Set default hours for each specialist. Changes apply to all weekdays automatically.
+                    <br>Click <strong>OFF</strong> to mark someone as not working.
                 </p>
                 <div id="defaultsContainer"><div class="empty">Loading...</div></div>
             </div>
@@ -137,6 +147,7 @@
         const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
         
         let specialists = [];
+        let defaults = [];
         
         async function supabase(endpoint, options = {}) {
             const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
@@ -159,227 +170,169 @@
             document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
             document.getElementById(section + '-section').classList.add('active');
             event.target.classList.add('active');
-            if (section === 'defaults') loadDefaults();
         }
         
         async function loadSpecialists() {
             try {
                 specialists = await supabase('intake_specialists?is_active=eq.true&order=display_name');
             } catch (e) {
-                specialists = [
-                    { email: 'rpena@thenofaultgroup.com', display_name: 'Richard Pena' },
-                    { email: 'lvivas@thenofaultgroup.com', display_name: 'Luis Vivas' },
-                    { email: 'oplasencia@305nofault.com', display_name: 'Orlando Plasencia' },
-                    { email: 'nelsonr@305nofault.com', display_name: 'Nelson Rodriguez' },
-                    { email: 'jjortega@thenofaultgroup.com', display_name: 'Juan Jose Ortega' },
-                    { email: 'jortega@thenofaultgroup.com', display_name: 'Jesus Ortega' },
-                    { email: 'nsilva@thenofaultgroup.com', display_name: 'Naryeli Silva' },
-                    { email: 'jramirez@thenofaultgroup.com', display_name: 'Jonathan Ramirez' },
-                    { email: 'scubillos@thenofaultgroup.com', display_name: 'Sebastian Cubillos' },
-                    { email: 'mpenaranda@thenofaultgroup.com', display_name: 'Manny Penaranda' },
-                ];
+                console.error('Failed to load specialists:', e);
+                specialists = [];
             }
-            const select = document.getElementById('specialist');
-            select.innerHTML = specialists.map(s => `<option value="${s.email}">${s.display_name}</option>`).join('');
-        }
-        
-        async function loadShifts() {
-            const date = document.getElementById('shiftDate').value;
-            if (!date) return;
-            try {
-                const shifts = await supabase(`intake_shifts?shift_date=eq.${date}&order=specialist_name`);
-                renderShifts(shifts || []);
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-                renderShifts([]);
-            }
-        }
-        
-        function renderShifts(shifts) {
-            if (!shifts.length) {
-                document.getElementById('shiftsContainer').innerHTML = `
-                    <div class="empty">No shifts scheduled.<br>Add manually or click "Apply Defaults".</div>`;
-                return;
-            }
-            const total = shifts.reduce((s, r) => s + parseFloat(r.hours_scheduled || 0), 0);
-            document.getElementById('shiftsContainer').innerHTML = `
-                <table>
-                    <thead><tr><th>Specialist</th><th>Start</th><th>End</th><th>Hours</th><th></th></tr></thead>
-                    <tbody>
-                        ${shifts.map(s => `<tr>
-                            <td>${s.specialist_name}</td>
-                            <td>${formatTime(s.start_time)}</td>
-                            <td>${formatTime(s.end_time)}</td>
-                            <td class="hours">${parseFloat(s.hours_scheduled).toFixed(1)}h</td>
-                            <td><button class="delete-btn" onclick="deleteShift(${s.id})">✕</button></td>
-                        </tr>`).join('')}
-                        <tr class="total-row"><td colspan="3"><strong>Total</strong></td><td class="hours">${total.toFixed(1)}h</td><td></td></tr>
-                    </tbody>
-                </table>`;
         }
         
         async function loadDefaults() {
             try {
-                const defaults = await supabase('intake_default_shifts?is_active=eq.true&order=specialist_name');
-                renderDefaults(defaults || []);
+                // Load from default_shifts table (day_of_week IS NULL = Mon-Fri default)
+                defaults = await supabase('default_shifts?day_of_week=is.null&order=specialist_name');
+                renderDefaults();
             } catch (e) {
-                // If table doesn't exist or error, show setup form
-                renderDefaultsSetup();
+                console.error('Failed to load defaults:', e);
+                showMessage('Error loading schedules: ' + e.message, 'error');
+                document.getElementById('defaultsContainer').innerHTML = '<div class="empty">Failed to load schedules</div>';
             }
         }
         
-        function renderDefaults(defaults) {
-            const defaultMap = {};
-            defaults.forEach(d => defaultMap[d.specialist_email] = d);
+        function formatTimeForInput(timeStr) {
+            if (!timeStr) return '09:00';
+            // Handle HH:MM:SS format
+            return timeStr.substring(0, 5);
+        }
+        
+        function formatTimeDisplay(timeStr) {
+            if (!timeStr) return '';
+            const [h, m] = timeStr.split(':');
+            const hr = parseInt(h);
+            return `${hr % 12 || 12}:${m} ${hr >= 12 ? 'PM' : 'AM'}`;
+        }
+        
+        function calculateHours(start, end) {
+            if (!start || !end) return 0;
+            const [sh, sm] = start.split(':').map(Number);
+            const [eh, em] = end.split(':').map(Number);
+            return ((eh * 60 + em) - (sh * 60 + sm)) / 60;
+        }
+        
+        function renderDefaults() {
+            if (!defaults || defaults.length === 0) {
+                document.getElementById('defaultsContainer').innerHTML = '<div class="empty">No schedules configured</div>';
+                return;
+            }
             
-            const rows = specialists.map(s => {
-                const d = defaultMap[s.email] || {};
-                const start = d.default_start || '09:00';
-                const end = d.default_end || '17:00';
-                return `<tr class="default-row" data-email="${s.email}">
-                    <td>${s.display_name}</td>
+            let totalHours = 0;
+            let workingCount = 0;
+            
+            const rows = defaults.map(d => {
+                const isOff = d.is_off === true;
+                const start = formatTimeForInput(d.start_time);
+                const end = formatTimeForInput(d.end_time);
+                const hours = isOff ? 0 : calculateHours(start, end);
+                
+                if (!isOff) {
+                    totalHours += hours;
+                    workingCount++;
+                }
+                
+                return `
+                <tr class="default-row ${isOff ? 'is-off' : ''}" data-id="${d.id}" data-email="${d.specialist_email}">
+                    <td>${d.specialist_name}</td>
                     <td class="time-inputs">
-                        <input type="time" class="def-start" value="${start.substring(0,5)}">
+                        <input type="time" class="def-start" value="${start}" onchange="updateShift(${d.id})">
                         <span>-</span>
-                        <input type="time" class="def-end" value="${end.substring(0,5)}">
+                        <input type="time" class="def-end" value="${end}" onchange="updateShift(${d.id})">
+                    </td>
+                    <td class="hours-display">
+                        <span class="hours">${isOff ? 'OFF' : hours.toFixed(1) + 'h'}</span>
                     </td>
                     <td>
-                        <button class="btn btn-primary btn-sm" onclick="saveDefault('${s.email}', '${s.display_name}')">Save</button>
+                        <button class="off-toggle ${isOff ? 'off' : 'working'}" onclick="toggleOff(${d.id}, ${!isOff})">
+                            ${isOff ? 'ON' : 'OFF'}
+                        </button>
+                        <span class="save-indicator" id="saved-${d.id}">✓ Saved</span>
                     </td>
                 </tr>`;
             }).join('');
             
             document.getElementById('defaultsContainer').innerHTML = `
                 <table>
-                    <thead><tr><th>Specialist</th><th>Default Hours</th><th></th></tr></thead>
-                    <tbody>${rows}</tbody>
-                </table>`;
+                    <thead>
+                        <tr>
+                            <th>Specialist</th>
+                            <th>Start - End</th>
+                            <th>Hours</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows}
+                        <tr class="total-row">
+                            <td><strong>Total (${workingCount} working)</strong></td>
+                            <td></td>
+                            <td class="hours">${totalHours.toFixed(1)}h</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
         }
         
-        function renderDefaultsSetup() {
-            document.getElementById('defaultsContainer').innerHTML = `
-                <div class="empty">Configure default schedules for each specialist above.</div>`;
-            renderDefaults([]);
-        }
-        
-        async function saveDefault(email, name) {
-            const row = document.querySelector(`tr[data-email="${email}"]`);
+        async function updateShift(id) {
+            const row = document.querySelector(`tr[data-id="${id}"]`);
             const start = row.querySelector('.def-start').value;
             const end = row.querySelector('.def-end').value;
             
             try {
-                // Try update first, then insert
-                const existing = await supabase(`intake_default_shifts?specialist_email=eq.${encodeURIComponent(email)}`);
-                if (existing && existing.length > 0) {
-                    await supabase(`intake_default_shifts?specialist_email=eq.${encodeURIComponent(email)}`, {
-                        method: 'PATCH',
-                        body: JSON.stringify({ default_start: start, default_end: end })
-                    });
-                } else {
-                    await supabase('intake_default_shifts', {
-                        method: 'POST',
-                        body: JSON.stringify({
-                            specialist_email: email,
-                            specialist_name: name,
-                            default_start: start,
-                            default_end: end
-                        })
-                    });
-                }
-                showMessage(`Saved default for ${name}`, 'success');
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-            }
-        }
-        
-        async function applyDefaults() {
-            const date = document.getElementById('shiftDate').value;
-            const dayOfWeek = new Date(date).getDay(); // 0=Sun, 1=Mon, etc.
-            
-            try {
-                const defaults = await supabase('intake_default_shifts?is_active=eq.true');
-                if (!defaults || !defaults.length) {
-                    showMessage('No default schedules configured. Go to Default Schedules tab.', 'error');
-                    return;
-                }
-                
-                let added = 0;
-                for (const d of defaults) {
-                    try {
-                        await supabase('intake_shifts', {
-                            method: 'POST',
-                            body: JSON.stringify({
-                                shift_date: date,
-                                specialist_email: d.specialist_email,
-                                specialist_name: d.specialist_name,
-                                start_time: d.default_start,
-                                end_time: d.default_end
-                            })
-                        });
-                        added++;
-                    } catch (e) {
-                        // Skip duplicates
-                    }
-                }
-                showMessage(`Applied ${added} default shifts`, 'success');
-                loadShifts();
-            } catch (e) {
-                showMessage('Error: ' + e.message, 'error');
-            }
-        }
-        
-        async function addShift() {
-            const date = document.getElementById('shiftDate').value;
-            const email = document.getElementById('specialist').value;
-            const start = document.getElementById('startTime').value;
-            const end = document.getElementById('endTime').value;
-            const spec = specialists.find(s => s.email === email);
-            
-            try {
-                await supabase('intake_shifts', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        shift_date: date,
-                        specialist_email: email,
-                        specialist_name: spec?.display_name || email,
-                        start_time: start,
-                        end_time: end
+                await supabase(`default_shifts?id=eq.${id}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ 
+                        start_time: start + ':00',
+                        end_time: end + ':00',
+                        updated_at: new Date().toISOString()
                     })
                 });
-                showMessage('Shift added', 'success');
-                loadShifts();
+                
+                // Update local data and re-render
+                const d = defaults.find(d => d.id === id);
+                if (d) {
+                    d.start_time = start + ':00';
+                    d.end_time = end + ':00';
+                }
+                renderDefaults();
+                showSaved(id);
             } catch (e) {
-                showMessage(e.message.includes('duplicate') ? 'Already scheduled' : 'Error: ' + e.message, 'error');
+                showMessage('Error saving: ' + e.message, 'error');
             }
         }
         
-        async function deleteShift(id) {
-            if (!confirm('Delete?')) return;
+        async function toggleOff(id, setOff) {
             try {
-                await supabase(`intake_shifts?id=eq.${id}`, { method: 'DELETE' });
-                showMessage('Deleted', 'success');
-                loadShifts();
-            } catch (e) { showMessage('Error', 'error'); }
+                await supabase(`default_shifts?id=eq.${id}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ 
+                        is_off: setOff,
+                        updated_at: new Date().toISOString()
+                    })
+                });
+                
+                // Update local data and re-render
+                const d = defaults.find(d => d.id === id);
+                if (d) {
+                    d.is_off = setOff;
+                }
+                renderDefaults();
+                showSaved(id);
+                showMessage(setOff ? 'Marked as OFF' : 'Marked as working', 'success');
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
         }
         
-        function changeDate(days) {
-            const input = document.getElementById('shiftDate');
-            const d = new Date(input.value);
-            d.setDate(d.getDate() + days);
-            input.value = d.toISOString().split('T')[0];
-            loadShifts();
-        }
-        
-        function setToday() {
-            document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
-            loadShifts();
-        }
-        
-        function formatTime(t) {
-            if (!t) return '';
-            const [h,m] = t.split(':');
-            const hr = parseInt(h);
-            return `${hr % 12 || 12}:${m} ${hr >= 12 ? 'PM' : 'AM'}`;
+        function showSaved(id) {
+            const indicator = document.getElementById(`saved-${id}`);
+            if (indicator) {
+                indicator.classList.add('show');
+                setTimeout(() => indicator.classList.remove('show'), 2000);
+            }
         }
         
         function showMessage(text, type) {
@@ -388,8 +341,7 @@
         }
         
         // Init
-        document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
-        loadSpecialists().then(() => { loadShifts(); });
+        loadSpecialists().then(() => loadDefaults());
     </script>
 </body>
 </html>
