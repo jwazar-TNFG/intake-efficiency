@@ -394,7 +394,7 @@
             
             // Separate scheduled vs OFF specialists
             const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => b.ld - a.ld);
-            const offReps = reps.filter(r => r.is_off && r.ld > 0).sort((a, b) => b.ld - a.ld);
+            const offReps = reps.filter(r => r.is_off).sort((a, b) => b.ld - a.ld);
             
             let headerRow = '<tr><th class="name-col">Intaker</th><th class="star-col">*</th>';
             hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
