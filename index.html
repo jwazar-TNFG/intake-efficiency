@@ -138,6 +138,11 @@
         .loading { text-align: center; padding: 100px; color: #888; }
         
         .updated { text-align: center; font-size: 11px; color: #444; margin-top: 20px; }
+        .metrics-help { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 12px 15px; margin-top: 20px; font-size: 12px; }
+        .metrics-help .help-title { color: #5BA4B5; font-weight: 600; margin-bottom: 10px; }
+        .metrics-help .help-item { margin-bottom: 8px; color: #ccc; line-height: 1.4; }
+        .metrics-help .help-item strong { color: #fff; }
+        .metrics-help .help-example { color: #666; font-size: 11px; font-style: italic; }
         
         /* Hourly Heatmap Styles */
         .heatmap-section {
@@ -704,6 +709,12 @@
                         <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 Average</div>
                         <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
                     </div>
+                </div>
+                
+                <div class="metrics-help">
+                    <div class="help-title">📊 How Metrics Are Calculated</div>
+                    <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far today<br><span class="help-example">e.g., if it's 4 PM and people started at 9 AM, that's ~7 hours worked</span></div>
+                    <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for the day<br><span class="help-example">e.g., 26 people × 8 hours = 208 hours</span></div>
                 </div>
                 
                 <div class="updated">Last updated: ${updatedTime}</div>
