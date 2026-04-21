@@ -25,15 +25,12 @@
         
         .dept-scorecard {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 10px;
             background: #1a1a1a;
             padding: 6px 15px;
             border-radius: 6px;
             border: 1px solid #333;
-            margin: 10px auto 0 auto;
-            max-width: 320px;
         }
         
         .dept-scorecard .label {
@@ -67,11 +64,19 @@
             color: #fff;
         }
         
+        .tabs-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         .tabs {
             display: flex;
-            justify-content: center;
             gap: 10px;
-            margin-bottom: 25px;
         }
         
         .tab {
@@ -883,11 +888,9 @@
             const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : '0.00';
             const eliteCount = reps.filter(r => r.rate >= 1.0).length;
             
-            const tabs = `
-                <div class="tabs">
+            const tabLinks = `
                     <a href="index.html" class="tab active">Dashboard</a>
                     <a href="admin.html#daily" class="tab">Manage Shifts</a>
-                </div>
             `;
             
             // Empty state
@@ -898,7 +901,7 @@
                         <h2>INTAKE EFFICIENCY REPORT</h2>
                         <div class="date">${formattedDate}</div>
                     </div>
-                    ${tabs}
+                    <div class="tabs-row"><div class="tabs">${tabLinks}</div></div>
                     <div class="empty-state">
                         <h3>No Data Yet</h3>
                         <p>Waiting for intake specialists to lock down cases today.</p>
@@ -953,14 +956,16 @@
                     <h1>1-800-NO-FAULT</h1>
                     <h2>INTAKE EFFICIENCY REPORT</h2>
                     <div class="date">${formattedDate}</div>
+                </div>
+                
+                <div class="tabs-row">
+                    <div class="tabs">${tabLinks}</div>
                     <div class="dept-scorecard">
                         <div class="label">DEPT<br>RATE</div>
                         <div class="rate-box ${deptRateClass}">${deptRate.toFixed(2)}</div>
                         <div class="stats"><strong>${deptTotalLD}</strong> LD&nbsp;&nbsp;|&nbsp;&nbsp;<strong>${Math.round(deptTotalHours)}</strong>h</div>
                     </div>
                 </div>
-                
-                ${tabs}
                 
                 ${heatmapHtml}
                 
