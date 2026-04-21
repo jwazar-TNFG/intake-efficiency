@@ -96,15 +96,16 @@
         .btn-off.is-off:hover { background: #22c55e; }
         
         .btn-deactivate {
-            padding: 5px 8px;
+            padding: 5px 10px;
             border: none;
             border-radius: 4px;
             font-size: 10px;
+            font-weight: 600;
             cursor: pointer;
-            background: transparent;
-            color: #666;
+            background: #2a2a2a;
+            color: #888;
         }
-        .btn-deactivate:hover { color: #ef4444; }
+        .btn-deactivate:hover { background: #7f1d1d; color: #fca5a5; }
         
         /* Header row */
         .list-header {
@@ -328,7 +329,7 @@
                     <div class="spec-hours ${isOff ? 'off' : ''}">${isOff ? 'OFF' : hours.toFixed(1) + 'h'}</div>
                     <div class="spec-actions">
                         <button class="btn-off ${isOff ? 'is-off' : 'working'}" onclick="toggleOff(${d.id}, ${!isOff})">${isOff ? 'ON' : 'OFF'}</button>
-                        <button class="btn-deactivate" onclick="deactivate('${d.specialist_email}', '${d.specialist_name}')" title="Deactivate">✕</button>
+                        <button class="btn-deactivate" onclick="deactivate('${d.specialist_email}', '${d.specialist_name}')">DE-ACT</button>
                     </div>
                 </div>`;
             }).join('');
@@ -341,7 +342,7 @@
                     ${inactiveDefaults.map(d => `
                         <div class="inactive-row">
                             <span class="name">${d.specialist_name}</span>
-                            <button class="btn-reactivate" onclick="reactivate('${d.specialist_email}')">Reactivate</button>
+                            <button class="btn-reactivate" onclick="reactivate('${d.specialist_email}')">RE-ACT</button>
                         </div>
                     `).join('')}
                 </div>`;
