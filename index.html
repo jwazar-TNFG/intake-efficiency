@@ -456,6 +456,19 @@
             color: #ef4444 !important;
         }
         
+        .pace-arrow {
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        
+        .pace-arrow.positive {
+            color: #22c55e;
+        }
+        
+        .pace-arrow.negative {
+            color: #ef4444;
+        }
+        
         .stat-context {
             color: #666;
             font-size: 11px;
@@ -785,8 +798,8 @@
                         </div>
                         <div class="stats-section">
                             <div class="stats-section-title">⏱️ PACE</div>
-                            <div class="stat-row">vs Yesterday ${paceTime}: <span class="${vsYesterdayClass}">${vsYesterdayDiff >= 0 ? '▲' : '▼'} <strong>${dept.total_ld}</strong></span> (was <strong>${yesterdaySameTime}</strong>) <span class="stat-context">→ ${yesterdayLd} EOD</span></div>
-                            <div class="stat-row">vs Last Week ${paceTime}: <span class="${vsLastWeekClass}">${vsLastWeekDiff >= 0 ? '▲' : '▼'} <strong>${dept.total_ld}</strong></span> (was <strong>${lastWeekSameTime}</strong>) <span class="stat-context">→ ${lastWeekTotal} EOD</span></div>
+                            <div class="stat-row">vs Yesterday ${paceTime}: <span class="pace-arrow ${vsYesterdayClass}">${vsYesterdayDiff >= 0 ? '▲' : '▼'}</span> <span class="${vsYesterdayClass}"><strong>${dept.total_ld}</strong></span> (was <strong>${yesterdaySameTime}</strong>) <span class="stat-context">→ ${yesterdayLd} EOD</span></div>
+                            <div class="stat-row">vs Last Week ${paceTime}: <span class="pace-arrow ${vsLastWeekClass}">${vsLastWeekDiff >= 0 ? '▲' : '▼'}</span> <span class="${vsLastWeekClass}"><strong>${dept.total_ld}</strong></span> (was <strong>${lastWeekSameTime}</strong>) <span class="stat-context">→ ${lastWeekTotal} EOD</span></div>
                         </div>
                         <div class="stats-section">
                             <div class="stats-section-title">SHIFT STATUS</div>
