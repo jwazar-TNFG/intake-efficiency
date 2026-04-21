@@ -621,6 +621,11 @@
         // Init
         document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
         loadDefaults().then(() => populateSpecialistDropdown());
+        
+        // Handle hash navigation (e.g., admin.html#daily)
+        if (window.location.hash === '#daily') {
+            showSection('daily');
+        }
     </script>
 </body>
 </html>
