@@ -430,28 +430,76 @@
                 return 'hourly-heat-1';
             }
             
+            // Teal gradient for TOTAL row
+            function getTealHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #0d9488; color: #fff;';  // teal-600
+                if (ratio >= 0.5) return 'background: #14b8a6; color: #fff;';   // teal-500
+                if (ratio >= 0.25) return 'background: #2dd4bf; color: #000;';  // teal-400
+                return 'background: #5eead4; color: #000;';                      // teal-300
+            }
+            
             let totalsRow = '<tr class="totals-row"><td class="name-cell">TOTAL</td><td class="star-cell">-</td>';
             hourlyTotals.forEach(count => {
-                const heatClass = getHourlyHeatClass(count);
+                const style = getTealHeatStyle(count, maxHourlyTotal);
                 if (count === 0) {
-                    totalsRow += `<td class="${heatClass}">-</td>`;
+                    totalsRow += `<td style="${style}">-</td>`;
                 } else {
-                    totalsRow += `<td class="${heatClass}">${count}</td>`;
+                    totalsRow += `<td style="${style}">${count}</td>`;
                 }
             });
             totalsRow += `<td class="total-cell">${dept.total_ld}</td></tr>`;
             
-            // Add Came In row (plain, no heatmap)
-            const totalCameIn = dept.total_came_in || 0;
-            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #888;">Came In</td><td class="star-cell">-</td>';
-            for (let i = 0; i < 17; i++) { cameInRow += '<td style="background: #1a1a1a; color: #666;">-</td>'; }
-            cameInRow += `<td class="total-cell" style="background: #1a1a1a;">${totalCameIn}</td></tr>`;
+            // Green gradient for Came In row
+            const hourlyCameIn = dept.hourly_came_in || new Array(17).fill(0);
+            const maxCameIn = Math.max(...hourlyCameIn, 1);
             
-            // Add Dropped row (plain, no heatmap)
+            function getGreenHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #16a34a; color: #fff;';  // green-600
+                if (ratio >= 0.5) return 'background: #22c55e; color: #fff;';   // green-500
+                if (ratio >= 0.25) return 'background: #4ade80; color: #000;';  // green-400
+                return 'background: #86efac; color: #000;';                      // green-300
+            }
+            
+            const totalCameIn = dept.total_came_in || 0;
+            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #4ade80;">Came In</td><td class="star-cell">-</td>';
+            hourlyCameIn.forEach(count => {
+                const style = getGreenHeatStyle(count, maxCameIn);
+                if (count === 0) {
+                    cameInRow += `<td style="${style}">-</td>`;
+                } else {
+                    cameInRow += `<td style="${style}">${count}</td>`;
+                }
+            });
+            cameInRow += `<td class="total-cell" style="background: #14532d; color: #4ade80;">${totalCameIn}</td></tr>`;
+            
+            // Red gradient for Dropped row
+            const hourlyDropped = dept.hourly_dropped || new Array(17).fill(0);
+            const maxDropped = Math.max(...hourlyDropped, 1);
+            
+            function getRedHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #dc2626; color: #fff;';  // red-600
+                if (ratio >= 0.5) return 'background: #ef4444; color: #fff;';   // red-500
+                if (ratio >= 0.25) return 'background: #f87171; color: #000;';  // red-400
+                return 'background: #fca5a5; color: #000;';                      // red-300
+            }
+            
             const totalDropped = dept.total_dropped || 0;
-            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #888;">Dropped</td><td class="star-cell">-</td>';
-            for (let i = 0; i < 17; i++) { droppedRow += '<td style="background: #1a1a1a; color: #666;">-</td>'; }
-            droppedRow += `<td class="total-cell" style="background: #1a1a1a;">${totalDropped}</td></tr>`;
+            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #ef4444;">Dropped</td><td class="star-cell">-</td>';
+            hourlyDropped.forEach(count => {
+                const style = getRedHeatStyle(count, maxDropped);
+                if (count === 0) {
+                    droppedRow += `<td style="${style}">-</td>`;
+                } else {
+                    droppedRow += `<td style="${style}">${count}</td>`;
+                }
+            });
+            droppedRow += `<td class="total-cell" style="background: #450a0a; color: #ef4444;">${totalDropped}</td></tr>`;
             
             // Yesterday comparison
             const yesterdayLd = dept.yesterday_ld || 0;
