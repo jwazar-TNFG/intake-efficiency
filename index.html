@@ -630,7 +630,7 @@
             
             const updatedTime = data.updated ? new Date(data.updated).toLocaleTimeString() : '';
             
-            const dept = data.department || {
+            const dept = data.dept || data.department || {
                 total_ld: totalLD,
                 total_shift_hours: totalHours,
                 total_hours_worked: totalHours,
