@@ -402,13 +402,20 @@
             let bodyRows = sortedReps.map(rep => {
                 const rowClass = getRowClass(rep.ld, rep.rate);
                 const hourly = rep.hourly || new Array(17).fill(0);
+                const scheduledHours = rep.scheduled_hours || [];  // Array of scheduled hour indices (0=7AM, 1=8AM, etc)
                 const displayName = rep.abbrev || rep.name;
                 const rateWorked = rep.rate_worked !== undefined ? rep.rate_worked.toFixed(1) : '-';
+                const isScheduled = rep.hours > 0;  // Has scheduled hours
                 
                 let row = `<tr class="${rowClass}"><td class="name-cell">${displayName}</td><td class="star-cell">${rateWorked}</td>`;
-                hourly.forEach(count => {
+                hourly.forEach((count, idx) => {
                     if (count === 0) {
-                        row += '<td class="heatmap-cell-dash">-</td>';
+                        // Show X if scheduled and 0 LDs in this hour
+                        if (isScheduled && rep.hours_worked > 0) {
+                            row += '<td class="heatmap-cell-dash" style="color: #ef4444;">X</td>';
+                        } else {
+                            row += '<td class="heatmap-cell-dash">-</td>';
+                        }
                     } else {
                         row += `<td>${count}</td>`;
                     }
@@ -527,7 +534,11 @@
                             <span class="dept-stat-value">${dept.total_ld}</span>
                         </div>
                         <div class="dept-stat">
-                            <span class="dept-stat-label">Avg LD/Hour:</span>
+                            <span class="dept-stat-label">LD/Scheduled Hr:</span>
+                            <span class="dept-stat-value" style="color: #4ade80; font-size: 16px;">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                        </div>
+                        <div class="dept-stat">
+                            <span class="dept-stat-label">LD/Worked Hr:</span>
                             <span class="dept-stat-value" style="color: #5BA4B5; font-size: 16px;">${dept.rate_worked.toFixed(2)}</span>
                         </div>
                         <div class="dept-stat">
