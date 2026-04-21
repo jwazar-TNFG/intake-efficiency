@@ -157,6 +157,29 @@
         
         .empty { text-align: center; padding: 30px; color: #666; font-size: 13px; }
         
+        .section { display: block; }
+        
+        /* Date nav */
+        .date-nav { display: flex; gap: 8px; margin-bottom: 15px; align-items: center; flex-wrap: wrap; }
+        .date-nav button { padding: 8px 12px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .date-nav button:hover { background: #2a2a2a; }
+        .date-nav input[type="date"] { padding: 8px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 4px; font-size: 14px; }
+        
+        /* Add shift form */
+        .add-shift-form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #333; }
+        .add-shift-form select { flex: 1; min-width: 150px; padding: 8px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 13px; }
+        .add-shift-form input[type="time"] { width: 90px; padding: 8px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 13px; }
+        .add-shift-form span { color: #666; }
+        .btn-add { padding: 8px 16px; background: #4ade80; color: #000; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; }
+        .btn-add:hover { background: #22c55e; }
+        
+        /* Daily shift row */
+        .daily-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #111; border-radius: 4px; margin-bottom: 4px; }
+        .daily-row .name { font-size: 13px; font-weight: 500; }
+        .daily-row .times { font-size: 12px; color: #5BA4B5; }
+        .daily-row .delete { background: none; border: none; color: #666; cursor: pointer; font-size: 14px; }
+        .daily-row .delete:hover { color: #ef4444; }
+        
         @media (max-width: 480px) {
             .specialist-row {
                 grid-template-columns: 1fr auto;
@@ -178,15 +201,44 @@
         
         <div class="nav-tabs">
             <a href="index.html" class="nav-tab">📊 Dashboard</a>
-            <button class="nav-tab active">⚙️ Default Schedules</button>
+            <button class="nav-tab" onclick="showSection('daily')" id="tab-daily">📅 Daily Shifts</button>
+            <button class="nav-tab active" onclick="showSection('defaults')" id="tab-defaults">⚙️ Defaults</button>
         </div>
         
         <div id="message"></div>
         
-        <div class="card">
-            <h3>Default Weekly Schedules (Mon-Fri)</h3>
-            <p>Set default hours for each specialist. Click <strong>OFF</strong> to mark as not working.</p>
-            <div id="defaultsContainer"><div class="empty">Loading...</div></div>
+        <!-- Daily Shifts Section -->
+        <div id="section-daily" class="section" style="display:none;">
+            <div class="date-nav">
+                <button onclick="changeDate(-1)">←</button>
+                <input type="date" id="shiftDate" onchange="loadDailyShifts()">
+                <button onclick="changeDate(1)">→</button>
+                <button onclick="setToday()">Today</button>
+            </div>
+            
+            <div class="card">
+                <h3>Shift Overrides for <span id="dateLabel"></span></h3>
+                <p>Add exceptions to the default schedule for this specific day.</p>
+                
+                <div class="add-shift-form">
+                    <select id="addSpecialist"></select>
+                    <input type="time" id="addStart" value="09:00">
+                    <span>-</span>
+                    <input type="time" id="addEnd" value="17:00">
+                    <button class="btn-add" onclick="addDailyShift()">Add</button>
+                </div>
+                
+                <div id="dailyContainer"><div class="empty">Loading...</div></div>
+            </div>
+        </div>
+        
+        <!-- Default Schedules Section -->
+        <div id="section-defaults" class="section">
+            <div class="card">
+                <h3>Default Weekly Schedules (Mon-Fri)</h3>
+                <p>Set default hours for each specialist. Click <strong>OFF</strong> to mark as not working.</p>
+                <div id="defaultsContainer"><div class="empty">Loading...</div></div>
+            </div>
         </div>
     </div>
 
@@ -233,9 +285,11 @@
                 });
                 
                 renderDefaults();
+                return true;
             } catch (e) {
                 console.error('Failed to load:', e);
                 showMessage('Error loading: ' + e.message, 'error');
+                return false;
             }
         }
         
@@ -366,7 +420,113 @@
             setTimeout(() => document.getElementById('message').innerHTML = '', 3000);
         }
         
-        loadDefaults();
+        // Section switching
+        function showSection(section) {
+            document.getElementById('section-daily').style.display = section === 'daily' ? 'block' : 'none';
+            document.getElementById('section-defaults').style.display = section === 'defaults' ? 'block' : 'none';
+            document.getElementById('tab-daily').classList.toggle('active', section === 'daily');
+            document.getElementById('tab-defaults').classList.toggle('active', section === 'defaults');
+            
+            if (section === 'daily') loadDailyShifts();
+        }
+        
+        // Daily shifts
+        let dailyShifts = [];
+        
+        function changeDate(days) {
+            const input = document.getElementById('shiftDate');
+            const d = new Date(input.value);
+            d.setDate(d.getDate() + days);
+            input.value = d.toISOString().split('T')[0];
+            loadDailyShifts();
+        }
+        
+        function setToday() {
+            document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
+            loadDailyShifts();
+        }
+        
+        async function loadDailyShifts() {
+            const date = document.getElementById('shiftDate').value;
+            if (!date) return;
+            
+            document.getElementById('dateLabel').textContent = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+            
+            try {
+                dailyShifts = await supabase(`intake_shifts?shift_date=eq.${date}&order=specialist_name`) || [];
+                renderDailyShifts();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
+        }
+        
+        function renderDailyShifts() {
+            if (!dailyShifts.length) {
+                document.getElementById('dailyContainer').innerHTML = '<div class="empty">No overrides for this day.<br>Using default schedules.</div>';
+                return;
+            }
+            
+            document.getElementById('dailyContainer').innerHTML = dailyShifts.map(s => `
+                <div class="daily-row">
+                    <span class="name">${s.specialist_name}</span>
+                    <span class="times">${formatTime(s.start_time)} - ${formatTime(s.end_time)}</span>
+                    <button class="delete" onclick="deleteDailyShift(${s.id})">✕</button>
+                </div>
+            `).join('');
+        }
+        
+        function formatTimeDisplay(t) {
+            if (!t) return '';
+            const [h, m] = t.split(':');
+            const hr = parseInt(h);
+            return `${hr % 12 || 12}:${m} ${hr >= 12 ? 'PM' : 'AM'}`;
+        }
+        
+        async function addDailyShift() {
+            const date = document.getElementById('shiftDate').value;
+            const email = document.getElementById('addSpecialist').value;
+            const start = document.getElementById('addStart').value;
+            const end = document.getElementById('addEnd').value;
+            
+            const spec = defaults.find(d => d.specialist_email === email) || inactiveDefaults.find(d => d.specialist_email === email);
+            const name = spec?.specialist_name || email;
+            
+            try {
+                await supabase('intake_shifts', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        shift_date: date,
+                        specialist_email: email,
+                        specialist_name: name,
+                        start_time: start + ':00',
+                        end_time: end + ':00',
+                        hours_scheduled: calcHours(start, end)
+                    })
+                });
+                showMessage('Shift added', 'success');
+                loadDailyShifts();
+            } catch (e) {
+                showMessage(e.message.includes('duplicate') ? 'Already has override' : 'Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function deleteDailyShift(id) {
+            if (!confirm('Remove this override?')) return;
+            try {
+                await supabase(`intake_shifts?id=eq.${id}`, { method: 'DELETE' });
+                loadDailyShifts();
+            } catch (e) { showMessage('Error', 'error'); }
+        }
+        
+        function populateSpecialistDropdown() {
+            const select = document.getElementById('addSpecialist');
+            const allSpecs = [...defaults, ...inactiveDefaults].sort((a, b) => a.specialist_name.localeCompare(b.specialist_name));
+            select.innerHTML = allSpecs.map(d => `<option value="${d.specialist_email}">${d.specialist_name}</option>`).join('');
+        }
+        
+        // Init
+        document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
+        loadDefaults().then(() => populateSpecialistDropdown());
     </script>
 </body>
 </html>
