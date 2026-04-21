@@ -886,11 +886,11 @@
                             </div>
                             <div class="stat-metric">
                                 <span class="metric-label">LD/Hour worked</span>
-                                <span class="metric-value ${getRateClass(dept.rate_worked)}">${dept.rate_worked.toFixed(2)}</span>
+                                <span class="metric-value" style="color: ${getRateTier(dept.rate_worked).color}">${dept.rate_worked.toFixed(2)}</span>
                             </div>
                             <div class="stat-metric">
                                 <span class="metric-label">LD/Hour scheduled</span>
-                                <span class="metric-value ${getRateClass(dept.total_ld / (dept.total_shift_hours || 1))}">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                                <span class="metric-value" style="color: ${getRateTier(dept.total_ld / (dept.total_shift_hours || 1)).color}">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
                             </div>
                             <div class="stat-metric forecast">
                                 <span class="metric-label">Forecast EOD</span>
