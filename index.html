@@ -341,15 +341,49 @@
             margin-bottom: 8px;
         }
         
-        .info-link {
+        .info-toggle {
             color: #5BA4B5;
-            text-decoration: none;
+            cursor: pointer;
             margin-left: 5px;
-            font-size: 12px;
+            font-size: 14px;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            border-radius: 50%;
+            background: #333;
         }
         
-        .info-link:hover {
+        .info-toggle:hover {
             color: #fff;
+            background: #5BA4B5;
+        }
+        
+        .color-scale {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #333;
+        }
+        
+        .scale-title {
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        
+        .scale-bar {
+            display: flex;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .scale-segment {
+            flex: 1;
+            padding: 6px 4px;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 600;
+            color: #000;
         }
         
         .stat-big {
@@ -495,6 +529,13 @@
             if (rate >= 0.5) return 'rate-yellow';
             if (rate >= 0.4) return 'rate-orange';
             return 'rate-red';
+        }
+        
+        function toggleDefinitions() {
+            const el = document.getElementById('definitions');
+            if (el) {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            }
         }
         
         function getRowClass(ld, rate) {
@@ -701,7 +742,7 @@
                     <div class="dept-summary-title">Intake Department</div>
                     <div class="dept-stats-grid">
                         <div class="stats-section">
-                            <div class="stats-section-title">TODAY'S PRODUCTION <a href="#definitions" class="info-link">ⓘ</a></div>
+                            <div class="stats-section-title">TODAY'S PRODUCTION <span class="info-toggle" onclick="toggleDefinitions()">ⓘ</span></div>
                             <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
                             <div class="stat-metric">
                                 <span class="metric-label">Avg. LD/hour</span>
@@ -721,12 +762,22 @@
                             </div>
                         </div>
                         
-                        <div class="metrics-help" id="definitions">
+                        <div class="metrics-help" id="definitions" style="display: none;">
                             <div class="help-title">📊 How Metrics Are Calculated</div>
                             <div class="help-item"><strong>Avg. LD/hour</strong> = Total LD ÷ hours elapsed since 7 AM<br><span class="help-example">Team output per hour of the workday</span></div>
                             <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far<br><span class="help-example">Based on each specialist's shift progress</span></div>
                             <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for day<br><span class="help-example">e.g., 25 people × 8 hours = 200 hours</span></div>
                             <div class="help-item"><strong>Forecast EOD</strong> = Projected total if current pace continues</div>
+                            <div class="color-scale">
+                                <div class="scale-title">Rate Color Scale</div>
+                                <div class="scale-bar">
+                                    <div class="scale-segment" style="background: #ef4444;"><span>&lt;0.4</span></div>
+                                    <div class="scale-segment" style="background: #f97316;"><span>0.4</span></div>
+                                    <div class="scale-segment" style="background: #fbbf24;"><span>0.5</span></div>
+                                    <div class="scale-segment" style="background: #a3e635;"><span>0.7</span></div>
+                                    <div class="scale-segment" style="background: #22c55e;"><span>≥1.0</span></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="stats-section">
                             <div class="stats-section-title">PACE CHECK</div>
