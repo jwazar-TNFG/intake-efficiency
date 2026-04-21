@@ -428,8 +428,8 @@
                             row += '<td class="heatmap-cell-dash">-</td>';
                         }
                     } else {
-                        // Yellow text if LD occurred outside of scheduled shift
-                        if (!isInShift && !isOff) {
+                        // Yellow text if LD occurred outside of scheduled shift (or if OFF)
+                        if (!isInShift || isOff) {
                             row += `<td style="color: #fbbf24;">${count}</td>`;  // Yellow for outside shift
                         } else {
                             row += `<td>${count}</td>`;  // White for during shift
