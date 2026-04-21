@@ -392,33 +392,37 @@
             // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P, 11P
             const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
             
-            // Sort by total LD descending for heatmap
-            const sortedReps = [...reps].sort((a, b) => b.ld - a.ld);
+            // Separate scheduled vs OFF specialists
+            const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => b.ld - a.ld);
+            const offReps = reps.filter(r => r.is_off && r.ld > 0).sort((a, b) => b.ld - a.ld);
             
             let headerRow = '<tr><th class="name-col">Intaker</th><th class="star-col">*</th>';
             hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
             headerRow += '<th class="total-col">TOT</th></tr>';
             
-            let bodyRows = sortedReps.map(rep => {
+            function renderRepRow(rep, isOff = false) {
                 const rowClass = getRowClass(rep.ld, rep.rate);
                 const hourly = rep.hourly || new Array(17).fill(0);
                 const displayName = rep.abbrev || rep.name;
-                const rateWorked = rep.rate_worked !== undefined ? rep.rate_worked.toFixed(1) : '-';
+                const rateWorked = rep.rate_worked !== undefined && rep.rate_worked > 0 ? rep.rate_worked.toFixed(1) : '-';
                 
                 // Shift hour range (start_hour and end_hour are actual hours like 8, 14, 23)
                 const startHour = rep.start_hour;  // e.g., 8 for 8AM
                 const endHour = rep.end_hour;      // e.g., 17 for 5PM
                 const hasShift = startHour !== null && startHour !== undefined;
                 
-                let row = `<tr class="${rowClass}"><td class="name-cell">${displayName}</td><td class="star-cell">${rateWorked}</td>`;
+                // For OFF specialists, show name with OFF indicator
+                const nameDisplay = isOff ? `<span style="color: #888;">${displayName}</span> <span style="color: #f59e0b; font-size: 10px;">OFF</span>` : displayName;
+                
+                let row = `<tr class="${rowClass}"><td class="name-cell">${nameDisplay}</td><td class="star-cell">${rateWorked}</td>`;
                 hourly.forEach((count, idx) => {
                     // idx 0 = 7AM, idx 1 = 8AM, etc. So actual hour = idx + 7
                     const actualHour = idx + 7;
                     const isInShift = hasShift && actualHour >= startHour && actualHour < endHour;
                     
                     if (count === 0) {
-                        // Show X only if this hour is within their scheduled shift
-                        if (isInShift) {
+                        // Show X only if this hour is within their scheduled shift (not for OFF)
+                        if (isInShift && !isOff) {
                             row += '<td class="heatmap-cell-dash" style="color: #ef4444;">X</td>';
                         } else {
                             row += '<td class="heatmap-cell-dash">-</td>';
@@ -429,7 +433,15 @@
                 });
                 row += `<td class="total-cell">${rep.ld}</td></tr>`;
                 return row;
-            }).join('');
+            }
+            
+            let bodyRows = scheduledReps.map(rep => renderRepRow(rep, false)).join('');
+            
+            // Add OFF section if there are OFF specialists with LDs
+            if (offReps.length > 0) {
+                bodyRows += `<tr class="off-divider"><td colspan="20" style="background: #1a1a1a; color: #f59e0b; font-size: 11px; font-weight: 600; padding: 6px; text-align: center; border-top: 2px solid #333;">OFF TODAY</td></tr>`;
+                bodyRows += offReps.map(rep => renderRepRow(rep, true)).join('');
+            }
             
             // Hourly totals row
             const hourlyTotals = dept.hourly_totals || new Array(17).fill(0);
