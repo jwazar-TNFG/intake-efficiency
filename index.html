@@ -428,7 +428,12 @@
                             row += '<td class="heatmap-cell-dash">-</td>';
                         }
                     } else {
-                        row += `<td>${count}</td>`;
+                        // Yellow text if LD occurred outside of scheduled shift
+                        if (!isInShift && !isOff) {
+                            row += `<td style="color: #fbbf24;">${count}</td>`;  // Yellow for outside shift
+                        } else {
+                            row += `<td>${count}</td>`;  // White for during shift
+                        }
                     }
                 });
                 row += `<td class="total-cell">${rep.ld}</td></tr>`;
@@ -542,7 +547,13 @@
                             <tbody>${bodyRows}${totalsRow}${cameInRow}${droppedRow}</tbody>
                         </table>
                     </div>
-                    <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">* = Locked down p/hour of shift</div>
+                    <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">
+                        * = LD per hour worked &nbsp;|&nbsp; 
+                        <span style="color: #fff;">White #</span> = LD during shift &nbsp;|&nbsp; 
+                        <span style="color: #fbbf24;">Yellow #</span> = LD outside shift &nbsp;|&nbsp; 
+                        <span style="color: #ef4444;">X</span> = On shift, 0 LDs &nbsp;|&nbsp; 
+                        <span style="color: #666;">-</span> = Not scheduled
+                    </div>
                 </div>
                 
                 <div class="dept-summary">
