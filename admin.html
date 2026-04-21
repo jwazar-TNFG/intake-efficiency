@@ -511,8 +511,7 @@
                         specialist_email: email,
                         specialist_name: name,
                         start_time: start + ':00',
-                        end_time: end + ':00',
-                        hours_scheduled: calcHours(start, end)
+                        end_time: end + ':00'
                     })
                 });
                 showMessage('Shift added', 'success');
@@ -544,8 +543,7 @@
                         specialist_email: email,
                         specialist_name: name,
                         start_time: '00:00:00',
-                        end_time: '00:00:00',
-                        hours_scheduled: 0
+                        end_time: '00:00:00'
                     })
                 });
                 showMessage(`${name} marked OFF`, 'success');
@@ -571,8 +569,7 @@
                                 specialist_email: d.specialist_email,
                                 specialist_name: d.specialist_name,
                                 start_time: d.start_time,
-                                end_time: d.end_time,
-                                hours_scheduled: calcHours(formatTime(d.start_time), formatTime(d.end_time))
+                                end_time: d.end_time
                             })
                         });
                         added++;
