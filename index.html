@@ -389,22 +389,33 @@
         }
         
         .metric-label {
-            font-size: 12px;
-            color: #999;
+            font-size: 14px;
+            color: #ccc;
+            font-weight: 500;
         }
         
         .metric-value {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             color: #fff;
         }
         
-        .metric-value.highlight-teal {
-            color: #5BA4B5;
+        .metric-value.rate-red { color: #ef4444; }
+        .metric-value.rate-orange { color: #f97316; }
+        .metric-value.rate-yellow { color: #fbbf24; }
+        .metric-value.rate-lightgreen { color: #a3e635; }
+        .metric-value.rate-green { color: #22c55e; }
+        
+        .stat-metric.forecast {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 2px solid #5BA4B5;
+            border-bottom: none;
         }
         
-        .metric-value.highlight-green {
-            color: #4ade80;
+        .stat-metric.forecast .metric-value {
+            color: #5BA4B5;
+            font-size: 22px;
         }
         
         .stat-context {
@@ -476,6 +487,14 @@
             if (rate >= 0.6) return 'solid';
             if (rate >= 0.4) return 'average';
             return 'below';
+        }
+        
+        function getRateClass(rate) {
+            if (rate >= 1.0) return 'rate-green';
+            if (rate >= 0.7) return 'rate-lightgreen';
+            if (rate >= 0.5) return 'rate-yellow';
+            if (rate >= 0.4) return 'rate-orange';
+            return 'rate-red';
         }
         
         function getRowClass(ld, rate) {
@@ -690,12 +709,24 @@
                             </div>
                             <div class="stat-metric">
                                 <span class="metric-label">LD/Hour worked</span>
-                                <span class="metric-value highlight-teal">${dept.rate_worked.toFixed(2)}</span>
+                                <span class="metric-value ${getRateClass(dept.rate_worked)}">${dept.rate_worked.toFixed(2)}</span>
                             </div>
                             <div class="stat-metric">
                                 <span class="metric-label">LD/Hour scheduled</span>
-                                <span class="metric-value highlight-green">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                                <span class="metric-value ${getRateClass(dept.total_ld / (dept.total_shift_hours || 1))}">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
                             </div>
+                            <div class="stat-metric forecast">
+                                <span class="metric-label">Forecast EOD</span>
+                                <span class="metric-value">${Math.round(dept.total_ld / (dept.total_hours_worked / dept.total_shift_hours || 1))} LD</span>
+                            </div>
+                        </div>
+                        
+                        <div class="metrics-help" id="definitions">
+                            <div class="help-title">📊 How Metrics Are Calculated</div>
+                            <div class="help-item"><strong>Avg. LD/hour</strong> = Total LD ÷ hours elapsed since 7 AM<br><span class="help-example">Team output per hour of the workday</span></div>
+                            <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far<br><span class="help-example">Based on each specialist's shift progress</span></div>
+                            <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for day<br><span class="help-example">e.g., 25 people × 8 hours = 200 hours</span></div>
+                            <div class="help-item"><strong>Forecast EOD</strong> = Projected total if current pace continues</div>
                         </div>
                         <div class="stats-section">
                             <div class="stats-section-title">PACE CHECK</div>
@@ -818,13 +849,6 @@
                         <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 Average</div>
                         <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
                     </div>
-                </div>
-                
-                <div class="metrics-help" id="definitions">
-                    <div class="help-title">📊 How Metrics Are Calculated</div>
-                    <div class="help-item"><strong>Avg. LD/hour</strong> = Total LD ÷ hours elapsed since 7 AM<br><span class="help-example">Team output per hour of the workday</span></div>
-                    <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far today<br><span class="help-example">Based on each specialist's shift progress</span></div>
-                    <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for the day<br><span class="help-example">e.g., 25 people × 8 hours = 200 hours</span></div>
                 </div>
                 
                 <div class="updated">Last updated: ${updatedTime}</div>
