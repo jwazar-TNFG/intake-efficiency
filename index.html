@@ -645,19 +645,17 @@
         
         function getRateClass(rate) {
             if (rate >= 1.0) return 'rate-green';
-            if (rate >= 0.7) return 'rate-lightgreen';
-            if (rate >= 0.5) return 'rate-yellow';
-            if (rate >= 0.4) return 'rate-orange';
+            if (rate >= 0.6) return 'rate-lightgreen';
+            if (rate >= 0.4) return 'rate-yellow';
             return 'rate-red';
         }
         
         function getRateTier(rate) {
-            // Match the color scale: green 1.0+, lightgreen 0.7-1.0, yellow 0.5-0.7, orange 0.4-0.5, red <0.4
+            // Match the legend: Elite 1.0+, Solid 0.6-0.99, Average 0.4-0.59, Below <0.4
             if (rate >= 1.0) return { label: 'Elite', color: '#22c55e' };
-            if (rate >= 0.7) return { label: 'Solid', color: '#a3e635' };
-            if (rate >= 0.5) return { label: 'Average', color: '#fbbf24' };
-            if (rate >= 0.4) return { label: 'Below', color: '#f97316' };
-            return { label: 'Critical', color: '#ef4444' };
+            if (rate >= 0.6) return { label: 'Solid', color: '#a3e635' };
+            if (rate >= 0.4) return { label: 'Average', color: '#fbbf24' };
+            return { label: 'Below', color: '#ef4444' };
         }
         
         function toggleDefinitions() {
@@ -1047,7 +1045,7 @@
                     <div class="legend">
                         <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ Elite</div>
                         <div class="legend-item"><span class="legend-dot solid"></span> 0.6-0.99 Solid</div>
-                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.6 Average</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.59 Average</div>
                         <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
                     </div>
                 </div>
