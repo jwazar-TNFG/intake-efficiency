@@ -441,6 +441,18 @@
             });
             totalsRow += `<td class="total-cell">${dept.total_ld}</td></tr>`;
             
+            // Add Came In row (plain, no heatmap)
+            const totalCameIn = dept.total_came_in || 0;
+            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #888;">Came In</td><td class="star-cell">-</td>';
+            for (let i = 0; i < 17; i++) { cameInRow += '<td style="background: #1a1a1a; color: #666;">-</td>'; }
+            cameInRow += `<td class="total-cell" style="background: #1a1a1a;">${totalCameIn}</td></tr>`;
+            
+            // Add Dropped row (plain, no heatmap)
+            const totalDropped = dept.total_dropped || 0;
+            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #888;">Dropped</td><td class="star-cell">-</td>';
+            for (let i = 0; i < 17; i++) { droppedRow += '<td style="background: #1a1a1a; color: #666;">-</td>'; }
+            droppedRow += `<td class="total-cell" style="background: #1a1a1a;">${totalDropped}</td></tr>`;
+            
             // Yesterday comparison
             const yesterdayLd = dept.yesterday_ld || 0;
             const ldDiff = dept.total_ld - yesterdayLd;
@@ -449,11 +461,11 @@
             
             return `
                 <div class="heatmap-section">
-                    <div class="heatmap-title">Signed by Hour per Intaker</div>
+                    <div class="heatmap-title">Locked Down by Hour per Intaker</div>
                     <div class="heatmap-wrapper">
                         <table class="heatmap-table">
                             <thead>${headerRow}</thead>
-                            <tbody>${bodyRows}${totalsRow}</tbody>
+                            <tbody>${bodyRows}${totalsRow}${cameInRow}${droppedRow}</tbody>
                         </table>
                     </div>
                     <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">* = Locked down p/hour of shift</div>
