@@ -173,12 +173,17 @@
         .add-shift-form span { color: #666; }
         .btn-add { padding: 8px 16px; background: #4ade80; color: #000; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; }
         .btn-add:hover { background: #22c55e; }
+        .btn-off-day { padding: 8px 12px; background: #ef4444; color: #fff; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 12px; }
+        .btn-off-day:hover { background: #dc2626; }
+        .btn-apply-defaults { padding: 10px 16px; background: #5BA4B5; color: #fff; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; width: 100%; }
+        .btn-apply-defaults:hover { background: #4a8a9a; }
         
         /* Daily shift row */
         .daily-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #111; border-radius: 4px; margin-bottom: 4px; }
-        .daily-row .name { font-size: 13px; font-weight: 500; }
-        .daily-row .times { font-size: 12px; color: #5BA4B5; }
-        .daily-row .delete { background: none; border: none; color: #666; cursor: pointer; font-size: 14px; }
+        .daily-row .name { font-size: 13px; font-weight: 500; flex: 1; }
+        .daily-row .times { font-size: 12px; color: #5BA4B5; margin-right: 10px; }
+        .daily-row .times.off { color: #ef4444; }
+        .daily-row .delete { background: none; border: none; color: #666; cursor: pointer; font-size: 14px; padding: 4px 8px; }
         .daily-row .delete:hover { color: #ef4444; }
         
         @media (max-width: 480px) {
@@ -227,6 +232,10 @@
                     <span>-</span>
                     <input type="time" id="addEnd" value="17:00">
                     <button class="btn-add" onclick="addDailyShift()">Add</button>
+                    <button class="btn-off-day" onclick="addOffDay()">+ OFF</button>
+                </div>
+                <div style="margin-bottom:15px;">
+                    <button class="btn-apply-defaults" onclick="applyDefaults()">Apply All Defaults</button>
                 </div>
                 
                 <div id="dailyContainer"><div class="empty">Loading...</div></div>
@@ -467,13 +476,15 @@
                 return;
             }
             
-            document.getElementById('dailyContainer').innerHTML = dailyShifts.map(s => `
+            document.getElementById('dailyContainer').innerHTML = dailyShifts.map(s => {
+                const isOff = s.hours_scheduled === 0 || s.start_time === s.end_time;
+                return `
                 <div class="daily-row">
                     <span class="name">${s.specialist_name}</span>
-                    <span class="times">${formatTime(s.start_time)} - ${formatTime(s.end_time)}</span>
+                    <span class="times ${isOff ? 'off' : ''}">${isOff ? 'OFF' : formatTimeDisplay(s.start_time) + ' - ' + formatTimeDisplay(s.end_time)}</span>
                     <button class="delete" onclick="deleteDailyShift(${s.id})">✕</button>
                 </div>
-            `).join('');
+            `}).join('');
         }
         
         function formatTimeDisplay(t) {
@@ -517,6 +528,63 @@
                 await supabase(`intake_shifts?id=eq.${id}`, { method: 'DELETE' });
                 loadDailyShifts();
             } catch (e) { showMessage('Error', 'error'); }
+        }
+        
+        async function addOffDay() {
+            const date = document.getElementById('shiftDate').value;
+            const email = document.getElementById('addSpecialist').value;
+            const spec = defaults.find(d => d.specialist_email === email) || inactiveDefaults.find(d => d.specialist_email === email);
+            const name = spec?.specialist_name || email;
+            
+            try {
+                await supabase('intake_shifts', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        shift_date: date,
+                        specialist_email: email,
+                        specialist_name: name,
+                        start_time: '00:00:00',
+                        end_time: '00:00:00',
+                        hours_scheduled: 0
+                    })
+                });
+                showMessage(`${name} marked OFF`, 'success');
+                loadDailyShifts();
+            } catch (e) {
+                showMessage(e.message.includes('duplicate') ? 'Already has override' : 'Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function applyDefaults() {
+            const date = document.getElementById('shiftDate').value;
+            if (!confirm(`Apply all default schedules to ${date}?`)) return;
+            
+            try {
+                let added = 0;
+                for (const d of defaults) {
+                    if (d.is_off) continue; // Skip if default is OFF
+                    try {
+                        await supabase('intake_shifts', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                shift_date: date,
+                                specialist_email: d.specialist_email,
+                                specialist_name: d.specialist_name,
+                                start_time: d.start_time,
+                                end_time: d.end_time,
+                                hours_scheduled: calcHours(formatTime(d.start_time), formatTime(d.end_time))
+                            })
+                        });
+                        added++;
+                    } catch (e) {
+                        // Skip duplicates
+                    }
+                }
+                showMessage(`Applied ${added} shifts`, 'success');
+                loadDailyShifts();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
         }
         
         function populateSpecialistDropdown() {
