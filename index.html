@@ -341,6 +341,17 @@
             margin-bottom: 8px;
         }
         
+        .info-link {
+            color: #5BA4B5;
+            text-decoration: none;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        
+        .info-link:hover {
+            color: #fff;
+        }
+        
         .stat-big {
             font-size: 32px;
             font-weight: 700;
@@ -362,6 +373,38 @@
         
         .stat-row strong {
             color: #fff;
+        }
+        
+        .stat-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            padding: 6px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .stat-metric:last-child {
+            border-bottom: none;
+        }
+        
+        .metric-label {
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .metric-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .metric-value.highlight-teal {
+            color: #5BA4B5;
+        }
+        
+        .metric-value.highlight-green {
+            color: #4ade80;
         }
         
         .stat-context {
@@ -639,11 +682,20 @@
                     <div class="dept-summary-title">Intake Department</div>
                     <div class="dept-stats-grid">
                         <div class="stats-section">
-                            <div class="stats-section-title">TODAY'S PRODUCTION</div>
+                            <div class="stats-section-title">TODAY'S PRODUCTION <a href="#definitions" class="info-link">ⓘ</a></div>
                             <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
-                            <div class="stat-row">Avg. LD/hour: <strong>${(dept.total_ld / Math.max(1, new Date().getHours() - 7 + new Date().getMinutes()/60)).toFixed(1)}</strong></div>
-                            <div class="stat-row">LD/Hour worked: <strong>${dept.rate_worked.toFixed(2)}</strong></div>
-                            <div class="stat-row">LD/Hour scheduled: <strong>${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</strong></div>
+                            <div class="stat-metric">
+                                <span class="metric-label">Avg. LD/hour</span>
+                                <span class="metric-value">${(dept.total_ld / Math.max(1, new Date().getHours() - 7 + new Date().getMinutes()/60)).toFixed(1)}</span>
+                            </div>
+                            <div class="stat-metric">
+                                <span class="metric-label">LD/Hour worked</span>
+                                <span class="metric-value highlight-teal">${dept.rate_worked.toFixed(2)}</span>
+                            </div>
+                            <div class="stat-metric">
+                                <span class="metric-label">LD/Hour scheduled</span>
+                                <span class="metric-value highlight-green">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                            </div>
                         </div>
                         <div class="stats-section">
                             <div class="stats-section-title">PACE CHECK</div>
@@ -768,10 +820,11 @@
                     </div>
                 </div>
                 
-                <div class="metrics-help">
+                <div class="metrics-help" id="definitions">
                     <div class="help-title">📊 How Metrics Are Calculated</div>
-                    <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far today<br><span class="help-example">e.g., if it's 4 PM and people started at 9 AM, that's ~7 hours worked</span></div>
-                    <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for the day<br><span class="help-example">e.g., 26 people × 8 hours = 208 hours</span></div>
+                    <div class="help-item"><strong>Avg. LD/hour</strong> = Total LD ÷ hours elapsed since 7 AM<br><span class="help-example">Team output per hour of the workday</span></div>
+                    <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far today<br><span class="help-example">Based on each specialist's shift progress</span></div>
+                    <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for the day<br><span class="help-example">e.g., 25 people × 8 hours = 200 hours</span></div>
                 </div>
                 
                 <div class="updated">Last updated: ${updatedTime}</div>
