@@ -221,6 +221,11 @@
             font-weight: 500;
         }
         
+        .rank-num {
+            color: #666;
+            font-size: 9px;
+        }
+        
         .heatmap-table td.name-cell {
             text-align: left;
             padding-left: 6px;
@@ -581,7 +586,7 @@
             hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
             headerRow += '<th class="total-col">TOT</th></tr>';
             
-            function renderRepRow(rep, isOff = false) {
+            function renderRepRow(rep, isOff = false, rank = null) {
                 const rowClass = getRowClass(rep.ld, rep.rate);
                 const hourly = rep.hourly || new Array(17).fill(0);
                 const displayName = rep.abbrev || rep.name;
@@ -592,8 +597,9 @@
                 const endHour = rep.end_hour;      // e.g., 17 for 5PM
                 const hasShift = startHour !== null && startHour !== undefined;
                 
-                // For OFF specialists, show name with OFF indicator
-                const nameDisplay = isOff ? `<span style="color: #888;">${displayName}</span> <span style="color: #f59e0b; font-size: 10px;">OFF</span>` : displayName;
+                // For OFF specialists, show name with OFF indicator; for ranked, show #
+                const rankPrefix = rank ? `<span class="rank-num">${rank}.</span> ` : '';
+                const nameDisplay = isOff ? `<span style="color: #888;">${displayName}</span> <span style="color: #f59e0b; font-size: 10px;">OFF</span>` : `${rankPrefix}${displayName}`;
                 
                 let row = `<tr class="${rowClass}"><td class="name-cell">${nameDisplay}</td><td class="star-cell">${rateWorked}</td>`;
                 hourly.forEach((count, idx) => {
@@ -621,12 +627,12 @@
                 return row;
             }
             
-            let bodyRows = scheduledReps.map(rep => renderRepRow(rep, false)).join('');
+            let bodyRows = scheduledReps.map((rep, idx) => renderRepRow(rep, false, idx + 1)).join('');
             
             // Add OFF section if there are OFF specialists with LDs
             if (offReps.length > 0) {
                 bodyRows += `<tr class="off-divider"><td colspan="20" style="background: #1a1a1a; color: #f59e0b; font-size: 11px; font-weight: 600; padding: 6px; text-align: center; border-top: 2px solid #333;">OFF TODAY</td></tr>`;
-                bodyRows += offReps.map(rep => renderRepRow(rep, true)).join('');
+                bodyRows += offReps.map(rep => renderRepRow(rep, true, null)).join('');
             }
             
             // Hourly totals row
