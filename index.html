@@ -402,16 +402,23 @@
             let bodyRows = sortedReps.map(rep => {
                 const rowClass = getRowClass(rep.ld, rep.rate);
                 const hourly = rep.hourly || new Array(17).fill(0);
-                const scheduledHours = rep.scheduled_hours || [];  // Array of scheduled hour indices (0=7AM, 1=8AM, etc)
                 const displayName = rep.abbrev || rep.name;
                 const rateWorked = rep.rate_worked !== undefined ? rep.rate_worked.toFixed(1) : '-';
-                const isScheduled = rep.hours > 0;  // Has scheduled hours
+                
+                // Shift hour range (start_hour and end_hour are actual hours like 8, 14, 23)
+                const startHour = rep.start_hour;  // e.g., 8 for 8AM
+                const endHour = rep.end_hour;      // e.g., 17 for 5PM
+                const hasShift = startHour !== null && startHour !== undefined;
                 
                 let row = `<tr class="${rowClass}"><td class="name-cell">${displayName}</td><td class="star-cell">${rateWorked}</td>`;
                 hourly.forEach((count, idx) => {
+                    // idx 0 = 7AM, idx 1 = 8AM, etc. So actual hour = idx + 7
+                    const actualHour = idx + 7;
+                    const isInShift = hasShift && actualHour >= startHour && actualHour < endHour;
+                    
                     if (count === 0) {
-                        // Show X if scheduled and 0 LDs in this hour
-                        if (isScheduled && rep.hours_worked > 0) {
+                        // Show X only if this hour is within their scheduled shift
+                        if (isInShift) {
                             row += '<td class="heatmap-cell-dash" style="color: #ef4444;">X</td>';
                         } else {
                             row += '<td class="heatmap-cell-dash">-</td>';
