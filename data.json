@@ -1,6 +1,6 @@
 {
   "date": "2026-04-20",
-  "updated": "2026-04-20T22:15:00.816740",
+  "updated": "2026-04-20T23:13:36.755508",
   "title": "Locked Down",
   "reps": [
     {
@@ -42,9 +42,9 @@
       "came_in": 10,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 15.0,
       "rate": 1.93,
-      "rate_worked": 2.04,
+      "rate_worked": 1.93,
       "hourly": [
         0,
         0,
@@ -73,9 +73,9 @@
       "came_in": 18,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 15.0,
       "rate": 1.53,
-      "rate_worked": 1.61,
+      "rate_worked": 1.53,
       "hourly": [
         0,
         0,
@@ -104,9 +104,9 @@
       "came_in": 16,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 15.0,
       "rate": 1.47,
-      "rate_worked": 1.54,
+      "rate_worked": 1.47,
       "hourly": [
         0,
         1,
@@ -135,9 +135,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 1.44,
-      "rate_worked": 1.58,
+      "rate_worked": 1.44,
       "hourly": [
         0,
         0,
@@ -414,9 +414,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.85,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -631,9 +631,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.36,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -762,10 +762,10 @@
       0
     ],
     "total_shift_hours": 226.0,
-    "total_hours_worked": 221.2,
+    "total_hours_worked": 226.0,
     "specialists_count": 23,
     "specialists_with_ld": 22,
-    "rate_worked": 1.01,
+    "rate_worked": 0.99,
     "rate_shift": 0.99,
     "hourly_totals": [
       3,
