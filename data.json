@@ -1,6 +1,6 @@
 {
   "date": "2026-04-21",
-  "updated": "2026-04-21T18:39:23.399081",
+  "updated": "2026-04-21T18:39:48.520203",
   "title": "Locked Down",
   "reps": [
     {
@@ -786,40 +786,6 @@
       "is_off": false
     },
     {
-      "name": "Katiria Bonilla",
-      "abbrev": "K. Bonilla",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 8,
-      "hours_worked": 8,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 9,
-      "end_hour": 17,
-      "is_off": false
-    },
-    {
       "name": "M Cardona",
       "abbrev": "M. Cardona",
       "ld": 0,
@@ -898,12 +864,12 @@
       0,
       0
     ],
-    "total_shift_hours": 233.0,
-    "total_hours_worked": 204.2,
-    "specialists_count": 25,
+    "total_shift_hours": 225.0,
+    "total_hours_worked": 196.2,
+    "specialists_count": 24,
     "specialists_with_ld": 19,
-    "rate_worked": 0.72,
-    "rate_shift": 0.64,
+    "rate_worked": 0.75,
+    "rate_shift": 0.66,
     "hourly_totals": [
       2,
       7,
