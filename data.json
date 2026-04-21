@@ -1,6 +1,6 @@
 {
   "date": "2026-04-21",
-  "updated": "2026-04-21T10:57:30.265712",
+  "updated": "2026-04-21T10:58:24.364772",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 8,
       "hours_worked": 2.0,
       "rate": 0.38,
-      "rate_worked": 1.53,
+      "rate_worked": 1.52,
       "hourly": [
         0,
         0,
@@ -47,7 +47,7 @@
       "hours": 15.0,
       "hours_worked": 3.0,
       "rate": 0.33,
-      "rate_worked": 1.69,
+      "rate_worked": 1.68,
       "hourly": [
         0,
         1,
@@ -149,7 +149,7 @@
       "hours": 12.0,
       "hours_worked": 3.0,
       "rate": 0.17,
-      "rate_worked": 0.68,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         0,
@@ -217,7 +217,7 @@
       "hours": 9.0,
       "hours_worked": 2.5,
       "rate": 0.11,
-      "rate_worked": 0.41,
+      "rate_worked": 0.4,
       "hourly": [
         0,
         1,
@@ -579,7 +579,7 @@
       ],
       "start_hour": null,
       "end_hour": null,
-      "is_off": false
+      "is_off": true
     },
     {
       "name": "Katiria Bonilla",
