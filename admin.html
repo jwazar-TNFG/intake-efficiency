@@ -185,6 +185,10 @@
         .daily-row .times.off { color: #ef4444; }
         .daily-row .delete { background: none; border: none; color: #666; cursor: pointer; font-size: 14px; padding: 4px 8px; }
         .daily-row .delete:hover { color: #ef4444; }
+        .daily-off-btn { padding: 4px 10px; border: none; border-radius: 4px; font-size: 10px; font-weight: 600; cursor: pointer; background: #2a2a2a; color: #888; margin-right: 5px; }
+        .daily-off-btn:hover { background: #7f1d1d; color: #fca5a5; }
+        .daily-off-btn.is-on { background: #4ade80; color: #000; }
+        .daily-off-btn.is-on:hover { background: #22c55e; }
         
         @media (max-width: 480px) {
             .specialist-row {
@@ -477,11 +481,12 @@
             }
             
             document.getElementById('dailyContainer').innerHTML = dailyShifts.map(s => {
-                const isOff = s.hours_scheduled === 0 || s.start_time === s.end_time;
+                const isOff = s.hours_scheduled === 0 || s.start_time === s.end_time || (s.start_time === '00:00:00' && s.end_time === '00:00:00');
                 return `
                 <div class="daily-row">
                     <span class="name">${s.specialist_name}</span>
                     <span class="times ${isOff ? 'off' : ''}">${isOff ? 'OFF' : formatTimeDisplay(s.start_time) + ' - ' + formatTimeDisplay(s.end_time)}</span>
+                    <button class="daily-off-btn ${isOff ? 'is-on' : ''}" onclick="toggleDailyOff(${s.id}, ${!isOff})">${isOff ? 'ON' : 'OFF'}</button>
                     <button class="delete" onclick="deleteDailyShift(${s.id})">✕</button>
                 </div>
             `}).join('');
@@ -527,6 +532,29 @@
                 await supabase(`intake_shifts?id=eq.${id}`, { method: 'DELETE' });
                 loadDailyShifts();
             } catch (e) { showMessage('Error', 'error'); }
+        }
+        
+        async function toggleDailyOff(id, setOff) {
+            try {
+                if (setOff) {
+                    // Set to OFF (00:00 - 00:00)
+                    await supabase(`intake_shifts?id=eq.${id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({ start_time: '00:00:00', end_time: '00:00:00' })
+                    });
+                    showMessage('Marked OFF', 'success');
+                } else {
+                    // Restore to default 9-5
+                    await supabase(`intake_shifts?id=eq.${id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({ start_time: '09:00:00', end_time: '17:00:00' })
+                    });
+                    showMessage('Restored to 9-5', 'success');
+                }
+                loadDailyShifts();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
         }
         
         async function addOffDay() {
