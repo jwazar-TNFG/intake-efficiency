@@ -393,7 +393,13 @@
             const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
             
             // Separate scheduled vs OFF specialists
-            const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => b.ld - a.ld);
+            const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => {
+                // Sort by LD/hr rate (highest first), then by total LD as tiebreaker
+                const rateA = a.hours_worked > 0 ? a.ld / a.hours_worked : 0;
+                const rateB = b.hours_worked > 0 ? b.ld / b.hours_worked : 0;
+                if (rateB !== rateA) return rateB - rateA;
+                return b.ld - a.ld;
+            });
             const offReps = reps.filter(r => r.is_off).sort((a, b) => b.ld - a.ld);
             
             let headerRow = '<tr><th class="name-col">Intaker</th><th class="star-col">*</th>';
