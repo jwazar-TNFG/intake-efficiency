@@ -641,6 +641,7 @@
                         <div class="stats-section">
                             <div class="stats-section-title">TODAY'S PRODUCTION</div>
                             <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
+                            <div class="stat-row">Avg. LD/hour: <strong>${(dept.total_ld / Math.max(1, new Date().getHours() - 7 + new Date().getMinutes()/60)).toFixed(1)}</strong></div>
                             <div class="stat-row">LD/Hour worked: <strong>${dept.rate_worked.toFixed(2)}</strong></div>
                             <div class="stat-row">LD/Hour scheduled: <strong>${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</strong></div>
                         </div>
