@@ -508,21 +508,37 @@
             const spec = defaults.find(d => d.specialist_email === email) || inactiveDefaults.find(d => d.specialist_email === email);
             const name = spec?.specialist_name || email;
             
+            // Check if override already exists for this specialist on this date
+            const existing = dailyShifts.find(s => s.specialist_email === email);
+            
             try {
-                await supabase('intake_shifts', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        shift_date: date,
-                        specialist_email: email,
-                        specialist_name: name,
-                        start_time: start + ':00',
-                        end_time: end + ':00'
-                    })
-                });
-                showMessage('Shift added', 'success');
+                if (existing) {
+                    // Update existing override
+                    await supabase(`intake_shifts?id=eq.${existing.id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({
+                            start_time: start + ':00',
+                            end_time: end + ':00'
+                        })
+                    });
+                    showMessage('Shift updated', 'success');
+                } else {
+                    // Insert new override
+                    await supabase('intake_shifts', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            shift_date: date,
+                            specialist_email: email,
+                            specialist_name: name,
+                            start_time: start + ':00',
+                            end_time: end + ':00'
+                        })
+                    });
+                    showMessage('Shift added', 'success');
+                }
                 loadDailyShifts();
             } catch (e) {
-                showMessage(e.message.includes('duplicate') ? 'Already has override' : 'Error: ' + e.message, 'error');
+                showMessage('Error: ' + e.message, 'error');
             }
         }
         
@@ -563,21 +579,36 @@
             const spec = defaults.find(d => d.specialist_email === email) || inactiveDefaults.find(d => d.specialist_email === email);
             const name = spec?.specialist_name || email;
             
+            // Check if override already exists for this specialist on this date
+            const existing = dailyShifts.find(s => s.specialist_email === email);
+            
             try {
-                await supabase('intake_shifts', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        shift_date: date,
-                        specialist_email: email,
-                        specialist_name: name,
-                        start_time: '00:00:00',
-                        end_time: '00:00:00'
-                    })
-                });
+                if (existing) {
+                    // Update existing override to OFF
+                    await supabase(`intake_shifts?id=eq.${existing.id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({
+                            start_time: '00:00:00',
+                            end_time: '00:00:00'
+                        })
+                    });
+                } else {
+                    // Insert new OFF override
+                    await supabase('intake_shifts', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            shift_date: date,
+                            specialist_email: email,
+                            specialist_name: name,
+                            start_time: '00:00:00',
+                            end_time: '00:00:00'
+                        })
+                    });
+                }
                 showMessage(`${name} marked OFF`, 'success');
                 loadDailyShifts();
             } catch (e) {
-                showMessage(e.message.includes('duplicate') ? 'Already has override' : 'Error: ' + e.message, 'error');
+                showMessage('Error: ' + e.message, 'error');
             }
         }
         
