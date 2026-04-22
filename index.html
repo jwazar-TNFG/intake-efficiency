@@ -635,11 +635,264 @@
     </div>
 
     <script>
+        const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
+        
+        // Email aliases for normalization (must match Python script)
+        const EMAIL_ALIASES = {
+            'mjmiranda@thenofaultgroup.com': 'mmiranda@thenofaultgroup.com',
+            'jcuarezma@305nofault.com': 'jcuarezma@thenofaultgroup.com',
+            'nelsonr@305nofault.com': 'nelsonr@thenofaultgroup.com',
+            'oplasencia@305nofault.com': 'oplasencia@thenofaultgroup.com',
+            'carold@305nofault.com': 'carold@thenofaultgroup.com',
+            'rmartinez@thenofaultgroup.com': 'rchavarria@thenofaultgroup.com',
+            'dvelasquez@thenofaultgroup.com': 'dcastro@thenofaultgroup.com',
+        };
+        
+        function normalizeEmail(email) {
+            if (!email) return email;
+            email = email.toLowerCase().trim();
+            if (email.includes('@305nofault.com')) {
+                email = email.replace('@305nofault.com', '@thenofaultgroup.com');
+            }
+            return EMAIL_ALIASES[email] || email;
+        }
+        
+        async function supabaseFetch(endpoint) {
+            const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                }
+            });
+            if (!res.ok) throw new Error('Supabase fetch failed');
+            return res.json();
+        }
+        
+        async function fetchLiveSchedules(today) {
+            // Get day of week (0=Sun, 1=Mon, ..., 6=Sat for Supabase)
+            const dt = new Date(today + 'T12:00:00');
+            const pythonDow = dt.getDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+            const dayOfWeek = pythonDow; // Already in 0=Sun format
+            const isWeekday = pythonDow >= 1 && pythonDow <= 5;
+            
+            // Fetch all needed data in parallel
+            const [defaults, overrides, specialists] = await Promise.all([
+                supabaseFetch('default_shifts?select=*'),
+                supabaseFetch(`intake_shifts?shift_date=eq.${today}&select=*`),
+                supabaseFetch('intake_specialists?select=email,display_name,is_active')
+            ]);
+            
+            // Build active specialists set
+            const activeEmails = new Set();
+            const specialistNames = {};
+            (specialists || []).forEach(s => {
+                const email = normalizeEmail(s.email);
+                if (s.is_active !== false) activeEmails.add(email);
+                specialistNames[email] = s.display_name;
+            });
+            
+            // Build schedule map from defaults
+            const scheduleMap = {};
+            (defaults || []).forEach(d => {
+                const email = normalizeEmail(d.specialist_email);
+                if (!activeEmails.has(email)) return;
+                
+                const rowDow = d.day_of_week;
+                const isOff = d.is_off === true;
+                
+                // NULL day_of_week = Mon-Fri default
+                let appliesToday = false;
+                if (rowDow === null) {
+                    appliesToday = isWeekday;
+                } else if (rowDow === dayOfWeek) {
+                    appliesToday = true;
+                }
+                
+                if (!appliesToday) return;
+                
+                const startTime = (d.start_time || '09:00:00').substring(0, 5);
+                const endTime = (d.end_time || '17:00:00').substring(0, 5);
+                const startHour = parseInt(startTime.split(':')[0]);
+                const endHour = parseInt(endTime.split(':')[0]);
+                const hours = isOff ? 0 : (endHour - startHour);
+                
+                scheduleMap[email] = {
+                    name: d.specialist_name,
+                    email: email,
+                    hours: hours,
+                    start_hour: isOff ? null : startHour,
+                    end_hour: isOff ? null : endHour,
+                    is_off: isOff
+                };
+            });
+            
+            // Apply date-specific overrides
+            (overrides || []).forEach(o => {
+                const email = normalizeEmail(o.specialist_email);
+                const startTime = (o.start_time || '09:00:00').substring(0, 5);
+                const endTime = (o.end_time || '17:00:00').substring(0, 5);
+                const startHour = parseInt(startTime.split(':')[0]);
+                const endHour = parseInt(endTime.split(':')[0]);
+                
+                const isOff = (startHour === 0 && endHour === 0) || (startTime === endTime);
+                const hours = isOff ? 0 : (endHour - startHour);
+                
+                scheduleMap[email] = {
+                    name: o.specialist_name,
+                    email: email,
+                    hours: hours,
+                    start_hour: isOff ? null : startHour,
+                    end_hour: isOff ? null : endHour,
+                    is_off: isOff
+                };
+            });
+            
+            return { scheduleMap, specialistNames, activeEmails };
+        }
+        
+        function abbreviateName(name) {
+            if (!name) return name;
+            const parts = name.trim().split(' ');
+            if (parts.length >= 2) {
+                return `${parts[0][0]}. ${parts[parts.length - 1]}`;
+            }
+            return name;
+        }
+        
         async function fetchData() {
             try {
                 const response = await fetch('./data.json?' + Date.now());
                 if (!response.ok) throw new Error('Failed to fetch data');
                 const data = await response.json();
+                
+                // Fetch live schedule data from Supabase
+                try {
+                    const { scheduleMap, specialistNames, activeEmails } = await fetchLiveSchedules(data.date);
+                    
+                    // Calculate current hours worked based on time
+                    const now = new Date();
+                    
+                    // Merge live schedule into reps data
+                    const repsByEmail = {};
+                    (data.reps || []).forEach(r => {
+                        // Try to find email - data.json might have email or we match by name
+                        const email = r.email || Object.keys(scheduleMap).find(e => 
+                            scheduleMap[e].name === r.name || 
+                            abbreviateName(scheduleMap[e].name) === r.abbrev
+                        );
+                        if (email) repsByEmail[email] = r;
+                    });
+                    
+                    // Update reps with live schedule data
+                    const updatedReps = [];
+                    const processedEmails = new Set();
+                    
+                    // First, update existing reps with live schedule
+                    (data.reps || []).forEach(r => {
+                        const email = r.email || Object.keys(scheduleMap).find(e => 
+                            scheduleMap[e].name === r.name || 
+                            abbreviateName(scheduleMap[e].name) === r.abbrev
+                        );
+                        
+                        if (email && scheduleMap[email]) {
+                            const live = scheduleMap[email];
+                            processedEmails.add(email);
+                            
+                            // Calculate hours worked so far
+                            let hoursWorked = 0;
+                            if (!live.is_off && live.start_hour !== null) {
+                                const shiftStart = new Date(now);
+                                shiftStart.setHours(live.start_hour, 0, 0, 0);
+                                const shiftEnd = new Date(now);
+                                shiftEnd.setHours(live.end_hour, 0, 0, 0);
+                                
+                                if (now < shiftStart) {
+                                    hoursWorked = 0;
+                                } else if (now > shiftEnd) {
+                                    hoursWorked = live.hours;
+                                } else {
+                                    hoursWorked = (now - shiftStart) / 3600000;
+                                }
+                            }
+                            
+                            // Merge live schedule with LD data
+                            updatedReps.push({
+                                ...r,
+                                hours: live.hours,
+                                hours_worked: Math.round(hoursWorked * 100) / 100,
+                                start_hour: live.start_hour,
+                                end_hour: live.end_hour,
+                                is_off: live.is_off,
+                                rate: live.hours > 0 ? r.ld / live.hours : 0,
+                                rate_worked: hoursWorked > 0 ? r.ld / hoursWorked : 0
+                            });
+                        } else {
+                            // Keep original rep data
+                            updatedReps.push(r);
+                        }
+                    });
+                    
+                    // Add any scheduled specialists not in data.json (0 LDs)
+                    Object.keys(scheduleMap).forEach(email => {
+                        if (!processedEmails.has(email) && activeEmails.has(email)) {
+                            const live = scheduleMap[email];
+                            
+                            let hoursWorked = 0;
+                            if (!live.is_off && live.start_hour !== null) {
+                                const shiftStart = new Date(now);
+                                shiftStart.setHours(live.start_hour, 0, 0, 0);
+                                const shiftEnd = new Date(now);
+                                shiftEnd.setHours(live.end_hour, 0, 0, 0);
+                                
+                                if (now < shiftStart) {
+                                    hoursWorked = 0;
+                                } else if (now > shiftEnd) {
+                                    hoursWorked = live.hours;
+                                } else {
+                                    hoursWorked = (now - shiftStart) / 3600000;
+                                }
+                            }
+                            
+                            updatedReps.push({
+                                name: live.name,
+                                abbrev: abbreviateName(live.name),
+                                email: email,
+                                ld: 0,
+                                still_ld: 0,
+                                came_in: 0,
+                                dropped: 0,
+                                hours: live.hours,
+                                hours_worked: Math.round(hoursWorked * 100) / 100,
+                                start_hour: live.start_hour,
+                                end_hour: live.end_hour,
+                                is_off: live.is_off,
+                                rate: 0,
+                                rate_worked: 0,
+                                hourly: new Array(17).fill(0)
+                            });
+                        }
+                    });
+                    
+                    // Recalculate department totals
+                    const totalHours = updatedReps.filter(r => !r.is_off).reduce((sum, r) => sum + (r.hours || 0), 0);
+                    const totalHoursWorked = updatedReps.filter(r => !r.is_off).reduce((sum, r) => sum + (r.hours_worked || 0), 0);
+                    const specialistsCount = updatedReps.filter(r => !r.is_off).length;
+                    const specialistsWithLd = updatedReps.filter(r => r.ld > 0).length;
+                    
+                    data.reps = updatedReps;
+                    data.department.total_shift_hours = Math.round(totalHours * 10) / 10;
+                    data.department.total_hours_worked = Math.round(totalHoursWorked * 10) / 10;
+                    data.department.specialists_count = specialistsCount + updatedReps.filter(r => r.is_off).length;
+                    data.department.specialists_with_ld = specialistsWithLd;
+                    data.department.rate_worked = totalHoursWorked > 0 ? Math.round((data.department.total_ld / totalHoursWorked) * 100) / 100 : 0;
+                    data.department.rate_shift = totalHours > 0 ? Math.round((data.department.total_ld / totalHours) * 100) / 100 : 0;
+                    
+                    console.log('Live schedule data merged successfully');
+                } catch (scheduleError) {
+                    console.warn('Could not fetch live schedules, using cached data:', scheduleError);
+                }
+                
                 renderDashboard(data);
             } catch (error) {
                 console.error(error);
