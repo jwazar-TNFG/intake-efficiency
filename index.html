@@ -960,7 +960,7 @@
                 const hourly = rep.hourly || new Array(17).fill(0);
                 const displayName = rep.abbrev || rep.name;
                 const rateVal = rep.rate_worked !== undefined ? rep.rate_worked : 0;
-                const rateWorked = rateVal > 0 ? rateVal.toFixed(1) : '-';
+                const rateWorked = rateVal > 0 ? rateVal.toFixed(2) : '-';
                 const rateTier = getRateTier(rateVal);
                 const rateColor = rateVal > 0 ? rateTier.color : '#666';
                 
