@@ -1234,10 +1234,18 @@
                 return;
             }
             
-            const maxRate = Math.max(...reps.map(r => r.rate), 1.5);
+            // Sort reps by rate (LD/scheduled hours) for bar chart - highest first
+            const sortedReps = [...reps].sort((a, b) => {
+                const rateA = a.rate || 0;
+                const rateB = b.rate || 0;
+                if (rateB !== rateA) return rateB - rateA;
+                return b.ld - a.ld;  // Tiebreaker: more LDs
+            });
+            
+            const maxRate = Math.max(...sortedReps.map(r => r.rate), 1.5);
             const scaleMax = Math.min(maxRate * 1.1, 2.0);
             
-            let barsHtml = reps.map((rep, idx) => {
+            let barsHtml = sortedReps.map((rep, idx) => {
                 const barWidth = Math.max((rep.rate / scaleMax) * 100, 5);
                 const barClass = getBarClass(rep.rate);
                 const tier = getRateTier(rep.rate);
