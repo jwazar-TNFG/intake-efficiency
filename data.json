@@ -1,6 +1,6 @@
 {
   "date": "2026-04-23",
-  "updated": "2026-04-23T22:25:42.564728",
+  "updated": "2026-04-23T23:15:08.896034",
   "title": "Locked Down",
   "reps": [
     {
@@ -147,9 +147,9 @@
       "came_in": 8,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.4,
+      "hours_worked": 15.0,
       "rate": 1.2,
-      "rate_worked": 1.25,
+      "rate_worked": 1.2,
       "hourly": [
         0,
         0,
@@ -831,10 +831,10 @@
       0
     ],
     "total_shift_hours": 157.0,
-    "total_hours_worked": 156.4,
+    "total_hours_worked": 157.0,
     "specialists_count": 23,
     "specialists_with_ld": 17,
-    "rate_worked": 0.88,
+    "rate_worked": 0.87,
     "rate_shift": 0.87,
     "hourly_totals": [
       0,
@@ -857,8 +857,8 @@
     ],
     "yesterday_ld": 191,
     "yesterday_same_time": 191,
-    "last_week_same_time": 168,
+    "last_week_same_time": 172,
     "last_week_total": 172,
-    "pace_time": "22:25"
+    "pace_time": "23:15"
   }
 }
