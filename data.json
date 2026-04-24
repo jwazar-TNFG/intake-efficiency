@@ -1,6 +1,6 @@
 {
   "date": "2026-04-24",
-  "updated": "2026-04-24T16:35:51.549637",
+  "updated": "2026-04-24T16:36:33.386473",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10.0,
       "hours_worked": 8.6,
       "rate": 1.7,
-      "rate_worked": 1.98,
+      "rate_worked": 1.97,
       "hourly": [
         0,
         0,
@@ -183,7 +183,7 @@
       "hours": 10.0,
       "hours_worked": 8.6,
       "rate": 0.4,
-      "rate_worked": 0.47,
+      "rate_worked": 0.46,
       "hourly": [
         0,
         0,
@@ -429,40 +429,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true
-    },
-    {
-      "name": "Beatriz Oliva",
-      "abbrev": "B. Oliva",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -832,7 +798,7 @@
     ],
     "total_shift_hours": 201.0,
     "total_hours_worked": 148.8,
-    "specialists_count": 23,
+    "specialists_count": 22,
     "specialists_with_ld": 13,
     "rate_worked": 0.46,
     "rate_shift": 0.34,
@@ -859,6 +825,6 @@
     "yesterday_same_time": 97,
     "last_week_same_time": 115,
     "last_week_total": 163,
-    "pace_time": "16:35"
+    "pace_time": "16:36"
   }
 }
