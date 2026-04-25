@@ -1,6 +1,6 @@
 {
   "date": "2026-04-24",
-  "updated": "2026-04-24T21:02:57.396386",
+  "updated": "2026-04-24T22:08:44.792662",
   "title": "Locked Down",
   "reps": [
     {
@@ -79,9 +79,9 @@
       "came_in": 13,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 13.1,
+      "hours_worked": 14.2,
       "rate": 0.93,
-      "rate_worked": 1.07,
+      "rate_worked": 0.99,
       "hourly": [
         0,
         3,
@@ -108,14 +108,14 @@
     {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
-      "ld": 10,
-      "still_ld": 5,
-      "came_in": 5,
+      "ld": 11,
+      "still_ld": 2,
+      "came_in": 9,
       "dropped": 0,
       "hours": 12.0,
       "hours_worked": 12.0,
-      "rate": 0.83,
-      "rate_worked": 0.83,
+      "rate": 0.92,
+      "rate_worked": 0.92,
       "hourly": [
         0,
         0,
@@ -130,7 +130,7 @@
         2,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -142,14 +142,14 @@
     {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
-      "ld": 9,
+      "ld": 10,
       "still_ld": 5,
-      "came_in": 4,
+      "came_in": 5,
       "dropped": 0,
       "hours": 11.0,
       "hours_worked": 11.0,
-      "rate": 0.82,
-      "rate_worked": 0.82,
+      "rate": 0.91,
+      "rate_worked": 0.91,
       "hourly": [
         0,
         0,
@@ -163,7 +163,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -176,14 +176,14 @@
     {
       "name": "Jasmine Cuarezma",
       "abbrev": "J. Cuarezma",
-      "ld": 5,
-      "still_ld": 4,
-      "came_in": 1,
+      "ld": 6,
+      "still_ld": 3,
+      "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 0.5,
-      "rate_worked": 0.5,
+      "rate": 0.6,
+      "rate_worked": 0.6,
       "hourly": [
         0,
         0,
@@ -198,7 +198,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -589,7 +589,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 22.0,
-      "hours_worked": 21.1,
+      "hours_worked": 22.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -657,7 +657,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 8.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -691,7 +691,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.1,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -725,7 +725,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 8.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -788,9 +788,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 86,
-    "total_still_ld": 34,
-    "total_came_in": 51,
+    "total_ld": 89,
+    "total_still_ld": 30,
+    "total_came_in": 58,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
@@ -798,15 +798,15 @@
       5,
       2,
       3,
-      5,
+      9,
       15,
       3,
       6,
       2,
       4,
       0,
+      3,
       2,
-      0,
       0,
       0,
       0
@@ -831,11 +831,11 @@
       0
     ],
     "total_shift_hours": 201.0,
-    "total_hours_worked": 193.3,
+    "total_hours_worked": 198.6,
     "specialists_count": 23,
     "specialists_with_ld": 15,
-    "rate_worked": 0.44,
-    "rate_shift": 0.43,
+    "rate_worked": 0.45,
+    "rate_shift": 0.44,
     "hourly_totals": [
       2,
       5,
@@ -849,16 +849,16 @@
       2,
       4,
       0,
+      3,
       2,
-      0,
       0,
       0,
       0
     ],
     "yesterday_ld": 143,
-    "yesterday_same_time": 138,
-    "last_week_same_time": 150,
+    "yesterday_same_time": 140,
+    "last_week_same_time": 160,
     "last_week_total": 163,
-    "pace_time": "21:02"
+    "pace_time": "22:08"
   }
 }
