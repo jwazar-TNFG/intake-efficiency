@@ -1,6 +1,6 @@
 {
   "date": "2026-04-25",
-  "updated": "2026-04-25T18:15:51.374321",
+  "updated": "2026-04-25T19:15:55.245104",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 8.0,
-      "hours_worked": 4.3,
+      "hours_worked": 5.3,
       "rate": 0.75,
-      "rate_worked": 1.41,
+      "rate_worked": 1.14,
       "hourly": [
         0,
         0,
@@ -45,9 +45,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 13.0,
-      "hours_worked": 9.3,
+      "hours_worked": 10.3,
       "rate": 0.08,
-      "rate_worked": 0.11,
+      "rate_worked": 0.1,
       "hourly": [
         0,
         0,
@@ -249,7 +249,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.3,
+      "hours_worked": 5.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -283,7 +283,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 13.0,
-      "hours_worked": 9.3,
+      "hours_worked": 10.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -351,7 +351,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.3,
+      "hours_worked": 5.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -423,10 +423,10 @@
       0
     ],
     "total_shift_hours": 43.0,
-    "total_hours_worked": 31.5,
+    "total_hours_worked": 36.5,
     "specialists_count": 11,
     "specialists_with_ld": 7,
-    "rate_worked": 0.63,
+    "rate_worked": 0.55,
     "rate_shift": 0.47,
     "hourly_totals": [
       0,
@@ -448,9 +448,9 @@
       0
     ],
     "yesterday_ld": 99,
-    "yesterday_same_time": 92,
-    "last_week_same_time": 76,
+    "yesterday_same_time": 93,
+    "last_week_same_time": 77,
     "last_week_total": 102,
-    "pace_time": "18:15"
+    "pace_time": "19:15"
   }
 }
