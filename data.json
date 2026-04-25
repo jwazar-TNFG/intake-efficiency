@@ -1,6 +1,6 @@
 {
   "date": "2026-04-25",
-  "updated": "2026-04-25T12:15:28.108516",
+  "updated": "2026-04-25T13:15:31.869216",
   "title": "Locked Down",
   "reps": [
     {
@@ -72,6 +72,40 @@
       "is_off": false
     },
     {
+      "name": "Jorge Munoz",
+      "abbrev": "J. Munoz",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 13.0,
+      "hours_worked": 4.3,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 9,
+      "end_hour": 22,
+      "is_off": false
+    },
+    {
       "name": "Juan Ortega",
       "abbrev": "J. Ortega",
       "ld": 0,
@@ -113,7 +147,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 13.0,
-      "hours_worked": 3.3,
+      "hours_worked": 4.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -286,12 +320,12 @@
       0,
       0
     ],
-    "total_shift_hours": 30.0,
-    "total_hours_worked": 3.3,
-    "specialists_count": 7,
+    "total_shift_hours": 43.0,
+    "total_hours_worked": 8.6,
+    "specialists_count": 8,
     "specialists_with_ld": 2,
-    "rate_worked": 0.91,
-    "rate_shift": 0.1,
+    "rate_worked": 0.35,
+    "rate_shift": 0.07,
     "hourly_totals": [
       0,
       0,
@@ -312,9 +346,9 @@
       0
     ],
     "yesterday_ld": 99,
-    "yesterday_same_time": 28,
-    "last_week_same_time": 31,
+    "yesterday_same_time": 53,
+    "last_week_same_time": 40,
     "last_week_total": 102,
-    "pace_time": "12:15"
+    "pace_time": "13:15"
   }
 }
