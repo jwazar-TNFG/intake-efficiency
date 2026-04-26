@@ -1,6 +1,6 @@
 {
   "date": "2026-04-26",
-  "updated": "2026-04-26T10:16:57.370843",
+  "updated": "2026-04-26T11:17:01.926055",
   "title": "Locked Down",
   "reps": [
     {
@@ -35,6 +35,40 @@
       ],
       "start_hour": 21,
       "end_hour": 18,
+      "is_off": false
+    },
+    {
+      "name": "Jorge Munoz",
+      "abbrev": "J. Munoz",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 13.0,
+      "hours_worked": 2.3,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 9,
+      "end_hour": 22,
       "is_off": false
     },
     {
@@ -113,7 +147,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 13.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -286,9 +320,9 @@
       0,
       0
     ],
-    "total_shift_hours": 31.0,
-    "total_hours_worked": 1.3,
-    "specialists_count": 7,
+    "total_shift_hours": 44.0,
+    "total_hours_worked": 4.6,
+    "specialists_count": 8,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
     "rate_shift": 0.0,
@@ -312,9 +346,9 @@
       0
     ],
     "yesterday_ld": 31,
-    "yesterday_same_time": 2,
-    "last_week_same_time": 2,
+    "yesterday_same_time": 5,
+    "last_week_same_time": 9,
     "last_week_total": 77,
-    "pace_time": "10:16"
+    "pace_time": "11:17"
   }
 }
