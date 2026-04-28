@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "updated": "2026-04-28T10:15:07.017101",
+  "updated": "2026-04-28T10:15:08.575785",
   "title": "Locked Down",
   "reps": [
     {
@@ -418,7 +418,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9.0,
+      "hours": 9,
       "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
@@ -452,7 +452,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
