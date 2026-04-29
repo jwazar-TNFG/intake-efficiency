@@ -1042,6 +1042,10 @@
                 // MTD Signed for this rep
                 const repEmail = normalizeEmail(rep.email);
                 const repMtdSigned = mtdByIntaker[repEmail] || 0;
+                // Debug logging
+                if (rep.name && rep.name.includes('Nelson')) {
+                    console.log('Nelson debug:', { name: rep.name, email: rep.email, normalizedEmail: repEmail, mtdSigned: repMtdSigned, mtdByIntakerKeys: Object.keys(mtdByIntaker).slice(0, 5) });
+                }
                 const mtdSignedClass = repMtdSigned >= mtdAvg ? 'above-avg' : 'below-avg';
                 const mtdSignedDisplay = repMtdSigned > 0 ? repMtdSigned : '-';
                 
