@@ -888,6 +888,7 @@
                             // Merge live schedule with LD data
                             updatedReps.push({
                                 ...r,
+                                email: email,  // Add email for MTD signed lookup
                                 hours: live.hours,
                                 hours_worked: Math.round(hoursWorked * 100) / 100,
                                 start_hour: live.start_hour,
