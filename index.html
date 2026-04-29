@@ -825,15 +825,15 @@
                 if (!response.ok) throw new Error('Failed to fetch data');
                 const data = await response.json();
                 
-                // Fetch MTD signed data
-                let mtdSignedData = { mtdByIntaker: {}, mtdTotal: 0, mtdAvg: 0 };
-                try {
-                    mtdSignedData = await fetchMtdSigned();
-                    console.log('MTD Signed data fetched:', mtdSignedData.mtdTotal, 'total,', Object.keys(mtdSignedData.mtdByIntaker).length, 'intakers');
-                } catch (mtdError) {
-                    console.warn('Could not fetch MTD signed data:', mtdError);
-                }
-                data.mtdSigned = mtdSignedData;
+                // MTD signed data is now pre-computed in data.json
+                // Convert from data.json format to expected format
+                const mtdFromJson = data.mtd_signed || {};
+                data.mtdSigned = {
+                    mtdByIntaker: mtdFromJson.by_intaker || {},
+                    mtdTotal: mtdFromJson.total || 0,
+                    mtdAvg: mtdFromJson.avg || 0
+                };
+                console.log('MTD Signed from data.json:', data.mtdSigned.mtdTotal, 'total,', Object.keys(data.mtdSigned.mtdByIntaker).length, 'intakers');
                 
                 // Fetch live schedule data from Supabase
                 try {
@@ -888,6 +888,7 @@
                             // Merge live schedule with LD data
                             updatedReps.push({
                                 ...r,
+                                email: email,  // Add email for MTD signed lookup
                                 hours: live.hours,
                                 hours_worked: Math.round(hoursWorked * 100) / 100,
                                 start_hour: live.start_hour,
@@ -958,6 +959,13 @@
                     data.department.rate_shift = totalHours > 0 ? Math.round((data.department.total_ld / totalHours) * 100) / 100 : 0;
                     
                     console.log('Live schedule data merged successfully');
+                    // Debug: show which reps have emails
+                    const repsWithEmail = updatedReps.filter(r => r.email).length;
+                    const repsWithoutEmail = updatedReps.filter(r => !r.email).length;
+                    console.log(`Reps with email: ${repsWithEmail}, without: ${repsWithoutEmail}`);
+                    if (repsWithoutEmail > 0) {
+                        console.log('Reps missing email:', updatedReps.filter(r => !r.email).map(r => r.name));
+                    }
                 } catch (scheduleError) {
                     console.warn('Could not fetch live schedules, using cached data:', scheduleError);
                 }
@@ -1038,9 +1046,16 @@
                 const rateTier = getRateTier(rateVal);
                 const rateColor = rateVal > 0 ? rateTier.color : '#666';
                 
-                // MTD Signed for this rep
-                const repEmail = normalizeEmail(rep.email);
-                const repMtdSigned = mtdByIntaker[repEmail] || 0;
+                // MTD Signed for this rep - use pre-computed value from data.json
+                // First try rep.mtd_signed (set by Python script), then fallback to lookup
+                let repMtdSigned = rep.mtd_signed || 0;
+                
+                // Fallback: try lookup by email if mtd_signed not set
+                if (repMtdSigned === 0 && rep.email) {
+                    const repEmail = normalizeEmail(rep.email);
+                    repMtdSigned = mtdByIntaker[repEmail] || mtdByIntaker[rep.email.toLowerCase()] || 0;
+                }
+                
                 const mtdSignedClass = repMtdSigned >= mtdAvg ? 'above-avg' : 'below-avg';
                 const mtdSignedDisplay = repMtdSigned > 0 ? repMtdSigned : '-';
                 
