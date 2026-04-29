@@ -302,7 +302,7 @@
             width: 28px;
             background: #2a2a2a;
             position: sticky;
-            left: 85px;
+            left: 113px;
             z-index: 2;
         }
         
@@ -311,8 +311,32 @@
             font-weight: 600;
             color: #5BA4B5;
             position: sticky;
+            left: 113px;
+            z-index: 1;
+        }
+        
+        .heatmap-table th.signed-col {
+            width: 28px;
+            background: #2a2a2a;
+            position: sticky;
+            left: 85px;
+            z-index: 2;
+        }
+        
+        .heatmap-table td.signed-cell {
+            background: #2a2a2a;
+            font-weight: 600;
+            position: sticky;
             left: 85px;
             z-index: 1;
+        }
+        
+        .heatmap-table td.signed-cell.above-avg {
+            color: #4ade80;
+        }
+        
+        .heatmap-table td.signed-cell.below-avg {
+            color: #ef4444;
         }
         
         .heatmap-table th.hour-col {
@@ -669,6 +693,41 @@
             return res.json();
         }
         
+        async function fetchMtdSigned() {
+            // Get current month start date
+            const now = new Date();
+            const monthStart = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-01`;
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            
+            // Fetch MTD signed from rep_logs grouped by intakespecialist
+            // Using pagination since we may have more than 1000 records
+            const mtdByIntaker = {};
+            let offset = 0;
+            const limit = 1000;
+            
+            while (true) {
+                const data = await supabaseFetch(`rep_logs?select=intakespecialist&signed=gte.${monthStart}&signed=lte.${today}&offset=${offset}&limit=${limit}`);
+                if (!data || data.length === 0) break;
+                
+                data.forEach(row => {
+                    const email = normalizeEmail(row.intakespecialist);
+                    if (email) {
+                        mtdByIntaker[email] = (mtdByIntaker[email] || 0) + 1;
+                    }
+                });
+                
+                if (data.length < limit) break;
+                offset += limit;
+            }
+            
+            // Calculate team average
+            const values = Object.values(mtdByIntaker);
+            const total = values.reduce((sum, v) => sum + v, 0);
+            const avg = values.length > 0 ? total / values.length : 0;
+            
+            return { mtdByIntaker, mtdTotal: total, mtdAvg: avg };
+        }
+        
         async function fetchLiveSchedules(today) {
             // Get day of week (0=Sun, 1=Mon, ..., 6=Sat for Supabase)
             const dt = new Date(today + 'T12:00:00');
@@ -765,6 +824,16 @@
                 const response = await fetch('./data.json?' + Date.now());
                 if (!response.ok) throw new Error('Failed to fetch data');
                 const data = await response.json();
+                
+                // Fetch MTD signed data
+                let mtdSignedData = { mtdByIntaker: {}, mtdTotal: 0, mtdAvg: 0 };
+                try {
+                    mtdSignedData = await fetchMtdSigned();
+                    console.log('MTD Signed data fetched:', mtdSignedData.mtdTotal, 'total,', Object.keys(mtdSignedData.mtdByIntaker).length, 'intakers');
+                } catch (mtdError) {
+                    console.warn('Could not fetch MTD signed data:', mtdError);
+                }
+                data.mtdSigned = mtdSignedData;
                 
                 // Fetch live schedule data from Supabase
                 try {
@@ -937,9 +1006,14 @@
             return 'below-row';
         }
         
-        function renderHeatmap(reps, dept) {
+        function renderHeatmap(reps, dept, mtdSigned) {
             // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P, 11P
             const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
+            
+            // MTD Signed data
+            const mtdByIntaker = mtdSigned?.mtdByIntaker || {};
+            const mtdAvg = mtdSigned?.mtdAvg || 0;
+            const mtdTotal = mtdSigned?.mtdTotal || 0;
             
             // Separate scheduled vs OFF specialists
             const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => {
@@ -951,7 +1025,7 @@
             });
             const offReps = reps.filter(r => r.is_off).sort((a, b) => b.ld - a.ld);
             
-            let headerRow = '<tr><th class="name-col">Intaker</th><th class="star-col">*</th>';
+            let headerRow = '<tr><th class="name-col">Intaker</th><th class="signed-col">S</th><th class="star-col">*</th>';
             hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
             headerRow += '<th class="total-col">TOT</th></tr>';
             
@@ -964,6 +1038,12 @@
                 const rateTier = getRateTier(rateVal);
                 const rateColor = rateVal > 0 ? rateTier.color : '#666';
                 
+                // MTD Signed for this rep
+                const repEmail = normalizeEmail(rep.email);
+                const repMtdSigned = mtdByIntaker[repEmail] || 0;
+                const mtdSignedClass = repMtdSigned >= mtdAvg ? 'above-avg' : 'below-avg';
+                const mtdSignedDisplay = repMtdSigned > 0 ? repMtdSigned : '-';
+                
                 // Shift hour range (start_hour and end_hour are actual hours like 8, 14, 23)
                 const startHour = rep.start_hour;  // e.g., 8 for 8AM
                 const endHour = rep.end_hour;      // e.g., 17 for 5PM
@@ -973,7 +1053,7 @@
                 const rankPrefix = rank ? `<span class="rank-num">${rank}.</span> ` : '';
                 const nameDisplay = isOff ? `<span style="color: #888;">${displayName}</span> <span style="color: #f59e0b; font-size: 10px;">OFF</span>` : `${rankPrefix}${displayName}`;
                 
-                let row = `<tr class="${rowClass}"><td class="name-cell">${nameDisplay}</td><td class="star-cell" style="color: ${rateColor}">${rateWorked}</td>`;
+                let row = `<tr class="${rowClass}"><td class="name-cell">${nameDisplay}</td><td class="signed-cell ${mtdSignedClass}">${mtdSignedDisplay}</td><td class="star-cell" style="color: ${rateColor}">${rateWorked}</td>`;
                 hourly.forEach((count, idx) => {
                     // idx 0 = 7AM, idx 1 = 8AM, etc. So actual hour = idx + 7
                     const actualHour = idx + 7;
@@ -1003,7 +1083,7 @@
             
             // Add OFF section if there are OFF specialists with LDs
             if (offReps.length > 0) {
-                bodyRows += `<tr class="off-divider"><td colspan="20" style="background: #1a1a1a; color: #f59e0b; font-size: 11px; font-weight: 600; padding: 6px; text-align: center; border-top: 2px solid #333;">OFF TODAY</td></tr>`;
+                bodyRows += `<tr class="off-divider"><td colspan="21" style="background: #1a1a1a; color: #f59e0b; font-size: 11px; font-weight: 600; padding: 6px; text-align: center; border-top: 2px solid #333;">OFF TODAY</td></tr>`;
                 bodyRows += offReps.map(rep => renderRepRow(rep, true, null)).join('');
             }
             
@@ -1030,7 +1110,7 @@
                 return 'background: #5eead4; color: #000;';                      // teal-300
             }
             
-            let totalsRow = '<tr class="totals-row"><td class="name-cell">TOTAL</td><td class="star-cell">-</td>';
+            let totalsRow = `<tr class="totals-row"><td class="name-cell">TOTAL</td><td class="signed-cell" style="color: #5BA4B5; font-weight: 700;">${mtdTotal}</td><td class="star-cell">-</td>`;
             hourlyTotals.forEach(count => {
                 const style = getTealHeatStyle(count, maxHourlyTotal);
                 if (count === 0) {
@@ -1055,7 +1135,7 @@
             }
             
             const totalCameIn = dept.total_came_in || 0;
-            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #4ade80;">Came In</td><td class="star-cell">-</td>';
+            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #4ade80;">Came In</td><td class="signed-cell">-</td><td class="star-cell">-</td>';
             hourlyCameIn.forEach(count => {
                 const style = getGreenHeatStyle(count, maxCameIn);
                 if (count === 0) {
@@ -1080,7 +1160,7 @@
             }
             
             const totalDropped = dept.total_dropped || 0;
-            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #ef4444;">Dropped</td><td class="star-cell">-</td>';
+            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #ef4444;">Dropped</td><td class="signed-cell">-</td><td class="star-cell">-</td>';
             hourlyDropped.forEach(count => {
                 const style = getRedHeatStyle(count, maxDropped);
                 if (count === 0) {
@@ -1131,6 +1211,7 @@
                         </table>
                     </div>
                     <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">
+                        <span style="color: #5BA4B5; font-weight: 600;">S</span> = MTD Signed (<span style="color: #4ade80;">green</span> ≥ avg, <span style="color: #ef4444;">red</span> &lt; avg) &nbsp;|&nbsp;
                         * = LD per hour worked &nbsp;|&nbsp; 
                         <span style="color: #fff;">White #</span> = LD during shift &nbsp;|&nbsp; 
                         <span style="color: #fbbf24;">Yellow #</span> = LD outside shift &nbsp;|&nbsp; 
@@ -1277,7 +1358,7 @@
                 hourly_totals: new Array(17).fill(0),
                 yesterday_ld: 0
             };
-            const heatmapHtml = renderHeatmap(reps, dept);
+            const heatmapHtml = renderHeatmap(reps, dept, data.mtdSigned);
             
             // Calculate department-wide rate
             const deptTotalLD = reps.reduce((sum, r) => sum + r.ld, 0);
