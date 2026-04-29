@@ -959,6 +959,13 @@
                     data.department.rate_shift = totalHours > 0 ? Math.round((data.department.total_ld / totalHours) * 100) / 100 : 0;
                     
                     console.log('Live schedule data merged successfully');
+                    // Debug: show which reps have emails
+                    const repsWithEmail = updatedReps.filter(r => r.email).length;
+                    const repsWithoutEmail = updatedReps.filter(r => !r.email).length;
+                    console.log(`Reps with email: ${repsWithEmail}, without: ${repsWithoutEmail}`);
+                    if (repsWithoutEmail > 0) {
+                        console.log('Reps missing email:', updatedReps.filter(r => !r.email).map(r => r.name));
+                    }
                 } catch (scheduleError) {
                     console.warn('Could not fetch live schedules, using cached data:', scheduleError);
                 }
@@ -1039,13 +1046,17 @@
                 const rateTier = getRateTier(rateVal);
                 const rateColor = rateVal > 0 ? rateTier.color : '#666';
                 
-                // MTD Signed for this rep
+                // MTD Signed for this rep - try email first, then try all normalized emails
                 const repEmail = normalizeEmail(rep.email);
-                const repMtdSigned = mtdByIntaker[repEmail] || 0;
-                // Debug logging
-                if (rep.name && rep.name.includes('Nelson')) {
-                    console.log('Nelson debug:', { name: rep.name, email: rep.email, normalizedEmail: repEmail, mtdSigned: repMtdSigned, mtdByIntakerKeys: Object.keys(mtdByIntaker).slice(0, 5) });
+                let repMtdSigned = mtdByIntaker[repEmail] || 0;
+                
+                // If no match by email, try to find by checking all mtdByIntaker keys
+                // This handles cases where rep.email might not be set
+                if (repMtdSigned === 0 && rep.email) {
+                    // Also try the original email without normalization
+                    repMtdSigned = mtdByIntaker[rep.email.toLowerCase()] || 0;
                 }
+                
                 const mtdSignedClass = repMtdSigned >= mtdAvg ? 'above-avg' : 'below-avg';
                 const mtdSignedDisplay = repMtdSigned > 0 ? repMtdSigned : '-';
                 
