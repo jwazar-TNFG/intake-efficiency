@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "updated": "2026-04-28T23:15:07.214383",
+  "updated": "2026-04-28T23:20:58.535338",
   "title": "Locked Down",
   "reps": [
     {
@@ -890,9 +890,9 @@
       0
     ],
     "yesterday_ld": 205,
-    "yesterday_same_time": 204,
+    "yesterday_same_time": 205,
     "last_week_same_time": 217,
     "last_week_total": 217,
-    "pace_time": "23:15"
+    "pace_time": "23:20"
   }
 }
