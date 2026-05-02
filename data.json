@@ -1,6 +1,6 @@
 {
   "date": "2026-05-02",
-  "updated": "2026-05-02T08:15:08.976383",
+  "updated": "2026-05-02T08:30:19.642346",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.9,
-      "hours_worked": 0.1,
+      "hours_worked": 0.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -301,7 +301,7 @@
       0
     ],
     "total_shift_hours": 62.9,
-    "total_hours_worked": 0.3,
+    "total_hours_worked": 0.9,
     "specialists_count": 7,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -326,19 +326,15 @@
       0
     ],
     "yesterday_ld": 153,
-    "yesterday_same_time": 4,
+    "yesterday_same_time": 5,
     "last_week_same_time": 0,
     "last_week_total": 77,
-    "pace_time": "08:15"
+    "pace_time": "08:30"
   },
   "mtd_signed": {
     "by_intaker": {
-      "rchavarria@thenofaultgroup.com": 3,
-      "lmurillo@thenofaultgroup.com": 5,
-      "oplasencia@thenofaultgroup.com": 8,
-      "rpena@thenofaultgroup.com": 2,
-      "lvivas@thenofaultgroup.com": 4,
       "carold@thenofaultgroup.com": 1,
+      "rpena@thenofaultgroup.com": 2,
       "jduvergel@thenofaultgroup.com": 7,
       "jcuarezma@thenofaultgroup.com": 8,
       "mmiranda@thenofaultgroup.com": 6,
@@ -348,6 +344,10 @@
       "mcardona@thenofaultgroup.com": 1,
       "cprado@thenofaultgroup.com": 2,
       "jortega@thenofaultgroup.com": 1,
+      "rchavarria@thenofaultgroup.com": 3,
+      "lvivas@thenofaultgroup.com": 4,
+      "oplasencia@thenofaultgroup.com": 8,
+      "lmurillo@thenofaultgroup.com": 5,
       "djuarez@thenofaultgroup.com": 4
     },
     "total": 76,
