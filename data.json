@@ -1,6 +1,6 @@
 {
   "date": "2026-05-02",
-  "updated": "2026-05-02T12:15:04.155320",
+  "updated": "2026-05-02T12:15:04.328481",
   "title": "Locked Down",
   "reps": [
     {
@@ -509,21 +509,21 @@
   "mtd_signed": {
     "by_intaker": {
       "rchavarria@thenofaultgroup.com": 3,
-      "nelsonr@thenofaultgroup.com": 9,
+      "lmurillo@thenofaultgroup.com": 5,
+      "oplasencia@thenofaultgroup.com": 8,
+      "rpena@thenofaultgroup.com": 2,
+      "lvivas@thenofaultgroup.com": 4,
+      "carold@thenofaultgroup.com": 1,
+      "jduvergel@thenofaultgroup.com": 7,
       "jcuarezma@thenofaultgroup.com": 8,
       "mmiranda@thenofaultgroup.com": 6,
-      "lvivas@thenofaultgroup.com": 4,
-      "jamgomez@thenofaultgroup.com": 4,
+      "nelsonr@thenofaultgroup.com": 9,
       "mpenaranda@thenofaultgroup.com": 11,
-      "cprado@thenofaultgroup.com": 2,
-      "jduvergel@thenofaultgroup.com": 7,
-      "oplasencia@thenofaultgroup.com": 8,
-      "lmurillo@thenofaultgroup.com": 5,
-      "djuarez@thenofaultgroup.com": 4,
-      "rpena@thenofaultgroup.com": 2,
-      "carold@thenofaultgroup.com": 1,
+      "jamgomez@thenofaultgroup.com": 4,
       "mcardona@thenofaultgroup.com": 1,
-      "jortega@thenofaultgroup.com": 1
+      "cprado@thenofaultgroup.com": 2,
+      "jortega@thenofaultgroup.com": 1,
+      "djuarez@thenofaultgroup.com": 4
     },
     "total": 76,
     "avg": 4.8
