@@ -1,8 +1,43 @@
 {
   "date": "2026-05-02",
-  "updated": "2026-05-02T08:30:19.642346",
+  "updated": "2026-05-02T09:15:07.560545",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Jesus Ortega",
+      "abbrev": "Jesus Ortega",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "mtd_signed": 0
+    },
     {
       "name": "Jhonathan Ramirez",
       "abbrev": "J. Ramirez",
@@ -83,7 +118,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.9,
-      "hours_worked": 0.4,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +190,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +226,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.0,
+      "hours_worked": 0.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -258,8 +293,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -301,14 +336,14 @@
       0
     ],
     "total_shift_hours": 62.9,
-    "total_hours_worked": 0.9,
-    "specialists_count": 7,
-    "specialists_with_ld": 0,
-    "rate_worked": 0.0,
-    "rate_shift": 0.0,
+    "total_hours_worked": 3.1,
+    "specialists_count": 8,
+    "specialists_with_ld": 1,
+    "rate_worked": 0.32,
+    "rate_shift": 0.02,
     "hourly_totals": [
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -326,10 +361,10 @@
       0
     ],
     "yesterday_ld": 153,
-    "yesterday_same_time": 5,
+    "yesterday_same_time": 11,
     "last_week_same_time": 0,
     "last_week_total": 77,
-    "pace_time": "08:30"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
