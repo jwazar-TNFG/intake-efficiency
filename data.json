@@ -1,8 +1,44 @@
 {
   "date": "2026-05-03",
-  "updated": "2026-05-03T09:32:15.917901",
+  "updated": "2026-05-03T10:15:02.265747",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "D Valles",
+      "abbrev": "D. Valles",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 2.2,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "dvalles@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Jasmine Cuarezma",
       "abbrev": "J. Cuarezma",
@@ -11,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -119,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 21.0,
-      "hours_worked": 7.5,
+      "hours_worked": 8.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 21.0,
-      "hours_worked": 7.5,
+      "hours_worked": 8.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -336,9 +372,9 @@
       0,
       0
     ],
-    "total_shift_hours": 99.0,
-    "total_hours_worked": 21.0,
-    "specialists_count": 8,
+    "total_shift_hours": 109.0,
+    "total_hours_worked": 27.4,
+    "specialists_count": 9,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
     "rate_shift": 0.0,
@@ -362,10 +398,10 @@
       0
     ],
     "yesterday_ld": 85,
-    "yesterday_same_time": 4,
-    "last_week_same_time": 6,
+    "yesterday_same_time": 6,
+    "last_week_same_time": 11,
     "last_week_total": 84,
-    "pace_time": "09:32"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
