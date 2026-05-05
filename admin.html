@@ -213,6 +213,7 @@
             <a href="index.html" class="nav-tab">📊 Dashboard</a>
             <button class="nav-tab" onclick="showSection('daily')" id="tab-daily">📅 Daily Shifts</button>
             <button class="nav-tab active" onclick="showSection('defaults')" id="tab-defaults">⚙️ Defaults</button>
+            <button class="nav-tab" onclick="showSection('roster')" id="tab-roster">👥 Roster</button>
         </div>
         
         <div id="message"></div>
@@ -252,6 +253,22 @@
                 <h3>Default Weekly Schedules (Mon-Fri)</h3>
                 <p>Set default hours for each specialist. Click <strong>OFF</strong> to mark as not working.</p>
                 <div id="defaultsContainer"><div class="empty">Loading...</div></div>
+            </div>
+        </div>
+        
+        <!-- Roster Management Section -->
+        <div id="section-roster" class="section" style="display:none;">
+            <div class="card">
+                <h3>Manage Intake Roster</h3>
+                <p>Add or remove intake specialists. New specialists will appear in shift dropdowns.</p>
+                
+                <div class="add-specialist-form" style="display: flex; gap: 8px; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #333; flex-wrap: wrap;">
+                    <input type="text" id="newSpecName" placeholder="Display Name (e.g., J. Smith)" style="flex: 1; min-width: 150px; padding: 8px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 13px;">
+                    <input type="email" id="newSpecEmail" placeholder="Email" style="flex: 1; min-width: 200px; padding: 8px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 13px;">
+                    <button class="btn-add" onclick="addSpecialist()">+ Add</button>
+                </div>
+                
+                <div id="rosterContainer"><div class="empty">Loading...</div></div>
             </div>
         </div>
     </div>
@@ -438,10 +455,164 @@
         function showSection(section) {
             document.getElementById('section-daily').style.display = section === 'daily' ? 'block' : 'none';
             document.getElementById('section-defaults').style.display = section === 'defaults' ? 'block' : 'none';
+            document.getElementById('section-roster').style.display = section === 'roster' ? 'block' : 'none';
             document.getElementById('tab-daily').classList.toggle('active', section === 'daily');
             document.getElementById('tab-defaults').classList.toggle('active', section === 'defaults');
+            document.getElementById('tab-roster').classList.toggle('active', section === 'roster');
             
             if (section === 'daily') loadDailyShifts();
+            if (section === 'roster') loadRoster();
+        }
+        
+        // Roster management
+        let allRosterSpecs = [];
+        
+        async function loadRoster() {
+            try {
+                const [specialists, shifts] = await Promise.all([
+                    supabase('intake_specialists?select=*&order=display_name'),
+                    supabase('default_shifts?select=specialist_email&day_of_week=is.null')
+                ]);
+                
+                const shiftEmails = new Set((shifts || []).map(s => s.specialist_email));
+                
+                allRosterSpecs = (specialists || []).map(s => ({
+                    ...s,
+                    hasShift: shiftEmails.has(s.email)
+                }));
+                
+                renderRoster();
+            } catch (e) {
+                showMessage('Error loading roster: ' + e.message, 'error');
+            }
+        }
+        
+        function renderRoster() {
+            if (!allRosterSpecs.length) {
+                document.getElementById('rosterContainer').innerHTML = '<div class="empty">No specialists in roster</div>';
+                return;
+            }
+            
+            const active = allRosterSpecs.filter(s => s.is_active !== false);
+            const inactive = allRosterSpecs.filter(s => s.is_active === false);
+            
+            let html = '<div class="specialist-list">';
+            
+            active.forEach(s => {
+                const warning = !s.hasShift ? '<span style="color:#f59e0b;font-size:10px;margin-left:5px;">⚠️ No shift</span>' : '';
+                html += `
+                <div class="specialist-row" style="grid-template-columns: 1fr auto auto;">
+                    <div class="spec-name">${s.display_name}${warning}<br><span style="font-size:11px;color:#666;">${s.email}</span></div>
+                    <div style="font-size:11px;color:#4ade80;">Active</div>
+                    <div class="spec-actions">
+                        <button class="btn-deactivate" onclick="removeFromRoster('${s.email}', '${s.display_name}')">Remove</button>
+                    </div>
+                </div>`;
+            });
+            
+            html += '</div>';
+            
+            html += `<div style="margin-top:15px;font-size:12px;color:#666;">${active.length} active specialists</div>`;
+            
+            if (inactive.length) {
+                html += `
+                <div class="inactive-section">
+                    <h4>Inactive (${inactive.length})</h4>
+                    ${inactive.map(s => `
+                        <div class="inactive-row">
+                            <span class="name">${s.display_name}<br><span style="font-size:10px;">${s.email}</span></span>
+                            <button class="btn-reactivate" onclick="reactivateRoster('${s.email}')">Reactivate</button>
+                        </div>
+                    `).join('')}
+                </div>`;
+            }
+            
+            document.getElementById('rosterContainer').innerHTML = html;
+        }
+        
+        async function addSpecialist() {
+            const name = document.getElementById('newSpecName').value.trim();
+            const email = document.getElementById('newSpecEmail').value.trim().toLowerCase();
+            
+            if (!name || !email) {
+                showMessage('Please enter both name and email', 'error');
+                return;
+            }
+            
+            if (!email.includes('@')) {
+                showMessage('Please enter a valid email', 'error');
+                return;
+            }
+            
+            try {
+                // Add to intake_specialists
+                await supabase('intake_specialists', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        email: email,
+                        display_name: name,
+                        is_active: true
+                    })
+                });
+                
+                // Add to default_shifts
+                await supabase('default_shifts', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        specialist_email: email,
+                        specialist_name: name,
+                        start_time: '09:00:00',
+                        end_time: '17:00:00',
+                        is_off: false
+                    })
+                });
+                
+                showMessage(`${name} added to roster`, 'success');
+                document.getElementById('newSpecName').value = '';
+                document.getElementById('newSpecEmail').value = '';
+                
+                // Reload both roster and defaults
+                await loadRoster();
+                await loadDefaults();
+                populateSpecialistDropdown();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function removeFromRoster(email, name) {
+            if (!confirm(`Remove ${name} from roster?\n\nThis will deactivate them (they can be reactivated later).`)) return;
+            
+            try {
+                // Deactivate in intake_specialists
+                await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ is_active: false })
+                });
+                
+                showMessage(`${name} removed from active roster`, 'success');
+                await loadRoster();
+                await loadDefaults();
+                populateSpecialistDropdown();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function reactivateRoster(email) {
+            try {
+                await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ is_active: true })
+                });
+                
+                showMessage('Reactivated', 'success');
+                await loadRoster();
+                await loadDefaults();
+                populateSpecialistDropdown();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
         }
         
         // Daily shifts
@@ -653,9 +824,11 @@
         document.getElementById('shiftDate').value = new Date().toISOString().split('T')[0];
         loadDefaults().then(() => populateSpecialistDropdown());
         
-        // Handle hash navigation (e.g., admin.html#daily)
+        // Handle hash navigation (e.g., admin.html#daily, admin.html#roster)
         if (window.location.hash === '#daily') {
             showSection('daily');
+        } else if (window.location.hash === '#roster') {
+            showSection('roster');
         }
     </script>
 </body>
