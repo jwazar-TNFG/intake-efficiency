@@ -1,6 +1,10 @@
 {
   "date": "2026-05-05",
+<<<<<<< HEAD
   "updated": "2026-05-05T09:15:10.485444",
+=======
+  "updated": "2026-05-05T09:36:56.388291",
+>>>>>>> main
   "title": "Locked Down",
   "reps": [
     {
@@ -83,7 +87,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 8,
+<<<<<<< HEAD
       "hours_worked": 0.2,
+=======
+      "hours_worked": 0.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +199,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
+<<<<<<< HEAD
       "hours_worked": 0.2,
+=======
+      "hours_worked": 0.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +239,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +351,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 12.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +391,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +431,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
+<<<<<<< HEAD
       "hours_worked": 0.2,
+=======
+      "hours_worked": 0.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +507,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +619,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +659,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +699,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +739,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +779,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +819,11 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
+<<<<<<< HEAD
       "hours_worked": 1.2,
+=======
+      "hours_worked": 1.6,
+>>>>>>> main
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -902,6 +958,42 @@
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
       "mtd_signed": 5
+    },
+    {
+      "name": "Valentina Liberos",
+      "abbrev": "V. Liberos",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9,
+      "hours_worked": 0,
+      "rate": 0.0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 12,
+      "end_hour": 21,
+      "is_off": false,
+      "email": "vlibreros@thenofaultgroup.com",
+      "mtd_signed": 1
     }
   ],
   "shifts_configured": true,
@@ -948,9 +1040,15 @@
       0,
       0
     ],
+<<<<<<< HEAD
     "total_shift_hours": 180.0,
     "total_hours_worked": 12.6,
     "specialists_count": 25,
+=======
+    "total_shift_hours": 189.0,
+    "total_hours_worked": 17.8,
+    "specialists_count": 26,
+>>>>>>> main
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
     "rate_shift": 0.0,
@@ -974,6 +1072,7 @@
       0
     ],
     "yesterday_ld": 202,
+<<<<<<< HEAD
     "yesterday_same_time": 5,
     "last_week_same_time": 4,
     "last_week_total": 189,
@@ -983,9 +1082,19 @@
     "by_intaker": {
       "nsilva@thenofaultgroup.com": 11,
       "nelsonr@thenofaultgroup.com": 66,
+=======
+    "yesterday_same_time": 10,
+    "last_week_same_time": 5,
+    "last_week_total": 189,
+    "pace_time": "09:36"
+  },
+  "mtd_signed": {
+    "by_intaker": {
+>>>>>>> main
       "jortega@thenofaultgroup.com": 9,
       "oplasencia@thenofaultgroup.com": 28,
       "mmiranda@thenofaultgroup.com": 17,
+      "nelsonr@thenofaultgroup.com": 66,
       "chernandez@thenofaultgroup.com": 5,
       "vlibreros@thenofaultgroup.com": 1,
       "jramirez@thenofaultgroup.com": 5,
@@ -993,6 +1102,7 @@
       "mcardona@thenofaultgroup.com": 6,
       "jjortega@thenofaultgroup.com": 19,
       "scubillos@thenofaultgroup.com": 5,
+      "nsilva@thenofaultgroup.com": 11,
       "lvivas@thenofaultgroup.com": 17,
       "jamgomez@thenofaultgroup.com": 10,
       "rpena@thenofaultgroup.com": 10,

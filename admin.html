@@ -502,11 +502,13 @@
             active.forEach(s => {
                 const warning = !s.hasShift ? '<span style="color:#f59e0b;font-size:10px;margin-left:5px;">⚠️ No shift</span>' : '';
                 html += `
-                <div class="specialist-row" style="grid-template-columns: 1fr auto auto;">
+                <div class="specialist-row" style="grid-template-columns: 1fr auto auto auto;">
                     <div class="spec-name">${s.display_name}${warning}<br><span style="font-size:11px;color:#666;">${s.email}</span></div>
                     <div style="font-size:11px;color:#4ade80;">Active</div>
                     <div class="spec-actions">
-                        <button class="btn-deactivate" onclick="removeFromRoster('${s.email}', '${s.display_name}')">Remove</button>
+                        <button class="btn-deactivate" style="background:#3b82f6;color:#fff;" onclick="editSpecialist(${s.id}, '${s.display_name.replace(/'/g, "\\'")}', '${s.email}')">Edit</button>
+                        <button class="btn-deactivate" onclick="removeFromRoster('${s.email}', '${s.display_name}')">Deactivate</button>
+                        <button class="btn-deactivate" style="background:#7f1d1d;color:#fca5a5;" onclick="deleteFromRoster(${s.id}, '${s.display_name.replace(/'/g, "\\'")}')">Delete</button>
                     </div>
                 </div>`;
             });
@@ -520,15 +522,100 @@
                 <div class="inactive-section">
                     <h4>Inactive (${inactive.length})</h4>
                     ${inactive.map(s => `
-                        <div class="inactive-row">
-                            <span class="name">${s.display_name}<br><span style="font-size:10px;">${s.email}</span></span>
-                            <button class="btn-reactivate" onclick="reactivateRoster('${s.email}')">Reactivate</button>
+                        <div class="inactive-row" style="flex-wrap:wrap;gap:8px;">
+                            <span class="name" style="flex:1;min-width:150px;">${s.display_name}<br><span style="font-size:10px;">${s.email}</span></span>
+                            <div style="display:flex;gap:4px;">
+                                <button class="btn-deactivate" style="background:#3b82f6;color:#fff;" onclick="editSpecialist(${s.id}, '${s.display_name.replace(/'/g, "\\'")}', '${s.email}')">Edit</button>
+                                <button class="btn-reactivate" onclick="reactivateRoster('${s.email}')">Reactivate</button>
+                                <button class="btn-deactivate" style="background:#7f1d1d;color:#fca5a5;" onclick="deleteFromRoster(${s.id}, '${s.display_name.replace(/'/g, "\\'")}')">Delete</button>
+                            </div>
                         </div>
                     `).join('')}
                 </div>`;
             }
             
             document.getElementById('rosterContainer').innerHTML = html;
+        }
+        
+        async function editSpecialist(id, currentName, currentEmail) {
+            const newName = prompt('Edit display name:', currentName);
+            if (newName === null) return; // Cancelled
+            
+            const newEmail = prompt('Edit email:', currentEmail);
+            if (newEmail === null) return; // Cancelled
+            
+            if (!newName.trim() || !newEmail.trim()) {
+                showMessage('Name and email cannot be empty', 'error');
+                return;
+            }
+            
+            try {
+                // Update intake_specialists
+                await supabase(`intake_specialists?id=eq.${id}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({
+                        display_name: newName.trim(),
+                        email: newEmail.trim().toLowerCase()
+                    })
+                });
+                
+                // Also update default_shifts to keep names in sync
+                await supabase(`default_shifts?specialist_email=eq.${encodeURIComponent(currentEmail)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({
+                        specialist_name: newName.trim(),
+                        specialist_email: newEmail.trim().toLowerCase()
+                    })
+                });
+                
+                // Also update any daily shifts
+                await supabase(`intake_shifts?specialist_email=eq.${encodeURIComponent(currentEmail)}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({
+                        specialist_name: newName.trim(),
+                        specialist_email: newEmail.trim().toLowerCase()
+                    })
+                });
+                
+                showMessage(`Updated ${newName}`, 'success');
+                await loadRoster();
+                await loadDefaults();
+                populateSpecialistDropdown();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
+        }
+        
+        async function deleteFromRoster(id, name) {
+            if (!confirm(`PERMANENTLY DELETE ${name}?\n\nThis will remove them from the roster entirely. This cannot be undone.`)) return;
+            
+            // Get the email first
+            const spec = allRosterSpecs.find(s => s.id === id);
+            if (!spec) return;
+            
+            try {
+                // Delete from default_shifts first (foreign key)
+                await supabase(`default_shifts?specialist_email=eq.${encodeURIComponent(spec.email)}`, {
+                    method: 'DELETE'
+                });
+                
+                // Delete from intake_shifts
+                await supabase(`intake_shifts?specialist_email=eq.${encodeURIComponent(spec.email)}`, {
+                    method: 'DELETE'
+                });
+                
+                // Delete from intake_specialists
+                await supabase(`intake_specialists?id=eq.${id}`, {
+                    method: 'DELETE'
+                });
+                
+                showMessage(`${name} permanently deleted`, 'success');
+                await loadRoster();
+                await loadDefaults();
+                populateSpecialistDropdown();
+            } catch (e) {
+                showMessage('Error: ' + e.message, 'error');
+            }
         }
         
         async function addSpecialist() {
@@ -546,29 +633,74 @@
             }
             
             try {
-                // Add to intake_specialists
-                await supabase('intake_specialists', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        email: email,
-                        display_name: name,
-                        is_active: true
-                    })
-                });
+                // Check if email already exists (active or inactive)
+                const existing = await supabase(`intake_specialists?email=eq.${encodeURIComponent(email)}&select=id,is_active`);
                 
-                // Add to default_shifts
-                await supabase('default_shifts', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        specialist_email: email,
-                        specialist_name: name,
-                        start_time: '09:00:00',
-                        end_time: '17:00:00',
-                        is_off: false
-                    })
-                });
+                if (existing && existing.length > 0) {
+                    // Email exists - update the existing record
+                    const existingSpec = existing[0];
+                    
+                    // Update intake_specialists with new name and reactivate
+                    await supabase(`intake_specialists?id=eq.${existingSpec.id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({
+                            display_name: name,
+                            is_active: true
+                        })
+                    });
+                    
+                    // Check if default_shift exists
+                    const existingShift = await supabase(`default_shifts?specialist_email=eq.${encodeURIComponent(email)}&day_of_week=is.null`);
+                    
+                    if (existingShift && existingShift.length > 0) {
+                        // Update existing shift with new name
+                        await supabase(`default_shifts?specialist_email=eq.${encodeURIComponent(email)}&day_of_week=is.null`, {
+                            method: 'PATCH',
+                            body: JSON.stringify({
+                                specialist_name: name,
+                                is_off: false
+                            })
+                        });
+                    } else {
+                        // Create new shift
+                        await supabase('default_shifts', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                specialist_email: email,
+                                specialist_name: name,
+                                start_time: '09:00:00',
+                                end_time: '17:00:00',
+                                is_off: false
+                            })
+                        });
+                    }
+                    
+                    showMessage(`${name} updated and reactivated`, 'success');
+                } else {
+                    // New email - add fresh
+                    await supabase('intake_specialists', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            email: email,
+                            display_name: name,
+                            is_active: true
+                        })
+                    });
+                    
+                    await supabase('default_shifts', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            specialist_email: email,
+                            specialist_name: name,
+                            start_time: '09:00:00',
+                            end_time: '17:00:00',
+                            is_off: false
+                        })
+                    });
+                    
+                    showMessage(`${name} added to roster`, 'success');
+                }
                 
-                showMessage(`${name} added to roster`, 'success');
                 document.getElementById('newSpecName').value = '';
                 document.getElementById('newSpecEmail').value = '';
                 
