@@ -491,7 +491,7 @@
                 
                 <div class="charts-grid">
                     <div class="chart-card full-width">
-                        <h3>📈 Daily Lockdowns & Came In</h3>
+                        <h3>📈 Daily Lockdowns</h3>
                         <div class="chart-container tall">
                             <canvas id="trendsChart"></canvas>
                         </div>
@@ -587,7 +587,7 @@
                 }
             };
             
-            // Trends chart (LD + Came In)
+            // Trends chart (LD only)
             trendsChart = new Chart(document.getElementById('trendsChart'), {
                 type: 'bar',
                 data: {
@@ -597,12 +597,6 @@
                             label: 'Total LD',
                             data: data.map(d => d.total_ld || 0),
                             backgroundColor: '#5BA4B5',
-                            borderRadius: 4
-                        },
-                        {
-                            label: 'Came In',
-                            data: data.map(d => d.came_in || 0),
-                            backgroundColor: '#4ade80',
                             borderRadius: 4
                         }
                     ]
