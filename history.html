@@ -324,7 +324,7 @@
         // Chart instances
         let trendsChart = null;
         let rateChart = null;
-        let conversionChart = null;
+        
         let specialistChart = null;
         
         // Initialize dates
@@ -469,10 +469,6 @@
                         <div class="value">${totalLd.toLocaleString()}</div>
                         <div class="label">Total Lockdowns</div>
                     </div>
-                    <div class="summary-card elite">
-                        <div class="value">${totalCameIn.toLocaleString()}</div>
-                        <div class="label">Came In</div>
-                    </div>
                     <div class="summary-card ${rateTier.class}">
                         <div class="value">${avgLdPerHour.toFixed(2)}</div>
                         <div class="label">Avg LD/Hour</div>
@@ -480,14 +476,6 @@
                     <div class="summary-card">
                         <div class="value">${avgLdPerDay.toFixed(0)}</div>
                         <div class="label">Avg LD/Day</div>
-                    </div>
-                    <div class="summary-card solid">
-                        <div class="value">${conversionRate.toFixed(1)}%</div>
-                        <div class="label">Conversion Rate</div>
-                    </div>
-                    <div class="summary-card ${totalDropped > 10 ? 'danger' : ''}">
-                        <div class="value">${totalDropped}</div>
-                        <div class="label">Dropped</div>
                     </div>
                 </div>
                 
@@ -503,13 +491,6 @@
                         <h3>⚡ LD/Hour by Day</h3>
                         <div class="chart-container">
                             <canvas id="rateChart"></canvas>
-                        </div>
-                    </div>
-                    
-                    <div class="chart-card">
-                        <h3>🎯 Conversion Rate by Day</h3>
-                        <div class="chart-container">
-                            <canvas id="conversionChart"></canvas>
                         </div>
                     </div>
                     
@@ -572,7 +553,7 @@
             // Destroy existing charts
             if (trendsChart) trendsChart.destroy();
             if (rateChart) rateChart.destroy();
-            if (conversionChart) conversionChart.destroy();
+            
             if (specialistChart) specialistChart.destroy();
             
             // Common chart options
@@ -674,24 +655,6 @@
                         }
                     }
                 }
-            });
-            
-            // Conversion chart
-            const conversionRates = data.map(d => d.total_ld > 0 ? ((d.came_in / d.total_ld) * 100) : 0);
-            conversionChart = new Chart(document.getElementById('conversionChart'), {
-                type: 'line',
-                data: {
-                    labels,
-                    datasets: [{
-                        label: 'Conversion %',
-                        data: conversionRates,
-                        borderColor: '#4ade80',
-                        backgroundColor: 'rgba(74, 222, 128, 0.1)',
-                        fill: true,
-                        tension: 0.3
-                    }]
-                },
-                options: commonOptions
             });
             
             // Specialist chart
