@@ -1,6 +1,6 @@
 {
   "date": "2026-05-06",
-  "updated": "2026-05-06T18:15:05.221449",
+  "updated": "2026-05-06T18:40:27.772564",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 10,
       "dropped": 1,
       "hours": 15.0,
-      "hours_worked": 10.2,
+      "hours_worked": 10.7,
       "rate": 1.53,
-      "rate_worked": 2.24,
+      "rate_worked": 2.16,
       "hourly": [
         2,
         1,
@@ -119,9 +119,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 12.0,
-      "hours_worked": 10.2,
+      "hours_worked": 10.7,
       "rate": 0.83,
-      "rate_worked": 0.98,
+      "rate_worked": 0.94,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 1,
       "dropped": 1,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.67,
-      "rate_worked": 1.41,
+      "rate_worked": 1.28,
       "hourly": [
         2,
         0,
@@ -191,9 +191,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.7,
       "rate": 0.67,
-      "rate_worked": 0.96,
+      "rate_worked": 0.9,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.7,
       "rate": 0.56,
-      "rate_worked": 0.8,
+      "rate_worked": 0.75,
       "hourly": [
         0,
         1,
@@ -407,9 +407,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.22,
-      "rate_worked": 0.47,
+      "rate_worked": 0.43,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.11,
-      "rate_worked": 0.24,
+      "rate_worked": 0.21,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.11,
-      "rate_worked": 0.24,
+      "rate_worked": 0.21,
       "hourly": [
         0,
         0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.7,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -985,10 +985,10 @@
       0
     ],
     "total_shift_hours": 199.0,
-    "total_hours_worked": 141.8,
+    "total_hours_worked": 148.8,
     "specialists_count": 26,
     "specialists_with_ld": 16,
-    "rate_worked": 0.7,
+    "rate_worked": 0.67,
     "rate_shift": 0.5,
     "hourly_totals": [
       4,
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 167,
-    "yesterday_same_time": 107,
-    "last_week_same_time": 130,
+    "yesterday_same_time": 111,
+    "last_week_same_time": 137,
     "last_week_total": 178,
-    "pace_time": "18:15"
+    "pace_time": "18:40"
   },
   "mtd_signed": {
     "by_intaker": {
