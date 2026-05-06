@@ -467,6 +467,7 @@
             // Sort specialists by LD
             const topSpecialists = Object.values(specialistTotals)
                 .map(stats => ({ ...stats, rate: stats.hours > 0 ? stats.ld / stats.hours : 0 }))
+                .filter(s => s.ld > 0)  // Only show specialists with LDs
                 .sort((a, b) => b.ld - a.ld)
 ;
             
