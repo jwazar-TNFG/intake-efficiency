@@ -657,7 +657,7 @@
                 }
             });
             
-            // Specialist chart
+            // Specialist chart - horizontal bar
             specialistChart = new Chart(document.getElementById('specialistChart'), {
                 type: 'bar',
                 data: {
@@ -676,15 +676,27 @@
                     }]
                 },
                 options: {
-                    ...commonOptions,
+                    responsive: true,
+                    maintainAspectRatio: false,
                     indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: { color: '#888' },
+                            grid: { color: '#333' }
+                        },
+                        y: {
+                            ticks: { color: '#888' },
+                            grid: { color: '#333' }
+                        }
+                    },
                     plugins: {
-                        ...commonOptions.plugins,
+                        legend: { display: false },
                         tooltip: {
                             callbacks: {
                                 afterLabel: (context) => {
                                     const s = topSpecialists[context.dataIndex];
-                                    return `Came In: ${s.came_in}\nRate: ${s.rate.toFixed(2)} LD/hr\nDays: ${s.days}`;
+                                    return `Rate: ${s.rate.toFixed(2)} LD/hr | Days: ${s.days}`;
                                 }
                             }
                         }
