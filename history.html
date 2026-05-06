@@ -319,7 +319,7 @@
     <script>
         // Supabase config
         const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltaGhkaXBhcGxoenhwZmhydW5wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyMzAyNjYsImV4cCI6MjA4OTgwNjI2Nn0.a-lsGLhWTMUCa2-6c-B_VE3jfJYNQCjNH3IP6cJREgg';
+        const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
         
         // Chart instances
         let trendsChart = null;
@@ -386,17 +386,23 @@
             document.getElementById('content').innerHTML = '<div class="loading">Fetching historical data...</div>';
             
             try {
-                const response = await fetch(
-                    `${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`,
-                    {
-                        headers: {
-                            'apikey': SUPABASE_ANON_KEY,
-                            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
-                        }
-                    }
-                );
+                const url = `${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`;
+                console.log('Fetching:', url);
                 
-                if (!response.ok) throw new Error('Failed to fetch data');
+                const response = await fetch(url, {
+                    headers: {
+                        'apikey': SUPABASE_KEY,
+                        'Authorization': `Bearer ${SUPABASE_KEY}`
+                    }
+                });
+                
+                console.log('Response status:', response.status);
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('Error response:', errorText);
+                    throw new Error(`Failed to fetch data: ${response.status} - ${errorText}`);
+                }
                 
                 const data = await response.json();
                 
@@ -729,3 +735,4 @@
     </script>
 </body>
 </html>
+
