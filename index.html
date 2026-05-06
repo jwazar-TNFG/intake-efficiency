@@ -194,6 +194,7 @@
         .bar-fill.solid { background: #5BA4B5; color: #fff; }
         .bar-fill.average { background: #fbbf24; color: #000; }
         .bar-fill.below { background: #ef4444; color: #fff; }
+        .bar-fill.off { background: #4a4a4a; color: #888; }
         
         .bar-stats {
             width: 100px;
@@ -1342,17 +1343,20 @@
             const scaleMax = Math.min(maxRate * 1.1, 2.0);
             
             let barsHtml = sortedReps.map((rep, idx) => {
+                const isOff = rep.is_off === true || rep.hours === 0;
                 const barWidth = Math.max((rep.rate / scaleMax) * 100, 5);
-                const barClass = getBarClass(rep.rate);
-                const tier = getRateTier(rep.rate);
+                const barClass = isOff ? 'off' : getBarClass(rep.rate);
+                const tier = isOff ? { color: '#888', label: 'OFF' } : getRateTier(rep.rate);
                 const rank = idx + 1;
+                const nameDisplay = isOff ? `${rep.name} <span style="color: #888; font-size: 11px;">(OFF)</span>` : rep.name;
+                const rateDisplay = isOff ? 'OFF' : rep.rate.toFixed(2);
                 return `
                     <div class="bar-row">
                         <div class="bar-rank" style="color: ${tier.color}">${rank}</div>
-                        <div class="bar-name">${rep.name}</div>
+                        <div class="bar-name">${nameDisplay}</div>
                         <div class="bar-track">
                             <div class="bar-fill ${barClass}" style="width: ${barWidth}%">
-                                ${rep.rate.toFixed(2)}
+                                ${rateDisplay}
                             </div>
                         </div>
                         <div class="bar-stats">${rep.ld} LD | ${rep.hours}h</div>
@@ -1421,6 +1425,7 @@
                         <div class="legend-item"><span class="legend-dot solid"></span> 0.6-0.99 Solid</div>
                         <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.59 Average</div>
                         <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
+                        <div class="legend-item"><span class="legend-dot" style="background: #4a4a4a;"></span> OFF</div>
                     </div>
                 </div>
                 
