@@ -439,25 +439,34 @@
             const avgLdPerDay = totalLd / data.length;
             const conversionRate = totalLd > 0 ? ((totalCameIn / totalLd) * 100) : 0;
             
-            // Aggregate specialist data across all days
+            // Aggregate specialist data across all days - use email as unique key
             const specialistTotals = {};
             data.forEach(day => {
                 (day.by_specialist || []).forEach(s => {
-                    const name = s.name || s.email?.split('@')[0] || 'Unknown';
-                    if (!specialistTotals[name]) {
-                        specialistTotals[name] = { ld: 0, came_in: 0, dropped: 0, hours: 0, days: 0 };
+                    const email = (s.email || '').toLowerCase();
+                    if (!email) return;
+                    
+                    if (!specialistTotals[email]) {
+                        specialistTotals[email] = { 
+                            name: s.name || email.split('@')[0], 
+                            ld: 0, came_in: 0, dropped: 0, hours: 0, days: 0 
+                        };
                     }
-                    specialistTotals[name].ld += s.ld || 0;
-                    specialistTotals[name].came_in += s.came_in || 0;
-                    specialistTotals[name].dropped += s.dropped || 0;
-                    specialistTotals[name].hours += s.hours || 0;
-                    if (!s.is_off) specialistTotals[name].days += 1;
+                    // Keep the longest/best name (full name > username)
+                    if (s.name && s.name.length > specialistTotals[email].name.length) {
+                        specialistTotals[email].name = s.name;
+                    }
+                    specialistTotals[email].ld += s.ld || 0;
+                    specialistTotals[email].came_in += s.came_in || 0;
+                    specialistTotals[email].dropped += s.dropped || 0;
+                    specialistTotals[email].hours += s.hours || 0;
+                    if (!s.is_off) specialistTotals[email].days += 1;
                 });
             });
             
             // Sort specialists by LD
-            const topSpecialists = Object.entries(specialistTotals)
-                .map(([name, stats]) => ({ name, ...stats, rate: stats.hours > 0 ? stats.ld / stats.hours : 0 }))
+            const topSpecialists = Object.values(specialistTotals)
+                .map(stats => ({ ...stats, rate: stats.hours > 0 ? stats.ld / stats.hours : 0 }))
                 .sort((a, b) => b.ld - a.ld)
 ;
             
