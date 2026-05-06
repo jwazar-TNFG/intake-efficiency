@@ -459,7 +459,7 @@
             const topSpecialists = Object.entries(specialistTotals)
                 .map(([name, stats]) => ({ name, ...stats, rate: stats.hours > 0 ? stats.ld / stats.hours : 0 }))
                 .sort((a, b) => b.ld - a.ld)
-                .slice(0, 10);
+;
             
             const rateTier = getRateTier(avgLdPerHour);
             
@@ -495,8 +495,8 @@
                     </div>
                     
                     <div class="chart-card full-width">
-                        <h3>🏆 Top 10 Specialists (by Total LD)</h3>
-                        <div class="chart-container">
+                        <h3>🏆 Intake Specialists (by Total LD)</h3>
+                        <div class="chart-container" style="height: ${Math.max(400, topSpecialists.length * 35)}px;">
                             <canvas id="specialistChart"></canvas>
                         </div>
                     </div>
@@ -661,7 +661,7 @@
             specialistChart = new Chart(document.getElementById('specialistChart'), {
                 type: 'bar',
                 data: {
-                    labels: topSpecialists.map(s => s.name),
+                    labels: topSpecialists.map(s => `${s.name} (${s.rate.toFixed(2)})`),
                     datasets: [{
                         label: 'Total LD',
                         data: topSpecialists.map(s => s.ld),
