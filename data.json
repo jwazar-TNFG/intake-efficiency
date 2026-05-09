@@ -1,6 +1,6 @@
 {
   "date": "2026-05-09",
-  "updated": "2026-05-09T17:15:07.847791",
+  "updated": "2026-05-09T17:48:41.328621",
   "title": "Locked Down",
   "reps": [
     {
@@ -119,9 +119,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.8,
       "rate": 0.44,
-      "rate_worked": 1.23,
+      "rate_worked": 1.05,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.8,
       "rate": 0.33,
-      "rate_worked": 0.57,
+      "rate_worked": 0.52,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.2,
+      "hours_worked": 9.8,
       "rate": 0.2,
-      "rate_worked": 0.22,
+      "rate_worked": 0.2,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.8,
       "rate": 0.11,
-      "rate_worked": 0.31,
+      "rate_worked": 0.26,
       "hourly": [
         0,
         0,
@@ -545,7 +545,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -619,10 +619,10 @@
       0
     ],
     "total_shift_hours": 91.0,
-    "total_hours_worked": 69.0,
+    "total_hours_worked": 72.0,
     "specialists_count": 16,
     "specialists_with_ld": 14,
-    "rate_worked": 0.75,
+    "rate_worked": 0.72,
     "rate_shift": 0.57,
     "hourly_totals": [
       1,
@@ -644,10 +644,10 @@
       0
     ],
     "yesterday_ld": 147,
-    "yesterday_same_time": 105,
-    "last_week_same_time": 67,
+    "yesterday_same_time": 111,
+    "last_week_same_time": 68,
     "last_week_total": 84,
-    "pace_time": "17:15"
+    "pace_time": "17:48"
   },
   "mtd_signed": {
     "by_intaker": {
