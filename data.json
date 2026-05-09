@@ -1,8 +1,43 @@
 {
   "date": "2026-05-09",
-  "updated": "2026-05-09T09:15:12.952741",
+  "updated": "2026-05-09T10:15:15.337874",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Richard Pena",
+      "abbrev": "R. Pena",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "mtd_signed": 0
+    },
     {
       "name": "Delvin Castro",
       "abbrev": "D. Castro",
@@ -76,8 +111,8 @@
   ],
   "shifts_configured": false,
   "department": {
-    "total_ld": 2,
-    "total_still_ld": 0,
+    "total_ld": 4,
+    "total_still_ld": 2,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -120,14 +155,14 @@
     ],
     "total_shift_hours": 0,
     "total_hours_worked": 0,
-    "specialists_count": 2,
-    "specialists_with_ld": 2,
+    "specialists_count": 3,
+    "specialists_with_ld": 3,
     "rate_worked": 0,
     "rate_shift": 0,
     "hourly_totals": [
       1,
       0,
-      0,
+      2,
       0,
       0,
       0,
@@ -144,10 +179,10 @@
       0
     ],
     "yesterday_ld": 147,
-    "yesterday_same_time": 12,
-    "last_week_same_time": 2,
+    "yesterday_same_time": 21,
+    "last_week_same_time": 6,
     "last_week_total": 84,
-    "pace_time": "09:15"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -155,7 +190,7 @@
       "scubillos@thenofaultgroup.com": 13,
       "jcuarezma@thenofaultgroup.com": 73,
       "jamgomez@thenofaultgroup.com": 30,
-      "nelsonr@thenofaultgroup.com": 137,
+      "nelsonr@thenofaultgroup.com": 142,
       "vlibreros@thenofaultgroup.com": 4,
       "chernandez@thenofaultgroup.com": 23,
       "mpenaranda@thenofaultgroup.com": 82,
@@ -179,7 +214,7 @@
       "jgonzalez@thenofaultgroup.com": 5,
       "carold@thenofaultgroup.com": 1
     },
-    "total": 891,
-    "avg": 33.0
+    "total": 896,
+    "avg": 33.2
   }
 }
