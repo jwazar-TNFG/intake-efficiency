@@ -1,6 +1,6 @@
 {
   "date": "2026-05-11",
-  "updated": "2026-05-11T07:54:46.501658",
+  "updated": "2026-05-11T08:15:02.868317",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 12,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 12,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -623,9 +623,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -659,9 +659,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -695,9 +695,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -731,9 +731,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -767,9 +767,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -985,10 +985,10 @@
       0
     ],
     "total_shift_hours": 248,
-    "total_hours_worked": 0,
+    "total_hours_worked": 2.4,
     "specialists_count": 26,
     "specialists_with_ld": 0,
-    "rate_worked": 0,
+    "rate_worked": 0.0,
     "rate_shift": 0.0,
     "hourly_totals": [
       0,
@@ -1013,7 +1013,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 1,
     "last_week_total": 199,
-    "pace_time": "07:54"
+    "pace_time": "08:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1021,6 +1021,8 @@
       "nelsonr@thenofaultgroup.com": 159,
       "jamgomez@thenofaultgroup.com": 40,
       "mpenaranda@thenofaultgroup.com": 84,
+      "jcuarezma@thenofaultgroup.com": 73,
+      "vlibreros@thenofaultgroup.com": 5,
       "mmiranda@thenofaultgroup.com": 27,
       "jjortega@thenofaultgroup.com": 50,
       "oplasencia@thenofaultgroup.com": 89,
@@ -1029,7 +1031,6 @@
       "lmurillo@thenofaultgroup.com": 27,
       "jramirez@thenofaultgroup.com": 20,
       "avilchez@thenofaultgroup.com": 21,
-      "jcuarezma@thenofaultgroup.com": 73,
       "rroca@thenofaultgroup.com": 29,
       "rchavarria@thenofaultgroup.com": 41,
       "nsilva@thenofaultgroup.com": 25,
@@ -1038,7 +1039,6 @@
       "dcastro@thenofaultgroup.com": 12,
       "jortega@thenofaultgroup.com": 23,
       "djuarez@thenofaultgroup.com": 31,
-      "vlibreros@thenofaultgroup.com": 5,
       "dvalles@thenofaultgroup.com": 10,
       "mcardona@thenofaultgroup.com": 20,
       "scubillos@thenofaultgroup.com": 14,
