@@ -1,6 +1,6 @@
 {
   "date": "2026-05-17",
-  "updated": "2026-05-17T12:15:03.669832",
+  "updated": "2026-05-17T12:15:09.889294",
   "title": "Locked Down",
   "reps": [
     {
@@ -37,7 +37,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 58
+      "mtd_signed": 38
     },
     {
       "name": "Delvin Castro",
@@ -73,7 +73,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "dcastro@thenofaultgroup.com",
-      "mtd_signed": 27
+      "mtd_signed": 31
     },
     {
       "name": "Valentina Liberos",
@@ -145,7 +145,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jramirez@thenofaultgroup.com",
-      "mtd_signed": 39
+      "mtd_signed": 18
     },
     {
       "name": "Nelson Rodriguez",
@@ -181,7 +181,7 @@
       "end_hour": null,
       "is_off": true,
       "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 263
+      "mtd_signed": 226
     },
     {
       "name": "Cindy Hernandez",
@@ -217,7 +217,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 50
+      "mtd_signed": 42
     },
     {
       "name": "Daniel Vallez",
@@ -253,7 +253,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "dvalles@thenofaultgroup.com",
-      "mtd_signed": 20
+      "mtd_signed": 19
     },
     {
       "name": "Jorge Munoz",
@@ -289,7 +289,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "jamgomez@thenofaultgroup.com",
-      "mtd_signed": 91
+      "mtd_signed": 85
     },
     {
       "name": "Juan Ortega",
@@ -325,7 +325,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 79
+      "mtd_signed": 101
     },
     {
       "name": "Manuel Cardona",
@@ -361,7 +361,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
-      "mtd_signed": 38
+      "mtd_signed": 49
     },
     {
       "name": "Reny Roca",
@@ -397,7 +397,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 42
+      "mtd_signed": 37
     },
     {
       "name": "Richard Pena",
@@ -433,7 +433,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 24
+      "mtd_signed": 38
     },
     {
       "name": "Ronnie Chavarria",
@@ -469,7 +469,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "rchavarria@thenofaultgroup.com",
-      "mtd_signed": 56
+      "mtd_signed": 76
     },
     {
       "name": "Sebastian Cubillos",
@@ -505,7 +505,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 37
+      "mtd_signed": 25
     }
   ],
   "shifts_configured": true,
@@ -585,34 +585,35 @@
   },
   "mtd_signed": {
     "by_intaker": {
-      "nelsonr@thenofaultgroup.com": 263,
-      "oplasencia@thenofaultgroup.com": 140,
-      "jcuarezma@thenofaultgroup.com": 144,
-      "jduvergel@thenofaultgroup.com": 151,
-      "rchavarria@thenofaultgroup.com": 56,
-      "mpenaranda@thenofaultgroup.com": 142,
-      "scubillos@thenofaultgroup.com": 37,
-      "jamgomez@thenofaultgroup.com": 91,
-      "jgonzalez@thenofaultgroup.com": 16,
-      "avilchez@thenofaultgroup.com": 36,
-      "djuarez@thenofaultgroup.com": 46,
-      "lmurillo@thenofaultgroup.com": 44,
-      "rpena@thenofaultgroup.com": 24,
-      "mmiranda@thenofaultgroup.com": 67,
-      "chernandez@thenofaultgroup.com": 50,
-      "dcastro@thenofaultgroup.com": 27,
-      "nsilva@thenofaultgroup.com": 58,
-      "rroca@thenofaultgroup.com": 42,
-      "cprado@thenofaultgroup.com": 12,
-      "mcardona@thenofaultgroup.com": 38,
-      "jramirez@thenofaultgroup.com": 39,
-      "dvalles@thenofaultgroup.com": 20,
+      "jamgomez@thenofaultgroup.com": 85,
+      "chernandez@thenofaultgroup.com": 42,
+      "mcardona@thenofaultgroup.com": 49,
+      "jduvergel@thenofaultgroup.com": 177,
+      "mpenaranda@thenofaultgroup.com": 163,
+      "mmiranda@thenofaultgroup.com": 49,
+      "oplasencia@thenofaultgroup.com": 161,
+      "jjortega@thenofaultgroup.com": 101,
+      "jcuarezma@thenofaultgroup.com": 141,
+      "nelsonr@thenofaultgroup.com": 226,
+      "rpena@thenofaultgroup.com": 38,
+      "avilchez@thenofaultgroup.com": 28,
+      "nsilva@thenofaultgroup.com": 38,
+      "jortega@thenofaultgroup.com": 35,
+      "rchavarria@thenofaultgroup.com": 76,
+      "jramirez@thenofaultgroup.com": 18,
+      "djuarez@thenofaultgroup.com": 57,
+      "lmurillo@thenofaultgroup.com": 57,
+      "lvivas@thenofaultgroup.com": 68,
+      "scubillos@thenofaultgroup.com": 25,
+      "dvalles@thenofaultgroup.com": 19,
+      "dcastro@thenofaultgroup.com": 31,
+      "rroca@thenofaultgroup.com": 37,
       "vlibreros@thenofaultgroup.com": 11,
-      "jortega@thenofaultgroup.com": 45,
-      "lvivas@thenofaultgroup.com": 80,
-      "jjortega@thenofaultgroup.com": 79
+      "cprado@thenofaultgroup.com": 16,
+      "jgonzalez@thenofaultgroup.com": 8,
+      "carold@thenofaultgroup.com": 2
     },
     "total": 1758,
-    "avg": 67.6
+    "avg": 65.1
   }
 }
