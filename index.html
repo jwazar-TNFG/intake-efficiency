@@ -265,6 +265,19 @@
         .tv-toggle.active { background: #5BA4B5; color: #fff; border-color: #5BA4B5; }
         .tv-toggle .icon { font-size: 14px; }
         
+        /* Hide TV toggle on mobile - not useful on small screens */
+        @media (max-width: 900px) {
+            .tv-toggle { display: none; }
+            /* Force disable TV mode styles on mobile even if class is set */
+            body.tv-mode { padding: 20px; }
+            body.tv-mode .container { max-width: 900px; }
+            body.tv-mode .tv-layout { display: block; }
+            body.tv-mode .tv-sidebar { display: none; }
+            body.tv-mode .section-divider { display: block; }
+            body.tv-mode .chart-area { display: block; }
+            body.tv-mode .footer { display: flex; }
+        }
+        
         /* TV Mode Layout */
         body.tv-mode { padding: 15px 30px; }
         body.tv-mode .container { max-width: 100%; }
