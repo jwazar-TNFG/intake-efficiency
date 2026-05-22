@@ -245,6 +245,61 @@
         .loading { text-align: center; padding: 100px; color: #888; }
         
         .updated { text-align: center; font-size: 11px; color: #444; margin-top: 20px; }
+        
+        /* TV Mode Toggle Button */
+        .tv-toggle {
+            padding: 8px 14px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #888;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .tv-toggle:hover { background: #2a2a2a; color: #fff; border-color: #5BA4B5; }
+        .tv-toggle.active { background: #5BA4B5; color: #fff; border-color: #5BA4B5; }
+        .tv-toggle .icon { font-size: 14px; }
+        
+        /* TV Mode Layout */
+        body.tv-mode { padding: 15px 30px; }
+        body.tv-mode .container { max-width: 100%; }
+        body.tv-mode .header h1 { font-size: 24px; }
+        body.tv-mode .header h2 { font-size: 18px; }
+        
+        body.tv-mode .tv-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 25px;
+            align-items: start;
+        }
+        
+        body.tv-mode .tv-main { }
+        body.tv-mode .tv-sidebar { }
+        
+        body.tv-mode .heatmap-section { margin-bottom: 15px; }
+        body.tv-mode .heatmap-title { font-size: 16px; margin-bottom: 10px; }
+        body.tv-mode .heatmap-table { font-size: 10px; }
+        body.tv-mode .heatmap-table td { padding: 4px 2px; }
+        body.tv-mode .heatmap-table th.name-col,
+        body.tv-mode .heatmap-table td.name-cell { width: 75px; font-size: 9px; }
+        
+        body.tv-mode .dept-summary { margin-bottom: 15px; padding: 12px; }
+        body.tv-mode .dept-summary-title { font-size: 12px; margin-bottom: 8px; }
+        body.tv-mode .stats-section { padding: 10px 12px; }
+        body.tv-mode .stat-big { font-size: 28px; }
+        body.tv-mode .stat-row { font-size: 12px; }
+        body.tv-mode .stat-metric { padding: 4px 0; }
+        body.tv-mode .metric-label { font-size: 12px; }
+        body.tv-mode .metric-value { font-size: 18px; }
+        
+        body.tv-mode .section-divider { display: none; }
+        body.tv-mode .chart-area { display: none; }
+        body.tv-mode .footer { display: none; }
         .metrics-help { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 12px 15px; margin-top: 20px; font-size: 12px; }
         .metrics-help .help-title { color: #5BA4B5; font-weight: 600; margin-bottom: 10px; }
         .metrics-help .help-item { margin-bottom: 8px; color: #ccc; line-height: 1.4; }
@@ -660,6 +715,21 @@
     </div>
 
     <script>
+        // TV Mode toggle
+        function toggleTvMode() {
+            document.body.classList.toggle('tv-mode');
+            const isActive = document.body.classList.contains('tv-mode');
+            localStorage.setItem('intakeEfficiency_tvMode', isActive ? '1' : '0');
+            
+            // Refresh data to rebuild layout
+            fetchData();
+        }
+        
+        // Restore TV mode on load
+        if (localStorage.getItem('intakeEfficiency_tvMode') === '1') {
+            document.body.classList.add('tv-mode');
+        }
+        
         const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
         const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
         
@@ -1314,6 +1384,8 @@
                     <a href="admin.html#daily" class="tab">Manage Shifts</a>
             `;
             
+            const tvToggle = `<button class="tv-toggle ${document.body.classList.contains('tv-mode') ? 'active' : ''}" onclick="toggleTvMode()"><span class="icon">📺</span> TV Mode</button>`;
+            
             // Empty state
             if (reps.length === 0) {
                 document.getElementById('app').innerHTML = `
@@ -1387,6 +1459,45 @@
             const deptRateClass = getRateClass(deptRate);
             const deptTier = getRateTier(deptRate);
             
+            // Check if TV mode is active
+            const isTvMode = document.body.classList.contains('tv-mode');
+            
+            // Build sidebar content for TV mode (duplicated from heatmapHtml summary sections)
+            const tvSidebar = `
+                <div class="tv-sidebar">
+                    <div class="dept-summary" style="margin-bottom: 15px;">
+                        <div class="dept-summary-title">📊 Today's Production</div>
+                        <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
+                        <div class="stat-metric">
+                            <span class="metric-label">LD/Hour worked</span>
+                            <span class="metric-value" style="color: ${getRateTier(dept.rate_worked).color}">${dept.rate_worked.toFixed(2)}</span>
+                        </div>
+                        <div class="stat-metric">
+                            <span class="metric-label">Forecast EOD</span>
+                            <span class="metric-value" style="color: #5BA4B5">${Math.round(dept.total_ld / (dept.total_hours_worked / dept.total_shift_hours || 1))} LD</span>
+                        </div>
+                    </div>
+                    <div class="stats-section" style="margin-bottom: 15px;">
+                        <div class="stats-section-title">⏱️ Pace</div>
+                        <div class="stat-row">vs Yesterday: <span class="${dept.total_ld >= (dept.yesterday_same_time || 0) ? 'positive' : 'negative'}">${dept.total_ld >= (dept.yesterday_same_time || 0) ? '▲' : '▼'} ${dept.total_ld}</span> (was ${dept.yesterday_same_time || 0})</div>
+                        <div class="stat-row">vs Last Week: <span class="${dept.total_ld >= (dept.last_week_same_time || 0) ? 'positive' : 'negative'}">${dept.total_ld >= (dept.last_week_same_time || 0) ? '▲' : '▼'} ${dept.total_ld}</span> (was ${dept.last_week_same_time || 0})</div>
+                    </div>
+                    <div class="stats-section" style="margin-bottom: 15px;">
+                        <div class="stats-section-title">👥 Shift Status</div>
+                        <div class="stat-row">Hours: <strong>${dept.total_hours_worked}</strong> / ${dept.total_shift_hours}</div>
+                        <div class="stat-row">Active: <strong>${dept.specialists_with_ld}</strong> / ${dept.specialists_count} with LD</div>
+                        <div class="stat-row">Zeros: <strong class="zeros-count">${dept.specialists_count - dept.specialists_with_ld}</strong></div>
+                    </div>
+                    <div class="legend" style="background: #1a1a1a; padding: 12px; border-radius: 8px;">
+                        <div style="font-size: 10px; color: #5BA4B5; font-weight: 600; margin-bottom: 8px;">RATE LEGEND</div>
+                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ Elite</div>
+                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-0.99 Solid</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.59 Average</div>
+                        <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
+                    </div>
+                </div>
+            `;
+            
             document.getElementById('app').innerHTML = `
                 <div class="header">
                     <h1>1-800-NO-FAULT</h1>
@@ -1396,6 +1507,7 @@
                 
                 <div class="tabs-row">
                     <div class="tabs">${tabLinks}</div>
+                    ${tvToggle}
                     <div class="dept-scorecard">
                         <div class="label">DEPT<br>RATE</div>
                         <div class="rate-box ${deptRateClass}">${deptRate.toFixed(2)}</div>
@@ -1404,7 +1516,11 @@
                     </div>
                 </div>
                 
+                ${isTvMode ? `<div class="tv-layout"><div class="tv-main">` : ''}
+                
                 ${heatmapHtml}
+                
+                ${isTvMode ? `</div>${tvSidebar}</div>` : ''}
                 
                 <div class="section-divider">
                     <div class="section-title">LD/Hour Performance</div>
