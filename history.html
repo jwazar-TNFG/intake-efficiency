@@ -278,93 +278,6 @@
             font-weight: 700;
             font-size: 16px;
         }
-
-        /* Lead Funnel Box */
-        .funnel-box {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 20px 24px;
-            margin-bottom: 30px;
-        }
-        .funnel-box-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 14px;
-        }
-        .funnel-box-header h3 {
-            font-size: 14px;
-            font-weight: 600;
-            color: #5BA4B5;
-        }
-        .funnel-info-btn {
-            background: #333;
-            border: none;
-            color: #888;
-            width: 22px; height: 22px;
-            border-radius: 50%;
-            font-size: 12px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-        .funnel-info-btn:hover { background: #5BA4B5; color: #fff; }
-        .funnel-list {
-            list-style: none;
-            padding: 0;
-        }
-        .funnel-list li {
-            display: flex;
-            justify-content: space-between;
-            padding: 6px 0;
-            border-bottom: 1px solid #222;
-            font-size: 13px;
-        }
-        .funnel-list li:last-child { border-bottom: none; }
-        .funnel-list .fl-label { color: #ccc; }
-        .funnel-list .fl-value { font-weight: 600; font-variant-numeric: tabular-nums; color: #fff; }
-        .funnel-list .fl-pct { color: #888; font-weight: 400; margin-left: 6px; }
-        .funnel-list .fl-age { color: #5BA4B5; font-size: 12px; margin-left: 6px; }
-        .funnel-defs {
-            display: none;
-            margin-top: 14px;
-            padding-top: 14px;
-            border-top: 1px solid #333;
-            font-size: 12px;
-            line-height: 1.7;
-            color: #888;
-        }
-        .funnel-defs.show { display: block; }
-        .funnel-defs dt { color: #ccc; font-weight: 600; margin-top: 6px; }
-        .funnel-defs dt:first-child { margin-top: 0; }
-        .funnel-defs dd { margin-left: 12px; }
-
-        /* Specialist filter */
-        .filter-row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 25px;
-        }
-        .filter-row label {
-            font-size: 12px;
-            color: #888;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-        .filter-select {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            color: #fff;
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-family: inherit;
-            min-width: 220px;
-            cursor: pointer;
-        }
-        .filter-select:focus { outline: none; border-color: #5BA4B5; }
     </style>
 </head>
 <body>
@@ -397,15 +310,6 @@
             
             <button class="load-btn" id="loadBtn">Load Data</button>
         </div>
-
-        <div class="filter-row">
-            <label>Intake Specialist:</label>
-            <select class="filter-select" id="specialistFilter">
-                <option value="">All Specialists</option>
-            </select>
-        </div>
-
-        <div id="funnelContainer"></div>
         
         <div id="content">
             <div class="loading">Select a date range and click "Load Data"</div>
@@ -466,79 +370,6 @@
         // Load data button
         document.getElementById('loadBtn').addEventListener('click', loadData);
         
-        // --- Funnel helpers ---
-        function sbRpc(fn, body) {
-            return fetch(`${SUPABASE_URL}/rest/v1/rpc/${fn}`, {
-                method: 'POST',
-                headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify(body)
-            }).then(r => r.ok ? r.json() : null);
-        }
-
-        function fmtPct(n, total) { return total ? ((n / total) * 100).toFixed(1) : '0.0'; }
-
-        function renderFunnel(f) {
-            const el = document.getElementById('funnelContainer');
-            if (!f) { el.innerHTML = ''; return; }
-            const t = f.total_created;
-            const row = (label, val, showPct, age) => {
-                let right = `<span class="fl-value">${val.toLocaleString()}</span>`;
-                if (showPct) right += `<span class="fl-pct">(${fmtPct(val, t)}%)</span>`;
-                if (age !== undefined) right += `<span class="fl-age">avg ${age}d</span>`;
-                return `<li><span class="fl-label">${label}</span><span>${right}</span></li>`;
-            };
-            el.innerHTML = `
-                <div class="funnel-box">
-                    <div class="funnel-box-header">
-                        <h3>📊 Lead Funnel Breakdown</h3>
-                        <button class="funnel-info-btn" onclick="document.getElementById('funnelDefs').classList.toggle('show')" title="Definitions">ℹ</button>
-                    </div>
-                    <ul class="funnel-list">
-                        ${row('Total Leads Created', t, false)}
-                        ${row('Dropped (before LD)', f.dropped_before_ld, true)}
-                        ${row('Total LD', f.total_ld, true)}
-                        ${row('Dropped (after LD)', f.dropped_after_ld, true)}
-                        ${row('Dropped (after Signed)', f.dropped_after_signed, true)}
-                        ${row('Signed', f.signed, true)}
-                        ${row('Came In', f.came_in, true)}
-                        ${row('Still Locked Down', f.still_ld, true, f.still_ld_avg_age)}
-                        ${row('CNA', f.cna, true, f.cna_avg_age)}
-                        ${row('Pending', f.pending, true, f.pending_avg_age)}
-                    </ul>
-                    <div class="funnel-defs" id="funnelDefs">
-                        <dl>
-                            <dt>Total Leads Created</dt><dd>All leads created in the selected date range.</dd>
-                            <dt>Dropped (before LD)</dt><dd>Dropped before being Locked Down — never had attorney + treatment location.</dd>
-                            <dt>Total LD</dt><dd>Locked Down — assigned both an attorney and treatment location.</dd>
-                            <dt>Dropped (after LD)</dt><dd>Locked down but dropped before signing.</dd>
-                            <dt>Dropped (after Signed)</dt><dd>Signed then later dropped — post-signing attrition.</dd>
-                            <dt>Signed</dt><dd>Completed signing (have a signed date on record).</dd>
-                            <dt>Came In</dt><dd>Patient attended initial treatment appointment.</dd>
-                            <dt>Still Locked Down</dt><dd>Pending signing — not yet signed, not dropped. Avg age = days since lockdown.</dd>
-                            <dt>CNA</dt><dd>Could Not Attend / Contact Not Available. Avg age = days since creation.</dd>
-                            <dt>Pending</dt><dd>Awaiting next action. Avg age = days since creation.</dd>
-                        </dl>
-                    </div>
-                </div>`;
-        }
-
-        async function loadSpecialists(startDate, endDate) {
-            const list = await sbRpc('intake_specialist_list', { p_start_date: startDate, p_end_date: endDate });
-            if (!list) return;
-            const sel = document.getElementById('specialistFilter');
-            const cur = sel.value;
-            sel.innerHTML = '<option value="">All Specialists</option>';
-            list.forEach(s => {
-                const o = document.createElement('option');
-                o.value = s.email;
-                o.textContent = `${s.name} (${s.ld_count} LD)`;
-                sel.appendChild(o);
-            });
-            sel.value = cur;
-        }
-
-        document.getElementById('specialistFilter').addEventListener('change', () => { loadData(); });
-
         async function loadData() {
             const startDate = document.getElementById('startDate').value;
             const endDate = document.getElementById('endDate').value;
@@ -553,41 +384,27 @@
             loadBtn.textContent = 'Loading...';
             
             document.getElementById('content').innerHTML = '<div class="loading">Fetching historical data...</div>';
-
-            const specialist = document.getElementById('specialistFilter').value;
             
             try {
-                const funnelBody = { p_start_date: startDate, p_end_date: endDate };
-                if (specialist) funnelBody.p_specialist = specialist;
-
-                const [response, funnel] = await Promise.all([
-                    fetch(`${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`, {
-                        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
-                    }),
-                    sbRpc('lead_funnel_breakdown', funnelBody)
-                ]);
-
-                // Load specialist dropdown in background
-                loadSpecialists(startDate, endDate);
-
-                // Render funnel
-                renderFunnel(funnel);
+                const url = `${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`;
+                console.log('Fetching:', url);
+                
+                const response = await fetch(url, {
+                    headers: {
+                        'apikey': SUPABASE_KEY,
+                        'Authorization': `Bearer ${SUPABASE_KEY}`
+                    }
+                });
+                
+                console.log('Response status:', response.status);
                 
                 if (!response.ok) {
                     const errorText = await response.text();
+                    console.error('Error response:', errorText);
                     throw new Error(`Failed to fetch data: ${response.status} - ${errorText}`);
                 }
                 
-                let data = await response.json();
-
-                // Filter daily data by specialist if selected
-                if (specialist && data.length > 0) {
-                    data = data.map(day => {
-                        const s = (day.by_specialist || []).find(x => (x.email || '').toLowerCase() === specialist.toLowerCase());
-                        return s ? { ...day, total_ld: s.ld||0, came_in: s.came_in||0, dropped: s.dropped||0, still_ld: s.still_ld||0, total_scheduled_hours: s.hours||0, by_specialist: [s] }
-                                 : { ...day, total_ld: 0, came_in: 0, dropped: 0, still_ld: 0, total_scheduled_hours: 0, by_specialist: [] };
-                    });
-                }
+                const data = await response.json();
                 
                 if (data.length === 0) {
                     document.getElementById('content').innerHTML = '<div class="loading">No data found for selected date range</div>';
