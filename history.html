@@ -278,6 +278,223 @@
             font-weight: 700;
             font-size: 16px;
         }
+
+        /* Specialist filter */
+        .filter-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .filter-row label {
+            font-size: 12px;
+            color: #888;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .filter-select {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            min-width: 220px;
+            cursor: pointer;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #5BA4B5;
+        }
+
+        /* Lead Funnel */
+        .funnel-section {
+            margin-bottom: 30px;
+        }
+
+        .funnel-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .funnel-header h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5BA4B5;
+        }
+
+        .funnel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .funnel-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 14px 16px;
+            position: relative;
+        }
+
+        .funnel-card .fc-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .funnel-card .fc-value {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .funnel-card .fc-pct {
+            font-size: 13px;
+            font-weight: 600;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .funnel-card .fc-label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
+
+        .funnel-card .fc-age {
+            font-size: 12px;
+            color: #5BA4B5;
+            margin-top: 4px;
+        }
+
+        .funnel-card.highlight-green .fc-value { color: #4ade80; }
+        .funnel-card.highlight-blue .fc-value { color: #5BA4B5; }
+        .funnel-card.highlight-red .fc-value { color: #ef4444; }
+        .funnel-card.highlight-yellow .fc-value { color: #fbbf24; }
+        .funnel-card.highlight-orange .fc-value { color: #fb923c; }
+
+        /* Info tooltip */
+        .info-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #333;
+            color: #888;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .info-btn:hover {
+            background: #5BA4B5;
+            color: #fff;
+        }
+
+        .info-tooltip {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #ccc;
+            white-space: normal;
+            width: 240px;
+            z-index: 100;
+            line-height: 1.5;
+            text-transform: none;
+            letter-spacing: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .info-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: #444;
+        }
+
+        .info-btn:hover .info-tooltip,
+        .info-btn:focus .info-tooltip {
+            display: block;
+        }
+
+        .funnel-definitions {
+            margin-top: 10px;
+        }
+
+        .definitions-toggle {
+            background: none;
+            border: 1px solid #333;
+            color: #888;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .definitions-toggle:hover {
+            border-color: #5BA4B5;
+            color: #fff;
+        }
+
+        .definitions-panel {
+            display: none;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #bbb;
+        }
+
+        .definitions-panel.show {
+            display: block;
+        }
+
+        .definitions-panel dt {
+            font-weight: 600;
+            color: #fff;
+            margin-top: 8px;
+        }
+
+        .definitions-panel dt:first-child {
+            margin-top: 0;
+        }
+
+        .definitions-panel dd {
+            margin-left: 16px;
+            color: #999;
+        }
     </style>
 </head>
 <body>
@@ -309,6 +526,13 @@
             </div>
             
             <button class="load-btn" id="loadBtn">Load Data</button>
+        </div>
+
+        <div class="filter-row">
+            <label>Intake Specialist:</label>
+            <select class="filter-select" id="specialistFilter">
+                <option value="">All Specialists</option>
+            </select>
         </div>
         
         <div id="content">
@@ -370,6 +594,64 @@
         // Load data button
         document.getElementById('loadBtn').addEventListener('click', loadData);
         
+        // Specialist filter change handler
+        document.getElementById('specialistFilter').addEventListener('change', () => {
+            if (lastLoadedData) {
+                loadData();
+            }
+        });
+
+        let lastLoadedData = null;
+
+        async function loadSpecialistList(startDate, endDate) {
+            try {
+                const resp = await fetch(`${SUPABASE_URL}/rest/v1/rpc/intake_specialist_list`, {
+                    method: 'POST',
+                    headers: {
+                        'apikey': SUPABASE_KEY,
+                        'Authorization': `Bearer ${SUPABASE_KEY}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ p_start_date: startDate, p_end_date: endDate })
+                });
+                if (!resp.ok) return;
+                const specialists = await resp.json();
+                const sel = document.getElementById('specialistFilter');
+                const currentVal = sel.value;
+                sel.innerHTML = '<option value="">All Specialists</option>';
+                specialists.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s.email;
+                    opt.textContent = `${s.name} (${s.ld_count} LD)`;
+                    sel.appendChild(opt);
+                });
+                sel.value = currentVal;
+            } catch (e) {
+                console.error('Failed to load specialist list:', e);
+            }
+        }
+
+        async function loadFunnelData(startDate, endDate, specialist) {
+            try {
+                const body = { p_start_date: startDate, p_end_date: endDate };
+                if (specialist) body.p_specialist = specialist;
+                const resp = await fetch(`${SUPABASE_URL}/rest/v1/rpc/lead_funnel_breakdown`, {
+                    method: 'POST',
+                    headers: {
+                        'apikey': SUPABASE_KEY,
+                        'Authorization': `Bearer ${SUPABASE_KEY}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+                if (!resp.ok) throw new Error('Failed to fetch funnel data');
+                return await resp.json();
+            } catch (e) {
+                console.error('Funnel data error:', e);
+                return null;
+            }
+        }
+
         async function loadData() {
             const startDate = document.getElementById('startDate').value;
             const endDate = document.getElementById('endDate').value;
@@ -385,33 +667,63 @@
             
             document.getElementById('content').innerHTML = '<div class="loading">Fetching historical data...</div>';
             
+            const specialist = document.getElementById('specialistFilter').value;
+
             try {
-                const url = `${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`;
-                console.log('Fetching:', url);
+                // Fetch intake_daily, funnel, and specialist list in parallel
+                const [dailyResp, funnel] = await Promise.all([
+                    fetch(`${SUPABASE_URL}/rest/v1/intake_daily?intake_date=gte.${startDate}&intake_date=lte.${endDate}&order=intake_date.asc`, {
+                        headers: {
+                            'apikey': SUPABASE_KEY,
+                            'Authorization': `Bearer ${SUPABASE_KEY}`
+                        }
+                    }),
+                    loadFunnelData(startDate, endDate, specialist)
+                ]);
+
+                // Load specialist list (don't block render)
+                loadSpecialistList(startDate, endDate);
                 
-                const response = await fetch(url, {
-                    headers: {
-                        'apikey': SUPABASE_KEY,
-                        'Authorization': `Bearer ${SUPABASE_KEY}`
-                    }
-                });
-                
-                console.log('Response status:', response.status);
-                
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    console.error('Error response:', errorText);
-                    throw new Error(`Failed to fetch data: ${response.status} - ${errorText}`);
+                if (!dailyResp.ok) {
+                    const errorText = await dailyResp.text();
+                    throw new Error(`Failed to fetch data: ${dailyResp.status} - ${errorText}`);
                 }
                 
-                const data = await response.json();
+                let data = await dailyResp.json();
+
+                // If specialist filter is active, filter by_specialist data
+                if (specialist && data.length > 0) {
+                    data = data.map(day => {
+                        const specData = (day.by_specialist || []).find(s => 
+                            (s.email || '').toLowerCase() === specialist.toLowerCase()
+                        );
+                        if (specData) {
+                            return {
+                                ...day,
+                                total_ld: specData.ld || 0,
+                                came_in: specData.came_in || 0,
+                                dropped: specData.dropped || 0,
+                                still_ld: specData.still_ld || 0,
+                                total_scheduled_hours: specData.hours || 0,
+                                by_specialist: [specData]
+                            };
+                        }
+                        return {
+                            ...day,
+                            total_ld: 0, came_in: 0, dropped: 0, still_ld: 0,
+                            total_scheduled_hours: 0,
+                            by_specialist: []
+                        };
+                    });
+                }
                 
                 if (data.length === 0) {
                     document.getElementById('content').innerHTML = '<div class="loading">No data found for selected date range</div>';
                     return;
                 }
                 
-                renderDashboard(data, startDate, endDate);
+                lastLoadedData = data;
+                renderDashboard(data, startDate, endDate, funnel);
                 
             } catch (error) {
                 console.error(error);
@@ -429,7 +741,157 @@
             return { label: 'Below', class: 'below' };
         }
         
-        function renderDashboard(data, startDate, endDate) {
+        function pct(n, total) {
+            if (!total) return '0.0';
+            return ((n / total) * 100).toFixed(1);
+        }
+
+        function renderFunnelSection(f) {
+            if (!f) return '';
+            const t = f.total_created;
+            return `
+                <div class="funnel-section">
+                    <div class="funnel-header">
+                        <h3>📊 Lead Funnel Breakdown</h3>
+                    </div>
+                    <div class="funnel-grid">
+                        <div class="funnel-card highlight-blue">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${t.toLocaleString()}</div>
+                                    <div class="fc-label">Total Leads Created</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">All leads created within the selected date range, regardless of current status.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-red">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.dropped_before_ld.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.dropped_before_ld, t)}%</div>
+                                    <div class="fc-label">Dropped (Before LD)</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads that were dropped before ever being locked down. They never received both an attorney and treatment location.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-green">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.total_ld.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.total_ld, t)}%</div>
+                                    <div class="fc-label">Total LD</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads that were Locked Down — assigned both an attorney and a treatment location.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-orange">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.dropped_after_ld.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.dropped_after_ld, t)}%</div>
+                                    <div class="fc-label">Dropped (After LD)</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads that were locked down but dropped before being signed. They had an attorney + treatment location but never completed signing.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-red">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.dropped_after_signed.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.dropped_after_signed, t)}%</div>
+                                    <div class="fc-label">Dropped (After Signed)</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads that were signed but later dropped. These represent post-signing attrition.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-green">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.signed.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.signed, t)}%</div>
+                                    <div class="fc-label">Signed</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads that completed signing (have a signed date on record), regardless of current status.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-green">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.came_in.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.came_in, t)}%</div>
+                                    <div class="fc-label">Came In</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads whose current status is "Came In" — the patient showed up for their initial treatment appointment.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-yellow">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.still_ld.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.still_ld, t)}%</div>
+                                    <div class="fc-label">Still Locked Down</div>
+                                    <div class="fc-age">Avg age: ${f.still_ld_avg_age} days</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads currently in "Locked Down" status — not yet signed, not dropped. Avg age = days since lockdown date.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-yellow">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.cna.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.cna, t)}%</div>
+                                    <div class="fc-label">CNA</div>
+                                    <div class="fc-age">Avg age: ${f.cna_avg_age} days</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads in "CNA" (Could Not Attend / Contact Not Available) status. Avg age = days since lead creation.</span></button>
+                            </div>
+                        </div>
+                        <div class="funnel-card highlight-yellow">
+                            <div class="fc-top">
+                                <div>
+                                    <div class="fc-value">${f.pending.toLocaleString()}</div>
+                                    <div class="fc-pct">${pct(f.pending, t)}%</div>
+                                    <div class="fc-label">Pending</div>
+                                    <div class="fc-age">Avg age: ${f.pending_avg_age} days</div>
+                                </div>
+                                <button class="info-btn" tabindex="0">i<span class="info-tooltip">Leads in "Pending" status — awaiting next action. Avg age = days since lead creation.</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-definitions">
+                        <button class="definitions-toggle" onclick="document.getElementById('defPanel').classList.toggle('show')">
+                            ℹ️ View All Definitions
+                        </button>
+                        <div class="definitions-panel" id="defPanel">
+                            <dl>
+                                <dt>Total Leads Created</dt>
+                                <dd>All leads created within the selected date range, regardless of current status.</dd>
+                                <dt>Dropped (Before LD)</dt>
+                                <dd>Leads dropped before being Locked Down — never had both an attorney and treatment location assigned.</dd>
+                                <dt>Total LD (Locked Down)</dt>
+                                <dd>Leads that received both an attorney and treatment location assignment. This is the key pipeline milestone.</dd>
+                                <dt>Dropped (After LD)</dt>
+                                <dd>Leads that were locked down but dropped before signing. Pre-sign attrition after lock-down.</dd>
+                                <dt>Dropped (After Signed)</dt>
+                                <dd>Leads that completed signing but were later dropped. Post-sign attrition.</dd>
+                                <dt>Signed</dt>
+                                <dd>Leads with a signed date on record — they completed the signing process.</dd>
+                                <dt>Came In</dt>
+                                <dd>Current status is "Came In" — the patient attended their initial treatment appointment.</dd>
+                                <dt>Still Locked Down</dt>
+                                <dd>Currently in "Locked Down" status — pending signing. Avg age = days since lockdown.</dd>
+                                <dt>CNA</dt>
+                                <dd>"Could Not Attend / Contact Not Available" — leads that could not be reached or did not attend. Avg age = days since creation.</dd>
+                                <dt>Pending</dt>
+                                <dd>Leads awaiting next action — in a holding state. Avg age = days since creation.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderDashboard(data, startDate, endDate, funnel) {
             // Calculate summary stats
             const totalLd = data.reduce((sum, d) => sum + (d.total_ld || 0), 0);
             const totalCameIn = data.reduce((sum, d) => sum + (d.came_in || 0), 0);
@@ -489,6 +951,8 @@
                     </div>
                 </div>
                 
+                ${renderFunnelSection(funnel)}
+
                 <div class="charts-grid">
                     <div class="chart-card full-width">
                         <h3>📈 Daily Lockdowns</h3>
