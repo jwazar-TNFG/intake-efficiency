@@ -1,23 +1,23 @@
 {
   "date": "2026-06-02",
-  "updated": "2026-06-02T09:08:50.362388",
+  "updated": "2026-06-02T09:15:14.764835",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 1,
-      "still_ld": 0,
+      "ld": 2,
+      "still_ld": 1,
       "came_in": 1,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.1,
-      "rate": 0.07,
-      "rate_worked": 0.87,
+      "hours_worked": 1.2,
+      "rate": 0.13,
+      "rate_worked": 1.6,
       "hourly": [
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -38,6 +38,42 @@
       "is_off": false,
       "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 22
+    },
+    {
+      "name": "Jorge Duvergel",
+      "abbrev": "J. Duvergel",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 1.2,
+      "rate": 0.1,
+      "rate_worked": 0.8,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jduvergel@thenofaultgroup.com",
+      "mtd_signed": 13
     },
     {
       "name": "Axl Vilchez",
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -364,42 +400,6 @@
       "mtd_signed": 2
     },
     {
-      "name": "Jorge Duvergel",
-      "abbrev": "J. Duvergel",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.1,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jduvergel@thenofaultgroup.com",
-      "mtd_signed": 13
-    },
-    {
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 0,
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -613,7 +613,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 10
+      "mtd_signed": 11
     },
     {
       "name": "Manuel Cardona",
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -942,8 +942,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 0,
+    "total_ld": 3,
+    "total_still_ld": 2,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -985,15 +985,15 @@
       0
     ],
     "total_shift_hours": 180.0,
-    "total_hours_worked": 12.3,
+    "total_hours_worked": 13.6,
     "specialists_count": 26,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.08,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.22,
+    "rate_shift": 0.02,
     "hourly_totals": [
       0,
-      0,
-      0,
+      1,
+      1,
       0,
       0,
       0,
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 203,
-    "yesterday_same_time": 10,
+    "yesterday_same_time": 12,
     "last_week_same_time": 5,
     "last_week_total": 192,
-    "pace_time": "09:08"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1023,7 +1023,7 @@
       "djuarez@thenofaultgroup.com": 5,
       "vlibreros@thenofaultgroup.com": 1,
       "nelsonr@thenofaultgroup.com": 22,
-      "mpenaranda@thenofaultgroup.com": 10,
+      "mpenaranda@thenofaultgroup.com": 11,
       "oplasencia@thenofaultgroup.com": 7,
       "rchavarria@thenofaultgroup.com": 7,
       "nsilva@thenofaultgroup.com": 2,
@@ -1039,7 +1039,7 @@
       "mmiranda@thenofaultgroup.com": 6,
       "mcardona@thenofaultgroup.com": 1
     },
-    "total": 123,
+    "total": 124,
     "avg": 5.9
   }
 }
