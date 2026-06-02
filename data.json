@@ -1,6 +1,6 @@
 {
   "date": "2026-06-02",
-  "updated": "2026-06-02T14:09:18.296158",
+  "updated": "2026-06-02T14:15:03.665739",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 1.1,
-      "rate_worked": 1.79,
+      "rate_worked": 1.76,
       "hourly": [
         0,
         0,
@@ -37,7 +37,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 9
+      "mtd_signed": 12
     },
     {
       "name": "Jorge Duvergel",
@@ -49,7 +49,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 1.0,
-      "rate_worked": 1.63,
+      "rate_worked": 1.6,
       "hourly": [
         0,
         1,
@@ -85,7 +85,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 0.6,
-      "rate_worked": 0.98,
+      "rate_worked": 0.96,
       "hourly": [
         0,
         0,
@@ -121,7 +121,7 @@
       "hours": 15.0,
       "hours_worked": 6.2,
       "rate": 0.53,
-      "rate_worked": 1.3,
+      "rate_worked": 1.28,
       "hourly": [
         0,
         0,
@@ -157,7 +157,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 0.5,
-      "rate_worked": 0.81,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         0,
@@ -193,7 +193,7 @@
       "hours": 9.0,
       "hours_worked": 6.2,
       "rate": 0.33,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -229,7 +229,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 0.3,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.22,
-      "rate_worked": 13.33,
+      "rate_worked": 8.0,
       "hourly": [
         0,
         0,
@@ -301,7 +301,7 @@
       "hours": 9.0,
       "hours_worked": 6.2,
       "rate": 0.22,
-      "rate_worked": 0.33,
+      "rate_worked": 0.32,
       "hourly": [
         0,
         0,
@@ -337,7 +337,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 0.2,
-      "rate_worked": 0.33,
+      "rate_worked": 0.32,
       "hourly": [
         0,
         0,
@@ -373,7 +373,7 @@
       "hours": 10.0,
       "hours_worked": 6.2,
       "rate": 0.2,
-      "rate_worked": 0.33,
+      "rate_worked": 0.32,
       "hourly": [
         0,
         0,
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -541,7 +541,7 @@
       "end_hour": null,
       "is_off": true,
       "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 2
+      "mtd_signed": 3
     },
     {
       "name": "Daniel Vallez",
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -985,7 +985,7 @@
       0
     ],
     "total_shift_hours": 180.0,
-    "total_hours_worked": 81.1,
+    "total_hours_worked": 81.6,
     "specialists_count": 26,
     "specialists_with_ld": 13,
     "rate_worked": 0.69,
@@ -1010,13 +1010,16 @@
       0
     ],
     "yesterday_ld": 203,
-    "yesterday_same_time": 94,
-    "last_week_same_time": 85,
+    "yesterday_same_time": 98,
+    "last_week_same_time": 90,
     "last_week_total": 191,
-    "pace_time": "14:09"
+    "pace_time": "14:15"
   },
   "mtd_signed": {
     "by_intaker": {
+      "jcuarezma@thenofaultgroup.com": 12,
+      "lmurillo@thenofaultgroup.com": 3,
+      "chernandez@thenofaultgroup.com": 3,
       "jramirez@thenofaultgroup.com": 3,
       "oplasencia@thenofaultgroup.com": 7,
       "rroca@thenofaultgroup.com": 4,
@@ -1030,16 +1033,13 @@
       "nsilva@thenofaultgroup.com": 2,
       "jgonzalez@thenofaultgroup.com": 1,
       "jortega@thenofaultgroup.com": 3,
-      "jcuarezma@thenofaultgroup.com": 9,
-      "chernandez@thenofaultgroup.com": 2,
       "jamgomez@thenofaultgroup.com": 5,
       "lvivas@thenofaultgroup.com": 7,
       "rpena@thenofaultgroup.com": 3,
-      "lmurillo@thenofaultgroup.com": 3,
       "mmiranda@thenofaultgroup.com": 6,
       "mcardona@thenofaultgroup.com": 1
     },
-    "total": 125,
-    "avg": 6.0
+    "total": 129,
+    "avg": 6.1
   }
 }
