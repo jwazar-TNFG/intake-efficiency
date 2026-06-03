@@ -1,6 +1,6 @@
 {
   "date": "2026-06-03",
-  "updated": "2026-06-03T08:10:53.050036",
+  "updated": "2026-06-03T08:15:07.827218",
   "title": "Locked Down",
   "reps": [
     {
@@ -541,7 +541,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 11
+      "mtd_signed": 12
     },
     {
       "name": "Manny Penaranda",
@@ -721,7 +721,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 36
+      "mtd_signed": 37
     },
     {
       "name": "Orlando Plasencia",
@@ -793,7 +793,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 7
+      "mtd_signed": 8
     },
     {
       "name": "Richard Pena",
@@ -1011,13 +1011,13 @@
     ],
     "yesterday_ld": 158,
     "yesterday_same_time": 2,
-    "last_week_same_time": 7,
+    "last_week_same_time": 8,
     "last_week_total": 189,
-    "pace_time": "08:10"
+    "pace_time": "08:15"
   },
   "mtd_signed": {
     "by_intaker": {
-      "rroca@thenofaultgroup.com": 7,
+      "rroca@thenofaultgroup.com": 8,
       "jduvergel@thenofaultgroup.com": 27,
       "jjortega@thenofaultgroup.com": 15,
       "djuarez@thenofaultgroup.com": 8,
@@ -1033,15 +1033,15 @@
       "mmiranda@thenofaultgroup.com": 10,
       "lmurillo@thenofaultgroup.com": 7,
       "vlibreros@thenofaultgroup.com": 1,
-      "nelsonr@thenofaultgroup.com": 36,
+      "nelsonr@thenofaultgroup.com": 37,
       "oplasencia@thenofaultgroup.com": 16,
       "jgonzalez@thenofaultgroup.com": 2,
-      "lvivas@thenofaultgroup.com": 11,
+      "lvivas@thenofaultgroup.com": 12,
       "rpena@thenofaultgroup.com": 4,
       "jramirez@thenofaultgroup.com": 5,
       "mcardona@thenofaultgroup.com": 2
     },
-    "total": 234,
-    "avg": 10.2
+    "total": 237,
+    "avg": 10.3
   }
 }
