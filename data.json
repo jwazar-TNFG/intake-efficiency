@@ -1,6 +1,6 @@
 {
   "date": "2026-06-03",
-  "updated": "2026-06-03T05:10:37.870309",
+  "updated": "2026-06-03T06:10:43.800944",
   "title": "Locked Down",
   "reps": [
     {
@@ -1013,33 +1013,33 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 189,
-    "pace_time": "05:10"
+    "pace_time": "06:10"
   },
   "mtd_signed": {
     "by_intaker": {
-      "rroca@thenofaultgroup.com": 7,
       "jduvergel@thenofaultgroup.com": 27,
-      "jjortega@thenofaultgroup.com": 15,
-      "djuarez@thenofaultgroup.com": 8,
-      "mpenaranda@thenofaultgroup.com": 19,
-      "jortega@thenofaultgroup.com": 6,
-      "jcuarezma@thenofaultgroup.com": 23,
-      "dcastro@thenofaultgroup.com": 1,
-      "chernandez@thenofaultgroup.com": 5,
-      "nsilva@thenofaultgroup.com": 9,
-      "jamgomez@thenofaultgroup.com": 8,
-      "rchavarria@thenofaultgroup.com": 10,
-      "avilchez@thenofaultgroup.com": 2,
-      "mmiranda@thenofaultgroup.com": 10,
-      "lmurillo@thenofaultgroup.com": 7,
-      "vlibreros@thenofaultgroup.com": 1,
       "nelsonr@thenofaultgroup.com": 36,
-      "oplasencia@thenofaultgroup.com": 16,
-      "jgonzalez@thenofaultgroup.com": 2,
+      "chernandez@thenofaultgroup.com": 5,
       "lvivas@thenofaultgroup.com": 11,
-      "rpena@thenofaultgroup.com": 4,
+      "jjortega@thenofaultgroup.com": 15,
       "jramirez@thenofaultgroup.com": 5,
-      "mcardona@thenofaultgroup.com": 2
+      "jamgomez@thenofaultgroup.com": 8,
+      "lmurillo@thenofaultgroup.com": 7,
+      "jcuarezma@thenofaultgroup.com": 23,
+      "oplasencia@thenofaultgroup.com": 16,
+      "mmiranda@thenofaultgroup.com": 10,
+      "djuarez@thenofaultgroup.com": 8,
+      "rroca@thenofaultgroup.com": 7,
+      "mpenaranda@thenofaultgroup.com": 19,
+      "jgonzalez@thenofaultgroup.com": 2,
+      "nsilva@thenofaultgroup.com": 9,
+      "mcardona@thenofaultgroup.com": 2,
+      "rpena@thenofaultgroup.com": 4,
+      "jortega@thenofaultgroup.com": 6,
+      "rchavarria@thenofaultgroup.com": 10,
+      "dcastro@thenofaultgroup.com": 1,
+      "avilchez@thenofaultgroup.com": 2,
+      "vlibreros@thenofaultgroup.com": 1
     },
     "total": 234,
     "avg": 10.2
