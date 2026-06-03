@@ -1,6 +1,6 @@
 {
   "date": "2026-06-02",
-  "updated": "2026-06-02T20:09:50.970661",
+  "updated": "2026-06-02T20:15:07.181728",
   "title": "Locked Down",
   "reps": [
     {
@@ -157,7 +157,7 @@
       "hours": 15.0,
       "hours_worked": 12.2,
       "rate": 0.93,
-      "rate_worked": 1.15,
+      "rate_worked": 1.14,
       "hourly": [
         0,
         0,
@@ -193,7 +193,7 @@
       "hours": 9.0,
       "hours_worked": 6.2,
       "rate": 0.78,
-      "rate_worked": 1.14,
+      "rate_worked": 1.12,
       "hourly": [
         0,
         0,
@@ -217,7 +217,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 10
+      "mtd_signed": 11
     },
     {
       "name": "Lina Murillo",
@@ -445,7 +445,7 @@
       "hours": 4.0,
       "hours_worked": 2.2,
       "rate": 0.25,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -865,7 +865,7 @@
       "end_hour": null,
       "is_off": true,
       "email": "rchavarria@thenofaultgroup.com",
-      "mtd_signed": 7
+      "mtd_signed": 9
     },
     {
       "name": "Sebastian Cubillos",
@@ -1010,22 +1010,22 @@
       0
     ],
     "yesterday_ld": 203,
-    "yesterday_same_time": 179,
+    "yesterday_same_time": 183,
     "last_week_same_time": 183,
     "last_week_total": 191,
-    "pace_time": "20:09"
+    "pace_time": "20:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "rroca@thenofaultgroup.com": 4,
       "jduvergel@thenofaultgroup.com": 13,
-      "jjortega@thenofaultgroup.com": 10,
+      "jjortega@thenofaultgroup.com": 11,
       "djuarez@thenofaultgroup.com": 5,
+      "rchavarria@thenofaultgroup.com": 9,
       "vlibreros@thenofaultgroup.com": 1,
       "nelsonr@thenofaultgroup.com": 22,
       "mpenaranda@thenofaultgroup.com": 11,
       "oplasencia@thenofaultgroup.com": 7,
-      "rchavarria@thenofaultgroup.com": 7,
       "nsilva@thenofaultgroup.com": 2,
       "jgonzalez@thenofaultgroup.com": 1,
       "jortega@thenofaultgroup.com": 3,
@@ -1039,7 +1039,7 @@
       "mmiranda@thenofaultgroup.com": 6,
       "mcardona@thenofaultgroup.com": 1
     },
-    "total": 129,
-    "avg": 6.1
+    "total": 132,
+    "avg": 6.3
   }
 }
