@@ -1,6 +1,6 @@
 {
   "date": "2026-06-04",
-  "updated": "2026-06-04T14:14:20.197526",
+  "updated": "2026-06-04T14:15:01.965529",
   "title": "Locked Down",
   "reps": [
     {
@@ -337,7 +337,7 @@
       "hours": 9.0,
       "hours_worked": 2.2,
       "rate": 0.11,
-      "rate_worked": 0.45,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -397,7 +397,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "lmurillo@thenofaultgroup.com",
-      "mtd_signed": 11
+      "mtd_signed": 10
     },
     {
       "name": "Luis Vivas",
@@ -757,7 +757,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
-      "mtd_signed": 3
+      "mtd_signed": 2
     },
     {
       "name": "Maria Jose Miranda",
@@ -1011,9 +1011,9 @@
     ],
     "yesterday_ld": 158,
     "yesterday_same_time": 78,
-    "last_week_same_time": 73,
+    "last_week_same_time": 75,
     "last_week_total": 149,
-    "pace_time": "14:14"
+    "pace_time": "14:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1024,8 +1024,8 @@
       "jjortega@thenofaultgroup.com": 21,
       "jamgomez@thenofaultgroup.com": 19,
       "mmiranda@thenofaultgroup.com": 17,
-      "mcardona@thenofaultgroup.com": 3,
-      "lmurillo@thenofaultgroup.com": 11,
+      "mcardona@thenofaultgroup.com": 2,
+      "lmurillo@thenofaultgroup.com": 10,
       "mpenaranda@thenofaultgroup.com": 30,
       "jcuarezma@thenofaultgroup.com": 30,
       "cprado@thenofaultgroup.com": 3,
@@ -1043,7 +1043,7 @@
       "rpena@thenofaultgroup.com": 2,
       "jgonzalez@thenofaultgroup.com": 4
     },
-    "total": 381,
+    "total": 379,
     "avg": 15.2
   }
 }
