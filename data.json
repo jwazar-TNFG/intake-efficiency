@@ -1,8 +1,44 @@
 {
   "date": "2026-06-05",
-  "updated": "2026-06-05T08:28:36.703521",
+  "updated": "2026-06-05T09:15:19.173251",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Jorge Duvergel",
+      "abbrev": "J. Duvergel",
+      "ld": 4,
+      "still_ld": 0,
+      "came_in": 4,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 1.2,
+      "rate": 0.4,
+      "rate_worked": 3.2,
+      "hourly": [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jduvergel@thenofaultgroup.com",
+      "mtd_signed": 59
+    },
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
@@ -11,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.13,
-      "rate_worked": 4.26,
+      "rate_worked": 1.6,
       "hourly": [
         2,
         0,
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -364,42 +400,6 @@
       "mtd_signed": 12
     },
     {
-      "name": "Jorge Duvergel",
-      "abbrev": "J. Duvergel",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 0.5,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jduvergel@thenofaultgroup.com",
-      "mtd_signed": 59
-    },
-    {
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 0,
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -942,13 +942,13 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 2,
+    "total_ld": 6,
     "total_still_ld": 1,
-    "total_came_in": 1,
+    "total_came_in": 5,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
-      0,
+      4,
       0,
       0,
       0,
@@ -985,14 +985,14 @@
       0
     ],
     "total_shift_hours": 202.0,
-    "total_hours_worked": 4.5,
+    "total_hours_worked": 11.0,
     "specialists_count": 26,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.44,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.55,
+    "rate_shift": 0.03,
     "hourly_totals": [
       2,
-      0,
+      4,
       0,
       0,
       0,
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 174,
-    "yesterday_same_time": 6,
-    "last_week_same_time": 8,
+    "yesterday_same_time": 16,
+    "last_week_same_time": 13,
     "last_week_total": 154,
-    "pace_time": "08:28"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
