@@ -1,6 +1,6 @@
 {
   "date": "2026-06-06",
-  "updated": "2026-06-06T13:15:16.467643",
+  "updated": "2026-06-06T13:32:25.249325",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.5,
-      "rate_worked": 0.95,
+      "rate_worked": 0.9,
       "hourly": [
         0,
         1,
@@ -47,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.3,
-      "rate_worked": 0.57,
+      "rate_worked": 0.54,
       "hourly": [
         0,
         1,
@@ -330,7 +330,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -366,7 +366,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -402,7 +402,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -438,7 +438,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -510,7 +510,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -584,10 +584,10 @@
       0
     ],
     "total_shift_hours": 96.0,
-    "total_hours_worked": 32.4,
+    "total_hours_worked": 34.5,
     "specialists_count": 15,
     "specialists_with_ld": 9,
-    "rate_worked": 0.74,
+    "rate_worked": 0.7,
     "rate_shift": 0.25,
     "hourly_totals": [
       0,
@@ -609,10 +609,10 @@
       0
     ],
     "yesterday_ld": 160,
-    "yesterday_same_time": 54,
-    "last_week_same_time": 57,
+    "yesterday_same_time": 56,
+    "last_week_same_time": 60,
     "last_week_total": 112,
-    "pace_time": "13:15"
+    "pace_time": "13:32"
   },
   "mtd_signed": {
     "by_intaker": {
