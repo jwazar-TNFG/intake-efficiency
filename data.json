@@ -1,6 +1,6 @@
 {
   "date": "2026-06-05",
-  "updated": "2026-06-05T22:30:24.235018",
+  "updated": "2026-06-05T23:15:15.940791",
   "title": "Locked Down",
   "reps": [
     {
@@ -119,9 +119,9 @@
       "came_in": 12,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.5,
+      "hours_worked": 15.0,
       "rate": 1.4,
-      "rate_worked": 1.45,
+      "rate_worked": 1.4,
       "hourly": [
         2,
         0,
@@ -335,9 +335,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.59,
+      "rate_worked": 0.56,
       "hourly": [
         1,
         0,
@@ -371,9 +371,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.44,
-      "rate_worked": 0.47,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -578,6 +578,42 @@
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
       "mtd_signed": 3
+    },
+    {
+      "name": "Richard Pena",
+      "abbrev": "R. Pena",
+      "ld": 2,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 9.0,
+      "rate": 0.22,
+      "rate_worked": 0.22,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "rpena@thenofaultgroup.com",
+      "mtd_signed": 2
     },
     {
       "name": "Maria Jose Miranda",
@@ -614,42 +650,6 @@
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 18
-    },
-    {
-      "name": "Richard Pena",
-      "abbrev": "R. Pena",
-      "ld": 1,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 8.5,
-      "rate": 0.11,
-      "rate_worked": 0.12,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 2
     },
     {
       "name": "Christiam Prado",
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -942,8 +942,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 153,
-    "total_still_ld": 91,
+    "total_ld": 154,
+    "total_still_ld": 92,
     "total_came_in": 61,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -985,10 +985,10 @@
       0
     ],
     "total_shift_hours": 202.0,
-    "total_hours_worked": 199.0,
+    "total_hours_worked": 202.0,
     "specialists_count": 26,
     "specialists_with_ld": 20,
-    "rate_worked": 0.77,
+    "rate_worked": 0.76,
     "rate_shift": 0.76,
     "hourly_totals": [
       3,
@@ -1007,13 +1007,13 @@
       14,
       2,
       0,
-      0
+      1
     ],
     "yesterday_ld": 173,
-    "yesterday_same_time": 171,
-    "last_week_same_time": 152,
+    "yesterday_same_time": 172,
+    "last_week_same_time": 154,
     "last_week_total": 154,
-    "pace_time": "22:30"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
