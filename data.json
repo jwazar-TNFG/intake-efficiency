@@ -1,6 +1,6 @@
 {
   "date": "2026-06-10",
-  "updated": "2026-06-10T09:47:49.904832",
+  "updated": "2026-06-10T10:15:07.897189",
   "title": "Locked Down",
   "reps": [
     {
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.8,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -501,8 +501,8 @@
         0,
         0
       ],
-      "start_hour": 8,
-      "end_hour": 17,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "lmurillo@thenofaultgroup.com",
       "mtd_signed": 31
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -622,10 +622,10 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours": 9.0,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -645,8 +645,8 @@
         0,
         0
       ],
-      "start_hour": 8,
-      "end_hour": 18,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 37
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -984,7 +984,7 @@
       0,
       0
     ],
-    "total_shift_hours": 198.0,
+    "total_shift_hours": 197.0,
     "total_hours_worked": 18.8,
     "specialists_count": 26,
     "specialists_with_ld": 0,
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 178,
-    "yesterday_same_time": 18,
-    "last_week_same_time": 11,
+    "yesterday_same_time": 22,
+    "last_week_same_time": 15,
     "last_week_total": 158,
-    "pace_time": "09:47"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
