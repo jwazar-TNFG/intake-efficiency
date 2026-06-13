@@ -1,6 +1,6 @@
 {
   "date": "2026-06-13",
-  "updated": "2026-06-13T00:03:31.427647",
+  "updated": "2026-06-13T01:03:36.962592",
   "title": "Locked Down",
   "reps": [
     {
@@ -433,18 +433,18 @@
       0,
       0
     ],
-    "yesterday_ld": 155,
+    "yesterday_ld": 158,
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 111,
-    "pace_time": "00:03"
+    "pace_time": "01:03"
   },
   "mtd_signed": {
     "by_intaker": {
       "avilchez@thenofaultgroup.com": 13,
       "chernandez@thenofaultgroup.com": 51,
       "cprado@thenofaultgroup.com": 11,
-      "djuarez@thenofaultgroup.com": 37,
+      "djuarez@thenofaultgroup.com": 38,
       "dvalles@thenofaultgroup.com": 14,
       "dcastro@thenofaultgroup.com": 28,
       "jamgomez@thenofaultgroup.com": 81,
@@ -468,7 +468,7 @@
       "scubillos@thenofaultgroup.com": 12,
       "vlibreros@thenofaultgroup.com": 14
     },
-    "total": 1474,
+    "total": 1475,
     "avg": 56.7
   }
 }
