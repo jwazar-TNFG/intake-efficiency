@@ -1,6 +1,6 @@
 {
   "date": "2026-06-14",
-  "updated": "2026-06-14T11:07:37.423779",
+  "updated": "2026-06-14T11:15:12.482365",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.1,
+      "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -38,6 +38,42 @@
       "is_off": false,
       "email": "dcastro@thenofaultgroup.com",
       "mtd_signed": 34
+    },
+    {
+      "name": "Richard Pena",
+      "abbrev": "R. Pena",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 3.2,
+      "rate": 0.1,
+      "rate_worked": 0.31,
+      "hourly": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "rpena@thenofaultgroup.com",
+      "mtd_signed": 24
     },
     {
       "name": "Jorge Munoz",
@@ -117,7 +153,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.1,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -153,7 +189,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.1,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -261,7 +297,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.1,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -324,42 +360,6 @@
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
       "mtd_signed": 40
-    },
-    {
-      "name": "Richard Pena",
-      "abbrev": "R. Pena",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 3.1,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 24
     },
     {
       "name": "Sebastian Cubillos",
@@ -436,8 +436,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 5,
-    "total_still_ld": 3,
+    "total_ld": 6,
+    "total_still_ld": 4,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -479,16 +479,16 @@
       0
     ],
     "total_shift_hours": 97.0,
-    "total_hours_worked": 15.5,
+    "total_hours_worked": 16.0,
     "specialists_count": 12,
-    "specialists_with_ld": 3,
-    "rate_worked": 0.32,
-    "rate_shift": 0.05,
+    "specialists_with_ld": 4,
+    "rate_worked": 0.38,
+    "rate_shift": 0.06,
     "hourly_totals": [
       0,
       2,
       3,
-      0,
+      1,
       0,
       0,
       0,
@@ -504,10 +504,10 @@
       0
     ],
     "yesterday_ld": 118,
-    "yesterday_same_time": 18,
+    "yesterday_same_time": 20,
     "last_week_same_time": 9,
     "last_week_total": 82,
-    "pace_time": "11:07"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
