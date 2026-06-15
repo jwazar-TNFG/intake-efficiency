@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "2026-06-15T10:10:17.839619",
+  "updated": "2026-06-15T10:15:09.551230",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10,
       "hours_worked": 2.2,
       "rate": 0.5,
-      "rate_worked": 2.3,
+      "rate_worked": 2.22,
       "hourly": [
         0,
         0,
@@ -49,7 +49,7 @@
       "hours": 15,
       "hours_worked": 2.2,
       "rate": 0.27,
-      "rate_worked": 1.84,
+      "rate_worked": 1.78,
       "hourly": [
         2,
         0,
@@ -85,7 +85,7 @@
       "hours": 9,
       "hours_worked": 2.2,
       "rate": 0.22,
-      "rate_worked": 0.92,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         2,
@@ -121,7 +121,7 @@
       "hours": 10,
       "hours_worked": 2.2,
       "rate": 0.2,
-      "rate_worked": 0.92,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         0,
@@ -157,7 +157,7 @@
       "hours": 10,
       "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         1,
         0,
@@ -193,7 +193,7 @@
       "hours": 10,
       "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         1,
@@ -229,7 +229,7 @@
       "hours": 10,
       "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -325,7 +325,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 53
+      "mtd_signed": 57
     },
     {
       "name": "Daniel Vallez",
@@ -1010,15 +1010,15 @@
       0
     ],
     "yesterday_ld": 76,
-    "yesterday_same_time": 6,
-    "last_week_same_time": 26,
+    "yesterday_same_time": 7,
+    "last_week_same_time": 27,
     "last_week_total": 181,
-    "pace_time": "10:10"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "avilchez@thenofaultgroup.com": 16,
-      "chernandez@thenofaultgroup.com": 53,
+      "chernandez@thenofaultgroup.com": 57,
       "cprado@thenofaultgroup.com": 12,
       "djuarez@thenofaultgroup.com": 43,
       "dvalles@thenofaultgroup.com": 21,
@@ -1044,7 +1044,7 @@
       "scubillos@thenofaultgroup.com": 12,
       "vlibreros@thenofaultgroup.com": 14
     },
-    "total": 1645,
-    "avg": 63.3
+    "total": 1649,
+    "avg": 63.4
   }
 }
