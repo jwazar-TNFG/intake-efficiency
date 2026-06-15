@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "2026-06-15T08:15:08.362845",
+  "updated": "2026-06-15T09:10:11.680109",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.13,
-      "rate_worked": 8.0,
+      "rate_worked": 1.71,
       "hourly": [
         2,
         0,
@@ -38,6 +38,42 @@
       "is_off": false,
       "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 234
+    },
+    {
+      "name": "Lina Murillo",
+      "abbrev": "L. Murillo",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9,
+      "hours_worked": 1.2,
+      "rate": 0.11,
+      "rate_worked": 0.85,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 17,
+      "is_off": false,
+      "email": "lmurillo@thenofaultgroup.com",
+      "mtd_signed": 42
     },
     {
       "name": "Axl Vilchez",
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -508,42 +544,6 @@
       "mtd_signed": 95
     },
     {
-      "name": "Lina Murillo",
-      "abbrev": "L. Murillo",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9,
-      "hours_worked": 0.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 17,
-      "is_off": false,
-      "email": "lmurillo@thenofaultgroup.com",
-      "mtd_signed": 42
-    },
-    {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
       "ld": 0,
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -942,8 +942,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 2,
-    "total_still_ld": 0,
+    "total_ld": 3,
+    "total_still_ld": 1,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -985,14 +985,14 @@
       0
     ],
     "total_shift_hours": 244,
-    "total_hours_worked": 2.4,
+    "total_hours_worked": 14.8,
     "specialists_count": 26,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.83,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.2,
     "rate_shift": 0.01,
     "hourly_totals": [
       2,
-      0,
+      1,
       0,
       0,
       0,
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 76,
-    "yesterday_same_time": 2,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 5,
+    "last_week_same_time": 14,
     "last_week_total": 181,
-    "pace_time": "08:15"
+    "pace_time": "09:10"
   },
   "mtd_signed": {
     "by_intaker": {
