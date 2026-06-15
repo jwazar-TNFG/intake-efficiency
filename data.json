@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "2026-06-15T11:10:23.872113",
+  "updated": "2026-06-15T11:15:20.337547",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.6,
-      "rate_worked": 1.89,
+      "rate_worked": 1.85,
       "hourly": [
         0,
         0,
@@ -49,7 +49,7 @@
       "hours": 15,
       "hours_worked": 3.2,
       "rate": 0.47,
-      "rate_worked": 2.21,
+      "rate_worked": 2.15,
       "hourly": [
         2,
         0,
@@ -85,7 +85,7 @@
       "hours": 9,
       "hours_worked": 3.2,
       "rate": 0.44,
-      "rate_worked": 1.26,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         2,
@@ -121,7 +121,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.4,
-      "rate_worked": 1.26,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         0,
@@ -157,7 +157,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.2,
-      "rate_worked": 0.63,
+      "rate_worked": 0.62,
       "hourly": [
         0,
         2,
@@ -193,7 +193,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.2,
-      "rate_worked": 0.63,
+      "rate_worked": 0.62,
       "hourly": [
         0,
         0,
@@ -265,7 +265,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         1,
         0,
@@ -301,7 +301,7 @@
       "hours": 10,
       "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         1,
@@ -325,7 +325,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jamgomez@thenofaultgroup.com",
-      "mtd_signed": 89
+      "mtd_signed": 90
     },
     {
       "name": "Axl Vilchez",
@@ -721,7 +721,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
-      "mtd_signed": 40
+      "mtd_signed": 41
     },
     {
       "name": "Naryeli Silva",
@@ -1013,7 +1013,7 @@
     "yesterday_same_time": 10,
     "last_week_same_time": 37,
     "last_week_total": 181,
-    "pace_time": "11:10"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1023,7 +1023,7 @@
       "djuarez@thenofaultgroup.com": 43,
       "dvalles@thenofaultgroup.com": 21,
       "dcastro@thenofaultgroup.com": 36,
-      "jamgomez@thenofaultgroup.com": 89,
+      "jamgomez@thenofaultgroup.com": 90,
       "jcuarezma@thenofaultgroup.com": 143,
       "jduvergel@thenofaultgroup.com": 168,
       "jgonzalez@thenofaultgroup.com": 5,
@@ -1032,7 +1032,7 @@
       "jramirez@thenofaultgroup.com": 27,
       "lmurillo@thenofaultgroup.com": 42,
       "lvivas@thenofaultgroup.com": 88,
-      "mcardona@thenofaultgroup.com": 40,
+      "mcardona@thenofaultgroup.com": 41,
       "mmiranda@thenofaultgroup.com": 56,
       "mpenaranda@thenofaultgroup.com": 116,
       "nelsonr@thenofaultgroup.com": 234,
@@ -1044,7 +1044,7 @@
       "scubillos@thenofaultgroup.com": 12,
       "vlibreros@thenofaultgroup.com": 14
     },
-    "total": 1649,
-    "avg": 63.4
+    "total": 1651,
+    "avg": 63.5
   }
 }
