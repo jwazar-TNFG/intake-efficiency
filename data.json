@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "2026-06-15T15:10:51.775434",
+  "updated": "2026-06-15T15:15:14.525928",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10,
       "hours_worked": 7.2,
       "rate": 1.3,
-      "rate_worked": 1.81,
+      "rate_worked": 1.79,
       "hourly": [
         0,
         0,
@@ -49,7 +49,7 @@
       "hours": 10,
       "hours_worked": 7.2,
       "rate": 1.2,
-      "rate_worked": 1.67,
+      "rate_worked": 1.66,
       "hourly": [
         0,
         0,
@@ -85,7 +85,7 @@
       "hours": 15,
       "hours_worked": 7.2,
       "rate": 1.13,
-      "rate_worked": 2.37,
+      "rate_worked": 2.34,
       "hourly": [
         2,
         0,
@@ -121,7 +121,7 @@
       "hours": 10,
       "hours_worked": 7.2,
       "rate": 1.1,
-      "rate_worked": 1.53,
+      "rate_worked": 1.52,
       "hourly": [
         0,
         0,
@@ -157,7 +157,7 @@
       "hours": 10,
       "hours_worked": 7.2,
       "rate": 0.8,
-      "rate_worked": 1.11,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         2,
@@ -229,7 +229,7 @@
       "hours": 9,
       "hours_worked": 3.2,
       "rate": 0.44,
-      "rate_worked": 1.26,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         0,
@@ -265,7 +265,7 @@
       "hours": 9,
       "hours_worked": 7.2,
       "rate": 0.44,
-      "rate_worked": 0.56,
+      "rate_worked": 0.55,
       "hourly": [
         0,
         2,
@@ -301,7 +301,7 @@
       "hours": 9,
       "hours_worked": 7.2,
       "rate": 0.44,
-      "rate_worked": 0.56,
+      "rate_worked": 0.55,
       "hourly": [
         0,
         0,
@@ -337,7 +337,7 @@
       "hours": 9,
       "hours_worked": 6.2,
       "rate": 0.33,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -373,7 +373,7 @@
       "hours": 9,
       "hours_worked": 1.2,
       "rate": 0.33,
-      "rate_worked": 2.54,
+      "rate_worked": 2.4,
       "hourly": [
         0,
         0,
@@ -409,7 +409,7 @@
       "hours": 9,
       "hours_worked": 3.2,
       "rate": 0.33,
-      "rate_worked": 0.94,
+      "rate_worked": 0.92,
       "hourly": [
         0,
         0,
@@ -433,7 +433,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "rchavarria@thenofaultgroup.com",
-      "mtd_signed": 66
+      "mtd_signed": 67
     },
     {
       "name": "Christiam Prado",
@@ -445,7 +445,7 @@
       "hours": 10,
       "hours_worked": 7.2,
       "rate": 0.3,
-      "rate_worked": 0.42,
+      "rate_worked": 0.41,
       "hourly": [
         1,
         0,
@@ -481,7 +481,7 @@
       "hours": 9,
       "hours_worked": 3.2,
       "rate": 0.22,
-      "rate_worked": 0.63,
+      "rate_worked": 0.62,
       "hourly": [
         0,
         0,
@@ -517,7 +517,7 @@
       "hours": 9,
       "hours_worked": 1.2,
       "rate": 0.22,
-      "rate_worked": 1.69,
+      "rate_worked": 1.6,
       "hourly": [
         0,
         0,
@@ -757,7 +757,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 88
+      "mtd_signed": 89
     },
     {
       "name": "Manuel Cardona",
@@ -1011,9 +1011,9 @@
     ],
     "yesterday_ld": 76,
     "yesterday_same_time": 38,
-    "last_week_same_time": 102,
+    "last_week_same_time": 104,
     "last_week_total": 181,
-    "pace_time": "15:10"
+    "pace_time": "15:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1031,20 +1031,20 @@
       "jortega@thenofaultgroup.com": 50,
       "jramirez@thenofaultgroup.com": 27,
       "lmurillo@thenofaultgroup.com": 42,
-      "lvivas@thenofaultgroup.com": 88,
+      "lvivas@thenofaultgroup.com": 89,
       "mcardona@thenofaultgroup.com": 41,
       "mmiranda@thenofaultgroup.com": 56,
       "mpenaranda@thenofaultgroup.com": 116,
       "nelsonr@thenofaultgroup.com": 234,
       "nsilva@thenofaultgroup.com": 55,
       "oplasencia@thenofaultgroup.com": 88,
-      "rchavarria@thenofaultgroup.com": 66,
+      "rchavarria@thenofaultgroup.com": 67,
       "rpena@thenofaultgroup.com": 32,
       "rroca@thenofaultgroup.com": 45,
       "scubillos@thenofaultgroup.com": 12,
       "vlibreros@thenofaultgroup.com": 14
     },
-    "total": 1653,
-    "avg": 63.6
+    "total": 1655,
+    "avg": 63.7
   }
 }
