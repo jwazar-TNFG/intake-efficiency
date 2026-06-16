@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "2026-06-15T20:11:20.229410",
+  "updated": "2026-06-15T20:15:02.319337",
   "title": "Locked Down",
   "reps": [
     {
@@ -121,7 +121,7 @@
       "hours": 15,
       "hours_worked": 12.2,
       "rate": 1.6,
-      "rate_worked": 1.97,
+      "rate_worked": 1.96,
       "hourly": [
         2,
         0,
@@ -193,7 +193,7 @@
       "hours": 9,
       "hours_worked": 6.2,
       "rate": 1.22,
-      "rate_worked": 1.78,
+      "rate_worked": 1.76,
       "hourly": [
         0,
         0,
@@ -217,7 +217,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 96
+      "mtd_signed": 97
     },
     {
       "name": "Maria Jose Miranda",
@@ -301,7 +301,7 @@
       "hours": 4,
       "hours_worked": 2.2,
       "rate": 1.0,
-      "rate_worked": 1.83,
+      "rate_worked": 1.78,
       "hourly": [
         0,
         0,
@@ -481,7 +481,7 @@
       "hours": 9,
       "hours_worked": 8.2,
       "rate": 0.44,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -517,7 +517,7 @@
       "hours": 9,
       "hours_worked": 8.2,
       "rate": 0.44,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -661,7 +661,7 @@
       "hours": 9,
       "hours_worked": 8.2,
       "rate": 0.33,
-      "rate_worked": 0.37,
+      "rate_worked": 0.36,
       "hourly": [
         0,
         0,
@@ -1013,7 +1013,7 @@
     "yesterday_same_time": 75,
     "last_week_same_time": 169,
     "last_week_total": 181,
-    "pace_time": "20:11"
+    "pace_time": "20:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1027,7 +1027,7 @@
       "jcuarezma@thenofaultgroup.com": 143,
       "jduvergel@thenofaultgroup.com": 168,
       "jgonzalez@thenofaultgroup.com": 5,
-      "jjortega@thenofaultgroup.com": 96,
+      "jjortega@thenofaultgroup.com": 97,
       "jortega@thenofaultgroup.com": 50,
       "jramirez@thenofaultgroup.com": 27,
       "lmurillo@thenofaultgroup.com": 43,
@@ -1044,7 +1044,7 @@
       "scubillos@thenofaultgroup.com": 12,
       "vlibreros@thenofaultgroup.com": 14
     },
-    "total": 1661,
+    "total": 1662,
     "avg": 63.9
   }
 }
