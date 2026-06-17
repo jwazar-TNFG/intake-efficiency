@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "updated": "2026-06-16T20:13:43.103469",
+  "updated": "2026-06-16T20:15:07.179398",
   "title": "Locked Down",
   "reps": [
     {
@@ -409,7 +409,7 @@
       "hours": 9.0,
       "hours_worked": 8.2,
       "rate": 0.44,
-      "rate_worked": 0.49,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -589,7 +589,7 @@
       "hours": 4.0,
       "hours_worked": 2.2,
       "rate": 0.25,
-      "rate_worked": 0.45,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -757,7 +757,7 @@
       "end_hour": null,
       "is_off": true,
       "email": "vlibreros@thenofaultgroup.com",
-      "mtd_signed": 17
+      "mtd_signed": 18
     },
     {
       "name": "Daniel Vallez",
@@ -977,7 +977,7 @@
     "yesterday_same_time": 184,
     "last_week_same_time": 163,
     "last_week_total": 177,
-    "pace_time": "20:13"
+    "pace_time": "20:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1006,9 +1006,9 @@
       "rpena@thenofaultgroup.com": 35,
       "rroca@thenofaultgroup.com": 50,
       "scubillos@thenofaultgroup.com": 12,
-      "vlibreros@thenofaultgroup.com": 17
+      "vlibreros@thenofaultgroup.com": 18
     },
-    "total": 1833,
+    "total": 1834,
     "avg": 70.5
   }
 }
