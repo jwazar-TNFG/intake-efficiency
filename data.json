@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updated": "2026-06-19T09:18:56.877999",
+  "updated": "2026-06-19T10:15:09.143375",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.2,
-      "rate_worked": 2.27,
+      "rate_worked": 1.33,
       "hourly": [
         3,
         0,
@@ -83,9 +83,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.2,
-      "rate_worked": 1.52,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         1,
@@ -112,6 +112,42 @@
       "mtd_signed": 246
     },
     {
+      "name": "Manny Penaranda",
+      "abbrev": "M. Penaranda",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 2.2,
+      "rate": 0.2,
+      "rate_worked": 0.89,
+      "hourly": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "mpenaranda@thenofaultgroup.com",
+      "mtd_signed": 183
+    },
+    {
       "name": "Lina Murillo",
       "abbrev": "L. Murillo",
       "ld": 1,
@@ -119,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.11,
-      "rate_worked": 0.76,
+      "rate_worked": 0.44,
       "hourly": [
         1,
         0,
@@ -146,42 +182,6 @@
       "is_off": false,
       "email": "lmurillo@thenofaultgroup.com",
       "mtd_signed": 62
-    },
-    {
-      "name": "Manny Penaranda",
-      "abbrev": "M. Penaranda",
-      "ld": 1,
-      "still_ld": 1,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.3,
-      "rate": 0.1,
-      "rate_worked": 0.76,
-      "hourly": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 183
     },
     {
       "name": "Axl Vilchez",
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.3,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 10,
-    "total_still_ld": 8,
+    "total_ld": 11,
+    "total_still_ld": 9,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -949,15 +949,15 @@
       0
     ],
     "total_shift_hours": 193.0,
-    "total_hours_worked": 11.7,
+    "total_hours_worked": 19.8,
     "specialists_count": 25,
     "specialists_with_ld": 5,
-    "rate_worked": 0.85,
-    "rate_shift": 0.05,
+    "rate_worked": 0.56,
+    "rate_shift": 0.06,
     "hourly_totals": [
       4,
       2,
-      0,
+      1,
       0,
       0,
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 178,
-    "yesterday_same_time": 3,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 13,
+    "last_week_same_time": 8,
     "last_week_total": 158,
-    "pace_time": "09:18"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
