@@ -1,8 +1,44 @@
 {
   "date": "2026-06-19",
-  "updated": "2026-06-19T05:18:37.061947",
+  "updated": "2026-06-19T06:18:42.445185",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Jorge Duvergel",
+      "abbrev": "J. Duvergel",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10,
+      "hours_worked": 0,
+      "rate": 0.1,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jduvergel@thenofaultgroup.com",
+      "mtd_signed": 246
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -326,42 +362,6 @@
       "is_off": false,
       "email": "jramirez@thenofaultgroup.com",
       "mtd_signed": 36
-    },
-    {
-      "name": "Jorge Duvergel",
-      "abbrev": "J. Duvergel",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0,
-      "rate": 0.0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jduvergel@thenofaultgroup.com",
-      "mtd_signed": 246
     },
     {
       "name": "Jorge Munoz",
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -951,7 +951,7 @@
     "total_shift_hours": 235,
     "total_hours_worked": 0,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
+    "specialists_with_ld": 1,
     "rate_worked": 0,
     "rate_shift": 0.0,
     "hourly_totals": [
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 158,
-    "pace_time": "05:18"
+    "pace_time": "06:18"
   },
   "mtd_signed": {
     "by_intaker": {
