@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updated": "2026-06-19T22:19:58.085028",
+  "updated": "2026-06-19T23:15:03.195261",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 19,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.3,
+      "hours_worked": 15.0,
       "rate": 2.07,
-      "rate_worked": 2.16,
+      "rate_worked": 2.07,
       "hourly": [
         3,
         0,
@@ -223,8 +223,8 @@
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
       "ld": 9,
-      "still_ld": 7,
-      "came_in": 2,
+      "still_ld": 5,
+      "came_in": 4,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -263,9 +263,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.84,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.6,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.6,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.44,
-      "rate_worked": 0.48,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 153,
-    "total_still_ld": 75,
-    "total_came_in": 77,
+    "total_still_ld": 73,
+    "total_came_in": 79,
     "total_dropped": 1,
     "hourly_came_in": [
       3,
@@ -920,8 +920,8 @@
       6,
       9,
       7,
-      8,
-      5,
+      9,
+      6,
       3,
       1,
       2,
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 193.0,
-    "total_hours_worked": 188.1,
+    "total_hours_worked": 193.0,
     "specialists_count": 25,
     "specialists_with_ld": 16,
-    "rate_worked": 0.81,
+    "rate_worked": 0.79,
     "rate_shift": 0.79,
     "hourly_totals": [
       4,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 175,
-    "yesterday_same_time": 173,
-    "last_week_same_time": 153,
+    "yesterday_same_time": 175,
+    "last_week_same_time": 156,
     "last_week_total": 158,
-    "pace_time": "22:19"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
