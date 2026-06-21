@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "updated": "2026-06-20T21:21:51.371808",
+  "updated": "2026-06-20T22:15:05.863640",
   "title": "Locked Down",
   "reps": [
     {
@@ -249,6 +249,41 @@
       "mtd_signed": 0
     },
     {
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
+      "ld": 4,
+      "still_ld": 4,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "mtd_signed": 0
+    },
+    {
       "name": "C. Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 3,
@@ -389,41 +424,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Sebastian Cubillos",
-      "abbrev": "S. Cubillos",
-      "ld": 3,
-      "still_ld": 3,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "mtd_signed": 0
-    },
-    {
       "name": "Richard Pena",
       "abbrev": "R. Pena",
       "ld": 2,
@@ -531,8 +531,8 @@
   ],
   "shifts_configured": false,
   "department": {
-    "total_ld": 83,
-    "total_still_ld": 54,
+    "total_ld": 84,
+    "total_still_ld": 55,
     "total_came_in": 27,
     "total_dropped": 2,
     "hourly_came_in": [
@@ -593,16 +593,16 @@
       13,
       4,
       5,
-      5,
+      6,
       0,
       0,
       0
     ],
     "yesterday_ld": 153,
-    "yesterday_same_time": 147,
-    "last_week_same_time": 116,
+    "yesterday_same_time": 152,
+    "last_week_same_time": 117,
     "last_week_total": 117,
-    "pace_time": "21:21"
+    "pace_time": "22:15"
   },
   "mtd_signed": {
     "by_intaker": {
