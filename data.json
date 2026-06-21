@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "updated": "2026-06-20T22:15:07.406587",
+  "updated": "2026-06-20T23:15:08.367347",
   "title": "Locked Down",
   "reps": [
     {
@@ -389,6 +389,41 @@
       "mtd_signed": 0
     },
     {
+      "name": "Jhonathan Ramirez",
+      "abbrev": "J. Ramirez",
+      "ld": 3,
+      "still_ld": 2,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "mtd_signed": 0
+    },
+    {
       "name": "Reny Roca",
       "abbrev": "R. Roca",
       "ld": 3,
@@ -492,47 +527,12 @@
       "end_hour": null,
       "is_off": true,
       "mtd_signed": 0
-    },
-    {
-      "name": "Jhonathan Ramirez",
-      "abbrev": "J. Ramirez",
-      "ld": 1,
-      "still_ld": 0,
-      "came_in": 1,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "mtd_signed": 0
     }
   ],
   "shifts_configured": false,
   "department": {
-    "total_ld": 84,
-    "total_still_ld": 55,
+    "total_ld": 86,
+    "total_still_ld": 57,
     "total_came_in": 27,
     "total_dropped": 2,
     "hourly_came_in": [
@@ -595,14 +595,14 @@
       5,
       6,
       0,
-      0,
+      2,
       0
     ],
     "yesterday_ld": 153,
     "yesterday_same_time": 152,
     "last_week_same_time": 117,
     "last_week_total": 117,
-    "pace_time": "22:15"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
