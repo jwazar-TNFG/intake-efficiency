@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "2026-06-22T22:26:03.341228",
+  "updated": "2026-06-22T23:15:06.687793",
   "title": "Locked Down",
   "reps": [
     {
@@ -263,9 +263,9 @@
       "came_in": 12,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.4,
+      "hours_worked": 15.0,
       "rate": 1.0,
-      "rate_worked": 1.04,
+      "rate_worked": 1.0,
       "hourly": [
         0,
         0,
@@ -400,6 +400,42 @@
       "mtd_signed": 117
     },
     {
+      "name": "Naryeli Silva",
+      "abbrev": "N. Silva",
+      "ld": 8,
+      "still_ld": 8,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 0.8,
+      "rate_worked": 0.8,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "nsilva@thenofaultgroup.com",
+      "mtd_signed": 79
+    },
+    {
       "name": "Juan Ortega",
       "abbrev": "Juan Ortega",
       "ld": 7,
@@ -407,9 +443,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.4,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.83,
+      "rate_worked": 0.78,
       "hourly": [
         1,
         0,
@@ -470,42 +506,6 @@
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 91
-    },
-    {
-      "name": "Naryeli Silva",
-      "abbrev": "N. Silva",
-      "ld": 7,
-      "still_ld": 7,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 0.7,
-      "rate_worked": 0.7,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        6,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 79
     },
     {
       "name": "Lina Murillo",
@@ -587,9 +587,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.4,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 186,
-    "total_still_ld": 90,
+    "total_ld": 187,
+    "total_still_ld": 91,
     "total_came_in": 91,
     "total_dropped": 2,
     "hourly_came_in": [
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 218.0,
-    "total_hours_worked": 216.2,
+    "total_hours_worked": 218.0,
     "specialists_count": 25,
     "specialists_with_ld": 23,
     "rate_worked": 0.86,
-    "rate_shift": 0.85,
+    "rate_shift": 0.86,
     "hourly_totals": [
       1,
       3,
@@ -970,14 +970,14 @@
       1,
       6,
       10,
-      0,
+      1,
       0
     ],
     "yesterday_ld": 76,
     "yesterday_same_time": 76,
     "last_week_same_time": 208,
     "last_week_total": 208,
-    "pace_time": "22:26"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
