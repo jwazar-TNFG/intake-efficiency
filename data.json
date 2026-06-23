@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "2026-06-22T22:15:07.092490",
+  "updated": "2026-06-22T22:26:03.341228",
   "title": "Locked Down",
   "reps": [
     {
@@ -263,9 +263,9 @@
       "came_in": 12,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 14.4,
       "rate": 1.0,
-      "rate_worked": 1.05,
+      "rate_worked": 1.04,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.4,
       "rate": 0.78,
-      "rate_worked": 0.85,
+      "rate_worked": 0.83,
       "hourly": [
         1,
         0,
@@ -587,7 +587,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.4,
       "rate": 0.22,
       "rate_worked": 0.24,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 218.0,
-    "total_hours_worked": 215.6,
+    "total_hours_worked": 216.2,
     "specialists_count": 25,
     "specialists_with_ld": 23,
     "rate_worked": 0.86,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 76,
-    "yesterday_same_time": 75,
-    "last_week_same_time": 206,
+    "yesterday_same_time": 76,
+    "last_week_same_time": 208,
     "last_week_total": 208,
-    "pace_time": "22:15"
+    "pace_time": "22:26"
   },
   "mtd_signed": {
     "by_intaker": {
