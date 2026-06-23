@@ -1,22 +1,22 @@
 {
   "date": "2026-06-23",
-  "updated": "2026-06-23T08:26:35.079268",
+  "updated": "2026-06-23T09:15:07.196538",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 7,
+      "ld": 8,
       "still_ld": 2,
-      "came_in": 5,
+      "came_in": 6,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.4,
-      "rate": 0.47,
-      "rate_worked": 15.91,
+      "hours_worked": 1.2,
+      "rate": 0.53,
+      "rate_worked": 6.4,
       "hourly": [
         7,
-        0,
+        1,
         0,
         0,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -263,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,12 +906,12 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 7,
+    "total_ld": 8,
     "total_still_ld": 2,
-    "total_came_in": 5,
+    "total_came_in": 6,
     "total_dropped": 0,
     "hourly_came_in": [
-      5,
+      6,
       0,
       0,
       0,
@@ -949,14 +949,14 @@
       0
     ],
     "total_shift_hours": 190.0,
-    "total_hours_worked": 4.8,
+    "total_hours_worked": 14.6,
     "specialists_count": 25,
     "specialists_with_ld": 1,
-    "rate_worked": 1.46,
+    "rate_worked": 0.55,
     "rate_shift": 0.04,
     "hourly_totals": [
       7,
-      0,
+      1,
       0,
       0,
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 187,
-    "yesterday_same_time": 3,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 4,
+    "last_week_same_time": 9,
     "last_week_total": 188,
-    "pace_time": "08:26"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
