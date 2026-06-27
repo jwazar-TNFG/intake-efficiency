@@ -1,6 +1,6 @@
 {
   "date": "2026-06-27",
-  "updated": "2026-06-27T10:15:08.659083",
+  "updated": "2026-06-27T10:32:18.798871",
   "title": "Locked Down",
   "reps": [
     {
@@ -81,7 +81,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -117,7 +117,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -153,7 +153,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -182,6 +182,42 @@
       "mtd_signed": 91
     },
     {
+      "name": "Juan Ortega",
+      "abbrev": "Juan Ortega",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 0,
+      "rate": 0.0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "jjortega@thenofaultgroup.com",
+      "mtd_signed": 159
+    },
+    {
       "name": "Manuel Cardona",
       "abbrev": "M. Cardona",
       "ld": 0,
@@ -189,7 +225,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -225,7 +261,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -261,7 +297,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -288,6 +324,78 @@
       "is_off": false,
       "email": "rpena@thenofaultgroup.com",
       "mtd_signed": 57
+    },
+    {
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 0,
+      "rate": 0.0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "scubillos@thenofaultgroup.com",
+      "mtd_signed": 31
+    },
+    {
+      "name": "Valentina Liberos",
+      "abbrev": "V. Liberos",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 0,
+      "rate": 0.0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 12,
+      "end_hour": 22,
+      "is_off": false,
+      "email": "vlibreros@thenofaultgroup.com",
+      "mtd_signed": 33
     }
   ],
   "shifts_configured": true,
@@ -334,12 +442,12 @@
       0,
       0
     ],
-    "total_shift_hours": 60.0,
-    "total_hours_worked": 13.2,
-    "specialists_count": 8,
+    "total_shift_hours": 88.0,
+    "total_hours_worked": 15.0,
+    "specialists_count": 11,
     "specialists_with_ld": 2,
-    "rate_worked": 0.3,
-    "rate_shift": 0.07,
+    "rate_worked": 0.27,
+    "rate_shift": 0.05,
     "hourly_totals": [
       0,
       2,
@@ -360,10 +468,10 @@
       0
     ],
     "yesterday_ld": 140,
-    "yesterday_same_time": 19,
-    "last_week_same_time": 11,
+    "yesterday_same_time": 23,
+    "last_week_same_time": 14,
     "last_week_total": 86,
-    "pace_time": "10:15"
+    "pace_time": "10:32"
   },
   "mtd_signed": {
     "by_intaker": {
