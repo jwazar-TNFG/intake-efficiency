@@ -1,6 +1,6 @@
 {
   "date": "2026-06-28",
-  "updated": "2026-06-28T20:34:53.367925",
+  "updated": "2026-06-28T21:16:30.087415",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.3,
       "rate": 1.0,
-      "rate_worked": 1.37,
+      "rate_worked": 1.24,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.3,
       "rate": 0.7,
-      "rate_worked": 0.82,
+      "rate_worked": 0.76,
       "hourly": [
         0,
         0,
@@ -187,13 +187,13 @@
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
       "ld": 4,
-      "still_ld": 4,
-      "came_in": 0,
+      "still_ld": 3,
+      "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.3,
       "rate": 0.44,
-      "rate_worked": 0.61,
+      "rate_worked": 0.55,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.3,
       "rate": 0.22,
-      "rate_worked": 0.3,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         0,
@@ -294,9 +294,9 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 18,
+      "ld": 19,
       "still_ld": 2,
-      "came_in": 16,
+      "came_in": 17,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -316,7 +316,7 @@
         3,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -329,8 +329,8 @@
     {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
-      "ld": 15,
-      "still_ld": 11,
+      "ld": 16,
+      "still_ld": 12,
       "came_in": 4,
       "dropped": 0,
       "hours": 0,
@@ -350,7 +350,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -470,9 +470,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 92,
+    "total_ld": 94,
     "total_still_ld": 57,
-    "total_came_in": 35,
+    "total_came_in": 37,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -486,9 +486,9 @@
       2,
       7,
       4,
+      2,
+      0,
       1,
-      0,
-      0,
       0,
       0,
       0
@@ -513,11 +513,11 @@
       0
     ],
     "total_shift_hours": 87.0,
-    "total_hours_worked": 78.4,
+    "total_hours_worked": 81.2,
     "specialists_count": 13,
     "specialists_with_ld": 12,
-    "rate_worked": 1.17,
-    "rate_shift": 1.06,
+    "rate_worked": 1.16,
+    "rate_shift": 1.08,
     "hourly_totals": [
       0,
       0,
@@ -531,17 +531,17 @@
       13,
       12,
       4,
-      2,
-      0,
+      3,
+      1,
       0,
       0,
       0
     ],
     "yesterday_ld": 81,
-    "yesterday_same_time": 67,
-    "last_week_same_time": 68,
+    "yesterday_same_time": 74,
+    "last_week_same_time": 69,
     "last_week_total": 73,
-    "pace_time": "20:34"
+    "pace_time": "21:16"
   },
   "mtd_signed": {
     "by_intaker": {
