@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "updated": "2026-06-30T23:15:07.739434",
+  "updated": "2026-06-30T23:38:51.394137",
   "title": "Locked Down",
   "reps": [
     {
@@ -109,7 +109,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 180
+      "mtd_signed": 181
     },
     {
       "name": "Jasmine Cuarezma",
@@ -977,7 +977,7 @@
     "yesterday_same_time": 196,
     "last_week_same_time": 176,
     "last_week_total": 176,
-    "pace_time": "23:15"
+    "pace_time": "23:38"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -991,7 +991,7 @@
       "jcuarezma@thenofaultgroup.com": 296,
       "jduvergel@thenofaultgroup.com": 366,
       "jgonzalez@thenofaultgroup.com": 5,
-      "jjortega@thenofaultgroup.com": 180,
+      "jjortega@thenofaultgroup.com": 181,
       "jortega@thenofaultgroup.com": 97,
       "jramirez@thenofaultgroup.com": 48,
       "lmurillo@thenofaultgroup.com": 111,
@@ -1008,7 +1008,7 @@
       "scubillos@thenofaultgroup.com": 44,
       "vlibreros@thenofaultgroup.com": 44
     },
-    "total": 3583,
+    "total": 3584,
     "avg": 137.8
   }
 }
