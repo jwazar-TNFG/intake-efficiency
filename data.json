@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "updated": "2026-06-30T21:15:17.250099",
+  "updated": "2026-06-30T21:38:42.056712",
   "title": "Locked Down",
   "reps": [
     {
@@ -155,9 +155,9 @@
       "came_in": 3,
       "dropped": 2,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 1.33,
-      "rate_worked": 1.66,
+      "rate_worked": 1.57,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 17,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 13.2,
+      "hours_worked": 13.6,
       "rate": 1.27,
-      "rate_worked": 1.43,
+      "rate_worked": 1.39,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 1.0,
-      "rate_worked": 1.23,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.22,
-      "rate_worked": 0.28,
+      "rate_worked": 0.26,
       "hourly": [
         0,
         0,
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 190.0,
-    "total_hours_worked": 182.0,
+    "total_hours_worked": 184.0,
     "specialists_count": 25,
     "specialists_with_ld": 18,
-    "rate_worked": 0.92,
+    "rate_worked": 0.91,
     "rate_shift": 0.88,
     "hourly_totals": [
       1,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 196,
-    "yesterday_same_time": 185,
-    "last_week_same_time": 157,
+    "yesterday_same_time": 193,
+    "last_week_same_time": 162,
     "last_week_total": 176,
-    "pace_time": "21:15"
+    "pace_time": "21:38"
   },
   "mtd_signed": {
     "by_intaker": {
