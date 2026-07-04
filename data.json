@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "updated": "2026-07-04T08:15:18.698624",
+  "updated": "2026-07-04T08:51:36.574290",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,7 +11,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -73,7 +73,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "dvalles@thenofaultgroup.com",
-      "mtd_signed": 9
+      "mtd_signed": 0
     },
     {
       "name": "Jesus Ortega",
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -109,7 +109,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jortega@thenofaultgroup.com",
-      "mtd_signed": 5
+      "mtd_signed": 0
     },
     {
       "name": "Juan Ortega",
@@ -145,7 +145,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 19
+      "mtd_signed": 0
     },
     {
       "name": "Manuel Cardona",
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -181,7 +181,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
-      "mtd_signed": 4
+      "mtd_signed": 0
     },
     {
       "name": "Reny Roca",
@@ -217,7 +217,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 2
+      "mtd_signed": 0
     },
     {
       "name": "Richard Pena",
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -289,7 +289,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 9
+      "mtd_signed": 0
     },
     {
       "name": "Valentina Liberos",
@@ -325,7 +325,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "vlibreros@thenofaultgroup.com",
-      "mtd_signed": 3
+      "mtd_signed": 0
     }
   ],
   "shifts_configured": true,
@@ -373,7 +373,7 @@
       0
     ],
     "total_shift_hours": 86.0,
-    "total_hours_worked": 1.0,
+    "total_hours_worked": 4.5,
     "specialists_count": 9,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -399,34 +399,13 @@
     ],
     "yesterday_ld": 119,
     "yesterday_same_time": 4,
-    "last_week_same_time": 0,
+    "last_week_same_time": 2,
     "last_week_total": 81,
-    "pace_time": "08:15"
+    "pace_time": "08:51"
   },
   "mtd_signed": {
-    "by_intaker": {
-      "chernandez@thenofaultgroup.com": 13,
-      "djuarez@thenofaultgroup.com": 4,
-      "dvalles@thenofaultgroup.com": 9,
-      "jamgomez@thenofaultgroup.com": 15,
-      "jcuarezma@thenofaultgroup.com": 17,
-      "jduvergel@thenofaultgroup.com": 24,
-      "jjortega@thenofaultgroup.com": 19,
-      "jortega@thenofaultgroup.com": 5,
-      "lmurillo@thenofaultgroup.com": 13,
-      "lvivas@thenofaultgroup.com": 22,
-      "mcardona@thenofaultgroup.com": 4,
-      "mmiranda@thenofaultgroup.com": 10,
-      "mpenaranda@thenofaultgroup.com": 34,
-      "nelsonr@thenofaultgroup.com": 53,
-      "nsilva@thenofaultgroup.com": 14,
-      "oplasencia@thenofaultgroup.com": 25,
-      "rchavarria@thenofaultgroup.com": 15,
-      "rroca@thenofaultgroup.com": 2,
-      "scubillos@thenofaultgroup.com": 9,
-      "vlibreros@thenofaultgroup.com": 3
-    },
-    "total": 310,
-    "avg": 15.5
+    "by_intaker": {},
+    "total": 0,
+    "avg": 0
   }
 }
