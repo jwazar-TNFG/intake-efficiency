@@ -1,6 +1,6 @@
 {
   "date": "2026-07-03",
-  "updated": "2026-07-03T22:50:14.609661",
+  "updated": "2026-07-03T23:15:04.209583",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 23,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.8,
+      "hours_worked": 15.0,
       "rate": 1.67,
-      "rate_worked": 1.68,
+      "rate_worked": 1.67,
       "hourly": [
         0,
         0,
@@ -220,6 +220,42 @@
       "mtd_signed": 12
     },
     {
+      "name": "Maria Jose Miranda",
+      "abbrev": "M. Miranda",
+      "ld": 6,
+      "still_ld": 5,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 0.6,
+      "rate_worked": 0.6,
+      "hourly": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "mmiranda@thenofaultgroup.com",
+      "mtd_signed": 8
+    },
+    {
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 5,
@@ -227,9 +263,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.57,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -263,9 +299,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.57,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -290,42 +326,6 @@
       "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
       "mtd_signed": 11
-    },
-    {
-      "name": "Maria Jose Miranda",
-      "abbrev": "M. Miranda",
-      "ld": 5,
-      "still_ld": 4,
-      "came_in": 1,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 0.5,
-      "rate_worked": 0.5,
-      "hourly": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "mmiranda@thenofaultgroup.com",
-      "mtd_signed": 8
     },
     {
       "name": "Reny Roca",
@@ -407,9 +407,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.34,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.34,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.34,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.11,
       "rate_worked": 0.11,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.8,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 118,
-    "total_still_ld": 64,
+    "total_ld": 119,
+    "total_still_ld": 65,
     "total_came_in": 54,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 205.0,
-    "total_hours_worked": 203.4,
+    "total_hours_worked": 205.0,
     "specialists_count": 25,
     "specialists_with_ld": 18,
     "rate_worked": 0.58,
@@ -968,7 +968,7 @@
       9,
       12,
       6,
-      3,
+      4,
       1,
       0,
       0
@@ -977,7 +977,7 @@
     "yesterday_same_time": 141,
     "last_week_same_time": 137,
     "last_week_total": 140,
-    "pace_time": "22:50"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
