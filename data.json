@@ -1,6 +1,6 @@
 {
   "date": "2026-07-06",
-  "updated": "2026-07-06T00:54:56.888158",
+  "updated": "2026-07-06T01:55:00.200964",
   "title": "Locked Down",
   "reps": [
     {
@@ -577,7 +577,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "mcardona@thenofaultgroup.com",
-      "mtd_signed": 7
+      "mtd_signed": 8
     },
     {
       "name": "Maria Jose Miranda",
@@ -757,7 +757,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 4
+      "mtd_signed": 5
     },
     {
       "name": "Richard Pena",
@@ -865,7 +865,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 13
+      "mtd_signed": 14
     },
     {
       "name": "Valentina Liberos",
@@ -901,7 +901,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "vlibreros@thenofaultgroup.com",
-      "mtd_signed": 8
+      "mtd_signed": 10
     }
   ],
   "shifts_configured": true,
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 196,
-    "pace_time": "00:54"
+    "pace_time": "01:54"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -993,7 +993,7 @@
       "jortega@thenofaultgroup.com": 7,
       "lmurillo@thenofaultgroup.com": 13,
       "lvivas@thenofaultgroup.com": 26,
-      "mcardona@thenofaultgroup.com": 7,
+      "mcardona@thenofaultgroup.com": 8,
       "mmiranda@thenofaultgroup.com": 16,
       "mpenaranda@thenofaultgroup.com": 41,
       "nelsonr@thenofaultgroup.com": 73,
@@ -1001,11 +1001,11 @@
       "oplasencia@thenofaultgroup.com": 25,
       "rchavarria@thenofaultgroup.com": 18,
       "rpena@thenofaultgroup.com": 4,
-      "rroca@thenofaultgroup.com": 4,
-      "scubillos@thenofaultgroup.com": 13,
-      "vlibreros@thenofaultgroup.com": 8
+      "rroca@thenofaultgroup.com": 5,
+      "scubillos@thenofaultgroup.com": 14,
+      "vlibreros@thenofaultgroup.com": 10
     },
-    "total": 409,
-    "avg": 17.8
+    "total": 414,
+    "avg": 18.0
   }
 }
