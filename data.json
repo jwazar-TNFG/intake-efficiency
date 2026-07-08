@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "updated": "2026-07-07T20:15:11.156691",
+  "updated": "2026-07-07T20:58:58.461101",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 1.22,
-      "rate_worked": 1.76,
+      "rate_worked": 1.58,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 7,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 12.2,
+      "hours_worked": 13.0,
       "rate": 1.13,
-      "rate_worked": 1.39,
+      "rate_worked": 1.31,
       "hourly": [
         0,
         1,
@@ -227,9 +227,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.89,
-      "rate_worked": 1.28,
+      "rate_worked": 1.15,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.44,
-      "rate_worked": 0.64,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.36,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.0,
       "rate": 0.25,
-      "rate_worked": 0.44,
+      "rate_worked": 0.34,
       "hourly": [
         0,
         0,
@@ -505,7 +505,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 10
+      "mtd_signed": 11
     },
     {
       "name": "Ronnie Chavarria",
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.11,
-      "rate_worked": 0.12,
+      "rate_worked": 0.11,
       "hourly": [
         0,
         0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 178.0,
-    "total_hours_worked": 157.0,
+    "total_hours_worked": 165.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.74,
+    "rate_worked": 0.7,
     "rate_shift": 0.65,
     "hourly_totals": [
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 243,
-    "yesterday_same_time": 226,
-    "last_week_same_time": 167,
+    "yesterday_same_time": 227,
+    "last_week_same_time": 175,
     "last_week_total": 189,
-    "pace_time": "20:15"
+    "pace_time": "20:58"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1001,11 +1001,11 @@
       "oplasencia@thenofaultgroup.com": 34,
       "rchavarria@thenofaultgroup.com": 27,
       "rpena@thenofaultgroup.com": 12,
-      "rroca@thenofaultgroup.com": 10,
+      "rroca@thenofaultgroup.com": 11,
       "scubillos@thenofaultgroup.com": 21,
       "vlibreros@thenofaultgroup.com": 17
     },
-    "total": 633,
-    "avg": 27.5
+    "total": 634,
+    "avg": 27.6
   }
 }
