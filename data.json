@@ -1,6 +1,6 @@
 {
   "date": "2026-07-09",
-  "updated": "2026-07-09T00:01:19.150298",
+  "updated": "2026-07-09T01:01:22.290348",
   "title": "Locked Down",
   "reps": [
     {
@@ -181,7 +181,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "djuarez@thenofaultgroup.com",
-      "mtd_signed": 12
+      "mtd_signed": 13
     },
     {
       "name": "Delvin Castro",
@@ -649,7 +649,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 34
+      "mtd_signed": 35
     },
     {
       "name": "Nelson Rodriguez",
@@ -757,7 +757,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 11
+      "mtd_signed": 12
     },
     {
       "name": "Richard Pena",
@@ -973,17 +973,17 @@
       0,
       0
     ],
-    "yesterday_ld": 158,
+    "yesterday_ld": 159,
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 140,
-    "pace_time": "00:01"
+    "pace_time": "01:01"
   },
   "mtd_signed": {
     "by_intaker": {
       "avilchez@thenofaultgroup.com": 7,
       "chernandez@thenofaultgroup.com": 37,
-      "djuarez@thenofaultgroup.com": 12,
+      "djuarez@thenofaultgroup.com": 13,
       "dvalles@thenofaultgroup.com": 16,
       "dcastro@thenofaultgroup.com": 17,
       "jamgomez@thenofaultgroup.com": 53,
@@ -997,15 +997,15 @@
       "mmiranda@thenofaultgroup.com": 48,
       "mpenaranda@thenofaultgroup.com": 94,
       "nelsonr@thenofaultgroup.com": 153,
-      "nsilva@thenofaultgroup.com": 34,
+      "nsilva@thenofaultgroup.com": 35,
       "oplasencia@thenofaultgroup.com": 47,
       "rchavarria@thenofaultgroup.com": 40,
       "rpena@thenofaultgroup.com": 16,
-      "rroca@thenofaultgroup.com": 11,
+      "rroca@thenofaultgroup.com": 12,
       "scubillos@thenofaultgroup.com": 22,
       "vlibreros@thenofaultgroup.com": 22
     },
-    "total": 908,
-    "avg": 39.5
+    "total": 911,
+    "avg": 39.6
   }
 }
