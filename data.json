@@ -1,6 +1,6 @@
 {
   "date": "2026-07-10",
-  "updated": "2026-07-10T20:15:08.484855",
+  "updated": "2026-07-10T20:15:54.881071",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,7 +11,7 @@
       "came_in": 11,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 12.2,
+      "hours_worked": 12.3,
       "rate": 1.4,
       "rate_worked": 1.71,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.67,
       "rate_worked": 0.73,
       "hourly": [
@@ -263,7 +263,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.44,
       "rate_worked": 0.48,
       "hourly": [
@@ -299,7 +299,7 @@
       "came_in": 1,
       "dropped": 1,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.44,
       "rate_worked": 0.48,
       "hourly": [
@@ -335,7 +335,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.33,
       "rate_worked": 0.48,
       "hourly": [
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 1,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.22,
       "rate_worked": 0.32,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.22,
       "rate_worked": 0.32,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.22,
       "rate_worked": 0.32,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.11,
       "rate_worked": 0.12,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.11,
       "rate_worked": 0.16,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 211.0,
-    "total_hours_worked": 182.8,
+    "total_hours_worked": 184.2,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.6,
+    "rate_worked": 0.59,
     "rate_shift": 0.52,
     "hourly_totals": [
       2,
