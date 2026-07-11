@@ -1,6 +1,6 @@
 {
   "date": "2026-07-11",
-  "updated": "2026-07-11T10:15:07.387265",
+  "updated": "2026-07-11T10:16:59.853672",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,7 +11,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.1,
       "rate_worked": 0.44,
       "hourly": [
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -373,10 +373,10 @@
       0
     ],
     "total_shift_hours": 87.0,
-    "total_hours_worked": 13.2,
+    "total_hours_worked": 13.8,
     "specialists_count": 9,
     "specialists_with_ld": 1,
-    "rate_worked": 0.08,
+    "rate_worked": 0.07,
     "rate_shift": 0.01,
     "hourly_totals": [
       0,
@@ -401,7 +401,7 @@
     "yesterday_same_time": 8,
     "last_week_same_time": 6,
     "last_week_total": 68,
-    "pace_time": "10:15"
+    "pace_time": "10:16"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -410,7 +410,7 @@
       "djuarez@thenofaultgroup.com": 19,
       "dvalles@thenofaultgroup.com": 17,
       "dcastro@thenofaultgroup.com": 23,
-      "jamgomez@thenofaultgroup.com": 65,
+      "jamgomez@thenofaultgroup.com": 67,
       "jcuarezma@thenofaultgroup.com": 77,
       "jduvergel@thenofaultgroup.com": 29,
       "jjortega@thenofaultgroup.com": 96,
@@ -429,7 +429,7 @@
       "scubillos@thenofaultgroup.com": 25,
       "vlibreros@thenofaultgroup.com": 24
     },
-    "total": 1158,
-    "avg": 50.3
+    "total": 1160,
+    "avg": 50.4
   }
 }
