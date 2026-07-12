@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "updated": "2026-07-12T15:00:28.259412",
+  "updated": "2026-07-12T15:15:11.205362",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.0,
+      "hours_worked": 1.2,
       "rate": 0.22,
-      "rate_worked": 1.98,
+      "rate_worked": 1.6,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.2,
-      "rate_worked": 0.29,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.1,
       "rate_worked": 0.14,
       "hourly": [
@@ -189,7 +189,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -225,7 +225,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.0,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -261,7 +261,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -297,7 +297,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.0,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -333,7 +333,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.0,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,10 +407,10 @@
       0
     ],
     "total_shift_hours": 76.0,
-    "total_hours_worked": 34.0,
+    "total_hours_worked": 35.6,
     "specialists_count": 10,
     "specialists_with_ld": 5,
-    "rate_worked": 0.35,
+    "rate_worked": 0.34,
     "rate_shift": 0.16,
     "hourly_totals": [
       0,
@@ -432,10 +432,10 @@
       0
     ],
     "yesterday_ld": 76,
-    "yesterday_same_time": 37,
-    "last_week_same_time": 41,
+    "yesterday_same_time": 38,
+    "last_week_same_time": 44,
     "last_week_total": 62,
-    "pace_time": "15:00"
+    "pace_time": "15:15"
   },
   "mtd_signed": {
     "by_intaker": {
