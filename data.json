@@ -1,8 +1,44 @@
 {
   "date": "2026-07-13",
-  "updated": "2026-07-13T08:01:49.043693",
+  "updated": "2026-07-13T08:15:06.326089",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 2,
+      "still_ld": 0,
+      "came_in": 2,
+      "dropped": 0,
+      "hours": 15,
+      "hours_worked": 0.2,
+      "rate": 0.13,
+      "rate_worked": 8.0,
+      "hourly": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "nelsonr@thenofaultgroup.com",
+      "mtd_signed": 218
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -47,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -652,42 +688,6 @@
       "mtd_signed": 42
     },
     {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 15,
-      "hours_worked": 0.0,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 218
-    },
-    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.0,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,12 +906,12 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
+    "total_ld": 2,
     "total_still_ld": 0,
-    "total_came_in": 0,
+    "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
-      0,
+      2,
       0,
       0,
       0,
@@ -949,13 +949,13 @@
       0
     ],
     "total_shift_hours": 234,
-    "total_hours_worked": 0.0,
+    "total_hours_worked": 2.2,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
-    "rate_worked": 0,
-    "rate_shift": 0.0,
+    "specialists_with_ld": 1,
+    "rate_worked": 0.91,
+    "rate_shift": 0.01,
     "hourly_totals": [
-      0,
+      2,
       0,
       0,
       0,
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 52,
     "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "last_week_same_time": 2,
     "last_week_total": 242,
-    "pace_time": "08:01"
+    "pace_time": "08:15"
   },
   "mtd_signed": {
     "by_intaker": {
