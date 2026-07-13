@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "updated": "2026-07-12T20:15:06.416604",
+  "updated": "2026-07-12T21:01:06.240453",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.85,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.67,
-      "rate_worked": 0.96,
+      "rate_worked": 0.85,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.56,
-      "rate_worked": 0.8,
+      "rate_worked": 0.71,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.0,
       "rate": 0.44,
-      "rate_worked": 0.64,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -289,7 +289,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 19
+      "mtd_signed": 20
     },
     {
       "name": "Jorge Munoz",
@@ -442,10 +442,10 @@
       0
     ],
     "total_shift_hours": 76.0,
-    "total_hours_worked": 66.8,
+    "total_hours_worked": 70.0,
     "specialists_count": 11,
     "specialists_with_ld": 11,
-    "rate_worked": 0.66,
+    "rate_worked": 0.63,
     "rate_shift": 0.58,
     "hourly_totals": [
       0,
@@ -467,10 +467,10 @@
       0
     ],
     "yesterday_ld": 76,
-    "yesterday_same_time": 62,
-    "last_week_same_time": 59,
+    "yesterday_same_time": 67,
+    "last_week_same_time": 62,
     "last_week_total": 62,
-    "pace_time": "20:15"
+    "pace_time": "21:01"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -493,12 +493,12 @@
       "nsilva@thenofaultgroup.com": 41,
       "oplasencia@thenofaultgroup.com": 70,
       "rchavarria@thenofaultgroup.com": 55,
-      "rpena@thenofaultgroup.com": 19,
+      "rpena@thenofaultgroup.com": 20,
       "rroca@thenofaultgroup.com": 14,
       "scubillos@thenofaultgroup.com": 25,
       "vlibreros@thenofaultgroup.com": 24
     },
-    "total": 1231,
-    "avg": 53.5
+    "total": 1232,
+    "avg": 53.6
   }
 }
