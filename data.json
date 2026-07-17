@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "updated": "2026-07-16T22:17:21.249207",
+  "updated": "2026-07-16T23:15:07.794150",
   "title": "Locked Down",
   "reps": [
     {
@@ -155,9 +155,9 @@
       "came_in": 14,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 14.3,
+      "hours_worked": 15,
       "rate": 1.2,
-      "rate_worked": 1.26,
+      "rate_worked": 1.2,
       "hourly": [
         0,
         0,
@@ -187,13 +187,13 @@
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 10,
-      "still_ld": 6,
-      "came_in": 4,
+      "still_ld": 5,
+      "came_in": 5,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 1.11,
-      "rate_worked": 1.21,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -330,14 +330,14 @@
     {
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
-      "ld": 6,
-      "still_ld": 5,
+      "ld": 8,
+      "still_ld": 7,
       "came_in": 1,
       "dropped": 0,
       "hours": 10,
       "hours_worked": 10,
-      "rate": 0.6,
-      "rate_worked": 0.6,
+      "rate": 0.8,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         0,
@@ -352,7 +352,7 @@
         1,
         0,
         0,
-        0,
+        2,
         0,
         0,
         0
@@ -407,9 +407,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.44,
-      "rate_worked": 0.48,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -695,9 +695,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 151,
-    "total_still_ld": 77,
-    "total_came_in": 72,
+    "total_ld": 153,
+    "total_still_ld": 78,
+    "total_came_in": 73,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
@@ -924,7 +924,7 @@
       5,
       5,
       3,
-      3,
+      4,
       0,
       0,
       0
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 234,
-    "total_hours_worked": 228.4,
+    "total_hours_worked": 234,
     "specialists_count": 25,
     "specialists_with_ld": 20,
-    "rate_worked": 0.66,
+    "rate_worked": 0.65,
     "rate_shift": 0.65,
     "hourly_totals": [
       1,
@@ -968,16 +968,16 @@
       19,
       18,
       5,
-      12,
+      14,
       2,
       0,
       0
     ],
     "yesterday_ld": 149,
-    "yesterday_same_time": 147,
+    "yesterday_same_time": 149,
     "last_week_same_time": 155,
     "last_week_total": 155,
-    "pace_time": "22:17"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {},
