@@ -1,14 +1,14 @@
 {
   "date": "2026-07-18",
-  "updated": "2026-07-18T22:24:11.747818",
+  "updated": "2026-07-18T23:15:02.960902",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
-      "ld": 21,
-      "still_ld": 17,
-      "came_in": 4,
+      "ld": 29,
+      "still_ld": 22,
+      "came_in": 7,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -29,7 +29,7 @@
         6,
         1,
         1,
-        0,
+        8,
         0,
         0
       ],
@@ -322,8 +322,8 @@
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
       "ld": 3,
-      "still_ld": 3,
-      "came_in": 0,
+      "still_ld": 0,
+      "came_in": 3,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -531,9 +531,9 @@
   ],
   "shifts_configured": false,
   "department": {
-    "total_ld": 108,
-    "total_still_ld": 62,
-    "total_came_in": 45,
+    "total_ld": 116,
+    "total_still_ld": 64,
+    "total_came_in": 51,
     "total_dropped": 1,
     "hourly_came_in": [
       2,
@@ -548,9 +548,9 @@
       2,
       2,
       2,
+      4,
       1,
-      0,
-      0,
+      2,
       0,
       0
     ],
@@ -594,15 +594,15 @@
       15,
       5,
       2,
-      0,
+      8,
       0,
       0
     ],
     "yesterday_ld": 143,
-    "yesterday_same_time": 142,
-    "last_week_same_time": 74,
+    "yesterday_same_time": 143,
+    "last_week_same_time": 76,
     "last_week_total": 76,
-    "pace_time": "22:24"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
