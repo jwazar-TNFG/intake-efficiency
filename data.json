@@ -1,6 +1,6 @@
 {
   "date": "2026-07-21",
-  "updated": "2026-07-21T09:26:45.596712",
+  "updated": "2026-07-21T10:15:05.199890",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.2,
-      "rate_worked": 2.07,
+      "rate_worked": 1.33,
       "hourly": [
         3,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -757,7 +757,7 @@
       "end_hour": 17,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 39
+      "mtd_signed": 42
     },
     {
       "name": "Richard Pena",
@@ -865,7 +865,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 46
+      "mtd_signed": 49
     },
     {
       "name": "Valentina Liberos",
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 234,
-    "total_hours_worked": 15.9,
+    "total_hours_worked": 25.4,
     "specialists_count": 25,
     "specialists_with_ld": 1,
-    "rate_worked": 0.19,
+    "rate_worked": 0.12,
     "rate_shift": 0.01,
     "hourly_totals": [
       3,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 198,
-    "yesterday_same_time": 10,
-    "last_week_same_time": 5,
+    "yesterday_same_time": 20,
+    "last_week_same_time": 13,
     "last_week_total": 175,
-    "pace_time": "09:26"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1001,11 +1001,11 @@
       "oplasencia@thenofaultgroup.com": 139,
       "rchavarria@thenofaultgroup.com": 95,
       "rpena@thenofaultgroup.com": 32,
-      "rroca@thenofaultgroup.com": 39,
-      "scubillos@thenofaultgroup.com": 46,
+      "rroca@thenofaultgroup.com": 42,
+      "scubillos@thenofaultgroup.com": 49,
       "vlibreros@thenofaultgroup.com": 42
     },
-    "total": 2214,
-    "avg": 96.3
+    "total": 2220,
+    "avg": 96.5
   }
 }
