@@ -1,6 +1,6 @@
 {
   "date": "2026-07-21",
-  "updated": "2026-07-21T08:26:42.924926",
+  "updated": "2026-07-21T09:15:11.891572",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.2,
-      "rate_worked": 6.82,
+      "rate_worked": 2.4,
       "hourly": [
         3,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -263,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -649,7 +649,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
-      "mtd_signed": 90
+      "mtd_signed": 91
     },
     {
       "name": "Naryeli Silva",
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 234,
-    "total_hours_worked": 4.4,
+    "total_hours_worked": 13.4,
     "specialists_count": 25,
     "specialists_with_ld": 1,
-    "rate_worked": 0.68,
+    "rate_worked": 0.22,
     "rate_shift": 0.01,
     "hourly_totals": [
       3,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 198,
-    "yesterday_same_time": 6,
-    "last_week_same_time": 4,
+    "yesterday_same_time": 10,
+    "last_week_same_time": 5,
     "last_week_total": 175,
-    "pace_time": "08:26"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -994,7 +994,7 @@
       "lmurillo@thenofaultgroup.com": 78,
       "lvivas@thenofaultgroup.com": 142,
       "mcardona@thenofaultgroup.com": 33,
-      "mmiranda@thenofaultgroup.com": 90,
+      "mmiranda@thenofaultgroup.com": 91,
       "mpenaranda@thenofaultgroup.com": 202,
       "nelsonr@thenofaultgroup.com": 316,
       "nsilva@thenofaultgroup.com": 73,
@@ -1005,7 +1005,7 @@
       "scubillos@thenofaultgroup.com": 46,
       "vlibreros@thenofaultgroup.com": 42
     },
-    "total": 2213,
-    "avg": 96.2
+    "total": 2214,
+    "avg": 96.3
   }
 }
