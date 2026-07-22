@@ -1,6 +1,6 @@
 {
   "date": "2026-07-22",
-  "updated": "2026-07-22T05:27:38.895487",
+  "updated": "2026-07-22T06:27:42.543949",
   "title": "Locked Down",
   "reps": [
     {
@@ -685,7 +685,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 330
+      "mtd_signed": 331
     },
     {
       "name": "Orlando Plasencia",
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 148,
-    "pace_time": "05:27"
+    "pace_time": "06:27"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -996,7 +996,7 @@
       "mcardona@thenofaultgroup.com": 36,
       "mmiranda@thenofaultgroup.com": 99,
       "mpenaranda@thenofaultgroup.com": 202,
-      "nelsonr@thenofaultgroup.com": 330,
+      "nelsonr@thenofaultgroup.com": 331,
       "nsilva@thenofaultgroup.com": 77,
       "oplasencia@thenofaultgroup.com": 154,
       "rchavarria@thenofaultgroup.com": 108,
@@ -1005,7 +1005,7 @@
       "scubillos@thenofaultgroup.com": 51,
       "vlibreros@thenofaultgroup.com": 44
     },
-    "total": 2368,
+    "total": 2369,
     "avg": 103.0
   }
 }
