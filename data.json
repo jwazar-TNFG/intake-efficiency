@@ -1,6 +1,6 @@
 {
   "date": "2026-07-21",
-  "updated": "2026-07-21T22:27:19.993045",
+  "updated": "2026-07-21T23:15:03.518486",
   "title": "Locked Down",
   "reps": [
     {
@@ -40,6 +40,42 @@
       "mtd_signed": 143
     },
     {
+      "name": "Jasmine Cuarezma",
+      "abbrev": "J. Cuarezma",
+      "ld": 18,
+      "still_ld": 12,
+      "came_in": 6,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 1.8,
+      "rate_worked": 1.8,
+      "hourly": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        0,
+        3,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jcuarezma@thenofaultgroup.com",
+      "mtd_signed": 163
+    },
+    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 18,
@@ -76,52 +112,16 @@
       "mtd_signed": 140
     },
     {
-      "name": "Jasmine Cuarezma",
-      "abbrev": "J. Cuarezma",
-      "ld": 17,
-      "still_ld": 11,
-      "came_in": 6,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 1.7,
-      "rate_worked": 1.7,
-      "hourly": [
-        0,
-        0,
-        0,
-        2,
-        4,
-        0,
-        3,
-        1,
-        1,
-        0,
-        2,
-        0,
-        0,
-        2,
-        0,
-        2,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 163
-    },
-    {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
-      "ld": 14,
-      "still_ld": 9,
+      "ld": 16,
+      "still_ld": 11,
       "came_in": 5,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 1.4,
-      "rate_worked": 1.4,
+      "rate": 1.6,
+      "rate_worked": 1.6,
       "hourly": [
         0,
         3,
@@ -137,7 +137,7 @@
         0,
         2,
         0,
-        0,
+        2,
         0,
         0
       ],
@@ -191,9 +191,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 1.11,
-      "rate_worked": 1.18,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 8,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.5,
+      "hours_worked": 15.0,
       "rate": 0.8,
-      "rate_worked": 0.83,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         2,
@@ -407,9 +407,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.5,
+      "hours_worked": 15.0,
       "rate": 0.73,
-      "rate_worked": 0.76,
+      "rate_worked": 0.73,
       "hourly": [
         3,
         0,
@@ -551,9 +551,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.44,
-      "rate_worked": 0.47,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.5,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 165,
-    "total_still_ld": 80,
+    "total_ld": 168,
+    "total_still_ld": 83,
     "total_came_in": 83,
     "total_dropped": 2,
     "hourly_came_in": [
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 185.0,
-    "total_hours_worked": 182.5,
+    "total_hours_worked": 185.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.9,
-    "rate_shift": 0.89,
+    "rate_worked": 0.91,
+    "rate_shift": 0.91,
     "hourly_totals": [
       4,
       7,
@@ -969,15 +969,15 @@
       4,
       13,
       10,
-      5,
-      2,
+      7,
+      3,
       0
     ],
     "yesterday_ld": 198,
     "yesterday_same_time": 198,
     "last_week_same_time": 175,
     "last_week_total": 175,
-    "pace_time": "22:27"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
