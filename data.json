@@ -1,6 +1,6 @@
 {
   "date": "2026-07-24",
-  "updated": "2026-07-24T09:32:05.558549",
+  "updated": "2026-07-24T09:37:21.464548",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 197.0,
-    "total_hours_worked": 12.0,
+    "total_hours_worked": 12.8,
     "specialists_count": 25,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -977,7 +977,7 @@
     "yesterday_same_time": 9,
     "last_week_same_time": 4,
     "last_week_total": 143,
-    "pace_time": "09:30"
+    "pace_time": "09:35"
   },
   "mtd_signed": {
     "by_intaker": {
