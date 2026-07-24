@@ -1,6 +1,6 @@
 {
   "date": "2026-07-23",
-  "updated": "2026-07-23T22:15:06.030751",
+  "updated": "2026-07-23T22:29:36.428613",
   "title": "Locked Down",
   "reps": [
     {
@@ -119,9 +119,9 @@
       "came_in": 17,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 14.5,
       "rate": 1.2,
-      "rate_worked": 1.26,
+      "rate_worked": 1.24,
       "hourly": [
         4,
         0,
@@ -299,9 +299,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 14.5,
       "rate": 0.73,
-      "rate_worked": 0.77,
+      "rate_worked": 0.76,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.44,
-      "rate_worked": 0.48,
+      "rate_worked": 0.47,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.44,
-      "rate_worked": 0.48,
+      "rate_worked": 0.47,
       "hourly": [
         0,
         0,
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.11,
       "rate_worked": 0.12,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 203.0,
-    "total_hours_worked": 198.2,
+    "total_hours_worked": 200.0,
     "specialists_count": 25,
     "specialists_with_ld": 18,
     "rate_worked": 0.69,
@@ -977,7 +977,7 @@
     "yesterday_same_time": 189,
     "last_week_same_time": 148,
     "last_week_total": 148,
-    "pace_time": "22:15"
+    "pace_time": "22:29"
   },
   "mtd_signed": {
     "by_intaker": {
