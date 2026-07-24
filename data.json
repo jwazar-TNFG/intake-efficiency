@@ -1,6 +1,6 @@
 {
   "date": "2026-07-24",
-  "updated": "2026-07-24T12:15:43.763096",
+  "updated": "2026-07-24T12:15:57.170946",
   "title": "Locked Down",
   "reps": [
     {
@@ -505,7 +505,7 @@
       "end_hour": null,
       "is_off": true,
       "email": "jduvergel@thenofaultgroup.com",
-      "mtd_signed": 193
+      "mtd_signed": 194
     },
     {
       "name": "Jorge Munoz",
@@ -793,7 +793,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 39
+      "mtd_signed": 40
     },
     {
       "name": "Ronnie Chavarria",
@@ -988,7 +988,7 @@
       "dcastro@thenofaultgroup.com": 64,
       "jamgomez@thenofaultgroup.com": 172,
       "jcuarezma@thenofaultgroup.com": 199,
-      "jduvergel@thenofaultgroup.com": 193,
+      "jduvergel@thenofaultgroup.com": 194,
       "jjortega@thenofaultgroup.com": 187,
       "jortega@thenofaultgroup.com": 58,
       "lmurillo@thenofaultgroup.com": 98,
@@ -1000,12 +1000,12 @@
       "nsilva@thenofaultgroup.com": 83,
       "oplasencia@thenofaultgroup.com": 175,
       "rchavarria@thenofaultgroup.com": 125,
-      "rpena@thenofaultgroup.com": 39,
+      "rpena@thenofaultgroup.com": 40,
       "rroca@thenofaultgroup.com": 50,
       "scubillos@thenofaultgroup.com": 57,
       "vlibreros@thenofaultgroup.com": 45
     },
-    "total": 2684,
-    "avg": 116.7
+    "total": 2686,
+    "avg": 116.8
   }
 }
