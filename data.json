@@ -1,6 +1,6 @@
 {
   "date": "2026-07-25",
-  "updated": "2026-07-25T12:44:53.823028",
+  "updated": "2026-07-25T13:15:27.921885",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.7,
+      "hours_worked": 5.2,
       "rate": 0.33,
-      "rate_worked": 0.63,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 12.0,
-      "hours_worked": 4.7,
+      "hours_worked": 5.2,
       "rate": 0.17,
-      "rate_worked": 0.42,
+      "rate_worked": 0.38,
       "hourly": [
         0,
         0,
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.7,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.7,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.7,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.7,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 84.0,
-    "total_hours_worked": 24.2,
+    "total_hours_worked": 27.2,
     "specialists_count": 22,
     "specialists_with_ld": 5,
-    "rate_worked": 0.41,
+    "rate_worked": 0.37,
     "rate_shift": 0.12,
     "hourly_totals": [
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 168,
-    "yesterday_same_time": 66,
-    "last_week_same_time": 37,
+    "yesterday_same_time": 69,
+    "last_week_same_time": 44,
     "last_week_total": 116,
-    "pace_time": "12:44"
+    "pace_time": "13:15"
   },
   "mtd_signed": {
     "by_intaker": {
