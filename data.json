@@ -1,6 +1,6 @@
 {
   "date": "2026-07-26",
-  "updated": "2026-07-26T23:15:07.844395",
+  "updated": "2026-07-26T23:56:58.912817",
   "title": "Locked Down",
   "reps": [
     {
@@ -330,9 +330,9 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 11,
+      "ld": 12,
       "still_ld": 5,
-      "came_in": 6,
+      "came_in": 7,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -354,7 +354,7 @@
         1,
         0,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": null,
@@ -798,9 +798,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 64,
+    "total_ld": 65,
     "total_still_ld": 39,
-    "total_came_in": 25,
+    "total_came_in": 26,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -818,7 +818,7 @@
       4,
       0,
       2,
-      0,
+      1,
       0
     ],
     "hourly_dropped": [
@@ -844,8 +844,8 @@
     "total_hours_worked": 97.0,
     "specialists_count": 22,
     "specialists_with_ld": 14,
-    "rate_worked": 0.66,
-    "rate_shift": 0.66,
+    "rate_worked": 0.67,
+    "rate_shift": 0.67,
     "hourly_totals": [
       0,
       0,
@@ -862,14 +862,14 @@
       6,
       5,
       5,
-      0,
+      1,
       0
     ],
     "yesterday_ld": 92,
     "yesterday_same_time": 92,
     "last_week_same_time": 55,
     "last_week_total": 55,
-    "pace_time": "23:15"
+    "pace_time": "23:56"
   },
   "mtd_signed": {
     "by_intaker": {
