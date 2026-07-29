@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "updated": "2026-07-29T09:15:12.164222",
+  "updated": "2026-07-29T10:05:12.012642",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.3,
-      "rate_worked": 2.4,
+      "rate_worked": 1.44,
       "hourly": [
         0,
         3,
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.2,
-      "rate_worked": 1.6,
+      "rate_worked": 0.96,
       "hourly": [
         2,
         0,
@@ -119,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -249,8 +249,8 @@
         0,
         0
       ],
-      "start_hour": 9,
-      "end_hour": 18,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "djuarez@thenofaultgroup.com",
       "mtd_signed": 54
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -406,10 +406,10 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 8.0,
-      "hours_worked": 0.2,
+      "hours": 9.0,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -429,8 +429,8 @@
         0,
         0
       ],
-      "start_hour": 9,
-      "end_hour": 17,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "jamgomez@thenofaultgroup.com",
       "mtd_signed": 200
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -586,10 +586,10 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours": 9.0,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -609,8 +609,8 @@
         0,
         0
       ],
-      "start_hour": 8,
-      "end_hour": 18,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 139
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 206.0,
-    "total_hours_worked": 12.4,
+    "total_hours_worked": 18.9,
     "specialists_count": 25,
     "specialists_with_ld": 2,
-    "rate_worked": 0.4,
+    "rate_worked": 0.26,
     "rate_shift": 0.02,
     "hourly_totals": [
       2,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 167,
-    "yesterday_same_time": 14,
-    "last_week_same_time": 5,
+    "yesterday_same_time": 20,
+    "last_week_same_time": 18,
     "last_week_total": 191,
-    "pace_time": "09:15"
+    "pace_time": "10:05"
   },
   "mtd_signed": {
     "by_intaker": {
