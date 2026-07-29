@@ -1,6 +1,6 @@
 {
   "date": "2026-07-28",
-  "updated": "2026-07-28T23:04:42.446251",
+  "updated": "2026-07-28T23:15:06.001418",
   "title": "Locked Down",
   "reps": [
     {
@@ -76,11 +76,47 @@
       "mtd_signed": 485
     },
     {
+      "name": "Orlando Plasencia",
+      "abbrev": "O. Plasencia",
+      "ld": 17,
+      "still_ld": 6,
+      "came_in": 11,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 1.7,
+      "rate_worked": 1.7,
+      "hourly": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3,
+        2,
+        0,
+        2,
+        0,
+        0,
+        4,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "oplasencia@thenofaultgroup.com",
+      "mtd_signed": 199
+    },
+    {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 15,
-      "still_ld": 7,
-      "came_in": 8,
+      "still_ld": 6,
+      "came_in": 9,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -146,42 +182,6 @@
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
       "mtd_signed": 217
-    },
-    {
-      "name": "Orlando Plasencia",
-      "abbrev": "O. Plasencia",
-      "ld": 13,
-      "still_ld": 5,
-      "came_in": 8,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 1.3,
-      "rate_worked": 1.3,
-      "hourly": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        2,
-        3,
-        2,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "oplasencia@thenofaultgroup.com",
-      "mtd_signed": 199
     },
     {
       "name": "Jasmine Cuarezma",
@@ -258,14 +258,14 @@
     {
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
-      "ld": 8,
-      "still_ld": 2,
+      "ld": 9,
+      "still_ld": 3,
       "came_in": 6,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 0.8,
-      "rate_worked": 0.8,
+      "rate": 0.9,
+      "rate_worked": 0.9,
       "hourly": [
         0,
         0,
@@ -280,7 +280,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 162,
-    "total_still_ld": 74,
-    "total_came_in": 85,
+    "total_ld": 167,
+    "total_still_ld": 75,
+    "total_came_in": 89,
     "total_dropped": 0,
     "hourly_came_in": [
       6,
@@ -922,11 +922,11 @@
       8,
       8,
       2,
-      1,
+      2,
       5,
       2,
       0,
-      0,
+      3,
       0
     ],
     "hourly_dropped": [
@@ -952,8 +952,8 @@
     "total_hours_worked": 189.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.86,
-    "rate_shift": 0.86,
+    "rate_worked": 0.88,
+    "rate_shift": 0.88,
     "hourly_totals": [
       11,
       3,
@@ -968,16 +968,16 @@
       9,
       9,
       11,
-      5,
+      6,
       3,
-      0,
+      4,
       0
     ],
     "yesterday_ld": 208,
     "yesterday_same_time": 208,
     "last_week_same_time": 164,
     "last_week_total": 164,
-    "pace_time": "23:04"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
