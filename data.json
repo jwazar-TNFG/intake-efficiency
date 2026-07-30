@@ -1,6 +1,6 @@
 {
   "date": "2026-07-30",
-  "updated": "2026-07-30T00:05:48.900818",
+  "updated": "2026-07-30T01:05:51.461180",
   "title": "Locked Down",
   "reps": [
     {
@@ -685,7 +685,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 529
+      "mtd_signed": 530
     },
     {
       "name": "Orlando Plasencia",
@@ -721,7 +721,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "oplasencia@thenofaultgroup.com",
-      "mtd_signed": 224
+      "mtd_signed": 225
     },
     {
       "name": "Reny Roca",
@@ -973,11 +973,11 @@
       0,
       0
     ],
-    "yesterday_ld": 184,
+    "yesterday_ld": 185,
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 141,
-    "pace_time": "00:05"
+    "pace_time": "01:05"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -996,16 +996,16 @@
       "mcardona@thenofaultgroup.com": 46,
       "mmiranda@thenofaultgroup.com": 144,
       "mpenaranda@thenofaultgroup.com": 246,
-      "nelsonr@thenofaultgroup.com": 529,
+      "nelsonr@thenofaultgroup.com": 530,
       "nsilva@thenofaultgroup.com": 106,
-      "oplasencia@thenofaultgroup.com": 224,
+      "oplasencia@thenofaultgroup.com": 225,
       "rchavarria@thenofaultgroup.com": 158,
       "rpena@thenofaultgroup.com": 51,
       "rroca@thenofaultgroup.com": 72,
       "scubillos@thenofaultgroup.com": 66,
       "vlibreros@thenofaultgroup.com": 57
     },
-    "total": 3438,
-    "avg": 149.5
+    "total": 3440,
+    "avg": 149.6
   }
 }
