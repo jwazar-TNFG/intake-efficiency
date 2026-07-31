@@ -1,6 +1,6 @@
 {
   "date": "2026-07-31",
-  "updated": "2026-07-31T19:07:53.363626",
+  "updated": "2026-07-31T19:15:07.955789",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 22,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 11.1,
+      "hours_worked": 11.2,
       "rate": 2.33,
-      "rate_worked": 3.14,
+      "rate_worked": 3.11,
       "hourly": [
         1,
         1,
@@ -109,7 +109,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 264
+      "mtd_signed": 265
     },
     {
       "name": "Orlando Plasencia",
@@ -155,9 +155,9 @@
       "came_in": 5,
       "dropped": 2,
       "hours": 9.0,
-      "hours_worked": 7.1,
+      "hours_worked": 7.2,
       "rate": 1.11,
-      "rate_worked": 1.4,
+      "rate_worked": 1.38,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.1,
+      "hours_worked": 7.2,
       "rate": 0.89,
-      "rate_worked": 1.12,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.1,
+      "hours_worked": 7.2,
       "rate": 0.44,
-      "rate_worked": 0.56,
+      "rate_worked": 0.55,
       "hourly": [
         0,
         0,
@@ -397,7 +397,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 138
+      "mtd_signed": 139
     },
     {
       "name": "Jorge Munoz",
@@ -407,9 +407,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.1,
+      "hours_worked": 5.2,
       "rate": 0.33,
-      "rate_worked": 0.58,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -479,7 +479,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.1,
+      "hours_worked": 5.2,
       "rate": 0.11,
       "rate_worked": 0.19,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.1,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 5.1,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.1,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.1,
+      "hours_worked": 5.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.1,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 212.0,
-    "total_hours_worked": 179.1,
+    "total_hours_worked": 180.2,
     "specialists_count": 25,
     "specialists_with_ld": 17,
     "rate_worked": 0.74,
@@ -974,15 +974,15 @@
       0
     ],
     "yesterday_ld": 153,
-    "yesterday_same_time": 137,
-    "last_week_same_time": 154,
+    "yesterday_same_time": 138,
+    "last_week_same_time": 155,
     "last_week_total": 168,
-    "pace_time": "19:07"
+    "pace_time": "19:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "avilchez@thenofaultgroup.com": 16,
-      "chernandez@thenofaultgroup.com": 138,
+      "chernandez@thenofaultgroup.com": 139,
       "djuarez@thenofaultgroup.com": 66,
       "dvalles@thenofaultgroup.com": 47,
       "dcastro@thenofaultgroup.com": 107,
@@ -995,7 +995,7 @@
       "lvivas@thenofaultgroup.com": 261,
       "mcardona@thenofaultgroup.com": 46,
       "mmiranda@thenofaultgroup.com": 152,
-      "mpenaranda@thenofaultgroup.com": 264,
+      "mpenaranda@thenofaultgroup.com": 265,
       "nelsonr@thenofaultgroup.com": 549,
       "nsilva@thenofaultgroup.com": 111,
       "oplasencia@thenofaultgroup.com": 236,
@@ -1005,7 +1005,7 @@
       "scubillos@thenofaultgroup.com": 66,
       "vlibreros@thenofaultgroup.com": 57
     },
-    "total": 3589,
-    "avg": 156.0
+    "total": 3591,
+    "avg": 156.1
   }
 }
