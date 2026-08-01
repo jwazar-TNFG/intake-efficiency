@@ -1,6 +1,6 @@
 {
   "date": "2026-08-01",
-  "updated": "2026-08-01T10:08:36.540284",
+  "updated": "2026-08-01T10:15:05.947133",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.47,
+      "rate_worked": 0.44,
       "hourly": [
         1,
         0,
@@ -73,6 +73,42 @@
       "end_hour": null,
       "is_off": true,
       "email": "oplasencia@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Manny Penaranda",
+      "abbrev": "M. Penaranda",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "email": "mpenaranda@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -155,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -299,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -508,42 +544,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Manny Penaranda",
-      "abbrev": "M. Penaranda",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Manuel Cardona",
       "abbrev": "M. Cardona",
       "ld": 0,
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 4,
-    "total_still_ld": 3,
+    "total_ld": 5,
+    "total_still_ld": 4,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,15 +841,15 @@
       0
     ],
     "total_shift_hours": 77.0,
-    "total_hours_worked": 10.5,
+    "total_hours_worked": 11.0,
     "specialists_count": 22,
-    "specialists_with_ld": 3,
-    "rate_worked": 0.38,
-    "rate_shift": 0.05,
+    "specialists_with_ld": 4,
+    "rate_worked": 0.45,
+    "rate_shift": 0.06,
     "hourly_totals": [
       4,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -869,7 +869,7 @@
     "yesterday_same_time": 16,
     "last_week_same_time": 5,
     "last_week_total": 91,
-    "pace_time": "10:08"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {},
