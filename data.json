@@ -1,8 +1,44 @@
 {
   "date": "2026-08-01",
-  "updated": "2026-08-01T09:08:33.666213",
+  "updated": "2026-08-01T09:15:07.887576",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 1.2,
+      "rate": 0.1,
+      "rate_worked": 0.8,
+      "hourly": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
@@ -119,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -616,42 +652,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.1,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Richard Pena",
       "abbrev": "R. Pena",
       "ld": 0,
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.1,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 3,
-    "total_still_ld": 2,
+    "total_ld": 4,
+    "total_still_ld": 3,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,13 +841,13 @@
       0
     ],
     "total_shift_hours": 77.0,
-    "total_hours_worked": 5.5,
+    "total_hours_worked": 6.0,
     "specialists_count": 22,
-    "specialists_with_ld": 2,
-    "rate_worked": 0.55,
-    "rate_shift": 0.04,
+    "specialists_with_ld": 3,
+    "rate_worked": 0.67,
+    "rate_shift": 0.05,
     "hourly_totals": [
-      3,
+      4,
       0,
       0,
       0,
@@ -869,7 +869,7 @@
     "yesterday_same_time": 9,
     "last_week_same_time": 0,
     "last_week_total": 91,
-    "pace_time": "09:08"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {},
