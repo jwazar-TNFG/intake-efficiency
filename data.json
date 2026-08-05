@@ -1,6 +1,6 @@
 {
   "date": "2026-08-04",
-  "updated": "2026-08-04T20:15:07.419516",
+  "updated": "2026-08-04T20:29:25.567092",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 18,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 12.2,
+      "hours_worked": 12.5,
       "rate": 2.07,
-      "rate_worked": 2.53,
+      "rate_worked": 2.48,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.5,
       "rate": 0.89,
-      "rate_worked": 1.28,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         0,
@@ -217,7 +217,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 30
+      "mtd_signed": 31
     },
     {
       "name": "Reny Roca",
@@ -263,9 +263,9 @@
       "came_in": 3,
       "dropped": 3,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.89,
-      "rate_worked": 0.97,
+      "rate_worked": 0.94,
       "hourly": [
         4,
         0,
@@ -335,9 +335,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.5,
       "rate": 0.78,
-      "rate_worked": 1.12,
+      "rate_worked": 1.08,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.67,
-      "rate_worked": 0.73,
+      "rate_worked": 0.71,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.5,
       "rate": 0.25,
-      "rate_worked": 0.44,
+      "rate_worked": 0.4,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.5,
       "rate": 0.22,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.5,
       "rate": 0.11,
-      "rate_worked": 0.16,
+      "rate_worked": 0.15,
       "hourly": [
         0,
         0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 8.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.2,
+      "hours_worked": 6.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 187.0,
-    "total_hours_worked": 166.0,
+    "total_hours_worked": 169.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.91,
+    "rate_worked": 0.89,
     "rate_shift": 0.81,
     "hourly_totals": [
       6,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 218,
-    "yesterday_same_time": 198,
+    "yesterday_same_time": 208,
     "last_week_same_time": 152,
     "last_week_total": 164,
-    "pace_time": "20:15"
+    "pace_time": "20:29"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,7 +988,7 @@
       "jamgomez@thenofaultgroup.com": 12,
       "jcuarezma@thenofaultgroup.com": 9,
       "jduvergel@thenofaultgroup.com": 15,
-      "jjortega@thenofaultgroup.com": 30,
+      "jjortega@thenofaultgroup.com": 31,
       "jortega@thenofaultgroup.com": 5,
       "lmurillo@thenofaultgroup.com": 6,
       "lvivas@thenofaultgroup.com": 17,
@@ -1004,7 +1004,7 @@
       "scubillos@thenofaultgroup.com": 7,
       "vlibreros@thenofaultgroup.com": 19
     },
-    "total": 287,
-    "avg": 13.0
+    "total": 288,
+    "avg": 13.1
   }
 }
