@@ -1,6 +1,6 @@
 {
   "date": "2026-08-08",
-  "updated": "2026-08-08T12:15:07.162431",
+  "updated": "2026-08-08T12:33:53.160742",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.6,
       "rate": 0.5,
-      "rate_worked": 1.18,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         0,
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 0.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 86.0,
-    "total_hours_worked": 21.2,
+    "total_hours_worked": 23.6,
     "specialists_count": 22,
     "specialists_with_ld": 5,
-    "rate_worked": 1.08,
+    "rate_worked": 0.97,
     "rate_shift": 0.27,
     "hourly_totals": [
       6,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 161,
-    "yesterday_same_time": 33,
-    "last_week_same_time": 22,
+    "yesterday_same_time": 39,
+    "last_week_same_time": 23,
     "last_week_total": 77,
-    "pace_time": "12:15"
+    "pace_time": "12:33"
   },
   "mtd_signed": {
     "by_intaker": {
