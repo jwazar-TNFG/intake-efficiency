@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated": "2026-08-11T15:15:07.642046",
+  "updated": "2026-08-11T15:37:24.381465",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 1.4,
-      "rate_worked": 1.93,
+      "rate_worked": 1.84,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.9,
-      "rate_worked": 1.24,
+      "rate_worked": 1.18,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.89,
-      "rate_worked": 6.4,
+      "rate_worked": 4.94,
       "hourly": [
         0,
         0,
@@ -109,7 +109,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 77
+      "mtd_signed": 78
     },
     {
       "name": "Orlando Plasencia",
@@ -119,9 +119,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
+      "hours_worked": 5.6,
       "rate": 0.89,
-      "rate_worked": 1.52,
+      "rate_worked": 1.42,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.8,
-      "rate_worked": 1.1,
+      "rate_worked": 1.05,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.8,
-      "rate_worked": 1.1,
+      "rate_worked": 1.05,
       "hourly": [
         1,
         1,
@@ -217,7 +217,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
-      "mtd_signed": 48
+      "mtd_signed": 49
     },
     {
       "name": "Nelson Rodriguez",
@@ -227,9 +227,9 @@
       "came_in": 8,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.6,
-      "rate_worked": 1.24,
+      "rate_worked": 1.18,
       "hourly": [
         1,
         0,
@@ -263,9 +263,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.5,
-      "rate_worked": 0.69,
+      "rate_worked": 0.66,
       "hourly": [
         0,
         1,
@@ -289,7 +289,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 15
+      "mtd_signed": 16
     },
     {
       "name": "David Juarez",
@@ -299,9 +299,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.6,
       "rate": 0.44,
-      "rate_worked": 0.64,
+      "rate_worked": 0.6,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.44,
-      "rate_worked": 1.23,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.22,
-      "rate_worked": 1.6,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         0,
@@ -397,7 +397,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 102
+      "mtd_signed": 105
     },
     {
       "name": "Cindy Hernandez",
@@ -407,9 +407,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.11,
-      "rate_worked": 0.31,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         0,
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 179.0,
-    "total_hours_worked": 84.6,
+    "total_hours_worked": 91.8,
     "specialists_count": 25,
     "specialists_with_ld": 13,
-    "rate_worked": 0.97,
+    "rate_worked": 0.89,
     "rate_shift": 0.46,
     "hourly_totals": [
       2,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 200,
-    "yesterday_same_time": 103,
-    "last_week_same_time": 103,
+    "yesterday_same_time": 108,
+    "last_week_same_time": 104,
     "last_week_total": 188,
-    "pace_time": "15:15"
+    "pace_time": "15:37"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,15 +988,15 @@
       "jamgomez@thenofaultgroup.com": 74,
       "jcuarezma@thenofaultgroup.com": 67,
       "jduvergel@thenofaultgroup.com": 107,
-      "jjortega@thenofaultgroup.com": 102,
+      "jjortega@thenofaultgroup.com": 105,
       "jortega@thenofaultgroup.com": 28,
       "lmurillo@thenofaultgroup.com": 25,
-      "lvivas@thenofaultgroup.com": 77,
+      "lvivas@thenofaultgroup.com": 78,
       "mcardona@thenofaultgroup.com": 9,
-      "mmiranda@thenofaultgroup.com": 48,
+      "mmiranda@thenofaultgroup.com": 49,
       "mpenaranda@thenofaultgroup.com": 80,
       "nelsonr@thenofaultgroup.com": 221,
-      "nsilva@thenofaultgroup.com": 15,
+      "nsilva@thenofaultgroup.com": 16,
       "oplasencia@thenofaultgroup.com": 74,
       "rchavarria@thenofaultgroup.com": 45,
       "rpena@thenofaultgroup.com": 10,
@@ -1004,7 +1004,7 @@
       "scubillos@thenofaultgroup.com": 11,
       "vlibreros@thenofaultgroup.com": 32
     },
-    "total": 1177,
-    "avg": 53.5
+    "total": 1183,
+    "avg": 53.8
   }
 }
