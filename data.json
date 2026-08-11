@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated": "2026-08-11T11:15:06.860597",
+  "updated": "2026-08-11T11:37:12.957605",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.7,
-      "rate_worked": 2.15,
+      "rate_worked": 1.93,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.3,
-      "rate_worked": 0.92,
+      "rate_worked": 0.83,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.2,
-      "rate_worked": 0.92,
+      "rate_worked": 0.83,
       "hourly": [
         1,
         0,
@@ -119,9 +119,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.2,
-      "rate_worked": 0.62,
+      "rate_worked": 0.55,
       "hourly": [
         1,
         1,
@@ -145,7 +145,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
-      "mtd_signed": 47
+      "mtd_signed": 48
     },
     {
       "name": "Luis Vivas",
@@ -191,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.6,
       "rate": 0.11,
-      "rate_worked": 0.8,
+      "rate_worked": 0.62,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.1,
-      "rate_worked": 0.31,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         1,
@@ -335,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 3.6,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 179.0,
-    "total_hours_worked": 29.0,
+    "total_hours_worked": 33.0,
     "specialists_count": 25,
     "specialists_with_ld": 8,
-    "rate_worked": 0.66,
+    "rate_worked": 0.58,
     "rate_shift": 0.11,
     "hourly_totals": [
       2,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 202,
-    "yesterday_same_time": 36,
-    "last_week_same_time": 34,
+    "yesterday_same_time": 44,
+    "last_week_same_time": 38,
     "last_week_total": 188,
-    "pace_time": "11:15"
+    "pace_time": "11:37"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -993,7 +993,7 @@
       "lmurillo@thenofaultgroup.com": 25,
       "lvivas@thenofaultgroup.com": 76,
       "mcardona@thenofaultgroup.com": 9,
-      "mmiranda@thenofaultgroup.com": 47,
+      "mmiranda@thenofaultgroup.com": 48,
       "mpenaranda@thenofaultgroup.com": 78,
       "nelsonr@thenofaultgroup.com": 221,
       "nsilva@thenofaultgroup.com": 15,
@@ -1004,7 +1004,7 @@
       "scubillos@thenofaultgroup.com": 11,
       "vlibreros@thenofaultgroup.com": 32
     },
-    "total": 1172,
+    "total": 1173,
     "avg": 53.3
   }
 }
