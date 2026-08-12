@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated": "2026-08-11T22:37:46.003097",
+  "updated": "2026-08-11T23:15:06.575861",
   "title": "Locked Down",
   "reps": [
     {
@@ -40,6 +40,42 @@
       "mtd_signed": 67
     },
     {
+      "name": "Jorge Duvergel",
+      "abbrev": "J. Duvergel",
+      "ld": 19,
+      "still_ld": 4,
+      "came_in": 15,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 1.9,
+      "rate_worked": 1.9,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        4,
+        0,
+        3,
+        1,
+        1,
+        1,
+        1,
+        0,
+        4,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jduvergel@thenofaultgroup.com",
+      "mtd_signed": 109
+    },
+    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 16,
@@ -76,52 +112,16 @@
       "mtd_signed": 74
     },
     {
-      "name": "Jorge Duvergel",
-      "abbrev": "J. Duvergel",
-      "ld": 15,
-      "still_ld": 1,
-      "came_in": 14,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 1.5,
-      "rate_worked": 1.5,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        4,
-        0,
-        3,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jduvergel@thenofaultgroup.com",
-      "mtd_signed": 109
-    },
-    {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
-      "ld": 13,
-      "still_ld": 4,
+      "ld": 14,
+      "still_ld": 5,
       "came_in": 9,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
-      "rate": 1.44,
-      "rate_worked": 1.51,
+      "hours_worked": 9.0,
+      "rate": 1.56,
+      "rate_worked": 1.56,
       "hourly": [
         0,
         0,
@@ -137,7 +137,7 @@
         1,
         1,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -150,14 +150,14 @@
     {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
-      "ld": 14,
-      "still_ld": 4,
+      "ld": 15,
+      "still_ld": 5,
       "came_in": 10,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 1.4,
-      "rate_worked": 1.4,
+      "rate": 1.5,
+      "rate_worked": 1.5,
       "hourly": [
         0,
         0,
@@ -175,7 +175,7 @@
         0,
         2,
         0,
-        0
+        1
       ],
       "start_hour": 8,
       "end_hour": 18,
@@ -186,14 +186,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 16,
+      "ld": 17,
       "still_ld": 2,
-      "came_in": 14,
+      "came_in": 15,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.6,
-      "rate": 1.07,
-      "rate_worked": 1.09,
+      "hours_worked": 15.0,
+      "rate": 1.13,
+      "rate_worked": 1.13,
       "hourly": [
         1,
         0,
@@ -210,7 +210,7 @@
         2,
         1,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": 8,
@@ -263,9 +263,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.81,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.58,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.44,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 144,
-    "total_still_ld": 51,
-    "total_came_in": 93,
+    "total_ld": 151,
+    "total_still_ld": 56,
+    "total_came_in": 95,
     "total_dropped": 0,
     "hourly_came_in": [
       2,
@@ -926,7 +926,7 @@
       3,
       5,
       0,
-      0,
+      2,
       0
     ],
     "hourly_dropped": [
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 179.0,
-    "total_hours_worked": 176.6,
+    "total_hours_worked": 179.0,
     "specialists_count": 25,
     "specialists_with_ld": 16,
-    "rate_worked": 0.82,
-    "rate_shift": 0.8,
+    "rate_worked": 0.84,
+    "rate_shift": 0.84,
     "hourly_totals": [
       2,
       3,
@@ -969,15 +969,15 @@
       8,
       8,
       6,
-      3,
-      0,
-      0
+      4,
+      5,
+      1
     ],
     "yesterday_ld": 200,
-    "yesterday_same_time": 198,
-    "last_week_same_time": 187,
+    "yesterday_same_time": 200,
+    "last_week_same_time": 188,
     "last_week_total": 188,
-    "pace_time": "22:37"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
