@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Efficiency Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .header { text-align: center; margin-bottom: 20px; position: relative; }
+        .header h1 { font-size: 28px; font-weight: 800; letter-spacing: 2px; margin-bottom: 0; }
+        .header h2 { font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
+        .header .date { font-size: 14px; color: #888; }
+        
+        .dept-scorecard {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #1a1a1a;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            height: 42px;
+        }
+        
+        .dept-scorecard .label {
+            font-size: 9px;
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.1;
+        }
+        
+        .dept-scorecard .rate-box {
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .dept-scorecard .rate-box.rate-below { background: #ef4444; }
+        .dept-scorecard .rate-box.rate-average { background: #fbbf24; }
+        .dept-scorecard .rate-box.rate-solid { background: #5BA4B5; }
+        .dept-scorecard .rate-box.rate-elite { background: #4ade80; }
+        
+        .dept-scorecard .tier-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .dept-scorecard .stats {
+            font-size: 12px;
+            color: #888;
+        }
+        
+        .dept-scorecard .stats strong {
+            color: #fff;
+        }
+        
+        @media (max-width: 600px) {
+            .tabs-row {
+                justify-content: space-between;
+                gap: 8px;
+            }
+            
+            .tabs {
+                gap: 6px;
+            }
+            
+            .tab {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            
+            .dept-scorecard {
+                padding: 4px 8px;
+                gap: 5px;
+            }
+            
+            .dept-scorecard .label {
+                display: none;
+            }
+            
+            .dept-scorecard .tier-label {
+                font-size: 9px;
+            }
+            
+            .dept-scorecard .stats {
+                display: none;
+            }
+            
+            .dept-scorecard .rate-box {
+                padding: 3px 6px;
+                font-size: 12px;
+            }
+        }
+        
+        .tabs-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            border: none;
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 6px;
+            text-decoration: none;
+            height: 42px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tab:hover { background: #2a2a2a; color: #fff; }
+        .tab.active { background: #5BA4B5; color: #fff; }
+        
+        .chart-area { padding-top: 10px; }
+        
+        .bar-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            height: 32px;
+        }
+        
+        .bar-rank {
+            width: 28px;
+            text-align: right;
+            padding-right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .bar-name {
+            width: 130px;
+            text-align: right;
+            padding-right: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+        
+        .bar-track {
+            flex: 1;
+            height: 28px;
+            background: #1a1a1a;
+            border-radius: 4px;
+            position: relative;
+            max-width: 400px;
+        }
+        
+        .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            min-width: 50px;
+        }
+        
+        .bar-fill.elite { background: #4ade80; color: #000; }
+        .bar-fill.solid { background: #5BA4B5; color: #fff; }
+        .bar-fill.average { background: #fbbf24; color: #000; }
+        .bar-fill.below { background: #ef4444; color: #fff; }
+        .bar-fill.off { background: #4a4a4a; color: #888; }
+        
+        .bar-stats {
+            width: 100px;
+            text-align: left;
+            font-size: 12px;
+            color: #888;
+            padding-left: 15px;
+            flex-shrink: 0;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .summary-box {
+            background: #1a1a1a;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        
+        .summary-box .line { font-size: 14px; margin-bottom: 5px; }
+        .summary-box .line:last-child { margin-bottom: 0; }
+        .summary-box .value { font-weight: 700; }
+        .summary-box .elite-count { color: #4ade80; }
+        
+        .legend { display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .legend-dot.elite { background: #4ade80; }
+        .legend-dot.solid { background: #5BA4B5; }
+        .legend-dot.average { background: #fbbf24; }
+        .legend-dot.below { background: #ef4444; }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        .empty-state h3 { font-size: 18px; margin-bottom: 10px; color: #888; }
+        .empty-state p { font-size: 14px; }
+        
+        .loading { text-align: center; padding: 100px; color: #888; }
+        
+        .updated { text-align: center; font-size: 11px; color: #444; margin-top: 20px; }
+        
+        /* TV Mode Toggle Button */
+        .tv-toggle {
+            padding: 8px 14px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #888;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .tv-toggle:hover { background: #2a2a2a; color: #fff; border-color: #5BA4B5; }
+        .tv-toggle.active { background: #5BA4B5; color: #fff; border-color: #5BA4B5; }
+        .tv-toggle .icon { font-size: 14px; }
+        
+        /* Hide TV toggle on mobile - not useful on small screens */
+        @media (max-width: 900px) {
+            .tv-toggle { display: none; }
+            /* Force disable TV mode styles on mobile even if class is set */
+            body.tv-mode { padding: 20px; }
+            body.tv-mode .container { max-width: 900px; }
+            body.tv-mode .tv-layout { display: block; }
+            body.tv-mode .tv-sidebar { display: none; }
+            body.tv-mode .section-divider { display: block; }
+            body.tv-mode .chart-area { display: block; }
+            body.tv-mode .footer { display: flex; }
+        }
+        
+        /* TV Mode Layout */
+        body.tv-mode { padding: 15px 30px; }
+        body.tv-mode .container { max-width: 100%; }
+        body.tv-mode .header h1 { font-size: 24px; }
+        body.tv-mode .header h2 { font-size: 18px; }
+        
+        body.tv-mode .tv-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 25px;
+            align-items: start;
+        }
+        
+        body.tv-mode .tv-main { }
+        body.tv-mode .tv-sidebar { }
+        
+        body.tv-mode .heatmap-section { margin-bottom: 15px; }
+        body.tv-mode .heatmap-title { font-size: 16px; margin-bottom: 10px; }
+        body.tv-mode .heatmap-table { font-size: 10px; }
+        body.tv-mode .heatmap-table td { padding: 4px 2px; }
+        body.tv-mode .heatmap-table th.name-col,
+        body.tv-mode .heatmap-table td.name-cell { width: 75px; font-size: 9px; }
+        
+        body.tv-mode .dept-summary { margin-bottom: 15px; padding: 12px; }
+        body.tv-mode .dept-summary-title { font-size: 12px; margin-bottom: 8px; }
+        body.tv-mode .stats-section { padding: 10px 12px; }
+        body.tv-mode .stat-big { font-size: 28px; }
+        body.tv-mode .stat-row { font-size: 12px; }
+        body.tv-mode .stat-metric { padding: 4px 0; }
+        body.tv-mode .metric-label { font-size: 12px; }
+        body.tv-mode .metric-value { font-size: 18px; }
+        
+        body.tv-mode .section-divider { display: none; }
+        body.tv-mode .chart-area { display: none; }
+        body.tv-mode .footer { display: none; }
+        .metrics-help { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 12px 15px; margin-top: 20px; font-size: 12px; }
+        .metrics-help .help-title { color: #5BA4B5; font-weight: 600; margin-bottom: 10px; }
+        .metrics-help .help-item { margin-bottom: 8px; color: #ccc; line-height: 1.4; }
+        .metrics-help .help-item strong { color: #fff; }
+        .metrics-help .help-example { color: #666; font-size: 11px; font-style: italic; }
+        
+        /* Hourly Heatmap Styles */
+        .heatmap-section {
+            margin-bottom: 30px;
+        }
+        
+        .heatmap-wrapper {
+            overflow-x: auto;
+            position: relative;
+        }
+        
+        .heatmap-title {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .heatmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            table-layout: fixed;
+        }
+        
+        .heatmap-table th {
+            background: #1a1a1a;
+            padding: 6px 2px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #333;
+            white-space: nowrap;
+        }
+        
+        .heatmap-table th.name-col {
+            text-align: left;
+            padding-left: 6px;
+            width: 85px;
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            background: #1a1a1a;
+        }
+        
+        .heatmap-table th.total-col {
+            width: 28px;
+            background: #2a2a2a;
+        }
+        
+        .heatmap-table th.star-col {
+            width: 28px;
+            background: #2a2a2a;
+            position: sticky;
+            left: 113px;
+            z-index: 2;
+        }
+        
+        .heatmap-table td.star-cell {
+            background: #2a2a2a;
+            font-weight: 600;
+            color: #5BA4B5;
+            position: sticky;
+            left: 113px;
+            z-index: 1;
+        }
+        
+        .heatmap-table th.signed-col {
+            width: 28px;
+            background: #2a2a2a;
+            position: sticky;
+            left: 85px;
+            z-index: 2;
+        }
+        
+        .heatmap-table td.signed-cell {
+            background: #2a2a2a;
+            font-weight: 600;
+            position: sticky;
+            left: 85px;
+            z-index: 1;
+        }
+        
+        .heatmap-table td.signed-cell.above-avg {
+            color: #4ade80;
+        }
+        
+        .heatmap-table td.signed-cell.below-avg {
+            color: #ef4444;
+        }
+        
+        .heatmap-table th.hour-col {
+            width: 22px;
+            font-size: 10px;
+        }
+        
+        .heatmap-table td {
+            padding: 5px 2px;
+            text-align: center;
+            border: 1px solid #333;
+            font-weight: 500;
+        }
+        
+        .rank-num {
+            color: #fff;
+            font-size: 9px;
+        }
+        
+        .heatmap-table td.name-cell {
+            text-align: left;
+            padding-left: 6px;
+            font-weight: 500;
+            font-size: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: sticky;
+            left: 0;
+            z-index: 1;
+            background: inherit;
+        }
+        
+        .heatmap-table tr.elite-row td.name-cell { background: #14532d; }
+        .heatmap-table tr.solid-row td.name-cell { background: #1a2e05; }
+        .heatmap-table tr.average-row td.name-cell { background: #451a03; }
+        .heatmap-table tr.below-row td.name-cell { background: #450a0a; }
+        .heatmap-table tr.zero-row td.name-cell { background: #27272a; }
+        
+        .heatmap-table td.total-cell {
+            font-weight: 700;
+            background: #2a2a2a;
+        }
+        
+        @media (max-width: 480px) {
+            .heatmap-table th.name-col,
+            .heatmap-table td.name-cell {
+                width: 80px;
+                font-size: 9px;
+            }
+            .heatmap-table th.hour-col {
+                width: 18px;
+                font-size: 9px;
+            }
+            .heatmap-table td {
+                padding: 4px 1px;
+                font-size: 10px;
+            }
+        }
+        
+        .heatmap-table tr.elite-row td { background: #166534; }
+        .heatmap-table tr.elite-row td.name-cell,
+        .heatmap-table tr.elite-row td.total-cell { background: #14532d; }
+        
+        .heatmap-table tr.solid-row td { background: #365314; }
+        .heatmap-table tr.solid-row td.name-cell,
+        .heatmap-table tr.solid-row td.total-cell { background: #1a2e05; }
+        
+        .heatmap-table tr.average-row td { background: #713f12; }
+        .heatmap-table tr.average-row td.name-cell,
+        .heatmap-table tr.average-row td.total-cell { background: #451a03; }
+        
+        .heatmap-table tr.below-row td { background: #7f1d1d; }
+        .heatmap-table tr.below-row td.name-cell,
+        .heatmap-table tr.below-row td.total-cell { background: #450a0a; }
+        
+        .heatmap-table tr.zero-row td { background: #3f3f46; }
+        .heatmap-table tr.zero-row td.name-cell,
+        .heatmap-table tr.zero-row td.total-cell { background: #27272a; }
+        
+        .heatmap-cell-dash { color: #666; }
+        
+        .section-divider {
+            border-top: 2px solid #333;
+            margin: 30px 0;
+            padding-top: 20px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #888;
+        }
+        
+        /* Department Summary Block */
+        .dept-summary {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .dept-summary-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #5BA4B5;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .dept-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+        }
+        
+        .dept-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        
+        .stats-section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+        
+        .stats-section-title {
+            font-size: 10px;
+            color: #5BA4B5;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .info-toggle {
+            color: #5BA4B5;
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 14px;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            border-radius: 50%;
+            background: #333;
+        }
+        
+        .info-toggle:hover {
+            color: #fff;
+            background: #5BA4B5;
+        }
+        
+        .color-scale {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #333;
+        }
+        
+        .scale-title {
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        
+        .scale-bar {
+            display: flex;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .scale-segment {
+            flex: 1;
+            padding: 6px 4px;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+        
+        .stat-big {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+        }
+        
+        .stat-big .stat-label {
+            font-size: 14px;
+            color: #888;
+            font-weight: 400;
+        }
+        
+        .stat-row {
+            font-size: 13px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+        
+        .stat-row strong {
+            color: #fff;
+        }
+        
+        .stat-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            padding: 6px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .stat-metric:last-child {
+            border-bottom: none;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #ccc;
+            font-weight: 500;
+        }
+        
+        .metric-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .metric-value.rate-red { color: #ef4444; }
+        .metric-value.rate-orange { color: #f97316; }
+        .metric-value.rate-yellow { color: #fbbf24; }
+        .metric-value.rate-lightgreen { color: #a3e635; }
+        .metric-value.rate-green { color: #22c55e; }
+        
+        .stat-metric.forecast {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 2px solid #5BA4B5;
+            border-bottom: none;
+        }
+        
+        .stat-metric.forecast .metric-value {
+            color: #5BA4B5;
+            font-size: 22px;
+        }
+        
+        .zeros-count {
+            color: #ef4444 !important;
+        }
+        
+        .pace-arrow {
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        
+        .pace-arrow.positive {
+            color: #22c55e;
+        }
+        
+        .pace-arrow.negative {
+            color: #ef4444;
+        }
+        
+        .stat-context {
+            color: #666;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+        
+        .dept-stat {
+            font-size: 13px;
+        }
+        
+        .dept-stat-label {
+            color: #888;
+        }
+        
+        .dept-stat-value {
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .dept-stat-value.positive { color: #4ade80; }
+        .dept-stat-value.negative { color: #ef4444; }
+        
+        .positive { color: #4ade80; }
+        .negative { color: #ef4444; }
+        
+        /* Hourly totals row */
+        .heatmap-table tr.totals-row td {
+            background: #1a1a1a;
+            font-weight: 700;
+            border-top: 2px solid #444;
+        }
+        
+        .heatmap-table tr.totals-row td.name-cell {
+            background: #1a1a1a;
+            color: #5BA4B5;
+        }
+        
+        .heatmap-table tr.totals-row td.star-cell {
+            background: #2a2a2a;
+        }
+        
+        /* Hourly total heatmap colors */
+        .hourly-heat-0 { background: #1a1a1a !important; color: #666; }
+        .hourly-heat-1 { background: #14532d !important; }
+        .hourly-heat-2 { background: #166534 !important; }
+        .hourly-heat-3 { background: #15803d !important; }
+        .hourly-heat-4 { background: #16a34a !important; }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="loading">Loading...</div>
+    </div>
+
+    <script>
+        // TV Mode toggle
+        function toggleTvMode() {
+            document.body.classList.toggle('tv-mode');
+            const isActive = document.body.classList.contains('tv-mode');
+            localStorage.setItem('intakeEfficiency_tvMode', isActive ? '1' : '0');
+            
+            // Refresh data to rebuild layout
+            fetchData();
+        }
+        
+        // Restore TV mode on load
+        if (localStorage.getItem('intakeEfficiency_tvMode') === '1') {
+            document.body.classList.add('tv-mode');
+        }
+        
+        const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_f_3vIV-VzDkK9UPxmDx1Sw_UXZ78iJq';
+        
+        // Email aliases for normalization (must match Python script)
+        const EMAIL_ALIASES = {
+            'mjmiranda@thenofaultgroup.com': 'mmiranda@thenofaultgroup.com',
+            'jcuarezma@305nofault.com': 'jcuarezma@thenofaultgroup.com',
+            'nelsonr@305nofault.com': 'nelsonr@thenofaultgroup.com',
+            'oplasencia@305nofault.com': 'oplasencia@thenofaultgroup.com',
+            'carold@305nofault.com': 'carold@thenofaultgroup.com',
+            'rmartinez@thenofaultgroup.com': 'rchavarria@thenofaultgroup.com',
+            'dvelasquez@thenofaultgroup.com': 'dcastro@thenofaultgroup.com',
+        };
+        
+        function normalizeEmail(email) {
+            if (!email) return email;
+            email = email.toLowerCase().trim();
+            if (email.includes('@305nofault.com')) {
+                email = email.replace('@305nofault.com', '@thenofaultgroup.com');
+            }
+            return EMAIL_ALIASES[email] || email;
+        }
+        
+        async function supabaseFetch(endpoint) {
+            const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                }
+            });
+            if (!res.ok) throw new Error('Supabase fetch failed');
+            return res.json();
+        }
+        
+        async function fetchMtdSigned() {
+            // Get current month start date
+            const now = new Date();
+            const monthStart = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-01`;
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            
+            // Fetch MTD signed from rep_logs grouped by intakespecialist
+            // Using pagination since we may have more than 1000 records
+            const mtdByIntaker = {};
+            let offset = 0;
+            const limit = 1000;
+            
+            while (true) {
+                const data = await supabaseFetch(`rep_logs?select=intakespecialist&signed=gte.${monthStart}&signed=lte.${today}&offset=${offset}&limit=${limit}`);
+                if (!data || data.length === 0) break;
+                
+                data.forEach(row => {
+                    const email = normalizeEmail(row.intakespecialist);
+                    if (email) {
+                        mtdByIntaker[email] = (mtdByIntaker[email] || 0) + 1;
+                    }
+                });
+                
+                if (data.length < limit) break;
+                offset += limit;
+            }
+            
+            // Calculate team average
+            const values = Object.values(mtdByIntaker);
+            const total = values.reduce((sum, v) => sum + v, 0);
+            const avg = values.length > 0 ? total / values.length : 0;
+            
+            return { mtdByIntaker, mtdTotal: total, mtdAvg: avg };
+        }
+        
+        async function fetchLiveSchedules(today) {
+            // Get day of week (0=Sun, 1=Mon, ..., 6=Sat for Supabase)
+            const dt = new Date(today + 'T12:00:00');
+            const pythonDow = dt.getDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+            const dayOfWeek = pythonDow; // Already in 0=Sun format
+            const isWeekday = pythonDow >= 1 && pythonDow <= 5;
+            
+            // Fetch all needed data in parallel
+            const [defaults, overrides, specialists] = await Promise.all([
+                supabaseFetch('default_shifts?select=*'),
+                supabaseFetch(`intake_shifts?shift_date=eq.${today}&select=*`),
+                supabaseFetch('intake_specialists?select=email,display_name,is_active')
+            ]);
+            
+            // Build active specialists set
+            const activeEmails = new Set();
+            const specialistNames = {};
+            (specialists || []).forEach(s => {
+                const email = normalizeEmail(s.email);
+                if (s.is_active !== false) activeEmails.add(email);
+                specialistNames[email] = s.display_name;
+            });
+            
+            // Build schedule map from defaults
+            const scheduleMap = {};
+            (defaults || []).forEach(d => {
+                const email = normalizeEmail(d.specialist_email);
+                if (!activeEmails.has(email)) return;
+                
+                const rowDow = d.day_of_week;
+                const isOff = d.is_off === true;
+                
+                // NULL day_of_week = Mon-Fri default
+                let appliesToday = false;
+                if (rowDow === null) {
+                    appliesToday = isWeekday;
+                } else if (rowDow === dayOfWeek) {
+                    appliesToday = true;
+                }
+                
+                if (!appliesToday) return;
+                
+                const startTime = (d.start_time || '09:00:00').substring(0, 5);
+                const endTime = (d.end_time || '17:00:00').substring(0, 5);
+                const startHour = parseInt(startTime.split(':')[0]);
+                const endHour = parseInt(endTime.split(':')[0]);
+                const hours = isOff ? 0 : (endHour - startHour);
+                
+                scheduleMap[email] = {
+                    name: d.specialist_name,
+                    email: email,
+                    hours: hours,
+                    start_hour: isOff ? null : startHour,
+                    end_hour: isOff ? null : endHour,
+                    is_off: isOff
+                };
+            });
+            
+            // Apply date-specific overrides
+            (overrides || []).forEach(o => {
+                const email = normalizeEmail(o.specialist_email);
+                const startTime = (o.start_time || '09:00:00').substring(0, 5);
+                const endTime = (o.end_time || '17:00:00').substring(0, 5);
+                const startHour = parseInt(startTime.split(':')[0]);
+                const endHour = parseInt(endTime.split(':')[0]);
+                
+                const isOff = (startHour === 0 && endHour === 0) || (startTime === endTime);
+                const hours = isOff ? 0 : (endHour - startHour);
+                
+                scheduleMap[email] = {
+                    name: o.specialist_name,
+                    email: email,
+                    hours: hours,
+                    start_hour: isOff ? null : startHour,
+                    end_hour: isOff ? null : endHour,
+                    is_off: isOff
+                };
+            });
+            
+            return { scheduleMap, specialistNames, activeEmails };
+        }
+        
+        function abbreviateName(name) {
+            if (!name) return name;
+            const parts = name.trim().split(' ');
+            if (parts.length >= 2) {
+                return `${parts[0][0]}. ${parts[parts.length - 1]}`;
+            }
+            return name;
+        }
+        
+        async function rpc(name) {
+            const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`, {
+                method: 'POST',
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: '{}'
+            });
+            if (!res.ok) throw new Error(`RPC ${name} failed: ${res.status}`);
+            return res.json();
+        }
+
+        // LIVE build: reconstruct the data.json shape entirely from Supabase RPCs.
+        // Mirrors scripts/refresh_intake_dashboard.py aggregation exactly.
+        async function buildLiveData() {
+            const now = new Date();
+            const pad = n => String(n).padStart(2, '0');
+            const today = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+
+            const [ldRows, mtdRows, paceRows] = await Promise.all([
+                rpc('get_intake_ld_today'),
+                rpc('get_intake_mtd_signed'),
+                rpc('get_intake_pace')
+            ]);
+
+            // --- MTD signed by intaker ---
+            const mtdByIntaker = {};
+            (mtdRows || []).forEach(r => {
+                const e = normalizeEmail(r.intakespecialist);
+                if (e) mtdByIntaker[e] = (mtdByIntaker[e] || 0) + Number(r.cnt);
+            });
+            const mtdValues = Object.values(mtdByIntaker);
+            const mtdTotal = mtdValues.reduce((s, v) => s + v, 0);
+            const mtdAvg = mtdValues.length ? mtdTotal / mtdValues.length : 0;
+
+            // --- LD today: per-specialist counts + hourly[7..23] + status splits ---
+            const ldCounts = {}, stillLd = {}, cameIn = {}, dropped = {};
+            const hourlyBySpec = {};
+            const hourlyCameIn = new Array(17).fill(0);
+            const hourlyDropped = new Array(17).fill(0);
+            (ldRows || []).forEach(r => {
+                const e = normalizeEmail(r.intakespecialist);
+                if (!e) return;
+                const c = Number(r.cnt);
+                const h = (r.hour === null || r.hour === undefined) ? null : Number(r.hour);
+                ldCounts[e] = (ldCounts[e] || 0) + c;
+                if (h !== null && h >= 7 && h <= 23) {
+                    if (!hourlyBySpec[e]) hourlyBySpec[e] = new Array(17).fill(0);
+                    hourlyBySpec[e][h - 7] += c;
+                }
+                if (r.status === 'Locked Down') stillLd[e] = (stillLd[e] || 0) + c;
+                else if (r.status === 'Came In') {
+                    cameIn[e] = (cameIn[e] || 0) + c;
+                    if (h !== null && h >= 7 && h <= 23) hourlyCameIn[h - 7] += c;
+                } else if (r.status === 'Dropped') {
+                    dropped[e] = (dropped[e] || 0) + c;
+                    if (h !== null && h >= 7 && h <= 23) hourlyDropped[h - 7] += c;
+                }
+            });
+
+            // Build reps[] from everyone who has LDs today (schedule merge adds the rest live).
+            const reps = Object.keys(ldCounts).map(email => ({
+                name: email,            // placeholder; live schedule merge overwrites name/abbrev
+                abbrev: abbreviateName(email),
+                email: email,
+                ld: ldCounts[email] || 0,
+                still_ld: stillLd[email] || 0,
+                came_in: cameIn[email] || 0,
+                dropped: dropped[email] || 0,
+                hours: 0,
+                hours_worked: 0,
+                rate: 0,
+                rate_worked: 0,
+                hourly: hourlyBySpec[email] || new Array(17).fill(0),
+                start_hour: null,
+                end_hour: null,
+                is_off: true,
+                mtd_signed: mtdByIntaker[email] || 0
+            }));
+
+            // Department hourly totals (7..23)
+            const hourlyTotals = new Array(17).fill(0);
+            reps.forEach(r => r.hourly.forEach((v, i) => { hourlyTotals[i] += v; }));
+
+            const totalLd = reps.reduce((s, r) => s + r.ld, 0);
+            const totalCameIn = reps.reduce((s, r) => s + r.came_in, 0);
+            const totalDropped = reps.reduce((s, r) => s + r.dropped, 0);
+            const totalStillLd = reps.reduce((s, r) => s + r.still_ld, 0);
+            const p = (paceRows && paceRows[0]) || {};
+
+            return {
+                date: today,
+                updated: now.toISOString(),
+                title: 'Locked Down',
+                reps: reps,
+                shifts_configured: true,
+                department: {
+                    total_ld: totalLd,
+                    total_still_ld: totalStillLd,
+                    total_came_in: totalCameIn,
+                    total_dropped: totalDropped,
+                    hourly_came_in: hourlyCameIn,
+                    hourly_dropped: hourlyDropped,
+                    total_shift_hours: 0,
+                    total_hours_worked: 0,
+                    specialists_count: reps.length,
+                    specialists_with_ld: reps.filter(r => r.ld > 0).length,
+                    rate_worked: 0,
+                    rate_shift: 0,
+                    hourly_totals: hourlyTotals,
+                    yesterday_ld: Number(p.yesterday_ld || 0),
+                    yesterday_same_time: Number(p.yesterday_same_time || 0),
+                    last_week_same_time: Number(p.last_week_same_time || 0),
+                    last_week_total: Number(p.last_week_total || 0),
+                    pace_time: p.pace_time || ''
+                },
+                mtd_signed: {
+                    by_intaker: mtdByIntaker,
+                    total: mtdTotal,
+                    avg: Math.round(mtdAvg * 10) / 10
+                }
+            };
+        }
+
+        async function fetchData() {
+            try {
+                const data = await buildLiveData();
+                
+                // MTD signed data is now pre-computed in data.json
+                // Convert from data.json format to expected format
+                const mtdFromJson = data.mtd_signed || {};
+                data.mtdSigned = {
+                    mtdByIntaker: mtdFromJson.by_intaker || {},
+                    mtdTotal: mtdFromJson.total || 0,
+                    mtdAvg: mtdFromJson.avg || 0
+                };
+                console.log('MTD Signed from data.json:', data.mtdSigned.mtdTotal, 'total,', Object.keys(data.mtdSigned.mtdByIntaker).length, 'intakers');
+                
+                // Fetch live schedule data from Supabase
+                try {
+                    const { scheduleMap, specialistNames, activeEmails } = await fetchLiveSchedules(data.date);
+                    
+                    // Calculate current hours worked based on time
+                    const now = new Date();
+                    
+                    // Merge live schedule into reps data
+                    const repsByEmail = {};
+                    (data.reps || []).forEach(r => {
+                        // Try to find email - data.json might have email or we match by name
+                        const email = r.email || Object.keys(scheduleMap).find(e => 
+                            scheduleMap[e].name === r.name || 
+                            abbreviateName(scheduleMap[e].name) === r.abbrev
+                        );
+                        if (email) repsByEmail[email] = r;
+                    });
+                    
+                    // Update reps with live schedule data
+                    const updatedReps = [];
+                    const processedEmails = new Set();
+                    
+                    // First, update existing reps with live schedule
+                    (data.reps || []).forEach(r => {
+                        const email = r.email || Object.keys(scheduleMap).find(e => 
+                            scheduleMap[e].name === r.name || 
+                            abbreviateName(scheduleMap[e].name) === r.abbrev
+                        );
+                        
+                        if (email && scheduleMap[email]) {
+                            const live = scheduleMap[email];
+                            processedEmails.add(email);
+                            
+                            // Calculate hours worked so far
+                            let hoursWorked = 0;
+                            if (!live.is_off && live.start_hour !== null) {
+                                const shiftStart = new Date(now);
+                                shiftStart.setHours(live.start_hour, 0, 0, 0);
+                                const shiftEnd = new Date(now);
+                                shiftEnd.setHours(live.end_hour, 0, 0, 0);
+                                
+                                if (now < shiftStart) {
+                                    hoursWorked = 0;
+                                } else if (now > shiftEnd) {
+                                    hoursWorked = live.hours;
+                                } else {
+                                    hoursWorked = (now - shiftStart) / 3600000;
+                                }
+                            }
+                            
+                            // Merge live schedule with LD data
+                            updatedReps.push({
+                                ...r,
+                                email: email,  // Add email for MTD signed lookup
+                                hours: live.hours,
+                                hours_worked: Math.round(hoursWorked * 100) / 100,
+                                start_hour: live.start_hour,
+                                end_hour: live.end_hour,
+                                is_off: live.is_off,
+                                rate: live.hours > 0 ? r.ld / live.hours : 0,
+                                rate_worked: hoursWorked > 0 ? r.ld / hoursWorked : 0
+                            });
+                        } else {
+                            // Keep original rep data
+                            updatedReps.push(r);
+                        }
+                    });
+                    
+                    // Add any scheduled specialists not in data.json (0 LDs)
+                    Object.keys(scheduleMap).forEach(email => {
+                        if (!processedEmails.has(email) && activeEmails.has(email)) {
+                            const live = scheduleMap[email];
+                            
+                            let hoursWorked = 0;
+                            if (!live.is_off && live.start_hour !== null) {
+                                const shiftStart = new Date(now);
+                                shiftStart.setHours(live.start_hour, 0, 0, 0);
+                                const shiftEnd = new Date(now);
+                                shiftEnd.setHours(live.end_hour, 0, 0, 0);
+                                
+                                if (now < shiftStart) {
+                                    hoursWorked = 0;
+                                } else if (now > shiftEnd) {
+                                    hoursWorked = live.hours;
+                                } else {
+                                    hoursWorked = (now - shiftStart) / 3600000;
+                                }
+                            }
+                            
+                            updatedReps.push({
+                                name: live.name,
+                                abbrev: abbreviateName(live.name),
+                                email: email,
+                                ld: 0,
+                                still_ld: 0,
+                                came_in: 0,
+                                dropped: 0,
+                                hours: live.hours,
+                                hours_worked: Math.round(hoursWorked * 100) / 100,
+                                start_hour: live.start_hour,
+                                end_hour: live.end_hour,
+                                is_off: live.is_off,
+                                rate: 0,
+                                rate_worked: 0,
+                                hourly: new Array(17).fill(0)
+                            });
+                        }
+                    });
+                    
+                    // Recalculate department totals
+                    const totalHours = updatedReps.filter(r => !r.is_off).reduce((sum, r) => sum + (r.hours || 0), 0);
+                    const totalHoursWorked = updatedReps.filter(r => !r.is_off).reduce((sum, r) => sum + (r.hours_worked || 0), 0);
+                    const specialistsCount = updatedReps.filter(r => !r.is_off).length;
+                    const specialistsWithLd = updatedReps.filter(r => r.ld > 0).length;
+                    
+                    data.reps = updatedReps;
+                    data.department.total_shift_hours = Math.round(totalHours * 10) / 10;
+                    data.department.total_hours_worked = Math.round(totalHoursWorked * 10) / 10;
+                    data.department.specialists_count = specialistsCount + updatedReps.filter(r => r.is_off).length;
+                    data.department.specialists_with_ld = specialistsWithLd;
+                    data.department.rate_worked = totalHoursWorked > 0 ? Math.round((data.department.total_ld / totalHoursWorked) * 100) / 100 : 0;
+                    data.department.rate_shift = totalHours > 0 ? Math.round((data.department.total_ld / totalHours) * 100) / 100 : 0;
+                    
+                    console.log('Live schedule data merged successfully');
+                    // Debug: show which reps have emails
+                    const repsWithEmail = updatedReps.filter(r => r.email).length;
+                    const repsWithoutEmail = updatedReps.filter(r => !r.email).length;
+                    console.log(`Reps with email: ${repsWithEmail}, without: ${repsWithoutEmail}`);
+                    if (repsWithoutEmail > 0) {
+                        console.log('Reps missing email:', updatedReps.filter(r => !r.email).map(r => r.name));
+                    }
+                } catch (scheduleError) {
+                    console.warn('Could not fetch live schedules, using cached data:', scheduleError);
+                }
+                
+                renderDashboard(data);
+            } catch (error) {
+                console.error(error);
+                document.getElementById('app').innerHTML = `<div class="loading">Error: ${error.message}</div>`;
+            }
+        }
+        
+        function getBarClass(rate) {
+            if (rate >= 1.0) return 'elite';
+            if (rate >= 0.6) return 'solid';
+            if (rate >= 0.4) return 'average';
+            return 'below';
+        }
+        
+        function getRateClass(rate) {
+            if (rate >= 1.0) return 'rate-elite';
+            if (rate >= 0.6) return 'rate-solid';
+            if (rate >= 0.4) return 'rate-average';
+            return 'rate-below';
+        }
+        
+        function getRateTier(rate) {
+            // Match the legend exactly: Elite #4ade80, Solid #5BA4B5, Average #fbbf24, Below #ef4444
+            if (rate >= 1.0) return { label: 'Elite', color: '#4ade80' };
+            if (rate >= 0.6) return { label: 'Solid', color: '#5BA4B5' };
+            if (rate >= 0.4) return { label: 'Average', color: '#fbbf24' };
+            return { label: 'Below', color: '#ef4444' };
+        }
+        
+        function toggleDefinitions() {
+            const el = document.getElementById('definitions');
+            if (el) {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+        
+        function getRowClass(ld, rate) {
+            if (ld === 0) return 'zero-row';
+            if (rate >= 1.0) return 'elite-row';
+            if (rate >= 0.6) return 'solid-row';
+            if (rate >= 0.4) return 'average-row';
+            return 'below-row';
+        }
+        
+        function renderHeatmap(reps, dept, mtdSigned) {
+            // Hour labels: 7A, 8A, 9A, 10A, 11A, 12P, 1P, 2P, 3P, 4P, 5P, 6P, 7P, 8P, 9P, 10P, 11P
+            const hourLabels = ['7A', '8A', '9A', '10A', '11A', '12P', '1P', '2P', '3P', '4P', '5P', '6P', '7P', '8P', '9P', '10P', '11P'];
+            
+            // MTD Signed data
+            const mtdByIntaker = mtdSigned?.mtdByIntaker || {};
+            const mtdAvg = mtdSigned?.mtdAvg || 0;
+            const mtdTotal = mtdSigned?.mtdTotal || 0;
+            
+            // Separate scheduled vs OFF specialists
+            const scheduledReps = reps.filter(r => !r.is_off).sort((a, b) => {
+                // Sort by LD/hr rate (highest first), then by total LD as tiebreaker
+                const rateA = a.hours_worked > 0 ? a.ld / a.hours_worked : 0;
+                const rateB = b.hours_worked > 0 ? b.ld / b.hours_worked : 0;
+                if (rateB !== rateA) return rateB - rateA;
+                return b.ld - a.ld;
+            });
+            const offReps = reps.filter(r => r.is_off).sort((a, b) => b.ld - a.ld);
+            
+            let headerRow = '<tr><th class="name-col">Intaker</th><th class="signed-col">S</th><th class="star-col">*</th>';
+            hourLabels.forEach(h => { headerRow += `<th class="hour-col">${h}</th>`; });
+            headerRow += '<th class="total-col">TOT</th></tr>';
+            
+            function renderRepRow(rep, isOff = false, rank = null) {
+                const rowClass = getRowClass(rep.ld, rep.rate);
+                const hourly = rep.hourly || new Array(17).fill(0);
+                const displayName = rep.abbrev || rep.name;
+                const rateVal = rep.rate_worked !== undefined ? rep.rate_worked : 0;
+                const rateWorked = rateVal > 0 ? rateVal.toFixed(2) : '-';
+                const rateTier = getRateTier(rateVal);
+                const rateColor = rateVal > 0 ? rateTier.color : '#666';
+                
+                // MTD Signed for this rep - use pre-computed value from data.json
+                // First try rep.mtd_signed (set by Python script), then fallback to lookup
+                let repMtdSigned = rep.mtd_signed || 0;
+                
+                // Fallback: try lookup by email if mtd_signed not set
+                if (repMtdSigned === 0 && rep.email) {
+                    const repEmail = normalizeEmail(rep.email);
+                    repMtdSigned = mtdByIntaker[repEmail] || mtdByIntaker[rep.email.toLowerCase()] || 0;
+                }
+                
+                const mtdSignedClass = repMtdSigned >= mtdAvg ? 'above-avg' : 'below-avg';
+                const mtdSignedDisplay = repMtdSigned > 0 ? repMtdSigned : '-';
+                
+                // Shift hour range (start_hour and end_hour are actual hours like 8, 14, 23)
+                const startHour = rep.start_hour;  // e.g., 8 for 8AM
+                const endHour = rep.end_hour;      // e.g., 17 for 5PM
+                const hasShift = startHour !== null && startHour !== undefined;
+                
+                // For OFF specialists, show name with OFF indicator; for ranked, show #
+                const rankPrefix = rank ? `<span class="rank-num">${rank}.</span> ` : '';
+                const nameDisplay = isOff ? `<span style="color: #888;">${displayName}</span> <span style="color: #f59e0b; font-size: 10px;">OFF</span>` : `${rankPrefix}${displayName}`;
+                
+                let row = `<tr class="${rowClass}"><td class="name-cell">${nameDisplay}</td><td class="signed-cell ${mtdSignedClass}">${mtdSignedDisplay}</td><td class="star-cell" style="color: ${rateColor}">${rateWorked}</td>`;
+                hourly.forEach((count, idx) => {
+                    // idx 0 = 7AM, idx 1 = 8AM, etc. So actual hour = idx + 7
+                    const actualHour = idx + 7;
+                    const isInShift = hasShift && actualHour >= startHour && actualHour < endHour;
+                    
+                    if (count === 0) {
+                        // Show X only if this hour is within their scheduled shift (not for OFF)
+                        if (isInShift && !isOff) {
+                            row += '<td class="heatmap-cell-dash" style="color: #ef4444;">X</td>';
+                        } else {
+                            row += '<td class="heatmap-cell-dash">-</td>';
+                        }
+                    } else {
+                        // Yellow text if LD occurred outside of scheduled shift (or if OFF)
+                        if (!isInShift || isOff) {
+                            row += `<td style="color: #fbbf24;">${count}</td>`;  // Yellow for outside shift
+                        } else {
+                            row += `<td>${count}</td>`;  // White for during shift
+                        }
+                    }
+                });
+                row += `<td class="total-cell">${rep.ld}</td></tr>`;
+                return row;
+            }
+            
+            let bodyRows = scheduledReps.map((rep, idx) => renderRepRow(rep, false, idx + 1)).join('');
+            
+            // Add OFF section if there are OFF specialists with LDs
+            if (offReps.length > 0) {
+                bodyRows += `<tr class="off-divider"><td colspan="21" style="background: #1a1a1a; color: #f59e0b; font-size: 11px; font-weight: 600; padding: 6px; text-align: center; border-top: 2px solid #333;">OFF TODAY</td></tr>`;
+                bodyRows += offReps.map(rep => renderRepRow(rep, true, null)).join('');
+            }
+            
+            // Hourly totals row
+            const hourlyTotals = dept.hourly_totals || new Array(17).fill(0);
+            const maxHourlyTotal = Math.max(...hourlyTotals, 1);
+            
+            function getHourlyHeatClass(val) {
+                if (val === 0) return 'hourly-heat-0';
+                const ratio = val / maxHourlyTotal;
+                if (ratio >= 0.75) return 'hourly-heat-4';
+                if (ratio >= 0.5) return 'hourly-heat-3';
+                if (ratio >= 0.25) return 'hourly-heat-2';
+                return 'hourly-heat-1';
+            }
+            
+            // Teal gradient for TOTAL row
+            function getTealHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #0d9488; color: #fff;';  // teal-600
+                if (ratio >= 0.5) return 'background: #14b8a6; color: #fff;';   // teal-500
+                if (ratio >= 0.25) return 'background: #2dd4bf; color: #000;';  // teal-400
+                return 'background: #5eead4; color: #000;';                      // teal-300
+            }
+            
+            let totalsRow = `<tr class="totals-row"><td class="name-cell">TOTAL</td><td class="signed-cell" style="color: #5BA4B5; font-weight: 700;">${mtdTotal}</td><td class="star-cell">-</td>`;
+            hourlyTotals.forEach(count => {
+                const style = getTealHeatStyle(count, maxHourlyTotal);
+                if (count === 0) {
+                    totalsRow += `<td style="${style}">-</td>`;
+                } else {
+                    totalsRow += `<td style="${style}">${count}</td>`;
+                }
+            });
+            totalsRow += `<td class="total-cell">${dept.total_ld}</td></tr>`;
+            
+            // Green gradient for Came In row
+            const hourlyCameIn = dept.hourly_came_in || new Array(17).fill(0);
+            const maxCameIn = Math.max(...hourlyCameIn, 1);
+            
+            function getGreenHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #16a34a; color: #fff;';  // green-600
+                if (ratio >= 0.5) return 'background: #22c55e; color: #fff;';   // green-500
+                if (ratio >= 0.25) return 'background: #4ade80; color: #000;';  // green-400
+                return 'background: #86efac; color: #000;';                      // green-300
+            }
+            
+            const totalCameIn = dept.total_came_in || 0;
+            let cameInRow = '<tr class="plain-row"><td class="name-cell" style="color: #4ade80;">Came In</td><td class="signed-cell">-</td><td class="star-cell">-</td>';
+            hourlyCameIn.forEach(count => {
+                const style = getGreenHeatStyle(count, maxCameIn);
+                if (count === 0) {
+                    cameInRow += `<td style="${style}">-</td>`;
+                } else {
+                    cameInRow += `<td style="${style}">${count}</td>`;
+                }
+            });
+            cameInRow += `<td class="total-cell" style="background: #14532d; color: #4ade80;">${totalCameIn}</td></tr>`;
+            
+            // Red gradient for Dropped row
+            const hourlyDropped = dept.hourly_dropped || new Array(17).fill(0);
+            const maxDropped = Math.max(...hourlyDropped, 1);
+            
+            function getRedHeatStyle(val, maxVal) {
+                if (val === 0) return 'background: #1a1a1a; color: #666;';
+                const ratio = val / Math.max(maxVal, 1);
+                if (ratio >= 0.75) return 'background: #dc2626; color: #fff;';  // red-600
+                if (ratio >= 0.5) return 'background: #ef4444; color: #fff;';   // red-500
+                if (ratio >= 0.25) return 'background: #f87171; color: #000;';  // red-400
+                return 'background: #fca5a5; color: #000;';                      // red-300
+            }
+            
+            const totalDropped = dept.total_dropped || 0;
+            let droppedRow = '<tr class="plain-row"><td class="name-cell" style="color: #ef4444;">Dropped</td><td class="signed-cell">-</td><td class="star-cell">-</td>';
+            hourlyDropped.forEach(count => {
+                const style = getRedHeatStyle(count, maxDropped);
+                if (count === 0) {
+                    droppedRow += `<td style="${style}">-</td>`;
+                } else {
+                    droppedRow += `<td style="${style}">${count}</td>`;
+                }
+            });
+            droppedRow += `<td class="total-cell" style="background: #450a0a; color: #ef4444;">${totalDropped}</td></tr>`;
+            
+            // Yesterday comparison (full day)
+            const yesterdayLd = dept.yesterday_ld || 0;
+            const ldDiff = dept.total_ld - yesterdayLd;
+            const ldDiffClass = ldDiff >= 0 ? 'positive' : 'negative';
+            const ldDiffText = ldDiff >= 0 ? `+${ldDiff}` : `${ldDiff}`;
+            
+            // Pace comparisons (same time)
+            const yesterdaySameTime = dept.yesterday_same_time || 0;
+            const lastWeekSameTime = dept.last_week_same_time || 0;
+            const lastWeekTotal = dept.last_week_total || 0;
+            const paceTimeRaw = dept.pace_time || '';
+            const paceTime = paceTimeRaw ? (() => {
+                const [h, m] = paceTimeRaw.split(':').map(Number);
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                const h12 = h % 12 || 12;
+                return `${h12}:${m.toString().padStart(2, '0')} ${ampm}`;
+            })() : '';
+            
+            const vsYesterdayDiff = dept.total_ld - yesterdaySameTime;
+            const vsYesterdayPct = yesterdaySameTime > 0 ? ((vsYesterdayDiff / yesterdaySameTime) * 100).toFixed(0) : 0;
+            const vsYesterdayClass = vsYesterdayDiff >= 0 ? 'positive' : 'negative';
+            const vsYesterdayText = vsYesterdayDiff >= 0 ? `+${vsYesterdayDiff}` : `${vsYesterdayDiff}`;
+            
+            const vsLastWeekDiff = dept.total_ld - lastWeekSameTime;
+            const vsLastWeekPct = lastWeekSameTime > 0 ? ((vsLastWeekDiff / lastWeekSameTime) * 100).toFixed(0) : 0;
+            const vsLastWeekClass = vsLastWeekDiff >= 0 ? 'positive' : 'negative';
+            const vsLastWeekText = vsLastWeekDiff >= 0 ? `+${vsLastWeekDiff}` : `${vsLastWeekDiff}`;
+            
+            const shiftPct = dept.total_shift_hours > 0 ? ((dept.total_hours_worked / dept.total_shift_hours) * 100).toFixed(0) : 0;
+            
+            return `
+                <div class="heatmap-section">
+                    <div class="heatmap-title">Locked Down by Hour per Intaker</div>
+                    <div class="heatmap-wrapper">
+                        <table class="heatmap-table">
+                            <thead>${headerRow}</thead>
+                            <tbody>${bodyRows}${totalsRow}${cameInRow}${droppedRow}</tbody>
+                        </table>
+                    </div>
+                    <div style="font-size: 10px; color: #666; margin-top: 8px; text-align: left;">
+                        <span style="color: #5BA4B5; font-weight: 600;">S</span> = MTD Signed (<span style="color: #4ade80;">green</span> ≥ avg, <span style="color: #ef4444;">red</span> &lt; avg) &nbsp;|&nbsp;
+                        * = LD per hour worked &nbsp;|&nbsp; 
+                        <span style="color: #fff;">White #</span> = LD during shift &nbsp;|&nbsp; 
+                        <span style="color: #fbbf24;">Yellow #</span> = LD outside shift &nbsp;|&nbsp; 
+                        <span style="color: #ef4444;">X</span> = On shift, 0 LDs &nbsp;|&nbsp; 
+                        <span style="color: #666;">-</span> = Not scheduled
+                    </div>
+                </div>
+                
+                <div class="dept-summary">
+                    <div class="dept-summary-title">Intake Department</div>
+                    <div class="dept-stats-grid">
+                        <div class="stats-section">
+                            <div class="stats-section-title">TODAY'S PRODUCTION <span class="info-toggle" onclick="toggleDefinitions()">ⓘ</span></div>
+                            <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
+                            <div class="stat-metric">
+                                <span class="metric-label">Avg. LD/hour</span>
+                                <span class="metric-value">${(dept.total_ld / Math.max(1, new Date().getHours() - 7 + new Date().getMinutes()/60)).toFixed(1)}</span>
+                            </div>
+                            <div class="stat-metric">
+                                <span class="metric-label">LD/Hour worked</span>
+                                <span class="metric-value" style="color: ${getRateTier(dept.rate_worked).color}">${dept.rate_worked.toFixed(2)}</span>
+                            </div>
+                            <div class="stat-metric">
+                                <span class="metric-label">LD/Hour scheduled</span>
+                                <span class="metric-value" style="color: ${getRateTier(dept.total_ld / (dept.total_shift_hours || 1)).color}">${(dept.total_ld / (dept.total_shift_hours || 1)).toFixed(2)}</span>
+                            </div>
+                            <div class="stat-metric forecast">
+                                <span class="metric-label">Forecast EOD</span>
+                                <span class="metric-value">${Math.round(dept.total_ld / (dept.total_hours_worked / dept.total_shift_hours || 1))} LD</span>
+                            </div>
+                        </div>
+                        
+                        <div class="metrics-help" id="definitions" style="display: none;">
+                            <div class="help-title">📊 How Metrics Are Calculated</div>
+                            <div class="help-item"><strong>Avg. LD/hour</strong> = Total LD ÷ hours elapsed since 7 AM<br><span class="help-example">Team output per hour of the workday</span></div>
+                            <div class="help-item"><strong>LD/Hour worked</strong> = Total LD ÷ hours actually worked so far<br><span class="help-example">Based on each specialist's shift progress</span></div>
+                            <div class="help-item"><strong>LD/Hour scheduled</strong> = Total LD ÷ total scheduled hours for day<br><span class="help-example">e.g., 25 people × 8 hours = 200 hours</span></div>
+                            <div class="help-item"><strong>Forecast EOD</strong> = Projected total if current pace continues</div>
+                            <div class="color-scale">
+                                <div class="scale-title">Rate Color Scale</div>
+                                <div class="scale-bar">
+                                    <div class="scale-segment" style="background: #ef4444;"><span>&lt;0.4</span></div>
+                                    <div class="scale-segment" style="background: #f97316;"><span>0.4</span></div>
+                                    <div class="scale-segment" style="background: #fbbf24;"><span>0.5</span></div>
+                                    <div class="scale-segment" style="background: #a3e635;"><span>0.7</span></div>
+                                    <div class="scale-segment" style="background: #22c55e;"><span>≥1.0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stats-section">
+                            <div class="stats-section-title">⏱️ PACE</div>
+                            <div class="stat-row">vs Yesterday ${paceTime}: <span class="pace-arrow ${vsYesterdayClass}">${vsYesterdayDiff >= 0 ? '▲' : '▼'}</span> <span class="${vsYesterdayClass}">${vsYesterdayDiff >= 0 ? '+' : ''}${vsYesterdayPct}%</span> <span class="${vsYesterdayClass}"><strong>${dept.total_ld}</strong></span> (was <strong>${yesterdaySameTime}</strong>) <span class="stat-context">→ ${yesterdayLd} EOD</span></div>
+                            <div class="stat-row">vs Last Week ${paceTime}: <span class="pace-arrow ${vsLastWeekClass}">${vsLastWeekDiff >= 0 ? '▲' : '▼'}</span> <span class="${vsLastWeekClass}">${vsLastWeekDiff >= 0 ? '+' : ''}${vsLastWeekPct}%</span> <span class="${vsLastWeekClass}"><strong>${dept.total_ld}</strong></span> (was <strong>${lastWeekSameTime}</strong>) <span class="stat-context">→ ${lastWeekTotal} EOD</span></div>
+                        </div>
+                        <div class="stats-section">
+                            <div class="stats-section-title">SHIFT STATUS</div>
+                            <div class="stat-row">Hours: <strong>${dept.total_hours_worked}</strong> / ${dept.total_shift_hours} (${shiftPct}% complete)</div>
+                            <div class="stat-row">Active: <strong>${dept.specialists_with_ld}</strong> / ${dept.specialists_count} with LD</div>
+                            <div class="stat-row">Rolling Zeros: <strong class="zeros-count">${dept.specialists_count - dept.specialists_with_ld}</strong></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function renderDashboard(data) {
+            const dateObj = new Date(data.date + 'T12:00:00');
+            const formattedDate = dateObj.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            
+            const reps = data.reps || [];
+            const totalLD = reps.reduce((sum, r) => sum + r.ld, 0);
+            const totalHours = reps.reduce((sum, r) => sum + r.hours, 0);
+            const teamAvg = totalHours > 0 ? (totalLD / totalHours).toFixed(2) : '0.00';
+            const eliteCount = reps.filter(r => r.rate >= 1.0).length;
+            
+            const tabLinks = `
+                    <a href="index.html" class="tab active">Dashboard</a>
+                    <a href="history.html" class="tab">History</a>
+                    <a href="admin.html#daily" class="tab">Manage Shifts</a>
+            `;
+            
+            const tvToggle = `<button class="tv-toggle ${document.body.classList.contains('tv-mode') ? 'active' : ''}" onclick="toggleTvMode()"><span class="icon">📺</span> TV Mode</button>`;
+            
+            // Empty state
+            if (reps.length === 0) {
+                document.getElementById('app').innerHTML = `
+                    <div class="header">
+                        <h1>1-800-NO-FAULT</h1>
+                        <h2>INTAKE EFFICIENCY REPORT</h2>
+                        <div class="date">${formattedDate}</div>
+                    </div>
+                    <div class="tabs-row"><div class="tabs">${tabLinks}</div></div>
+                    <div class="empty-state">
+                        <h3>No Data Yet</h3>
+                        <p>Waiting for intake specialists to lock down cases today.</p>
+                        <p style="margin-top: 10px; color: #555;">Refreshes every 15 minutes</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Sort reps by rate (LD/scheduled hours) for bar chart - highest first
+            const sortedReps = [...reps].sort((a, b) => {
+                const rateA = a.rate || 0;
+                const rateB = b.rate || 0;
+                if (rateB !== rateA) return rateB - rateA;
+                return b.ld - a.ld;  // Tiebreaker: more LDs
+            });
+            
+            const maxRate = Math.max(...sortedReps.map(r => r.rate), 1.5);
+            const scaleMax = Math.min(maxRate * 1.1, 2.0);
+            
+            let barsHtml = sortedReps.map((rep, idx) => {
+                const isOff = rep.is_off === true || rep.hours === 0;
+                const barWidth = Math.max((rep.rate / scaleMax) * 100, 5);
+                const barClass = isOff ? 'off' : getBarClass(rep.rate);
+                const tier = isOff ? { color: '#888', label: 'OFF' } : getRateTier(rep.rate);
+                const rank = idx + 1;
+                const nameDisplay = isOff ? `${rep.name} <span style="color: #888; font-size: 11px;">(OFF)</span>` : rep.name;
+                const rateDisplay = isOff ? 'OFF' : rep.rate.toFixed(2);
+                return `
+                    <div class="bar-row">
+                        <div class="bar-rank" style="color: ${tier.color}">${rank}</div>
+                        <div class="bar-name">${nameDisplay}</div>
+                        <div class="bar-track">
+                            <div class="bar-fill ${barClass}" style="width: ${barWidth}%">
+                                ${rateDisplay}
+                            </div>
+                        </div>
+                        <div class="bar-stats">${rep.ld} LD | ${rep.hours}h</div>
+                    </div>
+                `;
+            }).join('');
+            
+            const updatedTime = data.updated ? new Date(data.updated).toLocaleTimeString() : '';
+            
+            const dept = data.dept || data.department || {
+                total_ld: totalLD,
+                total_shift_hours: totalHours,
+                total_hours_worked: totalHours,
+                specialists_count: reps.length,
+                specialists_with_ld: reps.filter(r => r.ld > 0).length,
+                rate_worked: parseFloat(teamAvg),
+                rate_shift: parseFloat(teamAvg),
+                hourly_totals: new Array(17).fill(0),
+                yesterday_ld: 0
+            };
+            const heatmapHtml = renderHeatmap(reps, dept, data.mtdSigned);
+            
+            // Calculate department-wide rate
+            const deptTotalLD = reps.reduce((sum, r) => sum + r.ld, 0);
+            const deptTotalHours = reps.reduce((sum, r) => sum + (r.hours || 0), 0);
+            const deptRate = deptTotalHours > 0 ? deptTotalLD / deptTotalHours : 0;
+            const deptRateClass = getRateClass(deptRate);
+            const deptTier = getRateTier(deptRate);
+            
+            // Check if TV mode is active
+            const isTvMode = document.body.classList.contains('tv-mode');
+            
+            // Build sidebar content for TV mode (duplicated from heatmapHtml summary sections)
+            const tvSidebar = `
+                <div class="tv-sidebar">
+                    <div class="dept-summary" style="margin-bottom: 15px;">
+                        <div class="dept-summary-title">📊 Today's Production</div>
+                        <div class="stat-big">${dept.total_ld} <span class="stat-label">LD</span></div>
+                        <div class="stat-metric">
+                            <span class="metric-label">LD/Hour worked</span>
+                            <span class="metric-value" style="color: ${getRateTier(dept.rate_worked).color}">${dept.rate_worked.toFixed(2)}</span>
+                        </div>
+                        <div class="stat-metric">
+                            <span class="metric-label">Forecast EOD</span>
+                            <span class="metric-value" style="color: #5BA4B5">${Math.round(dept.total_ld / (dept.total_hours_worked / dept.total_shift_hours || 1))} LD</span>
+                        </div>
+                    </div>
+                    <div class="stats-section" style="margin-bottom: 15px;">
+                        <div class="stats-section-title">⏱️ Pace</div>
+                        <div class="stat-row">vs Yesterday: <span class="${dept.total_ld >= (dept.yesterday_same_time || 0) ? 'positive' : 'negative'}">${dept.total_ld >= (dept.yesterday_same_time || 0) ? '▲' : '▼'} ${dept.total_ld}</span> (was ${dept.yesterday_same_time || 0})</div>
+                        <div class="stat-row">vs Last Week: <span class="${dept.total_ld >= (dept.last_week_same_time || 0) ? 'positive' : 'negative'}">${dept.total_ld >= (dept.last_week_same_time || 0) ? '▲' : '▼'} ${dept.total_ld}</span> (was ${dept.last_week_same_time || 0})</div>
+                    </div>
+                    <div class="stats-section" style="margin-bottom: 15px;">
+                        <div class="stats-section-title">👥 Shift Status</div>
+                        <div class="stat-row">Hours: <strong>${dept.total_hours_worked}</strong> / ${dept.total_shift_hours}</div>
+                        <div class="stat-row">Active: <strong>${dept.specialists_with_ld}</strong> / ${dept.specialists_count} with LD</div>
+                        <div class="stat-row">Zeros: <strong class="zeros-count">${dept.specialists_count - dept.specialists_with_ld}</strong></div>
+                    </div>
+                    <div class="legend" style="background: #1a1a1a; padding: 12px; border-radius: 8px;">
+                        <div style="font-size: 10px; color: #5BA4B5; font-weight: 600; margin-bottom: 8px;">RATE LEGEND</div>
+                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ Elite</div>
+                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-0.99 Solid</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.59 Average</div>
+                        <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('app').innerHTML = `
+                <div class="header">
+                    <h1>1-800-NO-FAULT</h1>
+                    <h2>INTAKE EFFICIENCY REPORT</h2>
+                    <div class="date">${formattedDate}</div>
+                </div>
+                
+                <div class="tabs-row">
+                    <div class="tabs">${tabLinks}</div>
+                    ${tvToggle}
+                    <div class="dept-scorecard">
+                        <div class="label">DEPT<br>RATE</div>
+                        <div class="rate-box ${deptRateClass}">${deptRate.toFixed(2)}</div>
+                        <div class="tier-label" style="color: ${deptTier.color}">${deptTier.label}</div>
+                        <div class="stats"><strong>${deptTotalLD}</strong> LD&nbsp;&nbsp;|&nbsp;&nbsp;<strong>${Math.round(deptTotalHours)}</strong>h</div>
+                    </div>
+                </div>
+                
+                ${isTvMode ? `<div class="tv-layout"><div class="tv-main">` : ''}
+                
+                ${heatmapHtml}
+                
+                ${isTvMode ? `</div>${tvSidebar}</div>` : ''}
+                
+                <div class="section-divider">
+                    <div class="section-title">LD/Hour Performance</div>
+                </div>
+                
+                <div class="chart-area">
+                    ${barsHtml}
+                </div>
+                
+                <div class="footer">
+                    <div class="summary-box">
+                        <div class="line"><span class="value">TOTAL LD: ${totalLD}</span></div>
+                        <div class="line">TEAM AVG: <span class="value">${teamAvg}/hr</span></div>
+                        <div class="line"><span class="elite-count">ELITE (1.0+): ${eliteCount}</span></div>
+                    </div>
+                    
+                    <div class="legend">
+                        <div class="legend-item"><span class="legend-dot elite"></span> 1.0+ Elite</div>
+                        <div class="legend-item"><span class="legend-dot solid"></span> 0.6-0.99 Solid</div>
+                        <div class="legend-item"><span class="legend-dot average"></span> 0.4-0.59 Average</div>
+                        <div class="legend-item"><span class="legend-dot below"></span> &lt;0.4 Below</div>
+                        <div class="legend-item"><span class="legend-dot" style="background: #4a4a4a;"></span> OFF</div>
+                    </div>
+                </div>
+                
+                <div class="updated">Last updated: ${updatedTime}</div>
+            `;
+        }
+        
+        fetchData();
+        setInterval(fetchData, 300000);
+    </script>
+</body>
+</html>
