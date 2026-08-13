@@ -1093,9 +1093,14 @@
                                 }
                             }
                             
-                            // Merge live schedule with LD data
+                            // Merge live schedule with LD data.
+                            // LIVE build seeds rep.name with the email placeholder, so
+                            // overwrite name/abbrev from the schedule's real display name.
+                            const liveName = live.name || specialistNames[email] || r.name;
                             updatedReps.push({
                                 ...r,
+                                name: liveName,
+                                abbrev: abbreviateName(liveName),
                                 email: email,  // Add email for MTD signed lookup
                                 hours: live.hours,
                                 hours_worked: Math.round(hoursWorked * 100) / 100,
@@ -1106,8 +1111,21 @@
                                 rate_worked: hoursWorked > 0 ? r.ld / hoursWorked : 0
                             });
                         } else {
-                            // Keep original rep data
-                            updatedReps.push(r);
+                            // Rep has LDs but is not scheduled today (OFF). Resolve a real
+                            // display name from intake_specialists; fall back to email-derived.
+                            const resolvedName = (r.email && specialistNames[r.email]) || null;
+                            if (resolvedName) {
+                                updatedReps.push({ ...r, name: resolvedName, abbrev: abbreviateName(resolvedName) });
+                            } else if (r.email && r.name === r.email) {
+                                // Derive a readable name from the email local-part as last resort
+                                const local = r.email.split('@')[0];
+                                const derived = local.includes('.')
+                                    ? local.split('.').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ')
+                                    : local;
+                                updatedReps.push({ ...r, name: derived, abbrev: abbreviateName(derived) });
+                            } else {
+                                updatedReps.push(r);
+                            }
                         }
                     });
                     
@@ -1177,7 +1195,20 @@
                 } catch (scheduleError) {
                     console.warn('Could not fetch live schedules, using cached data:', scheduleError);
                 }
-                
+
+                // Safety net: never render raw emails as names. If any rep name is still
+                // an email (schedule merge missed/failed), derive a readable name.
+                (data.reps || []).forEach(r => {
+                    if (r.name && r.name.includes('@')) {
+                        const local = r.name.split('@')[0];
+                        const derived = local.includes('.')
+                            ? local.split('.').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ')
+                            : local;
+                        r.name = derived;
+                        r.abbrev = abbreviateName(derived);
+                    }
+                });
+
                 renderDashboard(data);
             } catch (error) {
                 console.error(error);
