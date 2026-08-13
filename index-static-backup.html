@@ -903,135 +903,11 @@
             return name;
         }
         
-        async function rpc(name) {
-            const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`, {
-                method: 'POST',
-                headers: {
-                    'apikey': SUPABASE_KEY,
-                    'Authorization': `Bearer ${SUPABASE_KEY}`,
-                    'Content-Type': 'application/json'
-                },
-                body: '{}'
-            });
-            if (!res.ok) throw new Error(`RPC ${name} failed: ${res.status}`);
-            return res.json();
-        }
-
-        // LIVE build: reconstruct the data.json shape entirely from Supabase RPCs.
-        // Mirrors scripts/refresh_intake_dashboard.py aggregation exactly.
-        async function buildLiveData() {
-            const now = new Date();
-            const pad = n => String(n).padStart(2, '0');
-            const today = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
-
-            const [ldRows, mtdRows, paceRows] = await Promise.all([
-                rpc('get_intake_ld_today'),
-                rpc('get_intake_mtd_signed'),
-                rpc('get_intake_pace')
-            ]);
-
-            // --- MTD signed by intaker ---
-            const mtdByIntaker = {};
-            (mtdRows || []).forEach(r => {
-                const e = normalizeEmail(r.intakespecialist);
-                if (e) mtdByIntaker[e] = (mtdByIntaker[e] || 0) + Number(r.cnt);
-            });
-            const mtdValues = Object.values(mtdByIntaker);
-            const mtdTotal = mtdValues.reduce((s, v) => s + v, 0);
-            const mtdAvg = mtdValues.length ? mtdTotal / mtdValues.length : 0;
-
-            // --- LD today: per-specialist counts + hourly[7..23] + status splits ---
-            const ldCounts = {}, stillLd = {}, cameIn = {}, dropped = {};
-            const hourlyBySpec = {};
-            const hourlyCameIn = new Array(17).fill(0);
-            const hourlyDropped = new Array(17).fill(0);
-            (ldRows || []).forEach(r => {
-                const e = normalizeEmail(r.intakespecialist);
-                if (!e) return;
-                const c = Number(r.cnt);
-                const h = (r.hour === null || r.hour === undefined) ? null : Number(r.hour);
-                ldCounts[e] = (ldCounts[e] || 0) + c;
-                if (h !== null && h >= 7 && h <= 23) {
-                    if (!hourlyBySpec[e]) hourlyBySpec[e] = new Array(17).fill(0);
-                    hourlyBySpec[e][h - 7] += c;
-                }
-                if (r.status === 'Locked Down') stillLd[e] = (stillLd[e] || 0) + c;
-                else if (r.status === 'Came In') {
-                    cameIn[e] = (cameIn[e] || 0) + c;
-                    if (h !== null && h >= 7 && h <= 23) hourlyCameIn[h - 7] += c;
-                } else if (r.status === 'Dropped') {
-                    dropped[e] = (dropped[e] || 0) + c;
-                    if (h !== null && h >= 7 && h <= 23) hourlyDropped[h - 7] += c;
-                }
-            });
-
-            // Build reps[] from everyone who has LDs today (schedule merge adds the rest live).
-            const reps = Object.keys(ldCounts).map(email => ({
-                name: email,            // placeholder; live schedule merge overwrites name/abbrev
-                abbrev: abbreviateName(email),
-                email: email,
-                ld: ldCounts[email] || 0,
-                still_ld: stillLd[email] || 0,
-                came_in: cameIn[email] || 0,
-                dropped: dropped[email] || 0,
-                hours: 0,
-                hours_worked: 0,
-                rate: 0,
-                rate_worked: 0,
-                hourly: hourlyBySpec[email] || new Array(17).fill(0),
-                start_hour: null,
-                end_hour: null,
-                is_off: true,
-                mtd_signed: mtdByIntaker[email] || 0
-            }));
-
-            // Department hourly totals (7..23)
-            const hourlyTotals = new Array(17).fill(0);
-            reps.forEach(r => r.hourly.forEach((v, i) => { hourlyTotals[i] += v; }));
-
-            const totalLd = reps.reduce((s, r) => s + r.ld, 0);
-            const totalCameIn = reps.reduce((s, r) => s + r.came_in, 0);
-            const totalDropped = reps.reduce((s, r) => s + r.dropped, 0);
-            const totalStillLd = reps.reduce((s, r) => s + r.still_ld, 0);
-            const p = (paceRows && paceRows[0]) || {};
-
-            return {
-                date: today,
-                updated: now.toISOString(),
-                title: 'Locked Down',
-                reps: reps,
-                shifts_configured: true,
-                department: {
-                    total_ld: totalLd,
-                    total_still_ld: totalStillLd,
-                    total_came_in: totalCameIn,
-                    total_dropped: totalDropped,
-                    hourly_came_in: hourlyCameIn,
-                    hourly_dropped: hourlyDropped,
-                    total_shift_hours: 0,
-                    total_hours_worked: 0,
-                    specialists_count: reps.length,
-                    specialists_with_ld: reps.filter(r => r.ld > 0).length,
-                    rate_worked: 0,
-                    rate_shift: 0,
-                    hourly_totals: hourlyTotals,
-                    yesterday_ld: Number(p.yesterday_ld || 0),
-                    yesterday_same_time: Number(p.yesterday_same_time || 0),
-                    last_week_same_time: Number(p.last_week_same_time || 0),
-                    last_week_total: Number(p.last_week_total || 0),
-                    pace_time: p.pace_time || ''
-                },
-                mtd_signed: {
-                    by_intaker: mtdByIntaker,
-                    total: mtdTotal,
-                    avg: Math.round(mtdAvg * 10) / 10
-                }
-            };
-        }
-
         async function fetchData() {
             try {
-                const data = await buildLiveData();
+                const response = await fetch('./data.json?' + Date.now());
+                if (!response.ok) throw new Error('Failed to fetch data');
+                const data = await response.json();
                 
                 // MTD signed data is now pre-computed in data.json
                 // Convert from data.json format to expected format
@@ -1093,14 +969,9 @@
                                 }
                             }
                             
-                            // Merge live schedule with LD data.
-                            // LIVE build seeds rep.name with the email placeholder, so
-                            // overwrite name/abbrev from the schedule's real display name.
-                            const liveName = live.name || specialistNames[email] || r.name;
+                            // Merge live schedule with LD data
                             updatedReps.push({
                                 ...r,
-                                name: liveName,
-                                abbrev: abbreviateName(liveName),
                                 email: email,  // Add email for MTD signed lookup
                                 hours: live.hours,
                                 hours_worked: Math.round(hoursWorked * 100) / 100,
@@ -1111,21 +982,8 @@
                                 rate_worked: hoursWorked > 0 ? r.ld / hoursWorked : 0
                             });
                         } else {
-                            // Rep has LDs but is not scheduled today (OFF). Resolve a real
-                            // display name from intake_specialists; fall back to email-derived.
-                            const resolvedName = (r.email && specialistNames[r.email]) || null;
-                            if (resolvedName) {
-                                updatedReps.push({ ...r, name: resolvedName, abbrev: abbreviateName(resolvedName) });
-                            } else if (r.email && r.name === r.email) {
-                                // Derive a readable name from the email local-part as last resort
-                                const local = r.email.split('@')[0];
-                                const derived = local.includes('.')
-                                    ? local.split('.').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ')
-                                    : local;
-                                updatedReps.push({ ...r, name: derived, abbrev: abbreviateName(derived) });
-                            } else {
-                                updatedReps.push(r);
-                            }
+                            // Keep original rep data
+                            updatedReps.push(r);
                         }
                     });
                     
@@ -1195,20 +1053,7 @@
                 } catch (scheduleError) {
                     console.warn('Could not fetch live schedules, using cached data:', scheduleError);
                 }
-
-                // Safety net: never render raw emails as names. If any rep name is still
-                // an email (schedule merge missed/failed), derive a readable name.
-                (data.reps || []).forEach(r => {
-                    if (r.name && r.name.includes('@')) {
-                        const local = r.name.split('@')[0];
-                        const derived = local.includes('.')
-                            ? local.split('.').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ')
-                            : local;
-                        r.name = derived;
-                        r.abbrev = abbreviateName(derived);
-                    }
-                });
-
+                
                 renderDashboard(data);
             } catch (error) {
                 console.error(error);
