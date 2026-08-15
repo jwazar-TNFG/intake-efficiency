@@ -1,6 +1,6 @@
 {
   "date": "2026-08-15",
-  "updated": "2026-08-15T14:15:07.050896",
+  "updated": "2026-08-15T15:15:05.126713",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 1.0,
-      "rate_worked": 1.6,
+      "rate_worked": 1.38,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.6,
-      "rate_worked": 0.96,
+      "rate_worked": 0.83,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.44,
-      "rate_worked": 1.78,
+      "rate_worked": 1.23,
       "hourly": [
         0,
         0,
@@ -119,9 +119,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.3,
-      "rate_worked": 0.48,
+      "rate_worked": 0.41,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.2,
-      "rate_worked": 0.32,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         1,
@@ -191,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.11,
-      "rate_worked": 4.0,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         0,
@@ -217,7 +217,7 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 128
+      "mtd_signed": 130
     },
     {
       "name": "Naryeli Silva",
@@ -227,9 +227,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.11,
-      "rate_worked": 4.0,
+      "rate_worked": 0.8,
       "hourly": [
         1,
         0,
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 105.0,
-    "total_hours_worked": 42.2,
+    "total_hours_worked": 53.2,
     "specialists_count": 22,
     "specialists_with_ld": 11,
-    "rate_worked": 0.85,
+    "rate_worked": 0.68,
     "rate_shift": 0.34,
     "hourly_totals": [
       1,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 150,
-    "yesterday_same_time": 78,
-    "last_week_same_time": 48,
+    "yesterday_same_time": 97,
+    "last_week_same_time": 54,
     "last_week_total": 94,
-    "pace_time": "14:15"
+    "pace_time": "15:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -880,7 +880,7 @@
       "jamgomez@thenofaultgroup.com": 99,
       "jcuarezma@thenofaultgroup.com": 126,
       "jduvergel@thenofaultgroup.com": 168,
-      "jjortega@thenofaultgroup.com": 128,
+      "jjortega@thenofaultgroup.com": 130,
       "jortega@thenofaultgroup.com": 37,
       "lmurillo@thenofaultgroup.com": 44,
       "lvivas@thenofaultgroup.com": 125,
@@ -896,7 +896,7 @@
       "scubillos@thenofaultgroup.com": 15,
       "vlibreros@thenofaultgroup.com": 36
     },
-    "total": 1735,
-    "avg": 78.9
+    "total": 1737,
+    "avg": 79.0
   }
 }
