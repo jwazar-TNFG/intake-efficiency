@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "updated": "2026-08-17T08:46:57.493881",
+  "updated": "2026-08-17T09:15:07.390264",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.13,
-      "rate_worked": 2.56,
+      "rate_worked": 1.6,
       "hourly": [
         2,
         0,
@@ -83,9 +83,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.1,
-      "rate_worked": 1.28,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         0,
@@ -110,6 +110,42 @@
       "is_off": false,
       "email": "jcuarezma@thenofaultgroup.com",
       "mtd_signed": 133
+    },
+    {
+      "name": "Naryeli Silva",
+      "abbrev": "N. Silva",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 1.2,
+      "rate": 0.1,
+      "rate_worked": 0.8,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "nsilva@thenofaultgroup.com",
+      "mtd_signed": 39
     },
     {
       "name": "Axl Vilchez",
@@ -155,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,9 +299,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -407,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -686,42 +722,6 @@
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 86
-    },
-    {
-      "name": "Naryeli Silva",
-      "abbrev": "N. Silva",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 0.8,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 39
     },
     {
       "name": "Orlando Plasencia",
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 4,
-    "total_still_ld": 2,
+    "total_ld": 5,
+    "total_still_ld": 3,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -949,14 +949,14 @@
       0
     ],
     "total_shift_hours": 230.0,
-    "total_hours_worked": 8.8,
+    "total_hours_worked": 13.4,
     "specialists_count": 25,
-    "specialists_with_ld": 3,
-    "rate_worked": 0.45,
+    "specialists_with_ld": 4,
+    "rate_worked": 0.37,
     "rate_shift": 0.02,
     "hourly_totals": [
       2,
-      0,
+      1,
       0,
       0,
       0,
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 74,
     "yesterday_same_time": 1,
-    "last_week_same_time": 1,
+    "last_week_same_time": 2,
     "last_week_total": 198,
-    "pace_time": "08:46"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
