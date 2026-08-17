@@ -1,6 +1,6 @@
 {
   "date": "2026-08-16",
-  "updated": "2026-08-16T22:15:04.258686",
+  "updated": "2026-08-16T22:46:11.800972",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.8,
       "rate": 1.11,
-      "rate_worked": 1.21,
+      "rate_worked": 1.14,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.8,
       "rate": 0.33,
-      "rate_worked": 0.36,
+      "rate_worked": 0.34,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.8,
       "rate": 0.33,
-      "rate_worked": 0.36,
+      "rate_worked": 0.34,
       "hourly": [
         0,
         0,
@@ -757,7 +757,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "rpena@thenofaultgroup.com",
-      "mtd_signed": 16
+      "mtd_signed": 17
     },
     {
       "name": "Ronnie Chavarria",
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 106.0,
-    "total_hours_worked": 103.6,
+    "total_hours_worked": 105.4,
     "specialists_count": 22,
     "specialists_with_ld": 11,
-    "rate_worked": 0.67,
+    "rate_worked": 0.65,
     "rate_shift": 0.65,
     "hourly_totals": [
       0,
@@ -869,7 +869,7 @@
     "yesterday_same_time": 95,
     "last_week_same_time": 104,
     "last_week_total": 104,
-    "pace_time": "22:15"
+    "pace_time": "22:46"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -891,12 +891,12 @@
       "nsilva@thenofaultgroup.com": 38,
       "oplasencia@thenofaultgroup.com": 119,
       "rchavarria@thenofaultgroup.com": 72,
-      "rpena@thenofaultgroup.com": 16,
+      "rpena@thenofaultgroup.com": 17,
       "rroca@thenofaultgroup.com": 37,
       "scubillos@thenofaultgroup.com": 15,
       "vlibreros@thenofaultgroup.com": 36
     },
-    "total": 1792,
+    "total": 1793,
     "avg": 81.5
   }
 }
