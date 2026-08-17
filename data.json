@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "updated": "2026-08-17T14:15:05.451386",
+  "updated": "2026-08-17T15:15:04.867883",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 1.2,
-      "rate_worked": 1.92,
+      "rate_worked": 1.66,
       "hourly": [
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 1.0,
-      "rate_worked": 1.6,
+      "rate_worked": 1.38,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 1.0,
-      "rate_worked": 1.6,
+      "rate_worked": 1.38,
       "hourly": [
         0,
         0,
@@ -109,7 +109,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 131
+      "mtd_signed": 132
     },
     {
       "name": "Nelson Rodriguez",
@@ -119,9 +119,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.93,
-      "rate_worked": 2.24,
+      "rate_worked": 1.93,
       "hourly": [
         2,
         0,
@@ -155,9 +155,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.7,
-      "rate_worked": 1.12,
+      "rate_worked": 0.97,
       "hourly": [
         0,
         1,
@@ -191,9 +191,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.67,
-      "rate_worked": 24.0,
+      "rate_worked": 4.8,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.67,
-      "rate_worked": 2.67,
+      "rate_worked": 1.85,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.6,
-      "rate_worked": 0.96,
+      "rate_worked": 0.83,
       "hourly": [
         0,
         0,
@@ -299,9 +299,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 5.2,
       "rate": 0.56,
-      "rate_worked": 1.18,
+      "rate_worked": 0.95,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.44,
-      "rate_worked": 0.64,
+      "rate_worked": 0.55,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.3,
-      "rate_worked": 0.48,
+      "rate_worked": 0.41,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.22,
-      "rate_worked": 0.89,
+      "rate_worked": 0.62,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
+      "hours_worked": 6.2,
       "rate": 0.22,
-      "rate_worked": 0.38,
+      "rate_worked": 0.32,
       "hourly": [
         0,
         1,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.11,
-      "rate_worked": 0.44,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.11,
-      "rate_worked": 0.16,
+      "rate_worked": 0.14,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.11,
-      "rate_worked": 0.44,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 215.0,
-    "total_hours_worked": 83.4,
+    "total_hours_worked": 105.4,
     "specialists_count": 25,
     "specialists_with_ld": 16,
-    "rate_worked": 1.08,
+    "rate_worked": 0.85,
     "rate_shift": 0.42,
     "hourly_totals": [
       2,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 75,
-    "yesterday_same_time": 36,
-    "last_week_same_time": 87,
+    "yesterday_same_time": 38,
+    "last_week_same_time": 101,
     "last_week_total": 198,
-    "pace_time": "14:15"
+    "pace_time": "15:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -991,7 +991,7 @@
       "jjortega@thenofaultgroup.com": 144,
       "jortega@thenofaultgroup.com": 40,
       "lmurillo@thenofaultgroup.com": 53,
-      "lvivas@thenofaultgroup.com": 131,
+      "lvivas@thenofaultgroup.com": 132,
       "mcardona@thenofaultgroup.com": 9,
       "mmiranda@thenofaultgroup.com": 86,
       "mpenaranda@thenofaultgroup.com": 147,
@@ -1004,7 +1004,7 @@
       "scubillos@thenofaultgroup.com": 15,
       "vlibreros@thenofaultgroup.com": 37
     },
-    "total": 1859,
+    "total": 1860,
     "avg": 84.5
   }
 }
