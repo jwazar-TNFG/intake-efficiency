@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "updated": "2026-08-17T22:48:10.587350",
+  "updated": "2026-08-17T23:15:09.233467",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,9 +83,9 @@
       "came_in": 14,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 1.89,
-      "rate_worked": 1.93,
+      "rate_worked": 1.89,
       "hourly": [
         0,
         0,
@@ -114,14 +114,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 26,
-      "still_ld": 4,
+      "ld": 27,
+      "still_ld": 5,
       "came_in": 22,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.8,
-      "rate": 1.73,
-      "rate_worked": 1.76,
+      "hours_worked": 15.0,
+      "rate": 1.8,
+      "rate_worked": 1.8,
       "hourly": [
         2,
         0,
@@ -138,7 +138,7 @@
         2,
         0,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": 8,
@@ -551,9 +551,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.57,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.11,
       "rate_worked": 0.11,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.8,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.8,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 203,
-    "total_still_ld": 81,
+    "total_ld": 204,
+    "total_still_ld": 82,
     "total_came_in": 119,
     "total_dropped": 3,
     "hourly_came_in": [
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 215.0,
-    "total_hours_worked": 213.8,
+    "total_hours_worked": 215.0,
     "specialists_count": 25,
     "specialists_with_ld": 19,
     "rate_worked": 0.95,
-    "rate_shift": 0.94,
+    "rate_shift": 0.95,
     "hourly_totals": [
       2,
       2,
@@ -970,14 +970,14 @@
       20,
       6,
       2,
-      0,
+      1,
       0
     ],
     "yesterday_ld": 75,
     "yesterday_same_time": 75,
-    "last_week_same_time": 197,
+    "last_week_same_time": 198,
     "last_week_total": 198,
-    "pace_time": "22:48"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
