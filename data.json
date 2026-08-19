@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "updated": "2026-08-18T23:15:04.510308",
+  "updated": "2026-08-18T23:50:18.650028",
   "title": "Locked Down",
   "reps": [
     {
@@ -76,6 +76,42 @@
       "mtd_signed": 127
     },
     {
+      "name": "Luis Vivas",
+      "abbrev": "L. Vivas",
+      "ld": 17,
+      "still_ld": 12,
+      "came_in": 5,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 9.0,
+      "rate": 1.89,
+      "rate_worked": 1.89,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        3,
+        0,
+        1,
+        1,
+        4,
+        0,
+        3,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "lvivas@thenofaultgroup.com",
+      "mtd_signed": 143
+    },
+    {
       "name": "Jorge Duvergel",
       "abbrev": "J. Duvergel",
       "ld": 18,
@@ -110,42 +146,6 @@
       "is_off": false,
       "email": "jduvergel@thenofaultgroup.com",
       "mtd_signed": 187
-    },
-    {
-      "name": "Luis Vivas",
-      "abbrev": "L. Vivas",
-      "ld": 16,
-      "still_ld": 11,
-      "came_in": 5,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 9.0,
-      "rate": 1.78,
-      "rate_worked": 1.78,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        3,
-        0,
-        1,
-        1,
-        4,
-        0,
-        3,
-        0,
-        3,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 143
     },
     {
       "name": "Manny Penaranda",
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 186,
-    "total_still_ld": 83,
+    "total_ld": 187,
+    "total_still_ld": 84,
     "total_came_in": 103,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -952,8 +952,8 @@
     "total_hours_worked": 195.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.95,
-    "rate_shift": 0.95,
+    "rate_worked": 0.96,
+    "rate_shift": 0.96,
     "hourly_totals": [
       0,
       3,
@@ -970,14 +970,14 @@
       14,
       7,
       0,
-      4,
+      5,
       0
     ],
     "yesterday_ld": 203,
     "yesterday_same_time": 203,
-    "last_week_same_time": 151,
+    "last_week_same_time": 152,
     "last_week_total": 152,
-    "pace_time": "23:15"
+    "pace_time": "23:50"
   },
   "mtd_signed": {
     "by_intaker": {
