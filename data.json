@@ -1,6 +1,6 @@
 {
   "date": "2026-08-19",
-  "updated": "2026-08-19T09:51:17.994480",
+  "updated": "2026-08-19T10:15:03.090937",
   "title": "Locked Down",
   "reps": [
     {
@@ -42,17 +42,17 @@
     {
       "name": "Lina Murillo",
       "abbrev": "L. Murillo",
-      "ld": 1,
-      "still_ld": 1,
+      "ld": 2,
+      "still_ld": 2,
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.9,
-      "rate": 0.11,
-      "rate_worked": 0.54,
+      "hours_worked": 2.2,
+      "rate": 0.22,
+      "rate_worked": 0.89,
       "hourly": [
         1,
-        0,
+        1,
         0,
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.11,
-      "rate_worked": 0,
+      "rate_worked": 4.0,
       "hourly": [
         0,
         1,
@@ -112,6 +112,42 @@
       "mtd_signed": 138
     },
     {
+      "name": "Luis Vivas",
+      "abbrev": "L. Vivas",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 2.2,
+      "rate": 0.1,
+      "rate_worked": 0.44,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "lvivas@thenofaultgroup.com",
+      "mtd_signed": 150
+    },
+    {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 1,
@@ -119,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.54,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         1,
@@ -155,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.07,
-      "rate_worked": 0.54,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         1,
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.8,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -580,42 +616,6 @@
       "mtd_signed": 169
     },
     {
-      "name": "Luis Vivas",
-      "abbrev": "L. Vivas",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.9,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "lvivas@thenofaultgroup.com",
-      "mtd_signed": 150
-    },
-    {
       "name": "Manuel Cardona",
       "abbrev": "M. Cardona",
       "ld": 0,
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.9,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 5,
-    "total_still_ld": 3,
+    "total_ld": 7,
+    "total_still_ld": 5,
     "total_came_in": 2,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -949,14 +949,14 @@
       0
     ],
     "total_shift_hours": 205.0,
-    "total_hours_worked": 16.0,
+    "total_hours_worked": 19.0,
     "specialists_count": 25,
-    "specialists_with_ld": 5,
-    "rate_worked": 0.31,
-    "rate_shift": 0.02,
+    "specialists_with_ld": 6,
+    "rate_worked": 0.37,
+    "rate_shift": 0.03,
     "hourly_totals": [
       1,
-      4,
+      6,
       0,
       0,
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 187,
-    "yesterday_same_time": 5,
-    "last_week_same_time": 15,
+    "yesterday_same_time": 7,
+    "last_week_same_time": 18,
     "last_week_total": 169,
-    "pace_time": "09:51"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
