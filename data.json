@@ -1,6 +1,6 @@
 {
   "date": "2026-08-22",
-  "updated": "2026-08-22T17:58:41.448034",
+  "updated": "2026-08-22T18:15:05.993014",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.0,
+      "hours_worked": 6.2,
       "rate": 0.33,
-      "rate_worked": 0.5,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -155,7 +155,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 10.0,
+      "hours_worked": 10.2,
       "rate": 0.13,
       "rate_worked": 0.2,
       "hourly": [
@@ -258,9 +258,9 @@
     {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
-      "ld": 8,
-      "still_ld": 5,
-      "came_in": 3,
+      "ld": 9,
+      "still_ld": 3,
+      "came_in": 6,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -277,7 +277,7 @@
         3,
         3,
         2,
-        0,
+        1,
         0,
         0,
         0,
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 10.0,
+      "hours_worked": 10,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 8.0,
-      "hours_worked": 3.0,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.0,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,9 +798,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 49,
-    "total_still_ld": 27,
-    "total_came_in": 22,
+    "total_ld": 50,
+    "total_still_ld": 25,
+    "total_came_in": 25,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
@@ -810,10 +810,10 @@
       1,
       2,
       6,
-      3,
+      5,
       2,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -841,11 +841,11 @@
       0
     ],
     "total_shift_hours": 91.0,
-    "total_hours_worked": 73.0,
+    "total_hours_worked": 73.8,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.67,
-    "rate_shift": 0.54,
+    "rate_worked": 0.68,
+    "rate_shift": 0.55,
     "hourly_totals": [
       1,
       0,
@@ -857,7 +857,7 @@
       7,
       7,
       2,
-      1,
+      2,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 176,
-    "yesterday_same_time": 140,
-    "last_week_same_time": 72,
+    "yesterday_same_time": 142,
+    "last_week_same_time": 74,
     "last_week_total": 93,
-    "pace_time": "17:58"
+    "pace_time": "18:15"
   },
   "mtd_signed": {
     "by_intaker": {
