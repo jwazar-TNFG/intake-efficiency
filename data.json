@@ -1,8 +1,44 @@
 {
   "date": "2026-08-22",
-  "updated": "2026-08-22T07:57:55.703927",
+  "updated": "2026-08-22T08:58:01.516871",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "email": "nelsonr@thenofaultgroup.com",
+      "mtd_signed": 466
+    },
     {
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
@@ -47,9 +83,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -191,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -263,9 +299,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -443,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -544,42 +580,6 @@
       "mtd_signed": 72
     },
     {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 465
-    },
-    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -623,9 +623,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -659,9 +659,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0,
+      "hours_worked": 1.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,13 +841,13 @@
       0
     ],
     "total_shift_hours": 91.0,
-    "total_hours_worked": 0,
+    "total_hours_worked": 6.0,
     "specialists_count": 22,
-    "specialists_with_ld": 0,
-    "rate_worked": 0,
-    "rate_shift": 0.0,
+    "specialists_with_ld": 1,
+    "rate_worked": 0.17,
+    "rate_shift": 0.01,
     "hourly_totals": [
-      0,
+      1,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 176,
-    "yesterday_same_time": 0,
-    "last_week_same_time": 1,
+    "yesterday_same_time": 6,
+    "last_week_same_time": 2,
     "last_week_total": 93,
-    "pace_time": "07:57"
+    "pace_time": "08:57"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -888,7 +888,7 @@
       "mcardona@thenofaultgroup.com": 9,
       "mmiranda@thenofaultgroup.com": 136,
       "mpenaranda@thenofaultgroup.com": 221,
-      "nelsonr@thenofaultgroup.com": 465,
+      "nelsonr@thenofaultgroup.com": 466,
       "nsilva@thenofaultgroup.com": 72,
       "oplasencia@thenofaultgroup.com": 173,
       "rchavarria@thenofaultgroup.com": 115,
@@ -897,7 +897,7 @@
       "scubillos@thenofaultgroup.com": 25,
       "vlibreros@thenofaultgroup.com": 41
     },
-    "total": 2664,
-    "avg": 115.8
+    "total": 2665,
+    "avg": 115.9
   }
 }
