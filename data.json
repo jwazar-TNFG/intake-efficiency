@@ -1,6 +1,6 @@
 {
   "date": "2026-08-22",
-  "updated": "2026-08-22T22:59:06.837228",
+  "updated": "2026-08-22T23:59:11.541322",
   "title": "Locked Down",
   "reps": [
     {
@@ -184,17 +184,20 @@
       "mtd_signed": 53
     },
     {
-      "name": "Naryeli Silva",
-      "abbrev": "N. Silva",
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
       "ld": 1,
       "still_ld": 1,
       "came_in": 0,
       "dropped": 0,
-      "hours": 8.0,
-      "hours_worked": 8.0,
-      "rate": 0.12,
-      "rate_worked": 0.13,
+      "hours": 9.0,
+      "hours_worked": 9.0,
+      "rate": 0.11,
+      "rate_worked": 0.11,
       "hourly": [
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -208,16 +211,13 @@
         0,
         1,
         0,
-        0,
-        0,
-        0,
         0
       ],
-      "start_hour": 15,
+      "start_hour": 14,
       "end_hour": 23,
       "is_off": false,
-      "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 72
+      "email": "scubillos@thenofaultgroup.com",
+      "mtd_signed": 25
     },
     {
       "name": "Richard Pena",
@@ -330,8 +330,8 @@
     {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
-      "ld": 9,
-      "still_ld": 8,
+      "ld": 10,
+      "still_ld": 9,
       "came_in": 1,
       "dropped": 0,
       "hours": 0,
@@ -350,7 +350,7 @@
         1,
         0,
         2,
-        1,
+        2,
         4,
         0,
         0,
@@ -688,6 +688,42 @@
       "mtd_signed": 136
     },
     {
+      "name": "Naryeli Silva",
+      "abbrev": "N. Silva",
+      "ld": 0,
+      "still_ld": 0,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 8.0,
+      "hours_worked": 8.0,
+      "rate": 0.0,
+      "rate_worked": 0.0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 15,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "nsilva@thenofaultgroup.com",
+      "mtd_signed": 72
+    },
+    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -758,48 +794,12 @@
       "is_off": true,
       "email": "rchavarria@thenofaultgroup.com",
       "mtd_signed": 115
-    },
-    {
-      "name": "Sebastian Cubillos",
-      "abbrev": "S. Cubillos",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 9.0,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 25
     }
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 72,
-    "total_still_ld": 35,
+    "total_ld": 73,
+    "total_still_ld": 36,
     "total_came_in": 37,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -844,8 +844,8 @@
     "total_hours_worked": 91.0,
     "specialists_count": 22,
     "specialists_with_ld": 13,
-    "rate_worked": 0.79,
-    "rate_shift": 0.79,
+    "rate_worked": 0.8,
+    "rate_shift": 0.8,
     "hourly_totals": [
       1,
       0,
@@ -861,7 +861,7 @@
       8,
       8,
       1,
-      0,
+      1,
       0,
       0
     ],
@@ -869,7 +869,7 @@
     "yesterday_same_time": 176,
     "last_week_same_time": 93,
     "last_week_total": 93,
-    "pace_time": "22:59"
+    "pace_time": "23:59"
   },
   "mtd_signed": {
     "by_intaker": {
