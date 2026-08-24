@@ -1,19 +1,19 @@
 {
   "date": "2026-08-23",
-  "updated": "2026-08-23T21:15:06.167761",
+  "updated": "2026-08-23T22:00:58.657132",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 14,
-      "still_ld": 6,
-      "came_in": 8,
+      "still_ld": 5,
+      "came_in": 9,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 13.2,
+      "hours_worked": 14.0,
       "rate": 0.93,
-      "rate_worked": 1.06,
+      "rate_worked": 1.0,
       "hourly": [
         0,
         3,
@@ -79,8 +79,8 @@
       "name": "Delvin Castro",
       "abbrev": "D. Castro",
       "ld": 7,
-      "still_ld": 6,
-      "came_in": 1,
+      "still_ld": 4,
+      "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -115,13 +115,13 @@
       "name": "Reny Roca",
       "abbrev": "R. Roca",
       "ld": 4,
-      "still_ld": 4,
-      "came_in": 0,
+      "still_ld": 3,
+      "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 8.0,
       "rate": 0.44,
-      "rate_worked": 0.55,
+      "rate_worked": 0.5,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 8.0,
       "rate": 0.11,
-      "rate_worked": 0.14,
+      "rate_worked": 0.12,
       "hourly": [
         0,
         0,
@@ -799,8 +799,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 74,
-    "total_still_ld": 49,
-    "total_came_in": 23,
+    "total_still_ld": 45,
+    "total_came_in": 27,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -809,11 +809,11 @@
       1,
       0,
       1,
-      0,
+      1,
       2,
       4,
       1,
-      5,
+      8,
       4,
       2,
       0,
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 82.0,
-    "total_hours_worked": 76.6,
+    "total_hours_worked": 79.0,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.97,
+    "rate_worked": 0.94,
     "rate_shift": 0.9,
     "hourly_totals": [
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 73,
-    "yesterday_same_time": 72,
-    "last_week_same_time": 69,
+    "yesterday_same_time": 73,
+    "last_week_same_time": 72,
     "last_week_total": 75,
-    "pace_time": "21:15"
+    "pace_time": "22:00"
   },
   "mtd_signed": {
     "by_intaker": {
