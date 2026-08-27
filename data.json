@@ -1,6 +1,6 @@
 {
   "date": "2026-08-27",
-  "updated": "2026-08-27T11:09:26.336917",
+  "updated": "2026-08-27T11:15:08.516213",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10.0,
       "hours_worked": 3.2,
       "rate": 0.6,
-      "rate_worked": 1.9,
+      "rate_worked": 1.85,
       "hourly": [
         0,
         1,
@@ -49,7 +49,7 @@
       "hours": 15.0,
       "hours_worked": 3.2,
       "rate": 0.53,
-      "rate_worked": 2.53,
+      "rate_worked": 2.46,
       "hourly": [
         1,
         0,
@@ -85,7 +85,7 @@
       "hours": 8.0,
       "hours_worked": 2.2,
       "rate": 0.25,
-      "rate_worked": 0.93,
+      "rate_worked": 0.89,
       "hourly": [
         1,
         1,
@@ -157,7 +157,7 @@
       "hours": 9.0,
       "hours_worked": 1.2,
       "rate": 0.11,
-      "rate_worked": 0.86,
+      "rate_worked": 0.8,
       "hourly": [
         0,
         0,
@@ -193,7 +193,7 @@
       "hours": 10.0,
       "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         1,
         0,
@@ -229,7 +229,7 @@
       "hours": 10.0,
       "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.32,
+      "rate_worked": 0.31,
       "hourly": [
         1,
         0,
@@ -433,7 +433,7 @@
       "end_hour": 21,
       "is_off": false,
       "email": "dcastro@thenofaultgroup.com",
-      "mtd_signed": 92
+      "mtd_signed": 93
     },
     {
       "name": "Jasmine Cuarezma",
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 189,
-    "yesterday_same_time": 37,
+    "yesterday_same_time": 38,
     "last_week_same_time": 26,
     "last_week_total": 166,
-    "pace_time": "11:09"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -986,7 +986,7 @@
       "chernandez@thenofaultgroup.com": 142,
       "djuarez@thenofaultgroup.com": 87,
       "dvalles@thenofaultgroup.com": 33,
-      "dcastro@thenofaultgroup.com": 92,
+      "dcastro@thenofaultgroup.com": 93,
       "jamgomez@thenofaultgroup.com": 163,
       "jcuarezma@thenofaultgroup.com": 226,
       "jduvergel@thenofaultgroup.com": 278,
@@ -1006,7 +1006,7 @@
       "scubillos@thenofaultgroup.com": 29,
       "vlibreros@thenofaultgroup.com": 54
     },
-    "total": 3286,
-    "avg": 136.9
+    "total": 3287,
+    "avg": 137.0
   }
 }
