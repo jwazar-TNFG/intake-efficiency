@@ -1,6 +1,6 @@
 {
   "date": "2026-08-27",
-  "updated": "2026-08-27T13:09:40.470760",
+  "updated": "2026-08-27T13:15:06.131998",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.8,
-      "rate_worked": 1.55,
+      "rate_worked": 1.52,
       "hourly": [
         0,
         1,
@@ -49,7 +49,7 @@
       "hours": 15.0,
       "hours_worked": 5.2,
       "rate": 0.73,
-      "rate_worked": 2.13,
+      "rate_worked": 2.1,
       "hourly": [
         1,
         0,
@@ -85,7 +85,7 @@
       "hours": 9.0,
       "hours_worked": 1.2,
       "rate": 0.67,
-      "rate_worked": 5.17,
+      "rate_worked": 4.8,
       "hourly": [
         0,
         1,
@@ -121,7 +121,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.6,
-      "rate_worked": 1.16,
+      "rate_worked": 1.14,
       "hourly": [
         0,
         0,
@@ -157,7 +157,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.4,
-      "rate_worked": 0.78,
+      "rate_worked": 0.76,
       "hourly": [
         1,
         0,
@@ -193,7 +193,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.4,
-      "rate_worked": 0.78,
+      "rate_worked": 0.76,
       "hourly": [
         0,
         0,
@@ -229,7 +229,7 @@
       "hours": 8.0,
       "hours_worked": 4.2,
       "rate": 0.38,
-      "rate_worked": 0.72,
+      "rate_worked": 0.71,
       "hourly": [
         1,
         1,
@@ -265,7 +265,7 @@
       "hours": 9.0,
       "hours_worked": 3.2,
       "rate": 0.33,
-      "rate_worked": 0.95,
+      "rate_worked": 0.92,
       "hourly": [
         0,
         0,
@@ -301,7 +301,7 @@
       "hours": 9.0,
       "hours_worked": 4.2,
       "rate": 0.22,
-      "rate_worked": 0.48,
+      "rate_worked": 0.47,
       "hourly": [
         0,
         0,
@@ -337,7 +337,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.2,
-      "rate_worked": 0.39,
+      "rate_worked": 0.38,
       "hourly": [
         0,
         0,
@@ -361,7 +361,7 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 226
+      "mtd_signed": 227
     },
     {
       "name": "Maria Jose Miranda",
@@ -373,7 +373,7 @@
       "hours": 10.0,
       "hours_worked": 5.2,
       "rate": 0.2,
-      "rate_worked": 0.39,
+      "rate_worked": 0.38,
       "hourly": [
         1,
         0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 189,
-    "yesterday_same_time": 75,
-    "last_week_same_time": 69,
+    "yesterday_same_time": 77,
+    "last_week_same_time": 71,
     "last_week_total": 166,
-    "pace_time": "13:09"
+    "pace_time": "13:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,7 +988,7 @@
       "dvalles@thenofaultgroup.com": 33,
       "dcastro@thenofaultgroup.com": 93,
       "jamgomez@thenofaultgroup.com": 163,
-      "jcuarezma@thenofaultgroup.com": 226,
+      "jcuarezma@thenofaultgroup.com": 227,
       "jduvergel@thenofaultgroup.com": 278,
       "jjortega@thenofaultgroup.com": 174,
       "jortega@thenofaultgroup.com": 67,
@@ -1006,7 +1006,7 @@
       "scubillos@thenofaultgroup.com": 29,
       "vlibreros@thenofaultgroup.com": 54
     },
-    "total": 3287,
+    "total": 3288,
     "avg": 137.0
   }
 }
