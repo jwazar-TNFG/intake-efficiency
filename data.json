@@ -1,8 +1,44 @@
 {
   "date": "2026-08-29",
-  "updated": "2026-08-29T09:14:02.127596",
+  "updated": "2026-08-29T10:14:07.522666",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 15.0,
+      "hours_worked": 2.2,
+      "rate": 0.07,
+      "rate_worked": 0.45,
+      "hourly": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 86
+    },
     {
       "name": "Jorge Duvergel",
       "abbrev": "J. Duvergel",
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -118,9 +154,9 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 0,
+      "hours": 9.0,
       "hours_worked": 0,
-      "rate": 0,
+      "rate": 0.0,
       "rate_worked": 0,
       "hourly": [
         0,
@@ -141,9 +177,9 @@
         0,
         0
       ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
       "email": "djuarez@thenofaultgroup.com",
       "mtd_signed": 94
     },
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -478,9 +514,9 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 0,
+      "hours": 9.0,
       "hours_worked": 0,
-      "rate": 0,
+      "rate": 0.0,
       "rate_worked": 0,
       "hourly": [
         0,
@@ -501,9 +537,9 @@
         0,
         0
       ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 172
     },
@@ -514,9 +550,9 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 0,
+      "hours": 9.0,
       "hours_worked": 0,
-      "rate": 0,
+      "rate": 0.0,
       "rate_worked": 0,
       "hourly": [
         0,
@@ -537,9 +573,9 @@
         0,
         0
       ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
       "mtd_signed": 99
     },
@@ -616,42 +652,6 @@
       "mtd_signed": 229
     },
     {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 86
-    },
-    {
       "name": "Richard Pena",
       "abbrev": "R. Pena",
       "ld": 0,
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 0,
+    "total_ld": 2,
+    "total_still_ld": 1,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -840,14 +840,14 @@
       0,
       0
     ],
-    "total_shift_hours": 67.0,
-    "total_hours_worked": 5.0,
+    "total_shift_hours": 99.0,
+    "total_hours_worked": 10.0,
     "specialists_count": 22,
-    "specialists_with_ld": 1,
+    "specialists_with_ld": 2,
     "rate_worked": 0.2,
-    "rate_shift": 0.01,
+    "rate_shift": 0.02,
     "hourly_totals": [
-      0,
+      1,
       1,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 147,
-    "yesterday_same_time": 7,
-    "last_week_same_time": 2,
+    "yesterday_same_time": 13,
+    "last_week_same_time": 6,
     "last_week_total": 73,
-    "pace_time": "09:14"
+    "pace_time": "10:14"
   },
   "mtd_signed": {
     "by_intaker": {
