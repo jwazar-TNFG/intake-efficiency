@@ -1,6 +1,6 @@
 {
   "date": "2026-08-29",
-  "updated": "2026-08-29T11:14:12.310258",
+  "updated": "2026-08-29T11:15:05.337563",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 15.0,
       "hours_worked": 3.2,
       "rate": 0.2,
-      "rate_worked": 0.93,
+      "rate_worked": 0.92,
       "hourly": [
         1,
         1,
@@ -869,7 +869,7 @@
     "yesterday_same_time": 26,
     "last_week_same_time": 16,
     "last_week_total": 73,
-    "pace_time": "11:14"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
