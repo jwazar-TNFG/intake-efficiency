@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "updated": "2026-08-30T16:15:53.510374",
+  "updated": "2026-08-30T16:17:04.745536",
   "title": "Locked Down",
   "reps": [
     {
@@ -13,7 +13,7 @@
       "hours": 10.0,
       "hours_worked": 8.3,
       "rate": 0.6,
-      "rate_worked": 0.73,
+      "rate_worked": 0.72,
       "hourly": [
         0,
         0,
@@ -49,7 +49,7 @@
       "hours": 9.0,
       "hours_worked": 2.3,
       "rate": 0.33,
-      "rate_worked": 1.33,
+      "rate_worked": 1.32,
       "hourly": [
         0,
         0,
@@ -869,7 +869,7 @@
     "yesterday_same_time": 60,
     "last_week_same_time": 52,
     "last_week_total": 75,
-    "pace_time": "16:15"
+    "pace_time": "16:17"
   },
   "mtd_signed": {
     "by_intaker": {
