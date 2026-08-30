@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "updated": "2026-08-30T16:15:05.845119",
+  "updated": "2026-08-30T16:15:53.510374",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,7 +11,7 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.6,
       "rate_worked": 0.73,
       "hourly": [
@@ -47,7 +47,7 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.33,
       "rate_worked": 1.33,
       "hourly": [
@@ -83,7 +83,7 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.3,
       "rate_worked": 0.36,
       "hourly": [
@@ -119,7 +119,7 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.3,
       "rate_worked": 0.36,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.11,
       "rate_worked": 0.44,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 76.0,
-    "total_hours_worked": 43.6,
+    "total_hours_worked": 44.4,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.8,
+    "rate_worked": 0.79,
     "rate_shift": 0.46,
     "hourly_totals": [
       0,
