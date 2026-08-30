@@ -1,24 +1,24 @@
 {
   "date": "2026-08-30",
-  "updated": "2026-08-30T10:15:06.320556",
+  "updated": "2026-08-30T11:15:05.544287",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Richard Pena",
       "abbrev": "R. Pena",
-      "ld": 1,
-      "still_ld": 1,
-      "came_in": 0,
+      "ld": 5,
+      "still_ld": 4,
+      "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
-      "rate": 0.1,
-      "rate_worked": 0.44,
+      "hours_worked": 3.2,
+      "rate": 0.5,
+      "rate_worked": 1.54,
       "hourly": [
         0,
         0,
-        1,
-        0,
+        2,
+        3,
         0,
         0,
         0,
@@ -42,8 +42,8 @@
     {
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
-      "ld": 0,
-      "still_ld": 0,
+      "ld": 2,
+      "still_ld": 2,
       "came_in": 0,
       "dropped": 0,
       "hours": 0,
@@ -52,7 +52,7 @@
       "rate_worked": 0,
       "hourly": [
         0,
-        0,
+        2,
         0,
         0,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,14 +798,14 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 1,
-    "total_came_in": 0,
+    "total_ld": 7,
+    "total_still_ld": 6,
+    "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -841,16 +841,16 @@
       0
     ],
     "total_shift_hours": 76.0,
-    "total_hours_worked": 8.8,
+    "total_hours_worked": 12.8,
     "specialists_count": 22,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.11,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.55,
+    "rate_shift": 0.09,
     "hourly_totals": [
       0,
-      0,
-      1,
-      0,
+      2,
+      2,
+      3,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 100,
-    "yesterday_same_time": 7,
-    "last_week_same_time": 6,
+    "yesterday_same_time": 18,
+    "last_week_same_time": 11,
     "last_week_total": 75,
-    "pace_time": "10:15"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
