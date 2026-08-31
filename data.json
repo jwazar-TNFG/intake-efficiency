@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "updated": "2026-08-30T22:17:40.491452",
+  "updated": "2026-08-30T23:15:05.921436",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.89,
-      "rate_worked": 0.97,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         0,
@@ -150,14 +150,14 @@
     {
       "name": "Reny Roca",
       "abbrev": "R. Roca",
-      "ld": 2,
+      "ld": 3,
       "still_ld": 1,
-      "came_in": 1,
+      "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
-      "rate": 0.22,
-      "rate_worked": 0.24,
+      "hours_worked": 9.0,
+      "rate": 0.33,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -173,7 +173,7 @@
         1,
         0,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -258,9 +258,9 @@
     {
       "name": "Naryeli Silva",
       "abbrev": "N. Silva",
-      "ld": 8,
+      "ld": 9,
       "still_ld": 1,
-      "came_in": 7,
+      "came_in": 8,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -281,7 +281,7 @@
         5,
         1,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,9 +798,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 67,
+    "total_ld": 69,
     "total_still_ld": 32,
-    "total_came_in": 35,
+    "total_came_in": 37,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -817,7 +817,7 @@
       5,
       0,
       0,
-      0,
+      2,
       0,
       0
     ],
@@ -841,11 +841,11 @@
       0
     ],
     "total_shift_hours": 76.0,
-    "total_hours_worked": 73.9,
+    "total_hours_worked": 76.0,
     "specialists_count": 22,
     "specialists_with_ld": 12,
     "rate_worked": 0.91,
-    "rate_shift": 0.88,
+    "rate_shift": 0.91,
     "hourly_totals": [
       0,
       2,
@@ -861,15 +861,15 @@
       8,
       1,
       10,
-      0,
+      2,
       0,
       0
     ],
     "yesterday_ld": 100,
     "yesterday_same_time": 100,
-    "last_week_same_time": 74,
+    "last_week_same_time": 75,
     "last_week_total": 75,
-    "pace_time": "22:17"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
