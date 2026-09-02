@@ -1,6 +1,6 @@
 {
   "date": "2026-09-02",
-  "updated": "2026-09-02T08:31:12.946354",
+  "updated": "2026-09-02T09:15:06.511693",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.5,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 196.0,
-    "total_hours_worked": 4.0,
+    "total_hours_worked": 9.8,
     "specialists_count": 25,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -975,14 +975,14 @@
     ],
     "yesterday_ld": 149,
     "yesterday_same_time": 1,
-    "last_week_same_time": 4,
+    "last_week_same_time": 10,
     "last_week_total": 187,
-    "pace_time": "08:31"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 2,
-      "david eduardo juarez": 5,
+      "david eduardo juarez": 7,
       "delvin antonio velasquez castro": 1,
       "jasmine cuarezma": 2,
       "jesus ortega": 1,
@@ -998,10 +998,10 @@
       "reny roca": 3,
       "rodriguez, nelson": 23,
       "ronnie andres martinez chavarria": 4,
-      "sebastian cubillos": 2,
+      "sebastian cubillos": 3,
       "valentina libreros alvarez": 1
     },
-    "total": 108,
-    "avg": 5.7
+    "total": 111,
+    "avg": 5.8
   }
 }
