@@ -1,6 +1,6 @@
 {
   "date": "2026-09-01",
-  "updated": "2026-09-01T23:15:08.248537",
+  "updated": "2026-09-01T23:30:19.498688",
   "title": "Locked Down",
   "reps": [
     {
@@ -78,14 +78,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 21,
+      "ld": 23,
       "still_ld": 1,
-      "came_in": 20,
+      "came_in": 22,
       "dropped": 0,
       "hours": 15.0,
       "hours_worked": 15.0,
-      "rate": 1.4,
-      "rate_worked": 1.4,
+      "rate": 1.53,
+      "rate_worked": 1.53,
       "hourly": [
         0,
         0,
@@ -103,7 +103,7 @@
         0,
         1,
         1,
-        0
+        2
       ],
       "start_hour": 8,
       "end_hour": 23,
@@ -187,8 +187,8 @@
       "name": "Jorge Munoz",
       "abbrev": "J. Munoz",
       "ld": 11,
-      "still_ld": 4,
-      "came_in": 7,
+      "still_ld": 2,
+      "came_in": 9,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 147,
-    "total_still_ld": 66,
-    "total_came_in": 81,
+    "total_ld": 149,
+    "total_still_ld": 64,
+    "total_came_in": 85,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
@@ -924,10 +924,10 @@
       3,
       5,
       7,
-      7,
+      8,
+      2,
       1,
-      1,
-      0
+      2
     ],
     "hourly_dropped": [
       0,
@@ -952,8 +952,8 @@
     "total_hours_worked": 187.0,
     "specialists_count": 25,
     "specialists_with_ld": 14,
-    "rate_worked": 0.79,
-    "rate_shift": 0.79,
+    "rate_worked": 0.8,
+    "rate_shift": 0.8,
     "hourly_totals": [
       1,
       0,
@@ -971,13 +971,13 @@
       16,
       5,
       2,
-      0
+      2
     ],
     "yesterday_ld": 262,
     "yesterday_same_time": 262,
     "last_week_same_time": 179,
     "last_week_total": 179,
-    "pace_time": "23:15"
+    "pace_time": "23:30"
   },
   "mtd_signed": {
     "by_intaker": {
