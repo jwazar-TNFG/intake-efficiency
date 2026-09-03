@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated": "2026-09-03T01:33:05.165736",
+  "updated": "2026-09-03T02:33:11.173787",
   "title": "Locked Down",
   "reps": [
     {
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 184,
-    "pace_time": "01:33"
+    "pace_time": "02:33"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -987,7 +987,7 @@
       "delvin antonio velasquez castro": 2,
       "jasmine cuarezma": 8,
       "jesus ortega": 5,
-      "jorge alberto munoz gomez": 20,
+      "jorge alberto munoz gomez": 23,
       "jorge duvergel": 22,
       "katiria bonilla": 22,
       "lina murillo marin": 16,
@@ -1002,7 +1002,7 @@
       "sebastian cubillos": 4,
       "valentina libreros alvarez": 1
     },
-    "total": 256,
-    "avg": 12.8
+    "total": 259,
+    "avg": 12.9
   }
 }
