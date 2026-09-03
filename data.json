@@ -1,6 +1,6 @@
 {
   "date": "2026-09-02",
-  "updated": "2026-09-02T22:32:42.630625",
+  "updated": "2026-09-02T23:15:05.563368",
   "title": "Locked Down",
   "reps": [
     {
@@ -78,14 +78,14 @@
     {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
-      "ld": 15,
+      "ld": 16,
       "still_ld": 10,
-      "came_in": 5,
+      "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
-      "rate": 1.67,
-      "rate_worked": 1.67,
+      "rate": 1.78,
+      "rate_worked": 1.78,
       "hourly": [
         0,
         0,
@@ -102,7 +102,7 @@
         0,
         3,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": 10,
@@ -115,13 +115,13 @@
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
       "ld": 23,
-      "still_ld": 5,
-      "came_in": 18,
+      "still_ld": 3,
+      "came_in": 20,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.5,
+      "hours_worked": 15.0,
       "rate": 1.53,
-      "rate_worked": 1.58,
+      "rate_worked": 1.53,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.82,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -474,14 +474,14 @@
     {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
-      "ld": 4,
-      "still_ld": 2,
+      "ld": 5,
+      "still_ld": 3,
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
-      "rate": 0.44,
-      "rate_worked": 0.47,
+      "hours_worked": 9.0,
+      "rate": 0.56,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -497,7 +497,7 @@
         0,
         1,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -510,14 +510,14 @@
     {
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
-      "ld": 2,
-      "still_ld": 2,
+      "ld": 3,
+      "still_ld": 3,
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
-      "rate": 0.22,
-      "rate_worked": 0.23,
+      "hours_worked": 9.0,
+      "rate": 0.33,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -533,7 +533,7 @@
         0,
         1,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.5,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.5,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,15 +906,15 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 167,
+    "total_ld": 170,
     "total_still_ld": 71,
-    "total_came_in": 93,
+    "total_came_in": 96,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
       2,
-      3,
-      17,
+      4,
+      18,
       13,
       10,
       12,
@@ -924,7 +924,7 @@
       2,
       8,
       2,
-      1,
+      2,
       0,
       0,
       0
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 196.0,
-    "total_hours_worked": 192.5,
+    "total_hours_worked": 196.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
     "rate_worked": 0.87,
-    "rate_shift": 0.85,
+    "rate_shift": 0.87,
     "hourly_totals": [
       1,
       2,
@@ -969,15 +969,15 @@
       12,
       7,
       8,
-      0,
-      0,
+      2,
+      1,
       0
     ],
     "yesterday_ld": 147,
-    "yesterday_same_time": 144,
+    "yesterday_same_time": 147,
     "last_week_same_time": 187,
     "last_week_total": 187,
-    "pace_time": "22:32"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -995,14 +995,14 @@
       "manuel penaranda": 26,
       "maria jose miranda rodriguez": 2,
       "naryeli silva": 2,
-      "orlando plasencia": 11,
+      "orlando plasencia": 12,
       "reny roca": 5,
-      "rodriguez, nelson": 41,
+      "rodriguez, nelson": 43,
       "ronnie andres martinez chavarria": 13,
       "sebastian cubillos": 4,
       "valentina libreros alvarez": 1
     },
-    "total": 253,
-    "avg": 12.7
+    "total": 256,
+    "avg": 12.8
   }
 }
