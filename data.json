@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated": "2026-09-03T20:35:07.961256",
+  "updated": "2026-09-03T21:15:10.542836",
   "title": "Locked Down",
   "reps": [
     {
@@ -155,9 +155,9 @@
       "came_in": 3,
       "dropped": 2,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 1.11,
-      "rate_worked": 1.16,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 14,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 12.6,
+      "hours_worked": 13.2,
       "rate": 1.07,
-      "rate_worked": 1.27,
+      "rate_worked": 1.21,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.33,
-      "rate_worked": 0.35,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 2.6,
+      "hours_worked": 3.2,
       "rate": 0.25,
-      "rate_worked": 0.39,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.2,
       "rate": 0.22,
-      "rate_worked": 0.3,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.2,
       "rate": 0.11,
-      "rate_worked": 0.15,
+      "rate_worked": 0.14,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.11,
-      "rate_worked": 0.12,
+      "rate_worked": 0.11,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.6,
+      "hours_worked": 7.2,
       "rate": 0.11,
-      "rate_worked": 0.15,
+      "rate_worked": 0.14,
       "hourly": [
         0,
         0,
@@ -623,9 +623,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.11,
-      "rate_worked": 0.12,
+      "rate_worked": 0.11,
       "hourly": [
         0,
         0,
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.6,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.6,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 206.0,
-    "total_hours_worked": 188.2,
+    "total_hours_worked": 194.4,
     "specialists_count": 25,
     "specialists_with_ld": 19,
-    "rate_worked": 0.69,
+    "rate_worked": 0.66,
     "rate_shift": 0.63,
     "hourly_totals": [
       2,
@@ -975,13 +975,13 @@
     ],
     "yesterday_ld": 174,
     "yesterday_same_time": 167,
-    "last_week_same_time": 165,
+    "last_week_same_time": 173,
     "last_week_total": 184,
-    "pace_time": "20:35"
+    "pace_time": "21:15"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 19,
+      "cindy del carmen hern\u00e1ndez zapata": 20,
       "daniel stiven valles mu\u00f1oz": 2,
       "david eduardo juarez": 22,
       "delvin antonio velasquez castro": 3,
@@ -999,12 +999,12 @@
       "orlando plasencia": 29,
       "reny roca": 5,
       "richard antonio pe\u00f1a": 2,
-      "rodriguez, nelson": 58,
+      "rodriguez, nelson": 59,
       "ronnie andres martinez chavarria": 16,
       "sebastian cubillos": 8,
       "valentina libreros alvarez": 1
     },
-    "total": 379,
-    "avg": 17.2
+    "total": 381,
+    "avg": 17.3
   }
 }
