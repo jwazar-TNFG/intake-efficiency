@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated": "2026-09-03T22:35:20.600299",
+  "updated": "2026-09-03T23:15:06.724812",
   "title": "Locked Down",
   "reps": [
     {
@@ -191,9 +191,9 @@
       "came_in": 15,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.6,
+      "hours_worked": 15.0,
       "rate": 1.27,
-      "rate_worked": 1.3,
+      "rate_worked": 1.27,
       "hourly": [
         0,
         0,
@@ -294,14 +294,14 @@
     {
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
-      "ld": 6,
-      "still_ld": 1,
+      "ld": 8,
+      "still_ld": 3,
       "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
-      "rate": 0.67,
-      "rate_worked": 0.67,
+      "rate": 0.89,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         0,
@@ -316,7 +316,7 @@
         1,
         3,
         0,
-        0,
+        2,
         0,
         0,
         0
@@ -364,6 +364,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Daniel Vallez",
+      "abbrev": "D. Vallez",
+      "ld": 5,
+      "still_ld": 3,
+      "came_in": 2,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 9.0,
+      "rate": 0.56,
+      "rate_worked": 0.56,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "dvalles@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
       "ld": 4,
@@ -397,42 +433,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "djuarez@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Daniel Vallez",
-      "abbrev": "D. Vallez",
-      "ld": 3,
-      "still_ld": 2,
-      "came_in": 1,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 8.6,
-      "rate": 0.33,
-      "rate_worked": 0.35,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        1,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "dvalles@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -515,9 +515,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.23,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.6,
+      "hours_worked": 9.0,
       "rate": 0.11,
-      "rate_worked": 0.12,
+      "rate_worked": 0.11,
       "hourly": [
         0,
         0,
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 148,
-    "total_still_ld": 65,
-    "total_came_in": 79,
+    "total_ld": 152,
+    "total_still_ld": 68,
+    "total_came_in": 80,
     "total_dropped": 2,
     "hourly_came_in": [
       2,
@@ -923,7 +923,7 @@
       4,
       9,
       5,
-      4,
+      5,
       1,
       1,
       0,
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 206.0,
-    "total_hours_worked": 203.6,
+    "total_hours_worked": 206.0,
     "specialists_count": 25,
     "specialists_with_ld": 19,
-    "rate_worked": 0.73,
-    "rate_shift": 0.72,
+    "rate_worked": 0.74,
+    "rate_shift": 0.74,
     "hourly_totals": [
       2,
       4,
@@ -968,26 +968,26 @@
       17,
       10,
       8,
-      5,
-      9,
+      7,
+      11,
       0,
       0
     ],
     "yesterday_ld": 174,
-    "yesterday_same_time": 170,
+    "yesterday_same_time": 174,
     "last_week_same_time": 181,
     "last_week_total": 184,
-    "pace_time": "22:35"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 23,
-      "daniel stiven valles mu\u00f1oz": 2,
+      "daniel stiven valles mu\u00f1oz": 4,
       "david eduardo juarez": 22,
       "delvin antonio velasquez castro": 3,
       "jasmine cuarezma": 10,
       "jesus ortega": 7,
-      "jorge alberto munoz gomez": 25,
+      "jorge alberto munoz gomez": 26,
       "jorge duvergel": 35,
       "juan jose ortega": 2,
       "katiria bonilla": 40,
@@ -1000,11 +1000,11 @@
       "reny roca": 5,
       "richard antonio pe\u00f1a": 3,
       "rodriguez, nelson": 60,
-      "ronnie andres martinez chavarria": 20,
+      "ronnie andres martinez chavarria": 25,
       "sebastian cubillos": 8,
       "valentina libreros alvarez": 1
     },
-    "total": 396,
-    "avg": 18.0
+    "total": 404,
+    "avg": 18.4
   }
 }
