@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated": "2026-09-03T23:15:17.291105",
+  "updated": "2026-09-03T23:35:27.125300",
   "title": "Locked Down",
   "reps": [
     {
@@ -148,6 +148,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 20,
+      "still_ld": 4,
+      "came_in": 16,
+      "dropped": 0,
+      "hours": 15.0,
+      "hours_worked": 15.0,
+      "rate": 1.33,
+      "rate_worked": 1.33,
+      "hourly": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        4,
+        1,
+        1,
+        0,
+        3,
+        1,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "nelsonr@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Jasmine Cuarezma",
       "abbrev": "J. Cuarezma",
       "ld": 13,
@@ -181,42 +217,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 19,
-      "still_ld": 4,
-      "came_in": 15,
-      "dropped": 0,
-      "hours": 15.0,
-      "hours_worked": 15.0,
-      "rate": 1.27,
-      "rate_worked": 1.27,
-      "hourly": [
-        0,
-        0,
-        0,
-        2,
-        1,
-        1,
-        1,
-        1,
-        2,
-        2,
-        4,
-        1,
-        1,
-        0,
-        3,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -295,8 +295,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 8,
-      "still_ld": 3,
-      "came_in": 5,
+      "still_ld": 2,
+      "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 152,
-    "total_still_ld": 68,
-    "total_came_in": 80,
+    "total_ld": 153,
+    "total_still_ld": 67,
+    "total_came_in": 82,
     "total_dropped": 2,
     "hourly_came_in": [
       2,
@@ -924,9 +924,9 @@
       9,
       5,
       5,
+      2,
       1,
       1,
-      0,
       0
     ],
     "hourly_dropped": [
@@ -970,14 +970,14 @@
       8,
       7,
       11,
-      0,
+      1,
       0
     ],
     "yesterday_ld": 174,
     "yesterday_same_time": 174,
     "last_week_same_time": 181,
     "last_week_total": 184,
-    "pace_time": "23:15"
+    "pace_time": "23:35"
   },
   "mtd_signed": {
     "by_intaker": {
