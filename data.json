@@ -1,8 +1,44 @@
 {
   "date": "2026-09-04",
-  "updated": "2026-09-04T06:36:07.145699",
+  "updated": "2026-09-04T07:36:13.336092",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 1,
+      "still_ld": 0,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 15.0,
+      "hours_worked": 0,
+      "rate": 0.07,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "nelsonr@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -652,42 +688,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 15.0,
-      "hours_worked": 0,
-      "rate": 0.0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -906,9 +906,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
+    "total_ld": 1,
     "total_still_ld": 0,
-    "total_came_in": 0,
+    "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -951,7 +951,7 @@
     "total_shift_hours": 210.0,
     "total_hours_worked": 0,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
+    "specialists_with_ld": 1,
     "rate_worked": 0,
     "rate_shift": 0.0,
     "hourly_totals": [
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 155,
-    "yesterday_same_time": 0,
+    "yesterday_same_time": 2,
     "last_week_same_time": 0,
     "last_week_total": 145,
-    "pace_time": "06:36"
+    "pace_time": "07:36"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -999,12 +999,12 @@
       "orlando plasencia": 31,
       "reny roca": 5,
       "richard antonio pe\u00f1a": 3,
-      "rodriguez, nelson": 61,
+      "rodriguez, nelson": 62,
       "ronnie andres martinez chavarria": 25,
       "sebastian cubillos": 8,
       "valentina libreros alvarez": 1
     },
-    "total": 407,
+    "total": 408,
     "avg": 18.5
   }
 }
