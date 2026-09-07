@@ -1,6 +1,6 @@
 {
   "date": "2026-09-07",
-  "updated": "2026-09-07T05:42:34.988597",
+  "updated": "2026-09-07T07:42:45.201620",
   "title": "Locked Down",
   "reps": [
     {
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 74,
     "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "last_week_same_time": 1,
     "last_week_total": 263,
-    "pace_time": "05:42"
+    "pace_time": "07:42"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -989,7 +989,7 @@
       "jesus ortega": 14,
       "jorge alberto munoz gomez": 39,
       "jorge duvergel": 66,
-      "juan jose ortega": 25,
+      "juan jose ortega": 26,
       "katiria bonilla": 49,
       "lina murillo marin": 26,
       "luis vivas": 46,
@@ -1004,7 +1004,7 @@
       "sebastian cubillos": 11,
       "valentina libreros alvarez": 4
     },
-    "total": 668,
+    "total": 669,
     "avg": 30.4
   }
 }
