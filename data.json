@@ -1,6 +1,6 @@
 {
   "date": "2026-09-07",
-  "updated": "2026-09-07T22:44:16.359990",
+  "updated": "2026-09-07T23:44:20.258663",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 16,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.7,
+      "hours_worked": 15.0,
       "rate": 1.33,
-      "rate_worked": 1.36,
+      "rate_worked": 1.33,
       "hourly": [
         0,
         0,
@@ -115,8 +115,8 @@
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
       "ld": 9,
-      "still_ld": 7,
-      "came_in": 2,
+      "still_ld": 6,
+      "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -151,8 +151,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 8,
-      "still_ld": 5,
-      "came_in": 3,
+      "still_ld": 3,
+      "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -263,9 +263,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.57,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 4,
       "dropped": 1,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.57,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -371,7 +371,7 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.7,
+      "hours_worked": 15.0,
       "rate": 0.47,
       "rate_worked": 0.47,
       "hourly": [
@@ -475,8 +475,8 @@
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
       "ld": 4,
-      "still_ld": 2,
-      "came_in": 2,
+      "still_ld": 1,
+      "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -551,7 +551,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.11,
       "rate_worked": 0.11,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.7,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.7,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 109,
-    "total_still_ld": 62,
-    "total_came_in": 44,
+    "total_still_ld": 58,
+    "total_came_in": 48,
     "total_dropped": 2,
     "hourly_came_in": [
       0,
@@ -916,13 +916,13 @@
       3,
       1,
       5,
-      6,
+      7,
       8,
       5,
       3,
       6,
-      1,
       2,
+      4,
       2,
       0,
       1,
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 220.0,
-    "total_hours_worked": 217.9,
+    "total_hours_worked": 220.0,
     "specialists_count": 25,
     "specialists_with_ld": 17,
     "rate_worked": 0.5,
@@ -975,13 +975,13 @@
     ],
     "yesterday_ld": 74,
     "yesterday_same_time": 74,
-    "last_week_same_time": 261,
+    "last_week_same_time": 263,
     "last_week_total": 263,
-    "pace_time": "22:44"
+    "pace_time": "23:44"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 35,
+      "cindy del carmen hern\u00e1ndez zapata": 37,
       "daniel stiven valles mu\u00f1oz": 11,
       "david eduardo juarez": 23,
       "delvin antonio velasquez castro": 8,
@@ -992,19 +992,19 @@
       "juan jose ortega": 32,
       "katiria bonilla": 49,
       "lina murillo marin": 26,
-      "luis vivas": 47,
+      "luis vivas": 49,
       "manuel penaranda": 59,
-      "maria jose miranda rodriguez": 8,
+      "maria jose miranda rodriguez": 9,
       "naryeli silva": 14,
       "orlando plasencia": 40,
       "reny roca": 18,
       "richard antonio pe\u00f1a": 10,
-      "rodriguez, nelson": 143,
+      "rodriguez, nelson": 144,
       "ronnie andres martinez chavarria": 35,
       "sebastian cubillos": 16,
       "valentina libreros alvarez": 9
     },
-    "total": 740,
-    "avg": 33.6
+    "total": 746,
+    "avg": 33.9
   }
 }
