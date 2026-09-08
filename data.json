@@ -1,6 +1,6 @@
 {
   "date": "2026-09-08",
-  "updated": "2026-09-08T08:15:05.570672",
+  "updated": "2026-09-08T09:00:44.170814",
   "title": "Locked Down",
   "reps": [
     {
@@ -10,9 +10,9 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 0,
       "hours_worked": 0,
-      "rate": 0.0,
+      "rate": 0,
       "rate_worked": 0,
       "hourly": [
         0,
@@ -33,9 +33,9 @@
         0,
         0
       ],
-      "start_hour": 12,
-      "end_hour": 21,
-      "is_off": false,
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
       "email": "avilchez@thenofaultgroup.com",
       "mtd_signed": 0
     },
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.0,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -335,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -694,7 +694,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9.0,
+      "hours": 9,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -948,8 +948,8 @@
       0,
       0
     ],
-    "total_shift_hours": 186.0,
-    "total_hours_worked": 1.6,
+    "total_shift_hours": 177.0,
+    "total_hours_worked": 8.0,
     "specialists_count": 25,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 109,
-    "yesterday_same_time": 0,
+    "yesterday_same_time": 3,
     "last_week_same_time": 1,
     "last_week_total": 147,
-    "pace_time": "08:15"
+    "pace_time": "09:00"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,23 +988,23 @@
       "jasmine cuarezma": 26,
       "jesus ortega": 14,
       "jorge alberto munoz gomez": 48,
-      "jorge duvergel": 69,
+      "jorge duvergel": 72,
       "juan jose ortega": 32,
       "katiria bonilla": 49,
       "lina murillo marin": 26,
       "luis vivas": 49,
-      "manuel penaranda": 59,
+      "manuel penaranda": 60,
       "maria jose miranda rodriguez": 9,
       "naryeli silva": 14,
       "orlando plasencia": 40,
       "reny roca": 18,
       "richard antonio pe\u00f1a": 10,
-      "rodriguez, nelson": 145,
+      "rodriguez, nelson": 147,
       "ronnie andres martinez chavarria": 35,
       "sebastian cubillos": 17,
-      "valentina libreros alvarez": 9
+      "valentina libreros alvarez": 10
     },
-    "total": 748,
-    "avg": 34.0
+    "total": 755,
+    "avg": 34.3
   }
 }
