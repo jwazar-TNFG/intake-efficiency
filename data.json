@@ -1,6 +1,6 @@
 {
   "date": "2026-09-08",
-  "updated": "2026-09-08T10:15:04.316416",
+  "updated": "2026-09-08T10:45:15.569342",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.33,
-      "rate_worked": 1.33,
+      "rate_worked": 1.09,
       "hourly": [
         0,
         3,
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.22,
-      "rate_worked": 1.6,
+      "rate_worked": 1.14,
       "hourly": [
         2,
         0,
@@ -76,6 +76,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 2.8,
+      "rate": 0.22,
+      "rate_worked": 0.73,
+      "hourly": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 17,
+      "is_off": false,
+      "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 2,
@@ -83,9 +119,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.2,
-      "rate_worked": 0.89,
+      "rate_worked": 0.73,
       "hourly": [
         0,
         1,
@@ -112,21 +148,21 @@
       "mtd_signed": 0
     },
     {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 1,
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 2,
       "still_ld": 1,
-      "came_in": 0,
+      "came_in": 1,
       "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 2.2,
-      "rate": 0.11,
-      "rate_worked": 0.44,
+      "hours": 15.0,
+      "hours_worked": 2.8,
+      "rate": 0.13,
+      "rate_worked": 0.73,
       "hourly": [
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
+        1,
         0,
         0,
         0,
@@ -142,9 +178,9 @@
         0
       ],
       "start_hour": 8,
-      "end_hour": 17,
+      "end_hour": 23,
       "is_off": false,
-      "email": "rroca@thenofaultgroup.com",
+      "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -191,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -688,42 +724,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 15.0,
-      "hours_worked": 2.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0.2,
+      "hours_worked": 0.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,14 +906,14 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 8,
-    "total_still_ld": 8,
-    "total_came_in": 0,
+    "total_ld": 11,
+    "total_still_ld": 10,
+    "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -949,16 +949,16 @@
       0
     ],
     "total_shift_hours": 177.0,
-    "total_hours_worked": 19.0,
+    "total_hours_worked": 25.0,
     "specialists_count": 25,
-    "specialists_with_ld": 4,
-    "rate_worked": 0.42,
-    "rate_shift": 0.05,
+    "specialists_with_ld": 5,
+    "rate_worked": 0.44,
+    "rate_shift": 0.06,
     "hourly_totals": [
       3,
       4,
+      3,
       1,
-      0,
       0,
       0,
       0,
@@ -974,14 +974,14 @@
       0
     ],
     "yesterday_ld": 109,
-    "yesterday_same_time": 11,
-    "last_week_same_time": 6,
+    "yesterday_same_time": 17,
+    "last_week_same_time": 7,
     "last_week_total": 147,
-    "pace_time": "10:15"
+    "pace_time": "10:45"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 37,
+      "cindy del carmen hern\u00e1ndez zapata": 38,
       "daniel stiven valles mu\u00f1oz": 11,
       "david eduardo juarez": 23,
       "delvin antonio velasquez castro": 8,
@@ -989,8 +989,8 @@
       "jesus ortega": 14,
       "jorge alberto munoz gomez": 48,
       "jorge duvergel": 72,
-      "juan jose ortega": 33,
-      "katiria bonilla": 49,
+      "juan jose ortega": 34,
+      "katiria bonilla": 50,
       "lina murillo marin": 26,
       "luis vivas": 49,
       "manuel penaranda": 60,
@@ -999,12 +999,12 @@
       "orlando plasencia": 40,
       "reny roca": 18,
       "richard antonio pe\u00f1a": 10,
-      "rodriguez, nelson": 147,
+      "rodriguez, nelson": 148,
       "ronnie andres martinez chavarria": 35,
       "sebastian cubillos": 17,
       "valentina libreros alvarez": 10
     },
-    "total": 756,
-    "avg": 34.4
+    "total": 760,
+    "avg": 34.5
   }
 }
