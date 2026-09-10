@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "updated": "2026-09-09T22:48:53.510361",
+  "updated": "2026-09-09T23:48:57.368149",
   "title": "Locked Down",
   "reps": [
     {
@@ -42,14 +42,14 @@
     {
       "name": "Juan Ortega",
       "abbrev": "Juan Ortega",
-      "ld": 23,
-      "still_ld": 13,
+      "ld": 26,
+      "still_ld": 16,
       "came_in": 9,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
-      "rate": 2.56,
-      "rate_worked": 2.61,
+      "hours_worked": 9.0,
+      "rate": 2.89,
+      "rate_worked": 2.89,
       "hourly": [
         0,
         0,
@@ -65,7 +65,7 @@
         1,
         1,
         2,
-        0,
+        3,
         0,
         0
       ],
@@ -78,14 +78,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 31,
+      "ld": 33,
       "still_ld": 7,
-      "came_in": 24,
+      "came_in": 26,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.8,
-      "rate": 2.07,
-      "rate_worked": 2.09,
+      "hours_worked": 15.0,
+      "rate": 2.2,
+      "rate_worked": 2.2,
       "hourly": [
         1,
         0,
@@ -102,7 +102,7 @@
         8,
         1,
         1,
-        0,
+        2,
         0
       ],
       "start_hour": 8,
@@ -115,8 +115,8 @@
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 20,
-      "still_ld": 4,
-      "came_in": 16,
+      "still_ld": 3,
+      "came_in": 17,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -187,8 +187,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 13,
-      "still_ld": 6,
-      "came_in": 7,
+      "still_ld": 5,
+      "came_in": 8,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -263,9 +263,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 1.11,
-      "rate_worked": 1.14,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.78,
-      "rate_worked": 0.79,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -403,8 +403,8 @@
       "name": "Naryeli Silva",
       "abbrev": "N. Silva",
       "ld": 7,
-      "still_ld": 2,
-      "came_in": 5,
+      "still_ld": 0,
+      "came_in": 7,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.8,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.8,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.8,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -906,15 +906,15 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 189,
-    "total_still_ld": 72,
-    "total_came_in": 115,
+    "total_ld": 194,
+    "total_still_ld": 71,
+    "total_came_in": 121,
     "total_dropped": 1,
     "hourly_came_in": [
       2,
       3,
       12,
-      11,
+      13,
       12,
       9,
       12,
@@ -923,10 +923,10 @@
       14,
       3,
       7,
-      9,
+      10,
       4,
       1,
-      0,
+      3,
       0
     ],
     "hourly_dropped": [
@@ -949,11 +949,11 @@
       0
     ],
     "total_shift_hours": 195.0,
-    "total_hours_worked": 193.4,
+    "total_hours_worked": 195.0,
     "specialists_count": 25,
     "specialists_with_ld": 15,
-    "rate_worked": 0.98,
-    "rate_shift": 0.97,
+    "rate_worked": 0.99,
+    "rate_shift": 0.99,
     "hourly_totals": [
       2,
       6,
@@ -969,15 +969,15 @@
       12,
       14,
       9,
-      3,
-      2,
+      6,
+      4,
       0
     ],
     "yesterday_ld": 227,
     "yesterday_same_time": 227,
-    "last_week_same_time": 168,
+    "last_week_same_time": 171,
     "last_week_total": 171,
-    "pace_time": "22:48"
+    "pace_time": "23:48"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,15 +988,15 @@
       "diez, carolina": 1,
       "jasmine cuarezma": 29,
       "jesus ortega": 19,
-      "jorge alberto munoz gomez": 62,
+      "jorge alberto munoz gomez": 64,
       "jorge duvergel": 119,
-      "juan jose ortega": 65,
+      "juan jose ortega": 66,
       "katiria bonilla": 88,
-      "lina murillo marin": 38,
+      "lina murillo marin": 39,
       "luis vivas": 80,
       "manuel penaranda": 107,
-      "maria jose miranda rodriguez": 20,
-      "naryeli silva": 30,
+      "maria jose miranda rodriguez": 22,
+      "naryeli silva": 33,
       "orlando plasencia": 41,
       "reny roca": 27,
       "richard antonio pe\u00f1a": 17,
@@ -1005,7 +1005,7 @@
       "sebastian cubillos": 21,
       "valentina libreros alvarez": 12
     },
-    "total": 1167,
-    "avg": 50.7
+    "total": 1176,
+    "avg": 51.1
   }
 }
