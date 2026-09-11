@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "updated": "2026-09-11T05:51:59.267483",
+  "updated": "2026-09-11T06:52:04.335752",
   "title": "Locked Down",
   "reps": [
     {
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 177,
     "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "last_week_same_time": 1,
     "last_week_total": 161,
-    "pace_time": "05:51"
+    "pace_time": "06:52"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -989,7 +989,7 @@
       "jasmine cuarezma": 29,
       "jesus ortega": 21,
       "jorge alberto munoz gomez": 73,
-      "jorge duvergel": 138,
+      "jorge duvergel": 140,
       "juan jose ortega": 82,
       "katiria bonilla": 108,
       "lina murillo marin": 42,
@@ -1001,11 +1001,11 @@
       "reny roca": 27,
       "richard antonio pe\u00f1a": 17,
       "rodriguez, nelson": 217,
-      "ronnie andres martinez chavarria": 69,
+      "ronnie andres martinez chavarria": 70,
       "sebastian cubillos": 23,
       "valentina libreros alvarez": 15
     },
-    "total": 1325,
-    "avg": 57.6
+    "total": 1328,
+    "avg": 57.7
   }
 }
