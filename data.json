@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "updated": "2026-09-11T23:15:03.939146",
+  "updated": "2026-09-11T23:53:52.886202",
   "title": "Locked Down",
   "reps": [
     {
@@ -403,8 +403,8 @@
       "name": "David Juarez",
       "abbrev": "D. Juarez",
       "ld": 4,
-      "still_ld": 2,
-      "came_in": 2,
+      "still_ld": 1,
+      "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 191,
-    "total_still_ld": 80,
-    "total_came_in": 111,
+    "total_still_ld": 79,
+    "total_came_in": 112,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -924,7 +924,7 @@
       12,
       9,
       4,
-      6,
+      7,
       5,
       1,
       0
@@ -975,15 +975,15 @@
     ],
     "yesterday_ld": 177,
     "yesterday_same_time": 177,
-    "last_week_same_time": 160,
+    "last_week_same_time": 161,
     "last_week_total": 161,
-    "pace_time": "23:15"
+    "pace_time": "23:53"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 69,
       "daniel stiven valles mu\u00f1oz": 15,
-      "david eduardo juarez": 48,
+      "david eduardo juarez": 49,
       "delvin antonio velasquez castro": 27,
       "diez, carolina": 1,
       "jasmine cuarezma": 29,
@@ -994,7 +994,7 @@
       "katiria bonilla": 119,
       "lina murillo marin": 48,
       "luis vivas": 108,
-      "manuel penaranda": 136,
+      "manuel penaranda": 137,
       "maria jose miranda rodriguez": 36,
       "naryeli silva": 37,
       "orlando plasencia": 41,
@@ -1003,9 +1003,9 @@
       "rodriguez, nelson": 255,
       "ronnie andres martinez chavarria": 82,
       "sebastian cubillos": 24,
-      "valentina libreros alvarez": 17
+      "valentina libreros alvarez": 19
     },
-    "total": 1506,
-    "avg": 65.5
+    "total": 1510,
+    "avg": 65.7
   }
 }
