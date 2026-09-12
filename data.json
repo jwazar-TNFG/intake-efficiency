@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "updated": "2026-09-12T18:55:33.447681",
+  "updated": "2026-09-12T19:15:05.246532",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,9 +83,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.9,
+      "hours_worked": 5.2,
       "rate": 0.89,
-      "rate_worked": 1.62,
+      "rate_worked": 1.52,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.9,
+      "hours_worked": 5.2,
       "rate": 0.33,
-      "rate_worked": 0.61,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.9,
+      "hours_worked": 5.2,
       "rate": 0.11,
-      "rate_worked": 0.2,
+      "rate_worked": 0.19,
       "hourly": [
         0,
         0,
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.9,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 96.0,
-    "total_hours_worked": 81.6,
+    "total_hours_worked": 82.8,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.87,
+    "rate_worked": 0.86,
     "rate_shift": 0.74,
     "hourly_totals": [
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 191,
-    "yesterday_same_time": 155,
-    "last_week_same_time": 96,
+    "yesterday_same_time": 163,
+    "last_week_same_time": 98,
     "last_week_total": 105,
-    "pace_time": "18:55"
+    "pace_time": "19:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -892,12 +892,12 @@
       "orlando plasencia": 41,
       "reny roca": 30,
       "richard antonio pe\u00f1a": 21,
-      "rodriguez, nelson": 272,
+      "rodriguez, nelson": 273,
       "ronnie andres martinez chavarria": 82,
-      "sebastian cubillos": 24,
+      "sebastian cubillos": 25,
       "valentina libreros alvarez": 19
     },
-    "total": 1551,
-    "avg": 67.4
+    "total": 1553,
+    "avg": 67.5
   }
 }
