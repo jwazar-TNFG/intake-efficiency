@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "updated": "2026-09-12T08:54:41.478767",
+  "updated": "2026-09-12T09:54:44.961151",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.9,
+      "hours_worked": 1.9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,7 +841,7 @@
       0
     ],
     "total_shift_hours": 96.0,
-    "total_hours_worked": 5.4,
+    "total_hours_worked": 11.4,
     "specialists_count": 22,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 191,
-    "yesterday_same_time": 2,
-    "last_week_same_time": 4,
+    "yesterday_same_time": 8,
+    "last_week_same_time": 5,
     "last_week_total": 105,
-    "pace_time": "08:54"
+    "pace_time": "09:54"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -885,7 +885,7 @@
       "juan jose ortega": 95,
       "katiria bonilla": 119,
       "lina murillo marin": 48,
-      "luis vivas": 108,
+      "luis vivas": 109,
       "manuel penaranda": 137,
       "maria jose miranda rodriguez": 36,
       "naryeli silva": 37,
@@ -897,7 +897,7 @@
       "sebastian cubillos": 24,
       "valentina libreros alvarez": 19
     },
-    "total": 1511,
+    "total": 1512,
     "avg": 65.7
   }
 }
