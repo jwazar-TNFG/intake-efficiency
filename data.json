@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "updated": "2026-09-12T17:55:27.033701",
+  "updated": "2026-09-12T18:15:02.021871",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.9,
+      "hours_worked": 10.0,
       "rate": 1.1,
-      "rate_worked": 1.11,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         1,
@@ -43,13 +43,13 @@
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
       "ld": 11,
-      "still_ld": 9,
-      "came_in": 2,
+      "still_ld": 6,
+      "came_in": 5,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.9,
+      "hours_worked": 10.0,
       "rate": 1.1,
-      "rate_worked": 1.11,
+      "rate_worked": 1.1,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.9,
+      "hours_worked": 4.2,
       "rate": 0.78,
-      "rate_worked": 1.79,
+      "rate_worked": 1.65,
       "hourly": [
         0,
         0,
@@ -119,7 +119,7 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.9,
+      "hours_worked": 10.0,
       "rate": 0.5,
       "rate_worked": 0.5,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.9,
+      "hours_worked": 10.0,
       "rate": 0.4,
       "rate_worked": 0.4,
       "hourly": [
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.9,
+      "hours_worked": 4.2,
       "rate": 0.22,
-      "rate_worked": 0.51,
+      "rate_worked": 0.47,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 3.9,
+      "hours_worked": 4.2,
       "rate": 0.11,
-      "rate_worked": 0.26,
+      "rate_worked": 0.24,
       "hourly": [
         0,
         0,
@@ -259,11 +259,11 @@
       "name": "Richard Pena",
       "abbrev": "R. Pena",
       "ld": 1,
-      "still_ld": 1,
-      "came_in": 0,
+      "still_ld": 0,
+      "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 9.9,
+      "hours_worked": 10.0,
       "rate": 0.1,
       "rate_worked": 0.1,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 9.9,
+      "hours_worked": 10,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.9,
+      "hours_worked": 6.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -799,8 +799,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 68,
-    "total_still_ld": 40,
-    "total_came_in": 28,
+    "total_still_ld": 36,
+    "total_came_in": 32,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -813,7 +813,7 @@
       1,
       4,
       2,
-      0,
+      4,
       0,
       0,
       0,
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 96.0,
-    "total_hours_worked": 77.0,
+    "total_hours_worked": 78.8,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.88,
+    "rate_worked": 0.86,
     "rate_shift": 0.71,
     "hourly_totals": [
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 191,
-    "yesterday_same_time": 133,
-    "last_week_same_time": 86,
+    "yesterday_same_time": 143,
+    "last_week_same_time": 87,
     "last_week_total": 105,
-    "pace_time": "17:55"
+    "pace_time": "18:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -885,19 +885,19 @@
       "juan jose ortega": 98,
       "katiria bonilla": 119,
       "lina murillo marin": 48,
-      "luis vivas": 112,
+      "luis vivas": 115,
       "manuel penaranda": 137,
       "maria jose miranda rodriguez": 36,
       "naryeli silva": 37,
       "orlando plasencia": 41,
       "reny roca": 30,
-      "richard antonio pe\u00f1a": 20,
+      "richard antonio pe\u00f1a": 21,
       "rodriguez, nelson": 272,
       "ronnie andres martinez chavarria": 82,
       "sebastian cubillos": 24,
       "valentina libreros alvarez": 19
     },
-    "total": 1546,
-    "avg": 67.2
+    "total": 1550,
+    "avg": 67.4
   }
 }
