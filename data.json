@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "updated": "2026-09-12T22:15:06.132449",
+  "updated": "2026-09-12T22:55:59.506186",
   "title": "Locked Down",
   "reps": [
     {
@@ -40,6 +40,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Juan Ortega",
+      "abbrev": "Juan Ortega",
+      "ld": 10,
+      "still_ld": 7,
+      "came_in": 3,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 8.9,
+      "rate": 1.11,
+      "rate_worked": 1.12,
+      "hourly": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "jjortega@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
       "ld": 11,
@@ -73,42 +109,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "dvalles@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Juan Ortega",
-      "abbrev": "Juan Ortega",
-      "ld": 9,
-      "still_ld": 6,
-      "came_in": 3,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 8.2,
-      "rate": 1.0,
-      "rate_worked": 1.09,
-      "hourly": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        1,
-        2,
-        2,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "jjortega@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -148,6 +148,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
+      "ld": 5,
+      "still_ld": 3,
+      "came_in": 2,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 8.9,
+      "rate": 0.56,
+      "rate_worked": 0.56,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "scubillos@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Jesus Ortega",
       "abbrev": "Jesus Ortega",
       "ld": 5,
@@ -181,42 +217,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jortega@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Sebastian Cubillos",
-      "abbrev": "S. Cubillos",
-      "ld": 4,
-      "still_ld": 2,
-      "came_in": 2,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 8.2,
-      "rate": 0.44,
-      "rate_worked": 0.48,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "scubillos@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -263,9 +263,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.9,
       "rate": 0.33,
-      "rate_worked": 0.36,
+      "rate_worked": 0.34,
       "hourly": [
         0,
         0,
@@ -331,8 +331,8 @@
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
       "ld": 21,
-      "still_ld": 4,
-      "came_in": 17,
+      "still_ld": 3,
+      "came_in": 18,
       "dropped": 0,
       "hours": 0,
       "hours_worked": 0,
@@ -366,8 +366,8 @@
     {
       "name": "Jorge Duvergel",
       "abbrev": "J. Duvergel",
-      "ld": 7,
-      "still_ld": 6,
+      "ld": 8,
+      "still_ld": 7,
       "came_in": 1,
       "dropped": 0,
       "hours": 0,
@@ -390,7 +390,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": null,
@@ -798,9 +798,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 91,
-    "total_still_ld": 52,
-    "total_came_in": 39,
+    "total_ld": 94,
+    "total_still_ld": 54,
+    "total_came_in": 40,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -817,7 +817,7 @@
       4,
       1,
       0,
-      0,
+      1,
       0,
       0
     ],
@@ -841,11 +841,11 @@
       0
     ],
     "total_shift_hours": 96.0,
-    "total_hours_worked": 93.6,
+    "total_hours_worked": 95.7,
     "specialists_count": 22,
     "specialists_with_ld": 13,
-    "rate_worked": 0.97,
-    "rate_shift": 0.95,
+    "rate_worked": 0.98,
+    "rate_shift": 0.98,
     "hourly_totals": [
       0,
       2,
@@ -860,16 +860,16 @@
       8,
       10,
       6,
+      3,
       2,
       1,
-      0,
       0
     ],
     "yesterday_ld": 191,
-    "yesterday_same_time": 189,
+    "yesterday_same_time": 191,
     "last_week_same_time": 105,
     "last_week_total": 105,
-    "pace_time": "22:15"
+    "pace_time": "22:55"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -892,12 +892,12 @@
       "orlando plasencia": 41,
       "reny roca": 31,
       "richard antonio pe\u00f1a": 21,
-      "rodriguez, nelson": 274,
+      "rodriguez, nelson": 275,
       "ronnie andres martinez chavarria": 82,
       "sebastian cubillos": 26,
-      "valentina libreros alvarez": 19
+      "valentina libreros alvarez": 21
     },
-    "total": 1560,
-    "avg": 67.8
+    "total": 1563,
+    "avg": 68.0
   }
 }
