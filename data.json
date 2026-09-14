@@ -1,8 +1,44 @@
 {
   "date": "2026-09-14",
-  "updated": "2026-09-14T03:58:53.811465",
+  "updated": "2026-09-14T05:59:04.315021",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 0,
+      "rate": 0.11,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "scubillos@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -832,42 +868,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Sebastian Cubillos",
-      "abbrev": "S. Cubillos",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 0,
-      "rate": 0.0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "scubillos@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Valentina Liberos",
       "abbrev": "V. Liberos",
       "ld": 0,
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -951,7 +951,7 @@
     "total_shift_hours": 220.0,
     "total_hours_worked": 0,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
+    "specialists_with_ld": 1,
     "rate_worked": 0,
     "rate_shift": 0.0,
     "hourly_totals": [
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 109,
-    "pace_time": "03:58"
+    "pace_time": "05:59"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1000,12 +1000,12 @@
       "orlando plasencia": 41,
       "reny roca": 34,
       "richard antonio pe\u00f1a": 22,
-      "rodriguez, nelson": 293,
+      "rodriguez, nelson": 295,
       "ronnie andres martinez chavarria": 82,
-      "sebastian cubillos": 29,
+      "sebastian cubillos": 30,
       "valentina libreros alvarez": 23
     },
-    "total": 1637,
-    "avg": 71.2
+    "total": 1640,
+    "avg": 71.3
   }
 }
