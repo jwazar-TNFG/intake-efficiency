@@ -1,6 +1,6 @@
 {
   "date": "2026-09-15",
-  "updated": "2026-09-15T21:02:34.994148",
+  "updated": "2026-09-15T21:15:06.381459",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 7,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 2.0,
-      "rate_worked": 2.56,
+      "rate_worked": 2.48,
       "hourly": [
         1,
         0,
@@ -119,9 +119,9 @@
       "came_in": 14,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 13.0,
+      "hours_worked": 13.2,
       "rate": 1.47,
-      "rate_worked": 1.69,
+      "rate_worked": 1.66,
       "hourly": [
         0,
         1,
@@ -263,9 +263,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 1.0,
-      "rate_worked": 1.28,
+      "rate_worked": 1.24,
       "hourly": [
         0,
         0,
@@ -299,9 +299,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 3.0,
+      "hours_worked": 3.2,
       "rate": 0.75,
-      "rate_worked": 0.99,
+      "rate_worked": 0.92,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.56,
-      "rate_worked": 0.71,
+      "rate_worked": 0.69,
       "hourly": [
         0,
         0,
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.22,
       "rate_worked": 0.28,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.0,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 195.0,
-    "total_hours_worked": 180.0,
+    "total_hours_worked": 181.6,
     "specialists_count": 25,
     "specialists_with_ld": 16,
     "rate_worked": 0.84,
@@ -974,14 +974,14 @@
       0
     ],
     "yesterday_ld": 248,
-    "yesterday_same_time": 226,
-    "last_week_same_time": 216,
+    "yesterday_same_time": 243,
+    "last_week_same_time": 217,
     "last_week_total": 225,
-    "pace_time": "21:02"
+    "pace_time": "21:15"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 89,
+      "cindy del carmen hern\u00e1ndez zapata": 90,
       "daniel stiven valles mu\u00f1oz": 26,
       "david eduardo juarez": 58,
       "delvin antonio velasquez castro": 42,
@@ -992,9 +992,9 @@
       "jorge duvergel": 211,
       "juan jose ortega": 141,
       "katiria bonilla": 160,
-      "lina murillo marin": 63,
+      "lina murillo marin": 65,
       "luis vivas": 151,
-      "manuel penaranda": 182,
+      "manuel penaranda": 184,
       "maria jose miranda rodriguez": 59,
       "naryeli silva": 51,
       "orlando plasencia": 41,
@@ -1005,7 +1005,7 @@
       "sebastian cubillos": 34,
       "valentina libreros alvarez": 38
     },
-    "total": 2035,
-    "avg": 88.5
+    "total": 2040,
+    "avg": 88.7
   }
 }
