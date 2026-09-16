@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "updated": "2026-09-16T18:04:47.494515",
+  "updated": "2026-09-16T18:15:02.246943",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 7,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.1,
+      "hours_worked": 8.2,
       "rate": 1.67,
-      "rate_worked": 1.86,
+      "rate_worked": 1.82,
       "hourly": [
         0,
         0,
@@ -155,9 +155,9 @@
       "came_in": 11,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 10.1,
+      "hours_worked": 10.2,
       "rate": 1.07,
-      "rate_worked": 1.59,
+      "rate_worked": 1.56,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 8,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.1,
+      "hours_worked": 6.2,
       "rate": 1.0,
-      "rate_worked": 1.48,
+      "rate_worked": 1.44,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.1,
+      "hours_worked": 6.2,
       "rate": 1.0,
-      "rate_worked": 1.48,
+      "rate_worked": 1.44,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.44,
-      "rate_worked": 0.98,
+      "rate_worked": 0.94,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.33,
-      "rate_worked": 0.74,
+      "rate_worked": 0.71,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.33,
-      "rate_worked": 0.74,
+      "rate_worked": 0.71,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.11,
-      "rate_worked": 0.25,
+      "rate_worked": 0.24,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.11,
-      "rate_worked": 0.25,
+      "rate_worked": 0.24,
       "hourly": [
         0,
         0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 6.1,
+      "hours_worked": 6.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.1,
+      "hours_worked": 6.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 0.1,
+      "hours_worked": 0.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 4.1,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 195.0,
-    "total_hours_worked": 139.4,
+    "total_hours_worked": 140.8,
     "specialists_count": 25,
     "specialists_with_ld": 17,
-    "rate_worked": 0.93,
+    "rate_worked": 0.92,
     "rate_shift": 0.66,
     "hourly_totals": [
       1,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 171,
-    "yesterday_same_time": 136,
-    "last_week_same_time": 152,
+    "yesterday_same_time": 139,
+    "last_week_same_time": 153,
     "last_week_total": 197,
-    "pace_time": "18:04"
+    "pace_time": "18:15"
   },
   "mtd_signed": {
     "by_intaker": {
