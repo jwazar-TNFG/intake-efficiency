@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "updated": "2026-09-16T09:15:05.788015",
+  "updated": "2026-09-16T10:03:59.597085",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.1,
-      "rate_worked": 0.8,
+      "rate_worked": 0.48,
       "hourly": [
         1,
         0,
@@ -37,6 +37,42 @@
       "end_hour": 18,
       "is_off": false,
       "email": "lvivas@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Manny Penaranda",
+      "abbrev": "M. Penaranda",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 2.1,
+      "rate": 0.1,
+      "rate_worked": 0.48,
+      "hourly": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "mpenaranda@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -505,42 +541,6 @@
       "end_hour": 17,
       "is_off": false,
       "email": "lmurillo@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Manny Penaranda",
-      "abbrev": "M. Penaranda",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "mpenaranda@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,9 +695,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.1,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 1,
+    "total_ld": 2,
+    "total_still_ld": 2,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -949,15 +949,15 @@
       0
     ],
     "total_shift_hours": 195.0,
-    "total_hours_worked": 8.6,
+    "total_hours_worked": 15.9,
     "specialists_count": 25,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.12,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.13,
     "rate_shift": 0.01,
     "hourly_totals": [
       1,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 171,
-    "yesterday_same_time": 6,
-    "last_week_same_time": 12,
+    "yesterday_same_time": 10,
+    "last_week_same_time": 22,
     "last_week_total": 197,
-    "pace_time": "09:15"
+    "pace_time": "10:03"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -998,14 +998,14 @@
       "maria jose miranda rodriguez": 59,
       "naryeli silva": 51,
       "orlando plasencia": 41,
-      "reny roca": 56,
+      "reny roca": 57,
       "richard antonio pe\u00f1a": 30,
       "rodriguez, nelson": 342,
       "ronnie andres martinez chavarria": 91,
       "sebastian cubillos": 34,
       "valentina libreros alvarez": 39
     },
-    "total": 2060,
+    "total": 2061,
     "avg": 89.6
   }
 }
