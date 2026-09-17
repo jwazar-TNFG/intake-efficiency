@@ -1,23 +1,23 @@
 {
   "date": "2026-09-17",
-  "updated": "2026-09-17T09:15:08.778914",
+  "updated": "2026-09-17T10:15:02.816260",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 2,
+      "ld": 4,
       "still_ld": 2,
-      "came_in": 0,
+      "came_in": 2,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.2,
-      "rate": 0.13,
-      "rate_worked": 1.6,
+      "hours_worked": 2.2,
+      "rate": 0.27,
+      "rate_worked": 1.78,
       "hourly": [
         0,
         2,
-        0,
+        2,
         0,
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.11,
-      "rate_worked": 0.8,
+      "rate_worked": 0.44,
       "hourly": [
         1,
         0,
@@ -73,6 +73,42 @@
       "end_hour": 17,
       "is_off": false,
       "email": "lmurillo@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Orlando Plasencia",
+      "abbrev": "O. Plasencia",
+      "ld": 1,
+      "still_ld": 0,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 0.2,
+      "rate": 0.11,
+      "rate_worked": 4.0,
+      "hourly": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 10,
+      "end_hour": 19,
+      "is_off": false,
+      "email": "oplasencia@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -119,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -299,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -685,42 +721,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "nsilva@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Orlando Plasencia",
-      "abbrev": "O. Plasencia",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 0,
-      "rate": 0.0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 10,
-      "end_hour": 19,
-      "is_off": false,
-      "email": "oplasencia@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -906,14 +906,14 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 3,
+    "total_ld": 6,
     "total_still_ld": 3,
-    "total_came_in": 0,
+    "total_came_in": 3,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
       0,
-      0,
+      3,
       0,
       0,
       0,
@@ -949,15 +949,15 @@
       0
     ],
     "total_shift_hours": 206.0,
-    "total_hours_worked": 11.0,
+    "total_hours_worked": 21.2,
     "specialists_count": 25,
-    "specialists_with_ld": 2,
-    "rate_worked": 0.27,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 3,
+    "rate_worked": 0.28,
+    "rate_shift": 0.03,
     "hourly_totals": [
       1,
       2,
-      0,
+      3,
       0,
       0,
       0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 169,
-    "yesterday_same_time": 1,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 9,
+    "last_week_same_time": 9,
     "last_week_total": 177,
-    "pace_time": "09:15"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -994,18 +994,18 @@
       "katiria bonilla": 190,
       "lina murillo marin": 71,
       "luis vivas": 172,
-      "manuel penaranda": 198,
+      "manuel penaranda": 199,
       "maria jose miranda rodriguez": 65,
       "naryeli silva": 58,
       "orlando plasencia": 48,
       "reny roca": 58,
       "richard antonio pe\u00f1a": 32,
-      "rodriguez, nelson": 364,
+      "rodriguez, nelson": 366,
       "ronnie andres martinez chavarria": 102,
       "sebastian cubillos": 36,
       "valentina libreros alvarez": 40
     },
-    "total": 2241,
-    "avg": 97.4
+    "total": 2244,
+    "avg": 97.6
   }
 }
