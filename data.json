@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "updated": "2026-09-16T22:15:05.569279",
+  "updated": "2026-09-16T23:05:22.663655",
   "title": "Locked Down",
   "reps": [
     {
@@ -151,13 +151,13 @@
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
       "ld": 21,
-      "still_ld": 5,
-      "came_in": 16,
+      "still_ld": 4,
+      "came_in": 17,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 15.0,
       "rate": 1.4,
-      "rate_worked": 1.47,
+      "rate_worked": 1.4,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 1.11,
-      "rate_worked": 1.21,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.89,
-      "rate_worked": 0.97,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         0,
@@ -367,8 +367,8 @@
       "name": "Jesus Ortega",
       "abbrev": "Jesus Ortega",
       "ld": 3,
-      "still_ld": 3,
-      "came_in": 0,
+      "still_ld": 1,
+      "came_in": 2,
       "dropped": 0,
       "hours": 4.0,
       "hours_worked": 4.0,
@@ -479,9 +479,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.61,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.11,
-      "rate_worked": 0.12,
+      "rate_worked": 0.11,
       "hourly": [
         0,
         0,
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 166,
-    "total_still_ld": 67,
-    "total_came_in": 99,
+    "total_still_ld": 64,
+    "total_came_in": 102,
     "total_dropped": 0,
     "hourly_came_in": [
       1,
@@ -923,8 +923,8 @@
       5,
       5,
       3,
-      4,
-      1,
+      6,
+      2,
       0,
       0,
       0
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 195.0,
-    "total_hours_worked": 188.6,
+    "total_hours_worked": 195.0,
     "specialists_count": 25,
     "specialists_with_ld": 19,
-    "rate_worked": 0.88,
+    "rate_worked": 0.85,
     "rate_shift": 0.85,
     "hourly_totals": [
       1,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 171,
-    "yesterday_same_time": 169,
-    "last_week_same_time": 194,
+    "yesterday_same_time": 171,
+    "last_week_same_time": 197,
     "last_week_total": 197,
-    "pace_time": "22:15"
+    "pace_time": "23:05"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -987,10 +987,10 @@
       "delvin antonio velasquez castro": 43,
       "diez, carolina": 1,
       "jasmine cuarezma": 29,
-      "jesus ortega": 41,
+      "jesus ortega": 43,
       "jorge alberto munoz gomez": 110,
       "jorge duvergel": 230,
-      "juan jose ortega": 157,
+      "juan jose ortega": 158,
       "katiria bonilla": 190,
       "lina murillo marin": 71,
       "luis vivas": 172,
@@ -1000,12 +1000,12 @@
       "orlando plasencia": 48,
       "reny roca": 58,
       "richard antonio pe\u00f1a": 32,
-      "rodriguez, nelson": 363,
+      "rodriguez, nelson": 364,
       "ronnie andres martinez chavarria": 100,
       "sebastian cubillos": 36,
       "valentina libreros alvarez": 40
     },
-    "total": 2235,
-    "avg": 97.2
+    "total": 2239,
+    "avg": 97.3
   }
 }
