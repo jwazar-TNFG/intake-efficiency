@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "updated": "2026-09-17T23:07:42.913221",
+  "updated": "2026-09-17T23:15:06.564181",
   "title": "Locked Down",
   "reps": [
     {
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 169,
-    "yesterday_same_time": 168,
+    "yesterday_same_time": 169,
     "last_week_same_time": 177,
     "last_week_total": 177,
-    "pace_time": "23:07"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
