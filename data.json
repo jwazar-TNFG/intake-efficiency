@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "updated": "2026-09-18T22:19:12.109715",
+  "updated": "2026-09-18T23:10:09.348247",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 17,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.3,
+      "hours_worked": 15.0,
       "rate": 1.47,
-      "rate_worked": 1.54,
+      "rate_worked": 1.47,
       "hourly": [
         0,
         1,
@@ -191,9 +191,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 1.0,
-      "rate_worked": 1.08,
+      "rate_worked": 1.0,
       "hourly": [
         0,
         0,
@@ -403,8 +403,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 5,
-      "still_ld": 2,
-      "came_in": 3,
+      "still_ld": 1,
+      "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -515,9 +515,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.3,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.3,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 144,
-    "total_still_ld": 65,
-    "total_came_in": 76,
+    "total_still_ld": 64,
+    "total_came_in": 77,
     "total_dropped": 2,
     "hourly_came_in": [
       0,
@@ -922,7 +922,7 @@
       11,
       6,
       5,
-      5,
+      6,
       5,
       1,
       1,
@@ -949,10 +949,10 @@
       0
     ],
     "total_shift_hours": 210.0,
-    "total_hours_worked": 204.4,
+    "total_hours_worked": 210.0,
     "specialists_count": 25,
     "specialists_with_ld": 18,
-    "rate_worked": 0.7,
+    "rate_worked": 0.69,
     "rate_shift": 0.69,
     "hourly_totals": [
       1,
@@ -974,14 +974,14 @@
       0
     ],
     "yesterday_ld": 190,
-    "yesterday_same_time": 185,
-    "last_week_same_time": 184,
+    "yesterday_same_time": 190,
+    "last_week_same_time": 186,
     "last_week_total": 186,
-    "pace_time": "22:19"
+    "pace_time": "23:10"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 116,
+      "cindy del carmen hern\u00e1ndez zapata": 118,
       "daniel stiven valles mu\u00f1oz": 30,
       "david eduardo juarez": 64,
       "delvin antonio velasquez castro": 47,
@@ -1001,11 +1001,11 @@
       "reny roca": 65,
       "richard antonio pe\u00f1a": 34,
       "rodriguez, nelson": 410,
-      "ronnie andres martinez chavarria": 119,
+      "ronnie andres martinez chavarria": 121,
       "sebastian cubillos": 37,
       "valentina libreros alvarez": 47
     },
-    "total": 2563,
-    "avg": 111.4
+    "total": 2567,
+    "avg": 111.6
   }
 }
