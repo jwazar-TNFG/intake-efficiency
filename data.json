@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "updated": "2026-09-21T16:15:06.704659",
+  "updated": "2026-09-21T16:16:38.082705",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 1.5,
-      "rate_worked": 1.82,
+      "rate_worked": 1.81,
       "hourly": [
         0,
         4,
@@ -47,9 +47,9 @@
       "came_in": 15,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 1.27,
-      "rate_worked": 2.3,
+      "rate_worked": 2.29,
       "hourly": [
         0,
         1,
@@ -83,9 +83,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.89,
-      "rate_worked": 3.56,
+      "rate_worked": 3.51,
       "hourly": [
         0,
         0,
@@ -119,9 +119,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 6.3,
       "rate": 0.89,
-      "rate_worked": 1.28,
+      "rate_worked": 1.27,
       "hourly": [
         0,
         0,
@@ -155,7 +155,7 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.8,
       "rate_worked": 0.97,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.8,
       "rate_worked": 0.97,
       "hourly": [
@@ -227,7 +227,7 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.78,
       "rate_worked": 0.85,
       "hourly": [
@@ -263,7 +263,7 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.67,
       "rate_worked": 1.21,
       "hourly": [
@@ -299,9 +299,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.3,
       "rate": 0.67,
-      "rate_worked": 1.41,
+      "rate_worked": 1.4,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.6,
-      "rate_worked": 0.73,
+      "rate_worked": 0.72,
       "hourly": [
         0,
         1,
@@ -371,9 +371,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.6,
-      "rate_worked": 0.73,
+      "rate_worked": 0.72,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.3,
       "rate": 0.44,
-      "rate_worked": 0.94,
+      "rate_worked": 0.93,
       "hourly": [
         0,
         0,
@@ -436,42 +436,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Cindy Hernandez",
-      "abbrev": "C. Hernandez",
-      "ld": 2,
-      "still_ld": 2,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 4.2,
-      "rate": 0.22,
-      "rate_worked": 0.47,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 12,
-      "end_hour": 21,
-      "is_off": false,
-      "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
       "ld": 2,
@@ -479,9 +443,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 7.3,
       "rate": 0.22,
-      "rate_worked": 0.28,
+      "rate_worked": 0.27,
       "hourly": [
         0,
         0,
@@ -515,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.22,
       "rate_worked": 0.24,
       "hourly": [
@@ -551,7 +515,7 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.2,
       "rate_worked": 0.24,
       "hourly": [
@@ -587,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.11,
       "rate_worked": 0.44,
       "hourly": [
@@ -623,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.2,
+      "hours_worked": 4.3,
       "rate": 0.11,
-      "rate_worked": 0.24,
+      "rate_worked": 0.23,
       "hourly": [
         0,
         0,
@@ -659,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.11,
       "rate_worked": 0.44,
       "hourly": [
@@ -685,6 +649,42 @@
       "end_hour": 23,
       "is_off": false,
       "email": "scubillos@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Cindy Hernandez",
+      "abbrev": "C. Hernandez",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "email": "chernandez@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 4.2,
+      "hours_worked": 4.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 8.2,
+      "hours_worked": 8.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 2.2,
+      "hours_worked": 2.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -948,12 +948,12 @@
       0,
       0
     ],
-    "total_shift_hours": 230.0,
-    "total_hours_worked": 135.6,
+    "total_shift_hours": 221.0,
+    "total_hours_worked": 133.6,
     "specialists_count": 25,
     "specialists_with_ld": 20,
-    "rate_worked": 0.86,
-    "rate_shift": 0.51,
+    "rate_worked": 0.88,
+    "rate_shift": 0.53,
     "hourly_totals": [
       1,
       9,
@@ -977,7 +977,7 @@
     "yesterday_same_time": 46,
     "last_week_same_time": 144,
     "last_week_total": 246,
-    "pace_time": "16:15"
+    "pace_time": "16:16"
   },
   "mtd_signed": {
     "by_intaker": {
