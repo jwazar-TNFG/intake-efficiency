@@ -1,8 +1,44 @@
 {
   "date": "2026-09-22",
-  "updated": "2026-09-22T00:17:23.363836",
+  "updated": "2026-09-22T02:17:34.021736",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Jesus Ortega",
+      "abbrev": "Jesus Ortega",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 4.0,
+      "hours_worked": 0,
+      "rate": 0.25,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 18,
+      "end_hour": 22,
+      "is_off": false,
+      "email": "jortega@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -253,42 +289,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Jesus Ortega",
-      "abbrev": "Jesus Ortega",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 4.0,
-      "hours_worked": 0,
-      "rate": 0.0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 18,
-      "end_hour": 22,
-      "is_off": false,
-      "email": "jortega@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -951,7 +951,7 @@
     "total_shift_hours": 205.0,
     "total_hours_worked": 0,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
+    "specialists_with_ld": 1,
     "rate_worked": 0,
     "rate_shift": 0.0,
     "hourly_totals": [
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 245,
     "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "last_week_same_time": 2,
     "last_week_total": 171,
-    "pace_time": "00:17"
+    "pace_time": "02:17"
   },
   "mtd_signed": {
     "by_intaker": {
