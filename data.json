@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "updated": "2026-09-24T04:22:39.148384",
+  "updated": "2026-09-24T05:22:47.469799",
   "title": "Locked Down",
   "reps": [
     {
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 1,
     "last_week_total": 190,
-    "pace_time": "04:22"
+    "pace_time": "05:22"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -988,7 +988,7 @@
       "diez, carolina": 1,
       "jasmine cuarezma": 76,
       "jesus ortega": 62,
-      "jorge alberto munoz gomez": 183,
+      "jorge alberto munoz gomez": 185,
       "jorge duvergel": 311,
       "juan jose ortega": 231,
       "katiria bonilla": 272,
@@ -1005,7 +1005,7 @@
       "sebastian cubillos": 54,
       "valentina libreros alvarez": 64
     },
-    "total": 3285,
-    "avg": 142.8
+    "total": 3287,
+    "avg": 142.9
   }
 }
