@@ -1,8 +1,44 @@
 {
   "date": "2026-09-25",
-  "updated": "2026-09-25T04:24:54.346901",
+  "updated": "2026-09-25T06:25:05.955446",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Juan Ortega",
+      "abbrev": "Juan Ortega",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "email": "jjortega@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Axl Vilchez",
       "abbrev": "A. Vilchez",
@@ -397,42 +433,6 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jamgomez@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Juan Ortega",
-      "abbrev": "Juan Ortega",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "email": "jjortega@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -906,8 +906,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -951,7 +951,7 @@
     "total_shift_hours": 210.0,
     "total_hours_worked": 0,
     "specialists_count": 25,
-    "specialists_with_ld": 0,
+    "specialists_with_ld": 1,
     "rate_worked": 0,
     "rate_shift": 0.0,
     "hourly_totals": [
@@ -977,7 +977,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 145,
-    "pace_time": "04:24"
+    "pace_time": "06:25"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -987,7 +987,7 @@
       "delvin antonio velasquez castro": 71,
       "diez, carolina": 1,
       "jasmine cuarezma": 84,
-      "jesus ortega": 63,
+      "jesus ortega": 64,
       "jorge alberto munoz gomez": 195,
       "jorge duvergel": 325,
       "juan jose ortega": 236,
@@ -1005,7 +1005,7 @@
       "sebastian cubillos": 55,
       "valentina libreros alvarez": 65
     },
-    "total": 3451,
-    "avg": 150.0
+    "total": 3452,
+    "avg": 150.1
   }
 }
