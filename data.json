@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "updated": "2026-09-27T18:30:55.237847",
+  "updated": "2026-09-27T19:15:07.879056",
   "title": "Locked Down",
   "reps": [
     {
@@ -115,9 +115,9 @@
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
       "ld": 7,
-      "still_ld": 2,
+      "still_ld": 1,
       "came_in": 5,
-      "dropped": 0,
+      "dropped": 1,
       "hours": 10.0,
       "hours_worked": 10.0,
       "rate": 0.7,
@@ -155,9 +155,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 10.5,
+      "hours_worked": 11.2,
       "rate": 0.4,
-      "rate_worked": 0.57,
+      "rate_worked": 0.53,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.5,
+      "hours_worked": 5.2,
       "rate": 0.33,
-      "rate_worked": 0.67,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 4.5,
+      "hours_worked": 5.2,
       "rate": 0.33,
-      "rate_worked": 0.67,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -263,9 +263,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.5,
+      "hours_worked": 7.2,
       "rate": 0.22,
-      "rate_worked": 0.31,
+      "rate_worked": 0.28,
       "hourly": [
         0,
         0,
@@ -299,9 +299,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 10.5,
+      "hours_worked": 11.2,
       "rate": 0.07,
-      "rate_worked": 0.1,
+      "rate_worked": 0.09,
       "hourly": [
         0,
         0,
@@ -799,9 +799,9 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 71,
-    "total_still_ld": 39,
+    "total_still_ld": 38,
     "total_came_in": 32,
-    "total_dropped": 0,
+    "total_dropped": 1,
     "hourly_came_in": [
       1,
       0,
@@ -832,7 +832,7 @@
       0,
       0,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 113.0,
-    "total_hours_worked": 92.5,
+    "total_hours_worked": 96.0,
     "specialists_count": 22,
     "specialists_with_ld": 12,
-    "rate_worked": 0.77,
+    "rate_worked": 0.74,
     "rate_shift": 0.63,
     "hourly_totals": [
       1,
@@ -866,23 +866,23 @@
       0
     ],
     "yesterday_ld": 122,
-    "yesterday_same_time": 95,
-    "last_week_same_time": 55,
+    "yesterday_same_time": 100,
+    "last_week_same_time": 61,
     "last_week_total": 75,
-    "pace_time": "18:30"
+    "pace_time": "19:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 158,
       "daniel stiven valles mu\u00f1oz": 50,
       "david eduardo juarez": 90,
-      "delvin antonio velasquez castro": 85,
+      "delvin antonio velasquez castro": 87,
       "diez, carolina": 1,
       "jasmine cuarezma": 109,
       "jesus ortega": 67,
       "jorge alberto munoz gomez": 202,
       "jorge duvergel": 341,
-      "juan jose ortega": 244,
+      "juan jose ortega": 245,
       "katiria bonilla": 318,
       "lina murillo marin": 127,
       "luis vivas": 258,
@@ -898,7 +898,7 @@
       "sebastian cubillos": 56,
       "valentina libreros alvarez": 72
     },
-    "total": 3721,
-    "avg": 155.0
+    "total": 3724,
+    "avg": 155.2
   }
 }
