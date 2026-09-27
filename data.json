@@ -1,19 +1,19 @@
 {
   "date": "2026-09-27",
-  "updated": "2026-09-27T09:30:08.029091",
+  "updated": "2026-09-27T10:15:04.610501",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
       "ld": 1,
-      "still_ld": 1,
-      "came_in": 0,
+      "still_ld": 0,
+      "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.1,
-      "rate_worked": 0.67,
+      "rate_worked": 0.44,
       "hourly": [
         1,
         0,
@@ -119,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 6.0,
-      "hours_worked": 1.5,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -799,11 +799,11 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 1,
-    "total_still_ld": 1,
-    "total_came_in": 0,
+    "total_still_ld": 0,
+    "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
-      0,
+      1,
       0,
       0,
       0,
@@ -841,10 +841,10 @@
       0
     ],
     "total_shift_hours": 113.0,
-    "total_hours_worked": 12.0,
+    "total_hours_worked": 17.6,
     "specialists_count": 22,
     "specialists_with_ld": 1,
-    "rate_worked": 0.08,
+    "rate_worked": 0.06,
     "rate_shift": 0.01,
     "hourly_totals": [
       1,
@@ -866,19 +866,19 @@
       0
     ],
     "yesterday_ld": 122,
-    "yesterday_same_time": 4,
-    "last_week_same_time": 2,
+    "yesterday_same_time": 8,
+    "last_week_same_time": 3,
     "last_week_total": 75,
-    "pace_time": "09:30"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 158,
-      "daniel stiven valles mu\u00f1oz": 45,
-      "david eduardo juarez": 89,
+      "daniel stiven valles mu\u00f1oz": 46,
+      "david eduardo juarez": 90,
       "delvin antonio velasquez castro": 79,
       "diez, carolina": 1,
-      "jasmine cuarezma": 104,
+      "jasmine cuarezma": 107,
       "jesus ortega": 66,
       "jorge alberto munoz gomez": 202,
       "jorge duvergel": 340,
@@ -897,7 +897,7 @@
       "sebastian cubillos": 56,
       "valentina libreros alvarez": 68
     },
-    "total": 3675,
-    "avg": 159.8
+    "total": 3680,
+    "avg": 160.0
   }
 }
