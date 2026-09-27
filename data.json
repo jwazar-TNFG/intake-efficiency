@@ -1,8 +1,44 @@
 {
   "date": "2026-09-27",
-  "updated": "2026-09-27T10:15:06.315576",
+  "updated": "2026-09-27T11:15:05.929206",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 2,
+      "still_ld": 2,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 15.0,
+      "hours_worked": 3.2,
+      "rate": 0.13,
+      "rate_worked": 0.62,
+      "hourly": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
@@ -11,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.1,
-      "rate_worked": 0.44,
+      "rate_worked": 0.31,
       "hourly": [
         1,
         0,
@@ -119,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -616,42 +652,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 15.0,
-      "hours_worked": 2.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Richard Pena",
       "abbrev": "R. Pena",
       "ld": 0,
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 6.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 0,
+    "total_ld": 3,
+    "total_still_ld": 2,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,16 +841,16 @@
       0
     ],
     "total_shift_hours": 113.0,
-    "total_hours_worked": 17.6,
+    "total_hours_worked": 25.6,
     "specialists_count": 22,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.06,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.12,
+    "rate_shift": 0.03,
     "hourly_totals": [
       1,
       0,
       0,
-      0,
+      2,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 122,
-    "yesterday_same_time": 8,
-    "last_week_same_time": 3,
+    "yesterday_same_time": 18,
+    "last_week_same_time": 7,
     "last_week_total": 75,
-    "pace_time": "10:15"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -882,7 +882,7 @@
       "jesus ortega": 66,
       "jorge alberto munoz gomez": 202,
       "jorge duvergel": 340,
-      "juan jose ortega": 242,
+      "juan jose ortega": 243,
       "katiria bonilla": 318,
       "lina murillo marin": 127,
       "luis vivas": 253,
@@ -893,11 +893,11 @@
       "reny roca": 100,
       "richard antonio pe\u00f1a": 42,
       "rodriguez, nelson": 546,
-      "ronnie andres martinez chavarria": 155,
+      "ronnie andres martinez chavarria": 156,
       "sebastian cubillos": 56,
-      "valentina libreros alvarez": 68
+      "valentina libreros alvarez": 69
     },
-    "total": 3680,
-    "avg": 160.0
+    "total": 3683,
+    "avg": 160.1
   }
 }
