@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "updated": "2026-10-01T04:39:46.102101",
+  "updated": "2026-10-01T05:39:51.258397",
   "title": "Locked Down",
   "reps": [
     {
@@ -977,11 +977,13 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 154,
-    "pace_time": "04:39"
+    "pace_time": "05:39"
   },
   "mtd_signed": {
-    "by_intaker": {},
-    "total": 0,
-    "avg": 0
+    "by_intaker": {
+      "luis vivas": 1
+    },
+    "total": 1,
+    "avg": 1.0
   }
 }
