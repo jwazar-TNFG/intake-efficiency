@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "updated": "2026-10-01T22:41:50.781431",
+  "updated": "2026-10-01T23:15:03.220053",
   "title": "Locked Down",
   "reps": [
     {
@@ -79,8 +79,8 @@
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 17,
-      "still_ld": 5,
-      "came_in": 12,
+      "still_ld": 4,
+      "came_in": 13,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -119,9 +119,9 @@
       "came_in": 17,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.7,
+      "hours_worked": 15.0,
       "rate": 1.47,
-      "rate_worked": 1.5,
+      "rate_worked": 1.47,
       "hourly": [
         0,
         5,
@@ -335,9 +335,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 0.69,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.44,
-      "rate_worked": 0.46,
+      "rate_worked": 0.44,
       "hourly": [
         0,
         0,
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.7,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -767,7 +767,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.7,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -839,7 +839,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.7,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -907,8 +907,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 184,
-    "total_still_ld": 70,
-    "total_came_in": 113,
+    "total_still_ld": 69,
+    "total_came_in": 114,
     "total_dropped": 1,
     "hourly_came_in": [
       1,
@@ -926,7 +926,7 @@
       10,
       3,
       4,
-      0,
+      1,
       0
     ],
     "hourly_dropped": [
@@ -949,7 +949,7 @@
       0
     ],
     "total_shift_hours": 215.0,
-    "total_hours_worked": 212.9,
+    "total_hours_worked": 215.0,
     "specialists_count": 25,
     "specialists_with_ld": 18,
     "rate_worked": 0.86,
@@ -974,17 +974,17 @@
       0
     ],
     "yesterday_ld": 182,
-    "yesterday_same_time": 177,
+    "yesterday_same_time": 182,
     "last_week_same_time": 154,
     "last_week_total": 154,
-    "pace_time": "22:41"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 9,
-      "daniel stiven valles mu\u00f1oz": 2,
+      "daniel stiven valles mu\u00f1oz": 3,
       "david eduardo juarez": 4,
-      "delvin antonio velasquez castro": 4,
+      "delvin antonio velasquez castro": 5,
       "jasmine cuarezma": 7,
       "jesus ortega": 1,
       "jorge alberto munoz gomez": 7,
@@ -993,15 +993,15 @@
       "katiria bonilla": 5,
       "lina murillo marin": 2,
       "luis vivas": 6,
-      "manuel penaranda": 12,
+      "manuel penaranda": 13,
       "maria jose miranda rodriguez": 1,
       "naryeli silva": 10,
       "orlando plasencia": 9,
       "rodriguez, nelson": 17,
-      "ronnie andres martinez chavarria": 4,
+      "ronnie andres martinez chavarria": 5,
       "valentina libreros alvarez": 5
     },
-    "total": 131,
-    "avg": 6.9
+    "total": 135,
+    "avg": 7.1
   }
 }
