@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "updated": "2026-10-02T03:42:20.875928",
+  "updated": "2026-10-02T05:42:43.862905",
   "title": "Locked Down",
   "reps": [
     {
@@ -975,9 +975,9 @@
     ],
     "yesterday_ld": 187,
     "yesterday_same_time": 1,
-    "last_week_same_time": 0,
+    "last_week_same_time": 1,
     "last_week_total": 153,
-    "pace_time": "03:42"
+    "pace_time": "05:42"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -986,7 +986,7 @@
       "david eduardo juarez": 4,
       "delvin antonio velasquez castro": 5,
       "jasmine cuarezma": 7,
-      "jesus ortega": 1,
+      "jesus ortega": 2,
       "jorge alberto munoz gomez": 7,
       "jorge duvergel": 14,
       "juan jose ortega": 12,
@@ -1001,7 +1001,7 @@
       "ronnie andres martinez chavarria": 5,
       "valentina libreros alvarez": 5
     },
-    "total": 135,
-    "avg": 7.1
+    "total": 136,
+    "avg": 7.2
   }
 }
