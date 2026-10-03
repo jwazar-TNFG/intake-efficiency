@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "updated": "2026-10-03T10:45:59.820097",
+  "updated": "2026-10-03T11:15:07.842727",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 11.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.27,
-      "rate_worked": 1.08,
+      "rate_worked": 0.92,
       "hourly": [
         2,
         1,
@@ -37,6 +37,42 @@
       "end_hour": 19,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 1,
+      "still_ld": 0,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
+      "hourly": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
+      "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -544,42 +580,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 0,
-      "hours_worked": 0,
-      "rate": 0,
-      "rate_worked": 0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": null,
-      "end_hour": null,
-      "is_off": true,
-      "email": "nelsonr@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 0,
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.8,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,15 +798,15 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 3,
+    "total_ld": 4,
     "total_still_ld": 1,
-    "total_came_in": 2,
+    "total_came_in": 3,
     "total_dropped": 0,
     "hourly_came_in": [
       2,
       0,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -841,16 +841,16 @@
       0
     ],
     "total_shift_hours": 106.0,
-    "total_hours_worked": 16.8,
+    "total_hours_worked": 19.2,
     "specialists_count": 22,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.18,
-    "rate_shift": 0.03,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.21,
+    "rate_shift": 0.04,
     "hourly_totals": [
       2,
       1,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 188,
-    "yesterday_same_time": 20,
-    "last_week_same_time": 10,
+    "yesterday_same_time": 27,
+    "last_week_same_time": 18,
     "last_week_total": 120,
-    "pace_time": "10:45"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -886,7 +886,7 @@
       "lina murillo marin": 3,
       "luis vivas": 19,
       "manuel penaranda": 26,
-      "maria jose miranda rodriguez": 9,
+      "maria jose miranda rodriguez": 10,
       "naryeli silva": 16,
       "orlando plasencia": 22,
       "reny roca": 4,
@@ -894,7 +894,7 @@
       "ronnie andres martinez chavarria": 9,
       "valentina libreros alvarez": 8
     },
-    "total": 295,
+    "total": 296,
     "avg": 14.8
   }
 }
