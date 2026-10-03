@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "updated": "2026-10-03T09:45:52.925669",
+  "updated": "2026-10-03T10:15:11.850179",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 11.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.8,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -841,7 +841,7 @@
       0
     ],
     "total_shift_hours": 106.0,
-    "total_hours_worked": 10.8,
+    "total_hours_worked": 13.2,
     "specialists_count": 22,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 188,
-    "yesterday_same_time": 7,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 9,
+    "last_week_same_time": 8,
     "last_week_total": 120,
-    "pace_time": "09:45"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -886,15 +886,15 @@
       "lina murillo marin": 3,
       "luis vivas": 19,
       "manuel penaranda": 26,
-      "maria jose miranda rodriguez": 7,
+      "maria jose miranda rodriguez": 8,
       "naryeli silva": 16,
       "orlando plasencia": 22,
       "reny roca": 4,
-      "rodriguez, nelson": 33,
+      "rodriguez, nelson": 35,
       "ronnie andres martinez chavarria": 9,
       "valentina libreros alvarez": 8
     },
-    "total": 290,
-    "avg": 14.5
+    "total": 293,
+    "avg": 14.7
   }
 }
