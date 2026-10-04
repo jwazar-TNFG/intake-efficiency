@@ -1,22 +1,22 @@
 {
   "date": "2026-10-04",
-  "updated": "2026-10-04T10:48:43.642777",
+  "updated": "2026-10-04T11:15:22.756973",
   "title": "Locked Down",
   "reps": [
     {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
-      "ld": 2,
+      "ld": 3,
       "still_ld": 2,
-      "came_in": 0,
+      "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
-      "rate": 0.2,
-      "rate_worked": 0.71,
+      "hours_worked": 3.3,
+      "rate": 0.3,
+      "rate_worked": 0.92,
       "hourly": [
         1,
-        1,
+        2,
         0,
         0,
         0,
@@ -47,9 +47,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.3,
       "rate": 0.1,
-      "rate_worked": 0.36,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         1,
@@ -76,6 +76,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Delvin Castro",
+      "abbrev": "D. Castro",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 3.3,
+      "rate": 0.1,
+      "rate_worked": 0.31,
+      "hourly": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "dcastro@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Naryeli Silva",
       "abbrev": "N. Silva",
       "ld": 1,
@@ -83,9 +119,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.3,
       "rate": 0.1,
-      "rate_worked": 0.36,
+      "rate_worked": 0.31,
       "hourly": [
         0,
         0,
@@ -145,42 +181,6 @@
       "end_hour": null,
       "is_off": true,
       "email": "chernandez@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Delvin Castro",
-      "abbrev": "D. Castro",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 2.8,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "dcastro@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.8,
+      "hours_worked": 3.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.8,
+      "hours_worked": 3.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.8,
+      "hours_worked": 3.3,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,12 +798,12 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 4,
-    "total_still_ld": 2,
-    "total_came_in": 2,
+    "total_ld": 6,
+    "total_still_ld": 3,
+    "total_came_in": 3,
     "total_dropped": 0,
     "hourly_came_in": [
-      0,
+      1,
       1,
       0,
       1,
@@ -841,16 +841,16 @@
       0
     ],
     "total_shift_hours": 106.0,
-    "total_hours_worked": 19.6,
+    "total_hours_worked": 23.1,
     "specialists_count": 22,
-    "specialists_with_ld": 3,
-    "rate_worked": 0.2,
-    "rate_shift": 0.04,
+    "specialists_with_ld": 4,
+    "rate_worked": 0.26,
+    "rate_shift": 0.06,
     "hourly_totals": [
       1,
-      2,
+      3,
       0,
-      1,
+      2,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 111,
-    "yesterday_same_time": 12,
-    "last_week_same_time": 12,
+    "yesterday_same_time": 17,
+    "last_week_same_time": 15,
     "last_week_total": 82,
-    "pace_time": "10:48"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -887,14 +887,14 @@
       "luis vivas": 19,
       "manuel penaranda": 31,
       "maria jose miranda rodriguez": 22,
-      "naryeli silva": 19,
+      "naryeli silva": 20,
       "orlando plasencia": 22,
       "reny roca": 13,
       "rodriguez, nelson": 52,
       "ronnie andres martinez chavarria": 12,
       "valentina libreros alvarez": 9
     },
-    "total": 376,
-    "avg": 18.8
+    "total": 377,
+    "avg": 18.9
   }
 }
