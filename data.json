@@ -1,8 +1,44 @@
 {
   "date": "2026-10-04",
-  "updated": "2026-10-04T09:15:16.553492",
+  "updated": "2026-10-04T09:48:37.671143",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "David Juarez",
+      "abbrev": "D. Juarez",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 1.8,
+      "rate": 0.1,
+      "rate_worked": 0.55,
+      "hourly": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "djuarez@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
@@ -47,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -76,42 +112,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "David Juarez",
-      "abbrev": "D. Juarez",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.2,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "djuarez@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Delvin Castro",
       "abbrev": "D. Castro",
       "ld": 0,
@@ -119,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,7 +515,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 1.2,
+      "hours_worked": 1.8,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 0,
-    "total_still_ld": 0,
+    "total_ld": 1,
+    "total_still_ld": 1,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,13 +841,13 @@
       0
     ],
     "total_shift_hours": 106.0,
-    "total_hours_worked": 8.4,
+    "total_hours_worked": 12.6,
     "specialists_count": 22,
-    "specialists_with_ld": 0,
-    "rate_worked": 0.0,
-    "rate_shift": 0.0,
+    "specialists_with_ld": 1,
+    "rate_worked": 0.08,
+    "rate_shift": 0.01,
     "hourly_totals": [
-      0,
+      1,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 111,
-    "yesterday_same_time": 4,
+    "yesterday_same_time": 5,
     "last_week_same_time": 1,
     "last_week_total": 82,
-    "pace_time": "09:15"
+    "pace_time": "09:48"
   },
   "mtd_signed": {
     "by_intaker": {
