@@ -1,14 +1,14 @@
 {
   "date": "2026-10-06",
-  "updated": "2026-10-06T23:15:29.002592",
+  "updated": "2026-10-06T23:56:19.418824",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
       "ld": 23,
-      "still_ld": 13,
-      "came_in": 10,
+      "still_ld": 12,
+      "came_in": 11,
       "dropped": 0,
       "hours": 10,
       "hours_worked": 10,
@@ -943,8 +943,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 195,
-    "total_still_ld": 90,
-    "total_came_in": 105,
+    "total_still_ld": 89,
+    "total_came_in": 106,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -954,7 +954,7 @@
       11,
       13,
       12,
-      3,
+      4,
       9,
       5,
       8,
@@ -1013,7 +1013,7 @@
     "yesterday_same_time": 235,
     "last_week_same_time": 181,
     "last_week_total": 181,
-    "pace_time": "23:15"
+    "pace_time": "23:56"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1028,7 +1028,7 @@
       "juan jose ortega": 56,
       "katiria bonilla": 43,
       "lina murillo marin": 15,
-      "luis vivas": 51,
+      "luis vivas": 52,
       "manuel penaranda": 63,
       "maria jose miranda rodriguez": 33,
       "naryeli silva": 37,
@@ -1040,7 +1040,7 @@
       "sebastian cubillos": 7,
       "valentina libreros alvarez": 22
     },
-    "total": 830,
-    "avg": 37.7
+    "total": 831,
+    "avg": 37.8
   }
 }
