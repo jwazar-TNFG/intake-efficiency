@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "updated": "2026-10-07T08:15:24.744692",
+  "updated": "2026-10-07T08:57:24.668674",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0.3,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -82,7 +82,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -118,7 +118,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -154,7 +154,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -190,7 +190,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -226,8 +226,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 10.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -262,7 +262,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 4,
+      "hours": 4.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -334,8 +334,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 10.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -370,7 +370,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -406,7 +406,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -442,8 +442,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
-      "hours_worked": 0.3,
+      "hours": 9.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -478,8 +478,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 10.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -514,8 +514,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 10.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -586,10 +586,10 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 9.0,
+      "hours_worked": 0,
       "rate": 0.0,
-      "rate_worked": 0.0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -609,8 +609,8 @@
         0,
         0
       ],
-      "start_hour": 8,
-      "end_hour": 18,
+      "start_hour": 14,
+      "end_hour": 23,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
       "mtd_signed": 0
@@ -622,8 +622,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 10,
-      "hours_worked": 0.3,
+      "hours": 10.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -658,8 +658,8 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 15,
-      "hours_worked": 0.3,
+      "hours": 15.0,
+      "hours_worked": 1.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -694,7 +694,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -730,10 +730,10 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
-      "hours_worked": 0.3,
-      "rate": 0.0,
-      "rate_worked": 0.0,
+      "hours": 0,
+      "hours_worked": 0,
+      "rate": 0,
+      "rate_worked": 0,
       "hourly": [
         0,
         0,
@@ -753,9 +753,9 @@
         0,
         0
       ],
-      "start_hour": 8,
-      "end_hour": 17,
-      "is_off": false,
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
       "email": "rroca@thenofaultgroup.com",
       "mtd_signed": 0
     },
@@ -802,7 +802,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -838,7 +838,7 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 9.0,
       "hours_worked": 0,
       "rate": 0.0,
       "rate_worked": 0,
@@ -874,9 +874,9 @@
       "still_ld": 0,
       "came_in": 0,
       "dropped": 0,
-      "hours": 9,
+      "hours": 0,
       "hours_worked": 0,
-      "rate": 0.0,
+      "rate": 0,
       "rate_worked": 0,
       "hourly": [
         0,
@@ -897,9 +897,9 @@
         0,
         0
       ],
-      "start_hour": 12,
-      "end_hour": 21,
-      "is_off": false,
+      "start_hour": null,
+      "end_hour": null,
+      "is_off": true,
       "email": "vlibreros@thenofaultgroup.com",
       "mtd_signed": 0
     }
@@ -948,8 +948,8 @@
       0,
       0
     ],
-    "total_shift_hours": 233,
-    "total_hours_worked": 3.0,
+    "total_shift_hours": 214.0,
+    "total_hours_worked": 8.0,
     "specialists_count": 25,
     "specialists_with_ld": 0,
     "rate_worked": 0.0,
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 198,
-    "yesterday_same_time": 7,
-    "last_week_same_time": 4,
+    "yesterday_same_time": 11,
+    "last_week_same_time": 7,
     "last_week_total": 184,
-    "pace_time": "08:15"
+    "pace_time": "08:57"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -989,7 +989,7 @@
       "jesus ortega": 11,
       "jorge alberto munoz gomez": 33,
       "jorge duvergel": 69,
-      "juan jose ortega": 56,
+      "juan jose ortega": 57,
       "katiria bonilla": 43,
       "lina murillo marin": 15,
       "luis vivas": 52,
@@ -1004,7 +1004,7 @@
       "sebastian cubillos": 7,
       "valentina libreros alvarez": 22
     },
-    "total": 832,
-    "avg": 37.8
+    "total": 833,
+    "avg": 37.9
   }
 }
