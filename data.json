@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "updated": "2026-10-07T06:57:06.529930",
+  "updated": "2026-10-07T07:57:15.658439",
   "title": "Locked Down",
   "reps": [
     {
@@ -974,10 +974,10 @@
       0
     ],
     "yesterday_ld": 198,
-    "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "yesterday_same_time": 5,
+    "last_week_same_time": 4,
     "last_week_total": 184,
-    "pace_time": "06:57"
+    "pace_time": "07:57"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -994,7 +994,7 @@
       "lina murillo marin": 15,
       "luis vivas": 52,
       "manuel penaranda": 63,
-      "maria jose miranda rodriguez": 33,
+      "maria jose miranda rodriguez": 34,
       "naryeli silva": 37,
       "orlando plasencia": 43,
       "randy roca ramirez": 5,
@@ -1004,7 +1004,7 @@
       "sebastian cubillos": 7,
       "valentina libreros alvarez": 22
     },
-    "total": 831,
+    "total": 832,
     "avg": 37.8
   }
 }
