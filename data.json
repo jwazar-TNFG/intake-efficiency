@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "updated": "2026-10-11T10:15:07.540614",
+  "updated": "2026-10-11T11:15:07.386480",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Ronnie Chavarria",
       "abbrev": "R. Chavarria",
-      "ld": 1,
-      "still_ld": 1,
+      "ld": 2,
+      "still_ld": 2,
       "came_in": 0,
       "dropped": 0,
       "hours": 0,
@@ -15,7 +15,7 @@
       "rate": 0,
       "rate_worked": 0,
       "hourly": [
-        0,
+        1,
         0,
         0,
         0,
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.2,
+      "hours_worked": 3.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -798,8 +798,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 1,
+    "total_ld": 2,
+    "total_still_ld": 2,
     "total_came_in": 0,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -841,13 +841,13 @@
       0
     ],
     "total_shift_hours": 76,
-    "total_hours_worked": 8.8,
+    "total_hours_worked": 12.8,
     "specialists_count": 22,
     "specialists_with_ld": 1,
-    "rate_worked": 0.11,
-    "rate_shift": 0.01,
+    "rate_worked": 0.16,
+    "rate_shift": 0.03,
     "hourly_totals": [
-      0,
+      1,
       0,
       0,
       0,
@@ -866,10 +866,10 @@
       0
     ],
     "yesterday_ld": 110,
-    "yesterday_same_time": 11,
-    "last_week_same_time": 7,
+    "yesterday_same_time": 17,
+    "last_week_same_time": 13,
     "last_week_total": 89,
-    "pace_time": "10:15"
+    "pace_time": "11:15"
   },
   "mtd_signed": {
     "by_intaker": {
