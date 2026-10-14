@@ -1,19 +1,19 @@
 {
   "date": "2026-10-13",
-  "updated": "2026-10-13T22:15:05.499589",
+  "updated": "2026-10-13T23:15:11.230061",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Luis Vivas",
       "abbrev": "L. Vivas",
-      "ld": 11,
-      "still_ld": 6,
+      "ld": 12,
+      "still_ld": 7,
       "came_in": 5,
       "dropped": 0,
       "hours": 4.0,
       "hours_worked": 4.0,
-      "rate": 2.75,
-      "rate_worked": 2.75,
+      "rate": 3.0,
+      "rate_worked": 3.0,
       "hourly": [
         0,
         0,
@@ -29,7 +29,7 @@
         2,
         3,
         1,
-        0,
+        1,
         0,
         0
       ],
@@ -42,14 +42,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 33,
-      "still_ld": 5,
-      "came_in": 28,
+      "ld": 35,
+      "still_ld": 3,
+      "came_in": 32,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
-      "rate": 2.2,
-      "rate_worked": 2.32,
+      "hours_worked": 15.0,
+      "rate": 2.33,
+      "rate_worked": 2.33,
       "hourly": [
         0,
         0,
@@ -66,7 +66,7 @@
         2,
         4,
         6,
-        0,
+        2,
         0
       ],
       "start_hour": 8,
@@ -78,14 +78,14 @@
     {
       "name": "Jorge Duvergel",
       "abbrev": "J. Duvergel",
-      "ld": 21,
-      "still_ld": 8,
+      "ld": 23,
+      "still_ld": 10,
       "came_in": 12,
       "dropped": 1,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 2.1,
-      "rate_worked": 2.1,
+      "rate": 2.3,
+      "rate_worked": 2.3,
       "hourly": [
         0,
         0,
@@ -101,7 +101,7 @@
         2,
         0,
         4,
-        2,
+        4,
         0,
         0
       ],
@@ -155,9 +155,9 @@
       "came_in": 10,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 1.44,
-      "rate_worked": 1.58,
+      "rate_worked": 1.44,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.22,
-      "rate_worked": 0.24,
+      "rate_worked": 0.22,
       "hourly": [
         0,
         0,
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -875,7 +875,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -911,7 +911,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.2,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -942,9 +942,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 171,
-    "total_still_ld": 55,
-    "total_came_in": 115,
+    "total_ld": 176,
+    "total_still_ld": 56,
+    "total_came_in": 119,
     "total_dropped": 1,
     "hourly_came_in": [
       2,
@@ -961,8 +961,8 @@
       10,
       6,
       4,
-      6,
-      6,
+      8,
+      8,
       0
     ],
     "hourly_dropped": [
@@ -985,11 +985,11 @@
       0
     ],
     "total_shift_hours": 199.0,
-    "total_hours_worked": 194.2,
+    "total_hours_worked": 199.0,
     "specialists_count": 26,
     "specialists_with_ld": 19,
     "rate_worked": 0.88,
-    "rate_shift": 0.86,
+    "rate_shift": 0.88,
     "hourly_totals": [
       2,
       3,
@@ -1005,15 +1005,15 @@
       18,
       12,
       10,
-      10,
-      0,
+      13,
+      2,
       0
     ],
     "yesterday_ld": 238,
-    "yesterday_same_time": 234,
-    "last_week_same_time": 195,
+    "yesterday_same_time": 238,
+    "last_week_same_time": 196,
     "last_week_total": 196,
-    "pace_time": "22:15"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1029,19 +1029,19 @@
       "juan jose ortega": 151,
       "katiria bonilla": 126,
       "lina murillo marin": 30,
-      "luis vivas": 109,
+      "luis vivas": 113,
       "manuel penaranda": 108,
       "maria jose miranda rodriguez": 69,
       "naryeli silva": 74,
       "orlando plasencia": 99,
       "randy roca ramirez": 26,
       "reny roca": 56,
-      "rodriguez, nelson": 253,
+      "rodriguez, nelson": 259,
       "ronnie andres martinez chavarria": 82,
       "sebastian cubillos": 24,
       "valentina libreros alvarez": 29
     },
-    "total": 1851,
-    "avg": 80.5
+    "total": 1861,
+    "avg": 80.9
   }
 }
