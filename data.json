@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "updated": "2026-10-23T00:57:11.183686",
+  "updated": "2026-10-23T02:57:28.354243",
   "title": "Locked Down",
   "reps": [
     {
@@ -1011,9 +1011,9 @@
     ],
     "yesterday_ld": 170,
     "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "last_week_same_time": 4,
     "last_week_total": 166,
-    "pace_time": "00:57"
+    "pace_time": "02:57"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1022,7 +1022,7 @@
       "daniel stiven valles mu\u00f1oz": 63,
       "david eduardo juarez": 102,
       "delvin antonio velasquez castro": 66,
-      "jasmine cuarezma": 226,
+      "jasmine cuarezma": 227,
       "jesus ortega": 66,
       "jorge alberto munoz gomez": 70,
       "jorge duvergel": 289,
@@ -1039,9 +1039,9 @@
       "rodriguez, nelson": 489,
       "ronnie andres martinez chavarria": 167,
       "sebastian cubillos": 46,
-      "valentina libreros alvarez": 54
+      "valentina libreros alvarez": 55
     },
-    "total": 3336,
-    "avg": 145.0
+    "total": 3338,
+    "avg": 145.1
   }
 }
