@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated": "2026-10-24T00:02:49.405763",
+  "updated": "2026-10-24T02:03:06.811796",
   "title": "Locked Down",
   "reps": [
     {
@@ -905,12 +905,12 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 128,
-    "pace_time": "00:02"
+    "pace_time": "02:03"
   },
   "mtd_signed": {
     "by_intaker": {
       "adriano guedes": 1,
-      "cindy del carmen hern\u00e1ndez zapata": 186,
+      "cindy del carmen hern\u00e1ndez zapata": 187,
       "daniel stiven valles mu\u00f1oz": 68,
       "david eduardo juarez": 109,
       "delvin antonio velasquez castro": 72,
@@ -933,7 +933,7 @@
       "sebastian cubillos": 46,
       "valentina libreros alvarez": 55
     },
-    "total": 3477,
+    "total": 3478,
     "avg": 151.2
   }
 }
