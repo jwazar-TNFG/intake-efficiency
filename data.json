@@ -1,8 +1,44 @@
 {
   "date": "2026-10-24",
-  "updated": "2026-10-24T10:04:19.446298",
+  "updated": "2026-10-24T11:04:24.276675",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Jesus Ortega",
+      "abbrev": "Jesus Ortega",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 3.1,
+      "rate": 0.1,
+      "rate_worked": 0.33,
+      "hourly": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "jortega@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
@@ -83,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -217,42 +253,6 @@
       "end_hour": null,
       "is_off": true,
       "email": "jcuarezma@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Jesus Ortega",
-      "abbrev": "Jesus Ortega",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 2.1,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "jortega@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -659,7 +659,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 2.1,
+      "hours_worked": 3.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -834,8 +834,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 0,
+    "total_ld": 2,
+    "total_still_ld": 1,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -877,16 +877,16 @@
       0
     ],
     "total_shift_hours": 114.0,
-    "total_hours_worked": 14.7,
+    "total_hours_worked": 21.7,
     "specialists_count": 23,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.07,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.09,
+    "rate_shift": 0.02,
     "hourly_totals": [
       0,
       1,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -902,16 +902,16 @@
       0
     ],
     "yesterday_ld": 163,
-    "yesterday_same_time": 23,
-    "last_week_same_time": 6,
+    "yesterday_same_time": 37,
+    "last_week_same_time": 14,
     "last_week_total": 128,
-    "pace_time": "10:04"
+    "pace_time": "11:04"
   },
   "mtd_signed": {
     "by_intaker": {
       "adriano guedes": 1,
       "cindy del carmen hern\u00e1ndez zapata": 187,
-      "daniel stiven valles mu\u00f1oz": 68,
+      "daniel stiven valles mu\u00f1oz": 69,
       "david eduardo juarez": 109,
       "delvin antonio velasquez castro": 72,
       "jasmine cuarezma": 232,
@@ -922,18 +922,18 @@
       "katiria bonilla": 264,
       "lina murillo marin": 79,
       "luis vivas": 223,
-      "manuel penaranda": 168,
+      "manuel penaranda": 170,
       "maria jose miranda rodriguez": 133,
       "naryeli silva": 112,
       "orlando plasencia": 195,
       "randy roca ramirez": 53,
       "reny roca": 112,
-      "rodriguez, nelson": 490,
+      "rodriguez, nelson": 491,
       "ronnie andres martinez chavarria": 179,
       "sebastian cubillos": 46,
       "valentina libreros alvarez": 55
     },
-    "total": 3478,
-    "avg": 151.2
+    "total": 3482,
+    "avg": 151.4
   }
 }
