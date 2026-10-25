@@ -1,25 +1,25 @@
 {
   "date": "2026-10-25",
-  "updated": "2026-10-25T11:15:03.708154",
+  "updated": "2026-10-25T12:15:03.621999",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Reny Roca",
       "abbrev": "R. Roca",
-      "ld": 5,
-      "still_ld": 4,
-      "came_in": 1,
+      "ld": 9,
+      "still_ld": 7,
+      "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 0,
-      "rate": 0.56,
+      "rate": 1.0,
       "rate_worked": 0,
       "hourly": [
         0,
         3,
         0,
-        2,
-        0,
+        3,
+        3,
         0,
         0,
         0,
@@ -79,8 +79,8 @@
       "name": "Ronnie Chavarria",
       "abbrev": "R. Chavarria",
       "ld": 5,
-      "still_ld": 3,
-      "came_in": 2,
+      "still_ld": 2,
+      "came_in": 3,
       "dropped": 0,
       "hours": -3.0,
       "hours_worked": 0,
@@ -191,7 +191,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +263,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 3.2,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 3.2,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -731,7 +731,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 3.2,
+      "hours_worked": 4.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -803,9 +803,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -834,15 +834,15 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 13,
-    "total_still_ld": 8,
-    "total_came_in": 5,
+    "total_ld": 17,
+    "total_still_ld": 10,
+    "total_came_in": 7,
     "total_dropped": 0,
     "hourly_came_in": [
       2,
-      1,
-      0,
       2,
+      0,
+      3,
       0,
       0,
       0,
@@ -877,17 +877,17 @@
       0
     ],
     "total_shift_hours": 79.0,
-    "total_hours_worked": 21.8,
+    "total_hours_worked": 26.0,
     "specialists_count": 23,
     "specialists_with_ld": 4,
-    "rate_worked": 0.6,
-    "rate_shift": 0.16,
+    "rate_worked": 0.65,
+    "rate_shift": 0.22,
     "hourly_totals": [
       2,
       4,
       1,
-      4,
-      0,
+      5,
+      3,
       0,
       0,
       0,
@@ -902,10 +902,10 @@
       0
     ],
     "yesterday_ld": 95,
-    "yesterday_same_time": 11,
-    "last_week_same_time": 12,
+    "yesterday_same_time": 22,
+    "last_week_same_time": 26,
     "last_week_total": 98,
-    "pace_time": "11:15"
+    "pace_time": "12:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -918,7 +918,7 @@
       "jesus ortega": 72,
       "jorge alberto munoz gomez": 70,
       "jorge duvergel": 314,
-      "juan jose ortega": 253,
+      "juan jose ortega": 254,
       "katiria bonilla": 264,
       "lina murillo marin": 80,
       "luis vivas": 224,
@@ -928,12 +928,12 @@
       "orlando plasencia": 200,
       "randy roca ramirez": 58,
       "reny roca": 115,
-      "rodriguez, nelson": 500,
-      "ronnie andres martinez chavarria": 179,
+      "rodriguez, nelson": 502,
+      "ronnie andres martinez chavarria": 182,
       "sebastian cubillos": 46,
       "valentina libreros alvarez": 57
     },
-    "total": 3548,
-    "avg": 154.3
+    "total": 3554,
+    "avg": 154.5
   }
 }
