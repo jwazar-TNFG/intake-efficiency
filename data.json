@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated": "2026-10-24T19:15:13.608046",
+  "updated": "2026-10-24T20:15:03.191669",
   "title": "Locked Down",
   "reps": [
     {
@@ -78,14 +78,14 @@
     {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
-      "ld": 6,
-      "still_ld": 5,
-      "came_in": 1,
+      "ld": 7,
+      "still_ld": 2,
+      "came_in": 5,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
-      "rate": 0.67,
-      "rate_worked": 1.14,
+      "hours_worked": 6.2,
+      "rate": 0.78,
+      "rate_worked": 1.12,
       "hourly": [
         0,
         0,
@@ -97,7 +97,7 @@
         0,
         1,
         3,
-        0,
+        1,
         0,
         0,
         0,
@@ -109,6 +109,42 @@
       "end_hour": 23,
       "is_off": false,
       "email": "djuarez@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Juan Ortega",
+      "abbrev": "Juan Ortega",
+      "ld": 6,
+      "still_ld": 4,
+      "came_in": 2,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 6.2,
+      "rate": 0.67,
+      "rate_worked": 0.96,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "jjortega@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -148,42 +184,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Juan Ortega",
-      "abbrev": "Juan Ortega",
-      "ld": 5,
-      "still_ld": 3,
-      "came_in": 2,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 5.2,
-      "rate": 0.56,
-      "rate_worked": 0.95,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Valentina Liberos",
       "abbrev": "V. Liberos",
       "ld": 4,
@@ -191,9 +191,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.2,
+      "hours_worked": 8.2,
       "rate": 0.44,
-      "rate_worked": 0.55,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
+      "hours_worked": 6.2,
       "rate": 0.33,
-      "rate_worked": 0.57,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -803,7 +803,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 5.2,
+      "hours_worked": 6.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -834,9 +834,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 71,
-    "total_still_ld": 38,
-    "total_came_in": 33,
+    "total_ld": 73,
+    "total_still_ld": 36,
+    "total_came_in": 37,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -845,10 +845,10 @@
       4,
       2,
       6,
-      5,
+      6,
       3,
       6,
-      4,
+      7,
       2,
       0,
       0,
@@ -877,11 +877,11 @@
       0
     ],
     "total_shift_hours": 114.0,
-    "total_hours_worked": 97.0,
+    "total_hours_worked": 102.0,
     "specialists_count": 23,
     "specialists_with_ld": 12,
-    "rate_worked": 0.73,
-    "rate_shift": 0.62,
+    "rate_worked": 0.72,
+    "rate_shift": 0.64,
     "hourly_totals": [
       0,
       1,
@@ -893,8 +893,8 @@
       3,
       12,
       14,
-      3,
-      0,
+      4,
+      1,
       0,
       0,
       0,
@@ -902,10 +902,10 @@
       0
     ],
     "yesterday_ld": 163,
-    "yesterday_same_time": 145,
-    "last_week_same_time": 108,
+    "yesterday_same_time": 150,
+    "last_week_same_time": 115,
     "last_week_total": 128,
-    "pace_time": "19:15"
+    "pace_time": "20:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -917,7 +917,7 @@
       "jasmine cuarezma": 232,
       "jesus ortega": 70,
       "jorge alberto munoz gomez": 70,
-      "jorge duvergel": 312,
+      "jorge duvergel": 314,
       "juan jose ortega": 252,
       "katiria bonilla": 264,
       "lina murillo marin": 80,
@@ -925,7 +925,7 @@
       "manuel penaranda": 177,
       "maria jose miranda rodriguez": 133,
       "naryeli silva": 114,
-      "orlando plasencia": 196,
+      "orlando plasencia": 198,
       "randy roca ramirez": 58,
       "reny roca": 113,
       "rodriguez, nelson": 500,
@@ -933,7 +933,7 @@
       "sebastian cubillos": 46,
       "valentina libreros alvarez": 57
     },
-    "total": 3524,
-    "avg": 153.2
+    "total": 3528,
+    "avg": 153.4
   }
 }
