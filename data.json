@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "updated": "2026-10-26T05:09:44.471991",
+  "updated": "2026-10-26T07:09:58.002803",
   "title": "Locked Down",
   "reps": [
     {
@@ -1010,10 +1010,10 @@
       0
     ],
     "yesterday_ld": 91,
-    "yesterday_same_time": 0,
-    "last_week_same_time": 0,
+    "yesterday_same_time": 2,
+    "last_week_same_time": 1,
     "last_week_total": 252,
-    "pace_time": "05:09"
+    "pace_time": "07:09"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -1033,7 +1033,7 @@
       "manuel penaranda": 177,
       "maria jose miranda rodriguez": 133,
       "naryeli silva": 115,
-      "orlando plasencia": 201,
+      "orlando plasencia": 202,
       "randy roca ramirez": 60,
       "reny roca": 130,
       "rodriguez, nelson": 512,
@@ -1041,7 +1041,7 @@
       "sebastian cubillos": 49,
       "valentina libreros alvarez": 58
     },
-    "total": 3608,
+    "total": 3609,
     "avg": 156.9
   }
 }
