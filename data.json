@@ -1,21 +1,21 @@
 {
   "date": "2026-10-30",
-  "updated": "2026-10-30T09:24:46.966947",
+  "updated": "2026-10-30T10:15:08.592433",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
-      "ld": 1,
-      "still_ld": 1,
-      "came_in": 0,
+      "ld": 5,
+      "still_ld": 4,
+      "came_in": 1,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
-      "rate": 0.1,
-      "rate_worked": 0.71,
+      "hours_worked": 2.2,
+      "rate": 0.5,
+      "rate_worked": 2.22,
       "hourly": [
-        0,
+        4,
         0,
         0,
         0,
@@ -37,6 +37,42 @@
       "end_hour": 18,
       "is_off": false,
       "email": "mmiranda@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Manny Penaranda",
+      "abbrev": "M. Penaranda",
+      "ld": 1,
+      "still_ld": 1,
+      "came_in": 0,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 2.2,
+      "rate": 0.1,
+      "rate_worked": 0.44,
+      "hourly": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "mpenaranda@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -119,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -191,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -263,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -400,42 +436,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Manny Penaranda",
-      "abbrev": "M. Penaranda",
-      "ld": 0,
-      "still_ld": 0,
-      "came_in": 0,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 1.4,
-      "rate": 0.0,
-      "rate_worked": 0.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Naryeli Silva",
       "abbrev": "N. Silva",
       "ld": 0,
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -587,7 +587,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.4,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -726,9 +726,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 1,
-    "total_still_ld": 1,
-    "total_came_in": 0,
+    "total_ld": 6,
+    "total_still_ld": 5,
+    "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -769,15 +769,15 @@
       0
     ],
     "total_shift_hours": 155.0,
-    "total_hours_worked": 13.4,
+    "total_hours_worked": 22.4,
     "specialists_count": 20,
-    "specialists_with_ld": 1,
-    "rate_worked": 0.07,
-    "rate_shift": 0.01,
+    "specialists_with_ld": 2,
+    "rate_worked": 0.27,
+    "rate_shift": 0.04,
     "hourly_totals": [
+      4,
       0,
-      0,
-      0,
+      1,
       0,
       0,
       0,
@@ -794,10 +794,10 @@
       0
     ],
     "yesterday_ld": 223,
-    "yesterday_same_time": 9,
-    "last_week_same_time": 19,
+    "yesterday_same_time": 19,
+    "last_week_same_time": 24,
     "last_week_total": 163,
-    "pace_time": "09:24"
+    "pace_time": "10:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -806,7 +806,7 @@
       "daniel stiven valles mu\u00f1oz": 90,
       "david eduardo juarez": 149,
       "delvin antonio velasquez castro": 102,
-      "jasmine cuarezma": 299,
+      "jasmine cuarezma": 301,
       "jesus ortega": 93,
       "jorge alberto munoz gomez": 70,
       "jorge duvergel": 388,
@@ -815,17 +815,17 @@
       "lina murillo marin": 112,
       "luis vivas": 260,
       "manuel penaranda": 226,
-      "maria jose miranda rodriguez": 169,
+      "maria jose miranda rodriguez": 170,
       "naryeli silva": 138,
       "orlando plasencia": 250,
       "randy roca ramirez": 75,
       "reny roca": 149,
-      "rodriguez, nelson": 645,
+      "rodriguez, nelson": 646,
       "ronnie andres martinez chavarria": 226,
       "sebastian cubillos": 69,
       "valentina libreros alvarez": 67
     },
-    "total": 4492,
-    "avg": 195.3
+    "total": 4496,
+    "avg": 195.5
   }
 }
