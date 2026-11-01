@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "updated": "2026-11-01T03:30:24.278964",
+  "updated": "2026-11-01T05:30:46.423982",
   "title": "Locked Down",
   "reps": [
     {
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.5,
+      "hours_worked": 3.5,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 83.0,
-    "total_hours_worked": 1.5,
+    "total_hours_worked": 3.5,
     "specialists_count": 20,
     "specialists_with_ld": 1,
-    "rate_worked": 0.67,
+    "rate_worked": 0.29,
     "rate_shift": 0.01,
     "hourly_totals": [
       0,
@@ -797,7 +797,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 91,
-    "pace_time": "03:30"
+    "pace_time": "05:30"
   },
   "mtd_signed": {
     "by_intaker": {},
