@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "updated": "2026-11-01T08:15:10.605869",
+  "updated": "2026-11-01T09:15:02.275062",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,7 +47,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -155,7 +155,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.2,
+      "hours_worked": 7.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,7 +623,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.2,
+      "hours_worked": 1.2,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 83.0,
-    "total_hours_worked": 7.0,
+    "total_hours_worked": 12.0,
     "specialists_count": 20,
     "specialists_with_ld": 1,
-    "rate_worked": 0.14,
+    "rate_worked": 0.08,
     "rate_shift": 0.01,
     "hourly_totals": [
       0,
@@ -795,13 +795,15 @@
     ],
     "yesterday_ld": 92,
     "yesterday_same_time": 1,
-    "last_week_same_time": 4,
+    "last_week_same_time": 8,
     "last_week_total": 91,
-    "pace_time": "08:15"
+    "pace_time": "09:15"
   },
   "mtd_signed": {
-    "by_intaker": {},
-    "total": 0,
-    "avg": 0
+    "by_intaker": {
+      "randy roca ramirez": 1
+    },
+    "total": 1,
+    "avg": 1.0
   }
 }
