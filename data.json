@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "updated": "2026-11-01T20:32:35.203995",
+  "updated": "2026-11-01T21:32:46.988520",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 9,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.5,
+      "hours_worked": 7.5,
       "rate": 1.56,
-      "rate_worked": 2.14,
+      "rate_worked": 1.86,
       "hourly": [
         0,
         0,
@@ -83,9 +83,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.5,
+      "hours_worked": 9.0,
       "rate": 1.11,
-      "rate_worked": 1.17,
+      "rate_worked": 1.11,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 6.5,
+      "hours_worked": 7.5,
       "rate": 0.78,
-      "rate_worked": 1.07,
+      "rate_worked": 0.93,
       "hourly": [
         0,
         0,
@@ -217,6 +217,42 @@
       "end_hour": 23,
       "is_off": false,
       "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Sebastian Cubillos",
+      "abbrev": "S. Cubillos",
+      "ld": 7,
+      "still_ld": 4,
+      "came_in": 3,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 7.5,
+      "rate": 0.78,
+      "rate_worked": 0.93,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "scubillos@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -253,42 +289,6 @@
       "end_hour": 18,
       "is_off": false,
       "email": "dcastro@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Sebastian Cubillos",
-      "abbrev": "S. Cubillos",
-      "ld": 6,
-      "still_ld": 3,
-      "came_in": 3,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 6.5,
-      "rate": 0.67,
-      "rate_worked": 0.92,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        1,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "scubillos@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 101,
-    "total_still_ld": 51,
+    "total_ld": 102,
+    "total_still_ld": 52,
     "total_came_in": 50,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 83.0,
-    "total_hours_worked": 75.0,
+    "total_hours_worked": 78.5,
     "specialists_count": 20,
     "specialists_with_ld": 13,
-    "rate_worked": 1.35,
-    "rate_shift": 1.22,
+    "rate_worked": 1.3,
+    "rate_shift": 1.23,
     "hourly_totals": [
       0,
       0,
@@ -788,16 +788,16 @@
       7,
       8,
       6,
-      0,
+      1,
       0,
       0,
       0
     ],
     "yesterday_ld": 92,
-    "yesterday_same_time": 86,
-    "last_week_same_time": 75,
+    "yesterday_same_time": 88,
+    "last_week_same_time": 87,
     "last_week_total": 91,
-    "pace_time": "20:32"
+    "pace_time": "21:32"
   },
   "mtd_signed": {
     "by_intaker": {
