@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated": "2026-11-03T00:36:18.754982",
+  "updated": "2026-11-03T02:36:31.418945",
   "title": "Locked Down",
   "reps": [
     {
@@ -795,9 +795,9 @@
     ],
     "yesterday_ld": 205,
     "yesterday_same_time": 0,
-    "last_week_same_time": 4,
+    "last_week_same_time": 6,
     "last_week_total": 212,
-    "pace_time": "00:36"
+    "pace_time": "02:36"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -820,10 +820,10 @@
       "reny roca": 14,
       "rodriguez, nelson": 42,
       "ronnie andres martinez chavarria": 20,
-      "sebastian cubillos": 8,
+      "sebastian cubillos": 9,
       "valentina libreros alvarez": 5
     },
-    "total": 228,
+    "total": 229,
     "avg": 10.9
   }
 }
