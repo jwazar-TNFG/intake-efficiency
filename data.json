@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated": "2026-11-03T22:15:07.279221",
+  "updated": "2026-11-03T22:38:47.835587",
   "title": "Locked Down",
   "reps": [
     {
@@ -114,14 +114,14 @@
     {
       "name": "Juan Ortega",
       "abbrev": "Juan Ortega",
-      "ld": 19,
-      "still_ld": 11,
+      "ld": 20,
+      "still_ld": 12,
       "came_in": 8,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
-      "rate": 2.11,
-      "rate_worked": 2.3,
+      "hours_worked": 8.7,
+      "rate": 2.22,
+      "rate_worked": 2.31,
       "hourly": [
         0,
         0,
@@ -138,7 +138,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0
       ],
       "start_hour": 14,
@@ -191,9 +191,9 @@
       "came_in": 25,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 14.7,
       "rate": 1.93,
-      "rate_worked": 2.04,
+      "rate_worked": 1.98,
       "hourly": [
         0,
         0,
@@ -223,8 +223,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 16,
-      "still_ld": 10,
-      "came_in": 6,
+      "still_ld": 9,
+      "came_in": 7,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -294,14 +294,14 @@
     {
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
-      "ld": 16,
-      "still_ld": 3,
+      "ld": 17,
+      "still_ld": 4,
       "came_in": 13,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 1.6,
-      "rate_worked": 1.6,
+      "rate": 1.7,
+      "rate_worked": 1.7,
       "hourly": [
         0,
         0,
@@ -317,7 +317,7 @@
         0,
         1,
         0,
-        0,
+        1,
         0,
         0
       ],
@@ -335,9 +335,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.7,
       "rate": 1.22,
-      "rate_worked": 1.33,
+      "rate_worked": 1.27,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.7,
       "rate": 0.56,
-      "rate_worked": 0.61,
+      "rate_worked": 0.58,
       "hourly": [
         0,
         0,
@@ -726,9 +726,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 247,
-    "total_still_ld": 102,
-    "total_came_in": 139,
+    "total_ld": 249,
+    "total_still_ld": 103,
+    "total_came_in": 140,
     "total_dropped": 6,
     "hourly_came_in": [
       1,
@@ -744,7 +744,7 @@
       7,
       5,
       9,
-      4,
+      5,
       1,
       0,
       0
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 159.0,
-    "total_hours_worked": 155.8,
+    "total_hours_worked": 157.8,
     "specialists_count": 20,
     "specialists_with_ld": 17,
-    "rate_worked": 1.59,
-    "rate_shift": 1.55,
+    "rate_worked": 1.58,
+    "rate_shift": 1.57,
     "hourly_totals": [
       1,
       1,
@@ -789,15 +789,15 @@
       16,
       17,
       11,
-      7,
-      2,
+      8,
+      3,
       4
     ],
     "yesterday_ld": 202,
     "yesterday_same_time": 200,
-    "last_week_same_time": 206,
+    "last_week_same_time": 207,
     "last_week_total": 212,
-    "pace_time": "22:15"
+    "pace_time": "22:38"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -808,7 +808,7 @@
       "jasmine cuarezma": 24,
       "jesus ortega": 7,
       "jorge duvergel": 43,
-      "juan jose ortega": 37,
+      "juan jose ortega": 38,
       "katiria bonilla": 33,
       "lina murillo marin": 8,
       "luis vivas": 8,
@@ -819,11 +819,11 @@
       "randy roca ramirez": 8,
       "reny roca": 22,
       "rodriguez, nelson": 70,
-      "ronnie andres martinez chavarria": 34,
+      "ronnie andres martinez chavarria": 35,
       "sebastian cubillos": 15,
       "valentina libreros alvarez": 6
     },
-    "total": 447,
-    "avg": 21.3
+    "total": 449,
+    "avg": 21.4
   }
 }
