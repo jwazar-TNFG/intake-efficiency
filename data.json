@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated": "2026-11-03T22:38:47.835587",
+  "updated": "2026-11-03T23:15:06.471652",
   "title": "Locked Down",
   "reps": [
     {
@@ -119,9 +119,9 @@
       "came_in": 8,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 2.22,
-      "rate_worked": 2.31,
+      "rate_worked": 2.22,
       "hourly": [
         0,
         0,
@@ -191,9 +191,9 @@
       "came_in": 25,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.7,
+      "hours_worked": 15.0,
       "rate": 1.93,
-      "rate_worked": 1.98,
+      "rate_worked": 1.93,
       "hourly": [
         0,
         0,
@@ -222,14 +222,14 @@
     {
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
-      "ld": 16,
-      "still_ld": 9,
+      "ld": 17,
+      "still_ld": 10,
       "came_in": 7,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
-      "rate": 1.78,
-      "rate_worked": 1.78,
+      "rate": 1.89,
+      "rate_worked": 1.89,
       "hourly": [
         0,
         0,
@@ -245,7 +245,7 @@
         3,
         1,
         2,
-        0,
+        1,
         0,
         0
       ],
@@ -335,9 +335,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 1.22,
-      "rate_worked": 1.27,
+      "rate_worked": 1.22,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.56,
-      "rate_worked": 0.58,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 249,
-    "total_still_ld": 103,
+    "total_ld": 250,
+    "total_still_ld": 104,
     "total_came_in": 140,
     "total_dropped": 6,
     "hourly_came_in": [
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 159.0,
-    "total_hours_worked": 157.8,
+    "total_hours_worked": 159.0,
     "specialists_count": 20,
     "specialists_with_ld": 17,
-    "rate_worked": 1.58,
+    "rate_worked": 1.57,
     "rate_shift": 1.57,
     "hourly_totals": [
       1,
@@ -789,15 +789,15 @@
       16,
       17,
       11,
-      8,
+      9,
       3,
       4
     ],
     "yesterday_ld": 202,
-    "yesterday_same_time": 200,
+    "yesterday_same_time": 201,
     "last_week_same_time": 207,
     "last_week_total": 212,
-    "pace_time": "22:38"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -812,18 +812,18 @@
       "katiria bonilla": 33,
       "lina murillo marin": 8,
       "luis vivas": 8,
-      "manuel penaranda": 29,
+      "manuel penaranda": 30,
       "maria jose miranda rodriguez": 21,
       "naryeli silva": 9,
       "orlando plasencia": 23,
       "randy roca ramirez": 8,
-      "reny roca": 22,
+      "reny roca": 23,
       "rodriguez, nelson": 70,
       "ronnie andres martinez chavarria": 35,
       "sebastian cubillos": 15,
       "valentina libreros alvarez": 6
     },
-    "total": 449,
-    "avg": 21.4
+    "total": 451,
+    "avg": 21.5
   }
 }
