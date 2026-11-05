@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "updated": "2026-11-04T22:42:56.334244",
+  "updated": "2026-11-04T23:15:07.523773",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,9 +83,9 @@
       "came_in": 12,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 1.78,
-      "rate_worked": 1.84,
+      "rate_worked": 1.78,
       "hourly": [
         0,
         0,
@@ -109,6 +109,42 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
+      "name": "Manny Penaranda",
+      "abbrev": "M. Penaranda",
+      "ld": 17,
+      "still_ld": 4,
+      "came_in": 13,
+      "dropped": 0,
+      "hours": 10.0,
+      "hours_worked": 10.0,
+      "rate": 1.7,
+      "rate_worked": 1.7,
+      "hourly": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 18,
+      "is_off": false,
+      "email": "mpenaranda@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -184,42 +220,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Manny Penaranda",
-      "abbrev": "M. Penaranda",
-      "ld": 16,
-      "still_ld": 3,
-      "came_in": 13,
-      "dropped": 0,
-      "hours": 10.0,
-      "hours_worked": 10.0,
-      "rate": 1.6,
-      "rate_worked": 1.6,
-      "hourly": [
-        0,
-        3,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 18,
-      "is_off": false,
-      "email": "mpenaranda@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
       "ld": 22,
@@ -227,9 +227,9 @@
       "came_in": 19,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.7,
+      "hours_worked": 15.0,
       "rate": 1.47,
-      "rate_worked": 1.5,
+      "rate_worked": 1.47,
       "hourly": [
         0,
         1,
@@ -443,9 +443,9 @@
       "came_in": 4,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 0.69,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
+      "hours_worked": 9.0,
       "rate": 0.67,
-      "rate_worked": 0.69,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         0,
@@ -510,14 +510,14 @@
     {
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
-      "ld": 2,
-      "still_ld": 2,
+      "ld": 3,
+      "still_ld": 3,
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.7,
-      "rate": 0.22,
-      "rate_worked": 0.23,
+      "hours_worked": 9.0,
+      "rate": 0.33,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -533,7 +533,7 @@
         0,
         0,
         0,
-        1,
+        2,
         0,
         0
       ],
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 191,
-    "total_still_ld": 79,
+    "total_ld": 193,
+    "total_still_ld": 81,
     "total_came_in": 111,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 141.0,
-    "total_hours_worked": 139.5,
+    "total_hours_worked": 141.0,
     "specialists_count": 20,
     "specialists_with_ld": 17,
     "rate_worked": 1.37,
-    "rate_shift": 1.35,
+    "rate_shift": 1.37,
     "hourly_totals": [
       0,
       4,
@@ -789,15 +789,15 @@
       11,
       11,
       9,
-      1,
       2,
+      3,
       0
     ],
     "yesterday_ld": 250,
     "yesterday_same_time": 246,
-    "last_week_same_time": 226,
+    "last_week_same_time": 227,
     "last_week_total": 228,
-    "pace_time": "22:42"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -818,12 +818,12 @@
       "orlando plasencia": 37,
       "randy roca ramirez": 11,
       "reny roca": 24,
-      "rodriguez, nelson": 89,
+      "rodriguez, nelson": 90,
       "ronnie andres martinez chavarria": 38,
       "sebastian cubillos": 18,
       "valentina libreros alvarez": 7
     },
-    "total": 635,
-    "avg": 30.2
+    "total": 636,
+    "avg": 30.3
   }
 }
