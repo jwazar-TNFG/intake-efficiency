@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "updated": "2026-11-04T23:15:04.215374",
+  "updated": "2026-11-04T23:43:03.978961",
   "title": "Locked Down",
   "reps": [
     {
@@ -151,8 +151,8 @@
       "name": "Orlando Plasencia",
       "abbrev": "O. Plasencia",
       "ld": 15,
-      "still_ld": 9,
-      "came_in": 6,
+      "still_ld": 8,
+      "came_in": 7,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -511,8 +511,8 @@
       "name": "Maria Jose Miranda",
       "abbrev": "M. Miranda",
       "ld": 3,
-      "still_ld": 3,
-      "came_in": 0,
+      "still_ld": 2,
+      "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -727,8 +727,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 193,
-    "total_still_ld": 81,
-    "total_came_in": 111,
+    "total_still_ld": 79,
+    "total_came_in": 113,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -740,12 +740,12 @@
       17,
       16,
       13,
-      16,
+      17,
       8,
       5,
       3,
       3,
-      0,
+      1,
       0,
       0
     ],
@@ -794,10 +794,10 @@
       0
     ],
     "yesterday_ld": 250,
-    "yesterday_same_time": 246,
+    "yesterday_same_time": 250,
     "last_week_same_time": 227,
     "last_week_total": 228,
-    "pace_time": "23:15"
+    "pace_time": "23:42"
   },
   "mtd_signed": {
     "by_intaker": {
