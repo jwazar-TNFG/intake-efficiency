@@ -1,6 +1,6 @@
 {
   "date": "2026-11-06",
-  "updated": "2026-11-06T23:15:02.931355",
+  "updated": "2026-11-06T23:50:09.171770",
   "title": "Locked Down",
   "reps": [
     {
@@ -797,18 +797,18 @@
     "yesterday_same_time": 167,
     "last_week_same_time": 169,
     "last_week_total": 169,
-    "pace_time": "23:15"
+    "pace_time": "23:50"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 54,
+      "cindy del carmen hern\u00e1ndez zapata": 55,
       "daniel stiven valles mu\u00f1oz": 19,
       "david eduardo juarez": 32,
       "delvin antonio velasquez castro": 19,
       "jasmine cuarezma": 54,
       "jesus ortega": 23,
       "jorge duvergel": 64,
-      "juan jose ortega": 68,
+      "juan jose ortega": 71,
       "katiria bonilla": 92,
       "lina murillo marin": 45,
       "luis vivas": 35,
@@ -823,7 +823,7 @@
       "sebastian cubillos": 23,
       "valentina libreros alvarez": 14
     },
-    "total": 931,
-    "avg": 44.3
+    "total": 935,
+    "avg": 44.5
   }
 }
