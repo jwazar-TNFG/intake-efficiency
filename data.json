@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated": "2026-11-07T19:52:28.374949",
+  "updated": "2026-11-07T20:15:11.286371",
   "title": "Locked Down",
   "reps": [
     {
@@ -47,9 +47,9 @@
       "came_in": 3,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 5.9,
+      "hours_worked": 6.2,
       "rate": 1.22,
-      "rate_worked": 1.87,
+      "rate_worked": 1.76,
       "hourly": [
         0,
         0,
@@ -150,14 +150,14 @@
     {
       "name": "Valentina Liberos",
       "abbrev": "V. Liberos",
-      "ld": 7,
-      "still_ld": 5,
+      "ld": 8,
+      "still_ld": 6,
       "came_in": 2,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.9,
-      "rate": 0.78,
-      "rate_worked": 0.89,
+      "hours_worked": 8.2,
+      "rate": 0.89,
+      "rate_worked": 0.97,
       "hourly": [
         0,
         0,
@@ -171,7 +171,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 5.9,
+      "hours_worked": 6.2,
       "rate": 0.33,
-      "rate_worked": 0.51,
+      "rate_worked": 0.48,
       "hourly": [
         0,
         0,
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 82,
-    "total_still_ld": 57,
+    "total_ld": 83,
+    "total_still_ld": 58,
     "total_came_in": 25,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 67,
-    "total_hours_worked": 59.7,
+    "total_hours_worked": 60.6,
     "specialists_count": 20,
     "specialists_with_ld": 11,
     "rate_worked": 1.37,
-    "rate_shift": 1.22,
+    "rate_shift": 1.24,
     "hourly_totals": [
       0,
       0,
@@ -787,17 +787,17 @@
       10,
       9,
       7,
-      1,
+      2,
       0,
       0,
       0,
       0
     ],
     "yesterday_ld": 121,
-    "yesterday_same_time": 100,
-    "last_week_same_time": 81,
+    "yesterday_same_time": 101,
+    "last_week_same_time": 83,
     "last_week_total": 103,
-    "pace_time": "19:52"
+    "pace_time": "20:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -808,7 +808,7 @@
       "jasmine cuarezma": 54,
       "jesus ortega": 24,
       "jorge duvergel": 64,
-      "juan jose ortega": 75,
+      "juan jose ortega": 77,
       "katiria bonilla": 92,
       "lina murillo marin": 45,
       "luis vivas": 35,
@@ -823,7 +823,7 @@
       "sebastian cubillos": 23,
       "valentina libreros alvarez": 16
     },
-    "total": 966,
-    "avg": 46.0
+    "total": 968,
+    "avg": 46.1
   }
 }
