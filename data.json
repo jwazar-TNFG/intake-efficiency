@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated": "2026-11-07T23:15:04.864600",
+  "updated": "2026-11-07T23:52:56.659417",
   "title": "Locked Down",
   "reps": [
     {
@@ -115,8 +115,8 @@
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
       "ld": 9,
-      "still_ld": 7,
-      "came_in": 2,
+      "still_ld": 6,
+      "came_in": 3,
       "dropped": 0,
       "hours": 9,
       "hours_worked": 9,
@@ -727,8 +727,8 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 99,
-    "total_still_ld": 69,
-    "total_came_in": 30,
+    "total_still_ld": 68,
+    "total_came_in": 31,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
@@ -741,7 +741,7 @@
       6,
       2,
       3,
-      0,
+      1,
       1,
       0,
       2,
@@ -797,12 +797,12 @@
     "yesterday_same_time": 121,
     "last_week_same_time": 103,
     "last_week_total": 103,
-    "pace_time": "23:15"
+    "pace_time": "23:52"
   },
   "mtd_signed": {
     "by_intaker": {
       "cindy del carmen hern\u00e1ndez zapata": 56,
-      "daniel stiven valles mu\u00f1oz": 25,
+      "daniel stiven valles mu\u00f1oz": 26,
       "david eduardo juarez": 32,
       "delvin antonio velasquez castro": 20,
       "jasmine cuarezma": 54,
@@ -820,10 +820,10 @@
       "reny roca": 32,
       "rodriguez, nelson": 123,
       "ronnie andres martinez chavarria": 60,
-      "sebastian cubillos": 23,
+      "sebastian cubillos": 25,
       "valentina libreros alvarez": 16
     },
-    "total": 970,
-    "avg": 46.2
+    "total": 973,
+    "avg": 46.3
   }
 }
