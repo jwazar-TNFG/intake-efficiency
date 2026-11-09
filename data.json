@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "updated": "2026-11-08T21:55:37.908454",
+  "updated": "2026-11-08T22:15:12.653978",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.9,
+      "hours_worked": 8.2,
       "rate": 1.67,
-      "rate_worked": 1.89,
+      "rate_worked": 1.82,
       "hourly": [
         0,
         0,
@@ -78,14 +78,14 @@
     {
       "name": "Reny Roca",
       "abbrev": "R. Roca",
-      "ld": 9,
-      "still_ld": 3,
+      "ld": 10,
+      "still_ld": 4,
       "came_in": 5,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.9,
-      "rate": 1.0,
-      "rate_worked": 1.13,
+      "hours_worked": 8.2,
+      "rate": 1.11,
+      "rate_worked": 1.21,
       "hourly": [
         0,
         0,
@@ -101,7 +101,7 @@
         2,
         1,
         1,
-        0,
+        1,
         0,
         0
       ],
@@ -191,9 +191,9 @@
       "came_in": 2,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 7.9,
+      "hours_worked": 8.2,
       "rate": 0.33,
-      "rate_worked": 0.38,
+      "rate_worked": 0.36,
       "hourly": [
         0,
         0,
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 84,
-    "total_still_ld": 35,
+    "total_ld": 85,
+    "total_still_ld": 36,
     "total_came_in": 48,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 65,
-    "total_hours_worked": 61.7,
+    "total_hours_worked": 62.6,
     "specialists_count": 20,
     "specialists_with_ld": 11,
     "rate_worked": 1.36,
-    "rate_shift": 1.29,
+    "rate_shift": 1.31,
     "hourly_totals": [
       0,
       0,
@@ -789,7 +789,7 @@
       8,
       5,
       13,
-      2,
+      3,
       0,
       0
     ],
@@ -797,7 +797,7 @@
     "yesterday_same_time": 92,
     "last_week_same_time": 100,
     "last_week_total": 104,
-    "pace_time": "21:55"
+    "pace_time": "22:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -812,18 +812,18 @@
       "katiria bonilla": 92,
       "lina murillo marin": 46,
       "luis vivas": 36,
-      "manuel penaranda": 66,
+      "manuel penaranda": 68,
       "maria jose miranda rodriguez": 30,
       "naryeli silva": 29,
       "orlando plasencia": 56,
       "randy roca ramirez": 21,
       "reny roca": 40,
-      "rodriguez, nelson": 141,
+      "rodriguez, nelson": 143,
       "ronnie andres martinez chavarria": 61,
       "sebastian cubillos": 28,
       "valentina libreros alvarez": 16
     },
-    "total": 1049,
-    "avg": 50.0
+    "total": 1053,
+    "avg": 50.1
   }
 }
