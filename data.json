@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "updated": "2026-11-09T06:57:11.470427",
+  "updated": "2026-11-09T08:15:05.165946",
   "title": "Locked Down",
   "reps": [
     {
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -299,9 +299,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -335,9 +335,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -371,9 +371,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -407,9 +407,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 0,
+      "hours_worked": 0.2,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 187,
-    "total_hours_worked": 0,
+    "total_hours_worked": 2.0,
     "specialists_count": 20,
     "specialists_with_ld": 0,
-    "rate_worked": 0,
+    "rate_worked": 0.0,
     "rate_shift": 0.0,
     "hourly_totals": [
       0,
@@ -797,7 +797,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 203,
-    "pace_time": "06:56"
+    "pace_time": "08:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -818,12 +818,12 @@
       "orlando plasencia": 56,
       "randy roca ramirez": 22,
       "reny roca": 41,
-      "rodriguez, nelson": 145,
+      "rodriguez, nelson": 146,
       "ronnie andres martinez chavarria": 61,
       "sebastian cubillos": 28,
       "valentina libreros alvarez": 16
     },
-    "total": 1058,
+    "total": 1059,
     "avg": 50.4
   }
 }
