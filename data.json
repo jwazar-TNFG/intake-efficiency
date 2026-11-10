@@ -1,19 +1,19 @@
 {
   "date": "2026-11-09",
-  "updated": "2026-11-09T22:59:40.583726",
+  "updated": "2026-11-09T23:59:45.481729",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Jorge Duvergel",
       "abbrev": "J. Duvergel",
-      "ld": 37,
-      "still_ld": 12,
+      "ld": 38,
+      "still_ld": 13,
       "came_in": 25,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 3.7,
-      "rate_worked": 3.7,
+      "rate": 3.8,
+      "rate_worked": 3.8,
       "hourly": [
         0,
         0,
@@ -30,7 +30,7 @@
         2,
         0,
         1,
-        0,
+        1,
         0
       ],
       "start_hour": 8,
@@ -42,14 +42,14 @@
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 36,
+      "ld": 37,
       "still_ld": 2,
-      "came_in": 34,
+      "came_in": 35,
       "dropped": 0,
       "hours": 15.0,
       "hours_worked": 15.0,
-      "rate": 2.4,
-      "rate_worked": 2.4,
+      "rate": 2.47,
+      "rate_worked": 2.47,
       "hourly": [
         0,
         0,
@@ -66,7 +66,7 @@
         5,
         3,
         1,
-        1,
+        2,
         0
       ],
       "start_hour": 8,
@@ -151,8 +151,8 @@
       "name": "Juan Ortega",
       "abbrev": "Juan Ortega",
       "ld": 16,
-      "still_ld": 8,
-      "came_in": 8,
+      "still_ld": 7,
+      "came_in": 9,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -223,8 +223,8 @@
       "name": "Cindy Hernandez",
       "abbrev": "C. Hernandez",
       "ld": 12,
-      "still_ld": 7,
-      "came_in": 5,
+      "still_ld": 6,
+      "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -547,8 +547,8 @@
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
       "ld": 4,
-      "still_ld": 3,
-      "came_in": 1,
+      "still_ld": 2,
+      "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -726,9 +726,9 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 227,
-    "total_still_ld": 76,
-    "total_came_in": 150,
+    "total_ld": 229,
+    "total_still_ld": 74,
+    "total_came_in": 154,
     "total_dropped": 1,
     "hourly_came_in": [
       0,
@@ -739,14 +739,14 @@
       2,
       14,
       12,
-      10,
+      11,
       20,
       26,
       17,
       11,
-      19,
-      7,
-      3,
+      20,
+      8,
+      4,
       2
     ],
     "hourly_dropped": [
@@ -772,8 +772,8 @@
     "total_hours_worked": 178.0,
     "specialists_count": 20,
     "specialists_with_ld": 17,
-    "rate_worked": 1.28,
-    "rate_shift": 1.28,
+    "rate_worked": 1.29,
+    "rate_shift": 1.29,
     "hourly_totals": [
       0,
       0,
@@ -790,14 +790,14 @@
       20,
       30,
       11,
-      5,
+      7,
       5
     ],
     "yesterday_ld": 88,
     "yesterday_same_time": 88,
-    "last_week_same_time": 201,
+    "last_week_same_time": 203,
     "last_week_total": 203,
-    "pace_time": "22:59"
+    "pace_time": "23:59"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -809,7 +809,7 @@
       "jasmine cuarezma": 81,
       "jesus ortega": 30,
       "jorge duvergel": 94,
-      "juan jose ortega": 103,
+      "juan jose ortega": 105,
       "katiria bonilla": 117,
       "lina murillo marin": 56,
       "luis vivas": 50,
@@ -819,12 +819,12 @@
       "orlando plasencia": 56,
       "randy roca ramirez": 29,
       "reny roca": 51,
-      "rodriguez, nelson": 184,
+      "rodriguez, nelson": 187,
       "ronnie andres martinez chavarria": 69,
       "sebastian cubillos": 30,
       "valentina libreros alvarez": 28
     },
-    "total": 1309,
-    "avg": 59.5
+    "total": 1314,
+    "avg": 59.7
   }
 }
