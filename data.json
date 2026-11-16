@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "updated": "2026-11-16T00:21:47.493377",
+  "updated": "2026-11-16T02:22:00.680690",
   "title": "Locked Down",
   "reps": [
     {
@@ -797,7 +797,7 @@
     "yesterday_same_time": 0,
     "last_week_same_time": 0,
     "last_week_total": 231,
-    "pace_time": "00:21"
+    "pace_time": "02:21"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -818,13 +818,13 @@
       "naryeli silva": 60,
       "orlando plasencia": 93,
       "randy roca ramirez": 49,
-      "reny roca": 77,
+      "reny roca": 78,
       "rodriguez, nelson": 320,
       "ronnie andres martinez chavarria": 133,
-      "sebastian cubillos": 42,
+      "sebastian cubillos": 43,
       "valentina libreros alvarez": 40
     },
-    "total": 2183,
-    "avg": 99.2
+    "total": 2185,
+    "avg": 99.3
   }
 }
