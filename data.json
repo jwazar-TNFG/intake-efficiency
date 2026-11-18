@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "updated": "2026-11-17T23:15:07.624964",
+  "updated": "2026-11-17T23:30:57.841211",
   "title": "Locked Down",
   "reps": [
     {
@@ -151,8 +151,8 @@
       "name": "Manny Penaranda",
       "abbrev": "M. Penaranda",
       "ld": 17,
-      "still_ld": 7,
-      "came_in": 10,
+      "still_ld": 5,
+      "came_in": 12,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
@@ -403,8 +403,8 @@
       "name": "Sebastian Cubillos",
       "abbrev": "S. Cubillos",
       "ld": 8,
-      "still_ld": 7,
-      "came_in": 1,
+      "still_ld": 6,
+      "came_in": 2,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -727,14 +727,14 @@
   "shifts_configured": true,
   "department": {
     "total_ld": 199,
-    "total_still_ld": 98,
-    "total_came_in": 100,
+    "total_still_ld": 95,
+    "total_came_in": 103,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
       2,
       4,
-      11,
+      12,
       19,
       7,
       10,
@@ -743,9 +743,9 @@
       1,
       1,
       8,
-      8,
+      9,
       4,
-      2,
+      3,
       4,
       0
     ],
@@ -797,7 +797,7 @@
     "yesterday_same_time": 240,
     "last_week_same_time": 174,
     "last_week_total": 174,
-    "pace_time": "23:15"
+    "pace_time": "23:30"
   },
   "mtd_signed": {
     "by_intaker": {
