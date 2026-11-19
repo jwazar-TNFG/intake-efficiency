@@ -1,19 +1,19 @@
 {
   "date": "2026-11-18",
-  "updated": "2026-11-18T22:34:34.216164",
+  "updated": "2026-11-18T23:34:43.339962",
   "title": "Locked Down",
   "reps": [
     {
       "name": "Nelson Rodriguez",
       "abbrev": "N. Rodriguez",
-      "ld": 32,
-      "still_ld": 6,
+      "ld": 33,
+      "still_ld": 7,
       "came_in": 26,
       "dropped": 0,
       "hours": 15,
-      "hours_worked": 14.6,
-      "rate": 2.13,
-      "rate_worked": 2.19,
+      "hours_worked": 15,
+      "rate": 2.2,
+      "rate_worked": 2.2,
       "hourly": [
         1,
         0,
@@ -31,7 +31,7 @@
         2,
         2,
         0,
-        0
+        1
       ],
       "start_hour": 8,
       "end_hour": 23,
@@ -371,9 +371,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.89,
-      "rate_worked": 0.93,
+      "rate_worked": 0.89,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.78,
-      "rate_worked": 0.82,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -479,9 +479,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.67,
-      "rate_worked": 0.7,
+      "rate_worked": 0.67,
       "hourly": [
         0,
         0,
@@ -587,9 +587,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.33,
-      "rate_worked": 0.35,
+      "rate_worked": 0.33,
       "hourly": [
         0,
         0,
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9,
-      "hours_worked": 8.6,
+      "hours_worked": 9,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 182,
-    "total_still_ld": 84,
+    "total_ld": 183,
+    "total_still_ld": 85,
     "total_came_in": 96,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 187,
-    "total_hours_worked": 184.6,
+    "total_hours_worked": 187,
     "specialists_count": 20,
     "specialists_with_ld": 18,
-    "rate_worked": 0.99,
-    "rate_shift": 0.97,
+    "rate_worked": 0.98,
+    "rate_shift": 0.98,
     "hourly_totals": [
       1,
       1,
@@ -791,17 +791,17 @@
       8,
       6,
       4,
-      0
+      1
     ],
     "yesterday_ld": 199,
-    "yesterday_same_time": 191,
-    "last_week_same_time": 201,
+    "yesterday_same_time": 192,
+    "last_week_same_time": 204,
     "last_week_total": 205,
-    "pace_time": "22:34"
+    "pace_time": "23:34"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 163,
+      "cindy del carmen hern\u00e1ndez zapata": 164,
       "daniel stiven valles mu\u00f1oz": 60,
       "david eduardo juarez": 75,
       "delvin antonio velasquez castro": 59,
@@ -809,22 +809,22 @@
       "jasmine cuarezma": 172,
       "jesus ortega": 54,
       "jorge duvergel": 200,
-      "juan jose ortega": 193,
+      "juan jose ortega": 194,
       "katiria bonilla": 252,
       "lina murillo marin": 86,
       "luis vivas": 114,
       "manuel penaranda": 191,
-      "maria jose miranda rodriguez": 93,
+      "maria jose miranda rodriguez": 96,
       "naryeli silva": 78,
       "orlando plasencia": 133,
       "randy roca ramirez": 68,
       "reny roca": 88,
-      "rodriguez, nelson": 418,
+      "rodriguez, nelson": 419,
       "ronnie andres martinez chavarria": 168,
       "sebastian cubillos": 57,
       "valentina libreros alvarez": 56
     },
-    "total": 2779,
-    "avg": 126.3
+    "total": 2785,
+    "avg": 126.6
   }
 }
