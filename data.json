@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "updated": "2026-11-19T21:39:34.867461",
+  "updated": "2026-11-19T22:15:19.599998",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 32,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 13.7,
+      "hours_worked": 14.2,
       "rate": 3.07,
-      "rate_worked": 3.37,
+      "rate_worked": 3.23,
       "hourly": [
         0,
         0,
@@ -227,9 +227,9 @@
       "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.7,
+      "hours_worked": 8.2,
       "rate": 1.11,
-      "rate_worked": 1.31,
+      "rate_worked": 1.21,
       "hourly": [
         0,
         0,
@@ -443,9 +443,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 4.0,
-      "hours_worked": 3.7,
+      "hours_worked": 4.0,
       "rate": 0.75,
-      "rate_worked": 0.82,
+      "rate_worked": 0.75,
       "hourly": [
         0,
         0,
@@ -551,9 +551,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 7.7,
+      "hours_worked": 8.2,
       "rate": 0.33,
-      "rate_worked": 0.39,
+      "rate_worked": 0.36,
       "hourly": [
         0,
         0,
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 151.0,
-    "total_hours_worked": 146.8,
+    "total_hours_worked": 148.6,
     "specialists_count": 20,
     "specialists_with_ld": 17,
-    "rate_worked": 1.41,
+    "rate_worked": 1.39,
     "rate_shift": 1.37,
     "hourly_totals": [
       0,
@@ -794,10 +794,10 @@
       0
     ],
     "yesterday_ld": 182,
-    "yesterday_same_time": 175,
-    "last_week_same_time": 171,
+    "yesterday_same_time": 181,
+    "last_week_same_time": 172,
     "last_week_total": 181,
-    "pace_time": "21:39"
+    "pace_time": "22:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -812,9 +812,9 @@
       "juan jose ortega": 200,
       "katiria bonilla": 272,
       "lina murillo marin": 93,
-      "luis vivas": 123,
+      "luis vivas": 124,
       "manuel penaranda": 198,
-      "maria jose miranda rodriguez": 107,
+      "maria jose miranda rodriguez": 108,
       "naryeli silva": 82,
       "orlando plasencia": 144,
       "randy roca ramirez": 72,
@@ -824,7 +824,7 @@
       "sebastian cubillos": 58,
       "valentina libreros alvarez": 65
     },
-    "total": 2967,
-    "avg": 134.9
+    "total": 2969,
+    "avg": 135.0
   }
 }
