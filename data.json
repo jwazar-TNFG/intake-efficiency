@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "updated": "2026-11-20T22:15:12.899980",
+  "updated": "2026-11-20T22:47:01.840147",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,9 +83,9 @@
       "came_in": 19,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 14.8,
       "rate": 1.87,
-      "rate_worked": 1.96,
+      "rate_worked": 1.89,
       "hourly": [
         0,
         2,
@@ -366,14 +366,14 @@
     {
       "name": "Naryeli Silva",
       "abbrev": "N. Silva",
-      "ld": 8,
-      "still_ld": 6,
+      "ld": 9,
+      "still_ld": 7,
       "came_in": 2,
       "dropped": 0,
       "hours": 10.0,
       "hours_worked": 10.0,
-      "rate": 0.8,
-      "rate_worked": 0.8,
+      "rate": 0.9,
+      "rate_worked": 0.9,
       "hourly": [
         0,
         0,
@@ -389,7 +389,7 @@
         3,
         1,
         1,
-        0,
+        1,
         0,
         0
       ],
@@ -436,6 +436,42 @@
       "mtd_signed": 0
     },
     {
+      "name": "Reny Roca",
+      "abbrev": "R. Roca",
+      "ld": 7,
+      "still_ld": 4,
+      "came_in": 3,
+      "dropped": 0,
+      "hours": 9.0,
+      "hours_worked": 8.8,
+      "rate": 0.78,
+      "rate_worked": 0.8,
+      "hourly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "start_hour": 14,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "rroca@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
+    {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
       "ld": 5,
@@ -443,9 +479,9 @@
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.8,
       "rate": 0.56,
-      "rate_worked": 0.61,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -472,42 +508,6 @@
       "mtd_signed": 0
     },
     {
-      "name": "Reny Roca",
-      "abbrev": "R. Roca",
-      "ld": 5,
-      "still_ld": 2,
-      "came_in": 3,
-      "dropped": 0,
-      "hours": 9.0,
-      "hours_worked": 8.2,
-      "rate": 0.56,
-      "rate_worked": 0.61,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 14,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "rroca@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
       "name": "Valentina Liberos",
       "abbrev": "V. Liberos",
       "ld": 5,
@@ -515,9 +515,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 8.8,
       "rate": 0.56,
-      "rate_worked": 0.61,
+      "rate_worked": 0.57,
       "hourly": [
         0,
         0,
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 193,
-    "total_still_ld": 92,
+    "total_ld": 196,
+    "total_still_ld": 95,
     "total_came_in": 100,
     "total_dropped": 1,
     "hourly_came_in": [
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 165.0,
-    "total_hours_worked": 161.8,
+    "total_hours_worked": 164.2,
     "specialists_count": 20,
     "specialists_with_ld": 17,
     "rate_worked": 1.19,
-    "rate_shift": 1.17,
+    "rate_shift": 1.19,
     "hourly_totals": [
       0,
       3,
@@ -789,15 +789,15 @@
       17,
       11,
       8,
-      4,
-      1,
+      5,
+      3,
       0
     ],
     "yesterday_ld": 224,
-    "yesterday_same_time": 218,
-    "last_week_same_time": 178,
+    "yesterday_same_time": 224,
+    "last_week_same_time": 181,
     "last_week_total": 183,
-    "pace_time": "22:15"
+    "pace_time": "22:46"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -806,7 +806,7 @@
       "david eduardo juarez": 86,
       "delvin antonio velasquez castro": 69,
       "diez, carolina": 1,
-      "jasmine cuarezma": 193,
+      "jasmine cuarezma": 194,
       "jesus ortega": 59,
       "jorge duvergel": 236,
       "juan jose ortega": 201,
@@ -816,7 +816,7 @@
       "manuel penaranda": 213,
       "maria jose miranda rodriguez": 116,
       "naryeli silva": 88,
-      "orlando plasencia": 163,
+      "orlando plasencia": 165,
       "randy roca ramirez": 75,
       "reny roca": 93,
       "rodriguez, nelson": 487,
@@ -824,7 +824,7 @@
       "sebastian cubillos": 60,
       "valentina libreros alvarez": 69
     },
-    "total": 3171,
-    "avg": 144.1
+    "total": 3174,
+    "avg": 144.3
   }
 }
