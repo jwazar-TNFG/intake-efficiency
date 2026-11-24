@@ -1,8 +1,44 @@
 {
   "date": "2026-11-24",
-  "updated": "2026-11-24T08:02:51.969185",
+  "updated": "2026-11-24T09:03:05.193478",
   "title": "Locked Down",
   "reps": [
+    {
+      "name": "Nelson Rodriguez",
+      "abbrev": "N. Rodriguez",
+      "ld": 2,
+      "still_ld": 1,
+      "came_in": 1,
+      "dropped": 0,
+      "hours": 15.0,
+      "hours_worked": 1.1,
+      "rate": 0.13,
+      "rate_worked": 1.9,
+      "hourly": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_hour": 8,
+      "end_hour": 23,
+      "is_off": false,
+      "email": "nelsonr@thenofaultgroup.com",
+      "mtd_signed": 0
+    },
     {
       "name": "Juan Ortega",
       "abbrev": "Juan Ortega",
@@ -37,42 +73,6 @@
       "end_hour": 23,
       "is_off": false,
       "email": "jjortega@thenofaultgroup.com",
-      "mtd_signed": 0
-    },
-    {
-      "name": "Nelson Rodriguez",
-      "abbrev": "N. Rodriguez",
-      "ld": 1,
-      "still_ld": 0,
-      "came_in": 1,
-      "dropped": 0,
-      "hours": 15.0,
-      "hours_worked": 0.1,
-      "rate": 0.07,
-      "rate_worked": 20.0,
-      "hourly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "start_hour": 8,
-      "end_hour": 23,
-      "is_off": false,
-      "email": "nelsonr@thenofaultgroup.com",
       "mtd_signed": 0
     },
     {
@@ -155,9 +155,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.1,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -299,7 +299,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -335,7 +335,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -371,7 +371,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -407,7 +407,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -479,7 +479,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0.1,
+      "hours_worked": 1.1,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -623,9 +623,9 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 0,
+      "hours_worked": 0.1,
       "rate": 0.0,
-      "rate_worked": 0,
+      "rate_worked": 0.0,
       "hourly": [
         0,
         0,
@@ -726,8 +726,8 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 2,
-    "total_still_ld": 1,
+    "total_ld": 3,
+    "total_still_ld": 2,
     "total_came_in": 1,
     "total_dropped": 0,
     "hourly_came_in": [
@@ -769,14 +769,14 @@
       0
     ],
     "total_shift_hours": 160.0,
-    "total_hours_worked": 0.9,
+    "total_hours_worked": 10.1,
     "specialists_count": 20,
     "specialists_with_ld": 2,
-    "rate_worked": 2.22,
-    "rate_shift": 0.01,
+    "rate_worked": 0.3,
+    "rate_shift": 0.02,
     "hourly_totals": [
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -795,9 +795,9 @@
     ],
     "yesterday_ld": 246,
     "yesterday_same_time": 1,
-    "last_week_same_time": 1,
+    "last_week_same_time": 3,
     "last_week_total": 198,
-    "pace_time": "08:02"
+    "pace_time": "09:02"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -808,7 +808,7 @@
       "diez, carolina": 2,
       "jasmine cuarezma": 219,
       "jesus ortega": 70,
-      "jorge duvergel": 255,
+      "jorge duvergel": 256,
       "juan jose ortega": 229,
       "katiria bonilla": 325,
       "lina murillo marin": 108,
@@ -819,12 +819,12 @@
       "orlando plasencia": 180,
       "randy roca ramirez": 103,
       "reny roca": 124,
-      "rodriguez, nelson": 549,
+      "rodriguez, nelson": 550,
       "ronnie andres martinez chavarria": 198,
       "sebastian cubillos": 74,
       "valentina libreros alvarez": 86
     },
-    "total": 3632,
-    "avg": 165.1
+    "total": 3634,
+    "avg": 165.2
   }
 }
