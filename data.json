@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated": "2026-11-24T23:07:17.549410",
+  "updated": "2026-11-24T23:15:09.483694",
   "title": "Locked Down",
   "reps": [
     {
@@ -795,9 +795,9 @@
     ],
     "yesterday_ld": 246,
     "yesterday_same_time": 246,
-    "last_week_same_time": 190,
+    "last_week_same_time": 191,
     "last_week_total": 198,
-    "pace_time": "23:07"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -808,23 +808,23 @@
       "diez, carolina": 2,
       "jasmine cuarezma": 236,
       "jesus ortega": 77,
-      "jorge duvergel": 272,
-      "juan jose ortega": 239,
+      "jorge duvergel": 273,
+      "juan jose ortega": 240,
       "katiria bonilla": 343,
       "lina murillo marin": 114,
-      "luis vivas": 154,
-      "manuel penaranda": 256,
+      "luis vivas": 155,
+      "manuel penaranda": 257,
       "maria jose miranda rodriguez": 131,
       "naryeli silva": 115,
       "orlando plasencia": 193,
       "randy roca ramirez": 117,
-      "reny roca": 132,
+      "reny roca": 133,
       "rodriguez, nelson": 574,
       "ronnie andres martinez chavarria": 207,
       "sebastian cubillos": 79,
       "valentina libreros alvarez": 94
     },
-    "total": 3838,
-    "avg": 174.5
+    "total": 3843,
+    "avg": 174.7
   }
 }
