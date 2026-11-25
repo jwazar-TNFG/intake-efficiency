@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "updated": "2026-11-25T01:07:37.919527",
+  "updated": "2026-11-25T03:07:52.868989",
   "title": "Locked Down",
   "reps": [
     {
@@ -795,34 +795,34 @@
     ],
     "yesterday_ld": 214,
     "yesterday_same_time": 1,
-    "last_week_same_time": 1,
+    "last_week_same_time": 2,
     "last_week_total": 178,
-    "pace_time": "01:07"
+    "pace_time": "03:07"
   },
   "mtd_signed": {
     "by_intaker": {
+      "reny roca": 133,
+      "lina murillo marin": 114,
+      "randy roca ramirez": 117,
+      "jorge duvergel": 273,
+      "maria jose miranda rodriguez": 131,
+      "valentina libreros alvarez": 94,
+      "orlando plasencia": 193,
+      "naryeli silva": 115,
+      "rodriguez, nelson": 574,
       "cindy del carmen hern\u00e1ndez zapata": 223,
+      "delvin antonio velasquez castro": 88,
+      "juan jose ortega": 240,
+      "sebastian cubillos": 79,
+      "manuel penaranda": 257,
+      "diez, carolina": 2,
+      "ronnie andres martinez chavarria": 207,
       "daniel stiven valles mu\u00f1oz": 87,
       "david eduardo juarez": 105,
-      "delvin antonio velasquez castro": 88,
-      "diez, carolina": 2,
       "jasmine cuarezma": 236,
       "jesus ortega": 77,
-      "jorge duvergel": 273,
-      "juan jose ortega": 240,
       "katiria bonilla": 343,
-      "lina murillo marin": 114,
-      "luis vivas": 155,
-      "manuel penaranda": 257,
-      "maria jose miranda rodriguez": 131,
-      "naryeli silva": 115,
-      "orlando plasencia": 193,
-      "randy roca ramirez": 117,
-      "reny roca": 133,
-      "rodriguez, nelson": 574,
-      "ronnie andres martinez chavarria": 207,
-      "sebastian cubillos": 79,
-      "valentina libreros alvarez": 94
+      "luis vivas": 155
     },
     "total": 3843,
     "avg": 174.7
