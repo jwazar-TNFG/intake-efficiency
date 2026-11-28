@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "updated": "2026-11-28T09:24:23.193295",
+  "updated": "2026-11-28T10:24:34.650715",
   "title": "Locked Down",
   "reps": [
     {
@@ -83,7 +83,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -119,7 +119,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -227,7 +227,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -443,7 +443,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -551,7 +551,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 10.0,
-      "hours_worked": 1.4,
+      "hours_worked": 2.4,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -769,10 +769,10 @@
       0
     ],
     "total_shift_hours": 93.0,
-    "total_hours_worked": 7.0,
+    "total_hours_worked": 12.0,
     "specialists_count": 20,
     "specialists_with_ld": 1,
-    "rate_worked": 0.14,
+    "rate_worked": 0.08,
     "rate_shift": 0.01,
     "hourly_totals": [
       0,
@@ -794,10 +794,10 @@
       0
     ],
     "yesterday_ld": 179,
-    "yesterday_same_time": 2,
-    "last_week_same_time": 2,
+    "yesterday_same_time": 4,
+    "last_week_same_time": 5,
     "last_week_total": 113,
-    "pace_time": "09:24"
+    "pace_time": "10:24"
   },
   "mtd_signed": {
     "by_intaker": {
@@ -806,9 +806,9 @@
       "david eduardo juarez": 111,
       "delvin antonio velasquez castro": 98,
       "diez, carolina": 2,
-      "jasmine cuarezma": 255,
+      "jasmine cuarezma": 256,
       "jesus ortega": 83,
-      "jorge duvergel": 296,
+      "jorge duvergel": 302,
       "juan jose ortega": 256,
       "katiria bonilla": 373,
       "lina murillo marin": 132,
@@ -824,7 +824,7 @@
       "sebastian cubillos": 85,
       "valentina libreros alvarez": 99
     },
-    "total": 4228,
-    "avg": 192.2
+    "total": 4235,
+    "avg": 192.5
   }
 }
