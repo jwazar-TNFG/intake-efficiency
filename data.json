@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated": "2026-11-27T22:15:34.459560",
+  "updated": "2026-11-27T23:15:06.154994",
   "title": "Locked Down",
   "reps": [
     {
@@ -11,9 +11,9 @@
       "came_in": 5,
       "dropped": 0,
       "hours": 3.0,
-      "hours_worked": 2.2,
+      "hours_worked": 3.0,
       "rate": 3.33,
-      "rate_worked": 4.44,
+      "rate_worked": 3.33,
       "hourly": [
         0,
         0,
@@ -79,8 +79,8 @@
       "name": "Ronnie Chavarria",
       "abbrev": "R. Chavarria",
       "ld": 17,
-      "still_ld": 12,
-      "came_in": 5,
+      "still_ld": 11,
+      "came_in": 6,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
@@ -299,9 +299,9 @@
       "came_in": 11,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
+      "hours_worked": 15.0,
       "rate": 1.27,
-      "rate_worked": 1.33,
+      "rate_worked": 1.27,
       "hourly": [
         0,
         0,
@@ -330,14 +330,14 @@
     {
       "name": "Randy Roca",
       "abbrev": "R. Roca",
-      "ld": 14,
-      "still_ld": 5,
+      "ld": 16,
+      "still_ld": 7,
       "came_in": 9,
       "dropped": 0,
       "hours": 15.0,
-      "hours_worked": 14.2,
-      "rate": 0.93,
-      "rate_worked": 0.98,
+      "hours_worked": 15.0,
+      "rate": 1.07,
+      "rate_worked": 1.07,
       "hourly": [
         0,
         0,
@@ -353,7 +353,7 @@
         1,
         0,
         1,
-        0,
+        2,
         0,
         0
       ],
@@ -402,14 +402,14 @@
     {
       "name": "Daniel Vallez",
       "abbrev": "D. Vallez",
-      "ld": 5,
-      "still_ld": 4,
+      "ld": 7,
+      "still_ld": 5,
       "came_in": 1,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
-      "rate": 0.56,
-      "rate_worked": 0.61,
+      "hours_worked": 9.0,
+      "rate": 0.78,
+      "rate_worked": 0.78,
       "hourly": [
         0,
         0,
@@ -426,7 +426,7 @@
         0,
         2,
         1,
-        0,
+        2,
         0
       ],
       "start_hour": 14,
@@ -438,14 +438,14 @@
     {
       "name": "David Juarez",
       "abbrev": "D. Juarez",
-      "ld": 4,
-      "still_ld": 4,
+      "ld": 5,
+      "still_ld": 5,
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
       "hours_worked": 9.0,
-      "rate": 0.44,
-      "rate_worked": 0.44,
+      "rate": 0.56,
+      "rate_worked": 0.56,
       "hourly": [
         0,
         0,
@@ -460,7 +460,7 @@
         0,
         1,
         1,
-        0,
+        1,
         0,
         0,
         0
@@ -695,7 +695,7 @@
       "came_in": 0,
       "dropped": 0,
       "hours": 9.0,
-      "hours_worked": 8.2,
+      "hours_worked": 9.0,
       "rate": 0.0,
       "rate_worked": 0.0,
       "hourly": [
@@ -726,16 +726,16 @@
   ],
   "shifts_configured": true,
   "department": {
-    "total_ld": 172,
-    "total_still_ld": 94,
-    "total_came_in": 78,
+    "total_ld": 177,
+    "total_still_ld": 97,
+    "total_came_in": 79,
     "total_dropped": 0,
     "hourly_came_in": [
       0,
       0,
       2,
       2,
-      12,
+      13,
       22,
       10,
       8,
@@ -769,11 +769,11 @@
       0
     ],
     "total_shift_hours": 165.0,
-    "total_hours_worked": 161.0,
+    "total_hours_worked": 165.0,
     "specialists_count": 20,
     "specialists_with_ld": 15,
     "rate_worked": 1.07,
-    "rate_shift": 1.04,
+    "rate_shift": 1.07,
     "hourly_totals": [
       0,
       0,
@@ -788,25 +788,25 @@
       12,
       11,
       6,
-      8,
-      3,
-      0,
+      9,
+      5,
+      2,
       0
     ],
     "yesterday_ld": 67,
-    "yesterday_same_time": 66,
-    "last_week_same_time": 195,
+    "yesterday_same_time": 67,
+    "last_week_same_time": 200,
     "last_week_total": 200,
-    "pace_time": "22:15"
+    "pace_time": "23:15"
   },
   "mtd_signed": {
     "by_intaker": {
-      "cindy del carmen hern\u00e1ndez zapata": 245,
-      "daniel stiven valles mu\u00f1oz": 92,
+      "cindy del carmen hern\u00e1ndez zapata": 246,
+      "daniel stiven valles mu\u00f1oz": 93,
       "david eduardo juarez": 110,
       "delvin antonio velasquez castro": 98,
       "diez, carolina": 2,
-      "jasmine cuarezma": 254,
+      "jasmine cuarezma": 255,
       "jesus ortega": 83,
       "jorge duvergel": 296,
       "juan jose ortega": 256,
@@ -820,11 +820,11 @@
       "randy roca ramirez": 136,
       "reny roca": 144,
       "rodriguez, nelson": 624,
-      "ronnie andres martinez chavarria": 233,
+      "ronnie andres martinez chavarria": 234,
       "sebastian cubillos": 85,
       "valentina libreros alvarez": 98
     },
-    "total": 4218,
-    "avg": 191.7
+    "total": 4222,
+    "avg": 191.9
   }
 }
